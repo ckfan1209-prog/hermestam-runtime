@@ -1,0 +1,1644 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HermesTam Runtime — .240 美股 Jobs 狀態</title>
+<style>
+:root{--bg:#0b1020;--panel:#131a2e;--panel2:#0f1526;--text:#e8ecf6;--muted:#93a0bd;--ok:#34d399;--err:#f87171;--off:#64748b;--accent:#7dd3fc;--line:#22304f}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,"PingFang HK","Microsoft JhengHei",sans-serif}
+header{padding:28px 20px 8px;max-width:1100px;margin:0 auto}
+h1{font-size:26px;margin:0 0 6px} .sub{color:var(--muted);font-size:14px}
+.stats{display:flex;gap:12px;flex-wrap:wrap;margin:18px 0 4px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 18px;min-width:120px}
+.stat b{font-size:24px;display:block} .stat span{color:var(--muted);font-size:12px}
+main{max-width:1100px;margin:0 auto;padding:8px 20px 40px}
+h2{font-size:19px;margin:28px 0 12px} h2 .count{color:var(--muted);font-size:13px;margin-left:8px;font-weight:400}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px}
+.card{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--ok);border-radius:12px;padding:14px 16px}
+.card.err{border-left-color:var(--err)} .card.off{border-left-color:var(--off);opacity:.75}
+.card-head{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
+.card h3{font-size:15px;margin:0;line-height:1.35}
+.badge{font-size:12px;white-space:nowrap} .badge.ok{color:var(--ok)} .badge.err{color:var(--err)} .badge.off{color:var(--off)}
+.meta{color:var(--muted);font-size:12px;margin:8px 0;line-height:1.6} code{color:var(--accent)}
+.err-msg{color:var(--err);font-size:12px;background:#2a1420;border-radius:8px;padding:8px;margin:6px 0;word-break:break-all}
+details{margin-top:6px} summary{cursor:pointer;color:var(--accent);font-size:13px}
+pre{white-space:pre-wrap;word-break:break-word;background:var(--panel2);border-radius:8px;padding:10px;font-size:12px;line-height:1.55;max-height:340px;overflow:auto}
+.report{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin-bottom:10px}
+#search{width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--text);font-size:15px;margin-top:14px}
+footer{color:var(--muted);font-size:12px;max-width:1100px;margin:0 auto;padding:0 20px 30px;line-height:1.7}
+</style></head><body>
+<header>
+<h1>🤖 HermesTam Runtime</h1>
+<div class="sub">.240 美股投資 Hermes Agent · 全部 cron job 運行狀態與最新輸出 · 更新：2026-10-29 22:55 HKT</div>
+<div class="stats">
+<div class="stat"><b>40</b><span>Job 總數</span></div>
+<div class="stat"><b>38</b><span>啟用中</span></div>
+<div class="stat"><b style="color:var(--ok)">36</b><span>最近運行正常</span></div>
+<div class="stat"><b style="color:var(--err)">2</b><span>最近出錯</span></div>
+</div>
+<input id="search" type="search" placeholder="🔍 搜尋 job 名稱…">
+</header>
+<main>
+<section><h2>📰 市場報告<span class="count">7 個 job</span></h2><div class="grid"><article class="card ok" data-name="美股每日晨報">
+  <div class="card-head"><h3>美股每日晨報</h3><span class="badge ok">✅ 正常</span></div>
+  <div class="meta">🕐 <code>30 7 * * 2-6</code> · 最後運行 10-29 07:38 · 下次 10-30 07:30 · 推送 telegram</div>
+  
+  <details><summary>最新輸出（d740ace88192_20261029_073813.txt）</summary><pre>Cronjob Response: 美股每日晨報
+(job_id: d740ace88192)
+-------------
+
+# 📊 美股市場晨報 (US Stock Market Morning Report)
+
+**報告日期**：2026年10月29日（星期四）  
+**基準交易日**：2026年10月28日（星期三）美股收盤  
+**資料來源**：CNBC Quote Cache / Yahoo Finance / WSJ / 官方經濟行事曆  
+
+---
+
+## 一、主要指數表現（前一交易日）
+
+聯儲局（Fed）決議維持基準利率在 3.75%–4.00% 不變，市場在利率決議公布後維持窄幅整理，三大指數連續第三個交易日收紅，半導體與小型股表現相對活躍。
+
+| 指數名稱 | 收盤價 | 點數漲跌 | 漲跌幅 | 成交量 | 52週區間 |
+|:---|:---:|:---:|:---:|:---:|:---:|
+| **標普500指數 (S&amp;P 500)** | 7,743.98 | +21.38 | 🟢 +0.28% | — *(指數不計量)* | 6,316.91 — 7,844.52 |
+| **納斯達克綜合指數 (Nasdaq)** | 26,549.85 | +72.04 | 🟢 +0.27% | 15.0 億股 | 20,690.25 — 27,722.75 |
+| **道瓊斯工業指數 (Dow Jones)** | 52,475.10 | +97.53 | 🟢 +0.19% | 4.05 億股 | 45,057.28 — 54,744.33 |
+| **羅素2000指數 (Russell 2000)** | 2,830.51 | +11.64 | 🟢 +0.41% | — *(指數不計量)* | 2,303.46 — 3,069.71 |
+
+---
+
+## 二、市場情緒指標
+
+- **VIX 恐慌指數**：**16.91**（-0.61，-3.48%）
+- **52週區間**：13.38 — 35.30
+- **情緒評估**：🟡 **中性 (Neutral)**
+- **解讀**：VIX 指數自 17.52 小幅回落至 16.91，處於 15–20 的中性區間。聯儲局如期按兵不動，消除了部分政策不確定性，市場整體避險情緒未見升溫，焦點全面轉向企業財報與即將公布的通膨及 GDP 數據。
+
+---
+
+## 三、板塊表現 (GICS Sector ETFs)
+
+科技與景氣循環族群走強，但 10 年期美債殖利率維持在 5% 高位，壓制了利率敏感與高息防禦板塊。
+
+### 🟢 漲幅前 3 大板塊
+1. **科技板塊 (XLK)**：$191.00（+$1.51，**+0.80%**）— 受甲骨文與記憶體晶片族群帶動
+2. **金融板塊 (XLF)**：$56.13（+$0.25，**+0.45%**）— 高利率環境利好銀行淨利息收入
+3. **能源板塊 (XLE)**：$68.45（+$0.24，**+0.35%**）— 地緣局勢支撐原油高位震盪
+
+### 🔴 跌幅前 3 大板塊
+1. **公用事業 (XLU)**：$42.49（-$0.36，**-0.84%**）— 債券殖利率上行削弱防禦高息股吸引力
+2. **房地產 (XLRE)**：$42.13（-$0.31，**-0.73%**）— 房貸利率與融資成本攀升構成壓抑
+3. **通訊服務 (XLC)**：$103.14（-$0.44，**-0.42%**）— 盤前大型權重股買盤觀望
+
+- **板塊輪動訊號**：典型的「成長與價值週期抗跌、高息防禦承壓」格局。
+
+---
+
+## 四、個股亮點
+
+### 🚀 當日漲幅前 5 大型股
+1. **Oracle (ORCL)**：$144.54（+$14.01，**+10.73%**）— 給予 2030 財年 2,250 億美元強勁營收展望，並宣布限制額外股權融資
+2. **AMD (AMD)**：$578.44（+$18.17，**+3.24%**）— SK海力士財報亮眼提振整體半導體產業鏈信心
+3. **Broadcom (AVGO)**：$351.81（+$9.48，**+2.77%**）— AI 晶片及客製化 ASIC 需求持續受到買盤青睞
+4. **Intel (INTC)**：$95.53（+$1.79，**+1.91%**）— 財報公布前空單回補
+5. **Morgan Stanley (MS)**：$190.13（+$3.22，**+1.72%**）— 投資銀行業務復甦預期推動金融巨頭走揚
+
+### 📉 當日跌幅前 5 大型股
+1. **Meta Platforms (META)**：$612.49（-$7.69，**-1.24%**）— 財報後資本開支疑慮引發微幅獲利了結
+2. **Pfizer (PFE)**：$29.45（-$0.35，**-1.17%**）— 傳統製藥族群受防禦板塊資金流出拖累
+3. **NVIDIA (NVDA)**：$215.38（-$2.55，**-1.17%**）— 高位獲利回吐與盤後巨頭財報前避險調整
+4. **Nike (NKE)**：$37.15（-$0.41，**-1.09%**）— 消費端需求擔憂壓制非必需消費板塊
+5. **Walt Disney (DIS)**：$109.04（-$1.19，**-1.08%**）— 串流競爭加劇與評級下調考量
+
+### ⭐ 成交量異常股份（Volume Anomaly，相對於 10 日均量）
+- **Oracle (ORCL)**：成交量 7,621 萬股 vs 10日均量 3,017 萬股（**2.53倍**，⭐ 顯著爆量大漲 +10.73%）
+- **Boeing (BA)**：成交量 1,986 萬股 vs 10日均量 1,053 萬股（**1.89倍**，放量微跌 -0.62%）
+- **Alphabet (GOOGL)**：成交量 3,659 萬股 vs 10日均量 2,432 萬股（**1.50倍**，財報公布前常規放量收漲 +1.34%，但盤後受財報不及預期影響下挫約 9%）
+
+---
+
+## 五、宏觀因素
+
+| 宏觀指標 | 最新收盤 | 漲跌變化 | 單位 / 觀察說明 |
+|:---|:---:|:---:|:---|
+| **10年期美債殖利率 (.TNX)** | **5.045%** | 🟢 +5.2 bps | 收 50.45，維持在 5% 關口上方，反映高利率持續預期 |
+| **5年期美債殖利率 (.FVX)** | **4.871%** | 🟢 +3.1 bps | 收 48.71，短端殖利率在 Fed 聲明後微幅上升 |
+| **30年期美債殖利率 (.TYX)** | **5.361%** | 🟢 +5.6 bps | 長端殖利率走高，殖利率曲線微幅趨陡 |
+| **美元指數 (DXY)** | **102.194** | ⚪ 0.00 | 利率決議後持平震盪，等待週四 PCE 數據指引 |
+| **WTI 原油期貨 (@CL.1)** | **$10</pre></details>
+</article>
+<article class="card ok" data-name="美股科技股新聞推送">
+  <div class="card-head"><h3>美股科技股新聞推送</h3><span class="badge ok">✅ 正常</span></div>
+  <div class="meta">🕐 <code>0 */2 * * *</code> · 最後運行 10-29 22:02 · 下次 10-30 00:00 · 推送 telegram</div>
+  
+  <details><summary>最新輸出（2026-10-29_22-02-19.md）</summary><pre># Cron Job: 美股科技股新聞推送
+
+**Job ID:** a1f7931bffc6
+**Run Time:** 2026-10-29 22:02:18
+**Mode:** no_agent (script)
+
+---
+
+🚀 美股科技股投資新聞推送系統 (完整中文版)
+⏰ 執行時間: 2026-10-29 22:00:33
+------------------------------------------------------------
+✅ 已從本地配置載入 API Keys (default model=gemini-3.8-flash-high, temp=0.3)
+   Available models: GLM-5.3-flash, gemini-3.8-flash-high
+   Per-task models: translation=gemini-3.8-flash-high, portfolio_analysis=gemini-3.8-flash-high
+🔍 開始免費資源搜尋...
+
+🔍 從 Brave Search 搜尋...
+   ✅ Brave Search: 0 篇
+🔍 從 Yahoo Finance 搜尋...
+   ✅ Yahoo Finance: 15 篇
+🔍 從 Google News 搜尋...
+   ✅ Google News: 6 篇
+🔍 從 GDELT 搜尋...
+   ⚠️  GDELT rate limit；停止本輪 GDELT 搜尋
+   ✅ GDELT: 0 篇
+🔍 從 SEC EDGAR 檢查官方文件...
+   ✅ SEC EDGAR: 6 份
+🔥 從 StockTwits 抓熱門股新聞...
+   ✅ Trending: 0 篇
+
+📊 原始搜尋總計: 27 篇
+🔄 去重後: 17 篇
+✅ 過濾後: 14 篇
+
+📤 準備發送 14 篇新聞...
+[敏感行已遮蔽]
+📊 已載入 15 個 scanner 信號 (用於出入貨建議)
+📝 並行翻譯 14 篇 × 標題+摘要 (4 workers)...
+   ✅ 翻譯完成 (65.5s)
+📄 生成 HTML digest...
+   💾 /home/jasonckfan/.hermes/cron/output/a1f7931bffc6/news_digest_2026-10-29_2202.html
+   ✅ Telegram 文件發送成功: /home/jasonckfan/.hermes/cron/output/a1f7931bffc6/news_digest_2026-10-29_2202.html
+
+✅ Digest 已發送 (14 篇 → 1 個附件)
+
+📄 完整 cron log: /home/jasonckfan/.hermes/cron/output/a1f7931bffc6/2026-10-29_20-03-01.md
+[敏感行已遮蔽]</pre></details>
+</article>
+<article class="card ok" data-name="動能股技術指標日報">
+  <div class="card-head"><h3>動能股技術指標日報</h3><span class="badge ok">✅ 正常</span></div>
+  <div class="meta">🕐 <code>0 8 * * 2-6</code> · 最後運行 10-29 08:00 · 下次 10-30 08:00 · 推送 telegram</div>
+  
+  <details><summary>最新輸出（2026-10-29_08-00-34.md）</summary><pre># Cron Job: 動能股技術指標日報
+
+**Job ID:** 2f085eb966df
+**Run Time:** 2026-10-29 08:00:33
+**Mode:** no_agent (script)
+
+---
+
+🎯 **動能股技術指標 (Daily)**
+_2026-10-29 08:00 HKT_
+
+**NVDA** — $215.38
+📈 趨勢: 🟡 趨勢分歧
+📊 10DMA $216.53 | 20DMA $224.44 | 50DMA $222.16 | 200DMA $203.99
+📏 50DMA 偏離 -3.1% | ATR 2.9%/日 | RSI 32
+🎯 距 52週高位 $243.37 (-11.5%)
+⚠️ 警號: 🔴 短線破位 (跌穿 10DMA &amp; 10&lt;20)
+🛑 建議止損: $210.03 (-2.5%)
+─────────────────────────
+**TSLA** — $404.22
+📈 趨勢: 🟡 趨勢分歧
+📊 10DMA $375.84 | 20DMA $374.31 | 50DMA $366.12 | 200DMA $385.94
+📏 50DMA 偏離 +10.4% | ATR 3.4%/日 | RSI 62
+🎯 距 52週高位 $498.83 (-19.0%)
+⚠️ 警號: 🟢 短線強勢 (10&gt;20DMA)
+🛑 建議止損: $383.54 (-5.1%)
+─────────────────────────
+**SOXL** — $107.35
+📈 趨勢: 🔴 下跌趨勢
+📊 10DMA $96.83 | 20DMA $122.96 | 50DMA $122.77 | 200DMA $123.65
+📏 50DMA 偏離 -12.6% | ATR 12.5%/日 | RSI 25
+🎯 距 52週高位 $302.00 (-64.5%)
+⚠️ 警號: 💡 RSI 超賣 (&lt;30) 反彈機會
+🛑 建議止損: $93.92 (-12.5%)
+─────────────────────────
+**AMD** — $578.44
+📈 趨勢: 🟢 上升趨勢
+📊 10DMA $540.36 | 20DMA $581.03 | 50DMA $543.70 | 200DMA $405.50
+📏 50DMA 偏離 +6.4% | ATR 5.1%/日 | RSI 34
+🎯 距 52週高位 $658.52 (-12.2%)
+🛑 建議止損: $533.96 (-7.7%)
+─────────────────────────
+**QQQ** — $725.61
+📈 趨勢: 🟢 上升趨勢
+📊 10DMA $717.03 | 20DMA $733.18 | 50DMA $725.26 | 200DMA $678.23
+📏 50DMA 偏離 +0.0% | ATR 1.7%/日 | RSI 33
+🎯 距 52週高位 $762.86 (-4.9%)
+🛑 建議止損: $706.78 (-2.6%)
+─────────────────────────
+
+⚠️ 僅供參考，不構成投資建議
+💡 框架: 茄利略 CUP (@KelileoCUP) Hard Penny Market 識別法</pre></details>
+</article>
+<article class="card ok" data-name="美股開市前簡報">
+  <div class="card-head"><h3>美股開市前簡報</h3><span class="badge ok">✅ 正常</span></div>
+  <div class="meta">🕐 <code>0 21 * * 1-5</code> · 最後運行 10-29 21:00 · 下次 10-30 21:00 · 推送 telegram</div>
+  
+  <details><summary>最新輸出（2026-10-29_21-00-34.md）</summary><pre># Cron Job: 美股開市前簡報
+
+**Job ID:** 96f195341bf8
+**Run Time:** 2026-10-29 21:00:34
+**Mode:** no_agent (script)
+
+---
+
+🌅 **美股開市前簡報** (2026-10-29 21:00 HKT)
+
+## 🌏 隔夜全球市場
+• 日經 225: 64,659.47 (+1.10%) 🟢
+• 恒指: 22,958.65 (-0.36%) ⚪
+• 歐洲 STOXX 50: 6,195.04 (+0.44%) ⚪
+• VIX 波幅: 17.07 (+0.95%) 🟢
+• 10Y 美債息率: 5.01 (-0.79%) 🔴
+• 美元指數 DXY: 102.22 (+0.02%) ⚪
+
+## 📊 美股期貨指示
+• S&amp;P 500 期貨: 7,751.00 (-0.41%) ⚪
+• Nasdaq 100 期貨: 29,610.00 (-1.23%) 🔴
+• 道指期貨: 52,563.00 (-0.25%) ⚪
+
+## 🚀 大型科技股盤前
+• NVDA: $214.60 (-1.53%) 🔴
+• TSLA: $405.08 (-0.58%) 🔴
+• AMD: $562.99 (+0.49%) ⚪
+• MSFT: $541.81 (+1.97%) 🟢
+• META: $617.31 (-0.46%) ⚪
+• GOOGL: $287.86 (-10.21%) 🔴⚠️
+• AAPL: $348.25 (+0.33%) ⚪
+• QQQ: $718.37 (-0.40%) ⚪
+• SOXL: $101.16 (+0.08%) ⚪
+
+[持倉章節已於公開版遮蔽]
+### 🚨 立即注意
+- **TQQQ** 已接近止損位 $72.70 (現價 $70.12)
+
+## ⚡ 盤前大幅異動 (|%|≥2%)
+- **GOOGL** -10.21%
+
+---
+_⚠️ 盤前報價成交量薄,實際開市後可能反轉。不構成投資建議_</pre></details>
+</article>
+<article class="card err" data-name="美股收市後深度分析">
+  <div class="card-head"><h3>美股收市後深度分析</h3><span class="badge err">❌ 出錯</span></div>
+  <div class="meta">🕐 <code>30 5 * * 2-6</code> · 最後運行 10-29 05:42 · 下次 10-30 05:30 · 推送 telegram</div>
+  <div class="err-msg">⚠️ RuntimeError: HTTP 429: 您已达到每周/每月使用上限，您的限额将在 2026-10-29 21:27:10 重置。</div>
+  <details><summary>最新輸出（2026-10-29_05-42-54.md）</summary><pre># Cron Job: 美股收市後深度分析 (FAILED)
+
+**Job ID:** 274f6ff8ab0b
+**Run Time:** 2026-10-29 05:42:54
+**Schedule:** 30 5 * * 2-6
+
+## Prompt
+
+[IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final response will be automatically delivered to the user — do NOT use send_message or try to deliver the output yourself. Just produce your report/output as your final response and the system handles the rest. SILENT: If there is genuinely nothing new to report, respond with exactly &quot;[SILENT]&quot; (nothing else) to suppress delivery. [SILENT] is a literal ASCII control token — never translate or rephrase it, whatever language the rest of your answer uses. Never combine [SILENT] with content — either report your findings normally, or say [SILENT] and nothing more. FAILURE: If a delegated child fails and this cron run must be recorded as failed, put [CRON_FAILURE] on the first line by itself, then explain the child failure on following lines. RECURSION: This is a run of an EXISTING scheduled job — execute the task now. NEVER create or update a cron job because of recurring or future-schedule language in the task prompt below; treat phrasing like &quot;each Monday&quot; or &quot;every day at 9&quot; as context for this run, not as a request to schedule another job.]
+
+執行美股收市後深度市況分析。
+
+**框架來源**: 茄利略 CUP (@KelileoCUP) 的 Hard Penny Market 五大警號框架 + 七書理論 (Douglas/Taleb/Kahneman/Lefèvre/Schwager)
+**⚠️ 注意**: 之前 prompt 寫成「Henry 財自了 (25歲財自)」是錯誤的!Hard Penny Market 影片的真實作者是 茄利略 CUP,不是 Henry (2026-06-18 修正)。Henry 已 unfollow。
+
+步驟:
+1. 跑底層數據腳本收集數據
+2. 讀取分析基礎文件 (市況匯總 + 持倉 + KOL筆記/KelileoCUP影片存檔/ 內最新 2-3 個 .md)
+3. 生成繁體中文深度分析報告,套用 **Hard Penny Market 五大警號** 框架:
+   - 警號 1: 市寬收窄 (T2108)
+   - 警號 2: 過度延伸 (50DMA 偏離 + ATR)
+   - 警號 3: 突破失敗 (VCP 候選股回測)
+   - 警號 4: 波幅飆升 (VIX + 動能股)
+   - 警號 5: 市場對壞消息有反應
+4. 結合七書框架評估持倉紀律
+5. 輸出報告 append 至市況匯總文件 (標題 `## 🧠 AI 深度分析`) + 推送
+
+## Error
+
+```
+Traceback (most recent call last):
+  File &quot;/home/jasonckfan/.hermes/hermes-agent/cron/scheduler.py&quot;, line 2613, in run_job
+    final_response = _final_response_from_result(result, job_id, job_name, AIAgent)
+  File &quot;/home/jasonckfan/.hermes/hermes-agent/cron/scheduler.py&quot;, line 2093, in _final_response_from_result
+    raise RuntimeError(result.get(&quot;error&quot;) or final_response_text or &quot;agent reported failure&quot;)
+RuntimeError: HTTP 429: 您已达到每周/每月使用上限，您的限额将在 2026-10-29 21:27:10 重置。
+
+```</pre></details>
+</article>
+<article class="card ok" data-name="voo/qqq 預測_收市後">
+  <div class="card-head"><h3>VOO/QQQ 預測_收市後</h3><span class="badge ok">✅ 正常</span></div>
+  <div class="meta">🕐 <code>30 5 * * 2-6</code> · 最後運行 10-29 05:31 · 下次 10-30 05:30 · 推送 origin</div>
+  
+  <details><summary>最新輸出（2026-10-29_05-31-05.md）</summary><pre># Cron Job: VOO/QQQ 預測_收市後
+
+**Job ID:** 4e8e5a30310e
+**Run Time:** 2026-10-29 05:31:05
+**Mode:** no_agent (script)
+
+---
+
+📊 VOO/QQQ 趨勢預測 (收市報告) — 2026-10-29 05:31 HKT
+
+**VOO** — 🟢 上漲 | 信心 67% | 收市 709.9
+  2 週預測區間: **706.73 – 738.42** (中值 722.58)
+  回測命中 (walk-forward, 750 樣本): **55%**
+  UP訊號勝率 65% (n=521) | DOWN訊號勝率 34% (n=53)
+  四模型: 動量 UP / 均值回歸 DOWN / 季節性 UP / 波動率 FLAT
+  當刻建議: 🛒 買入傾向 (歷史同狀態下 10 日平均為正)
+
+**QQQ** — 🟡 橫行 | 信心 31% | 收市 725.61
+  2 週預測區間: **691.23 – 759.99** (中值 725.61)
+  回測命中 (walk-forward, 1329 樣本): **46%**
+  UP訊號勝率 62% (n=728) | DOWN訊號勝率 51% (n=185)
+  四模型: 動量 UP / 均值回歸 DOWN / 季節性 UP / 波動率 DOWN
+  當刻建議: ⏸️ 持有觀望 (無明顯 edge)
+
+_預測基於 20 年 walk-forward 回測; 勝率係歷史統計, 唔係保證。_
+  send VOO_20261029_0530.png: OK
+  send QQQ_20261029_0531.png: OK</pre></details>
+</article>
+<article class="card ok" data-name="voo/qqq 預測_開市前">
+  <div class="card-head"><h3>VOO/QQQ 預測_開市前</h3><span class="badge ok">✅ 正常</span></div>
+  <div class="meta">🕐 <code>0 20 * * 1-5</code> · 最後運行 10-29 20:00 · 下次 10-30 20:00 · 推送 origin</div>
+  
+  <details><summary>最新輸出（2026-10-29_20-00-45.md）</summary><pre># Cron Job: VOO/QQQ 預測_開市前
+
+**Job ID:** 9c2c9c4238d0
+**Run Time:** 2026-10-29 20:00:45
+**Mode:** no_agent (script)
+
+---
+
+📊 VOO/QQQ 趨勢預測 (盤前報告) — 2026-10-29 20:00 HKT
+
+**VOO** — 🟢 上漲 | 信心 67% | 收市 709.9
+  2 週預測區間: **706.73 – 738.42** (中值 722.58)
+  回測命中 (walk-forward, 750 樣本): **55%**
+  UP訊號勝率 65% (n=521) | DOWN訊號勝率 34% (n=53)
+  四模型: 動量 UP / 均值回歸 DOWN / 季節性 UP / 波動率 FLAT
+  當刻建議: 🛒 買入傾向 (歷史同狀態下 10 日平均為正)
+
+**QQQ** — 🟡 橫行 | 信心 31% | 收市 725.61
+  2 週預測區間: **691.23 – 759.99** (中值 725.61)
+  回測命中 (walk-forward, 1329 樣本): **46%**
+  UP訊號勝率 62% (n=728) | DOWN訊號勝率 51% (n=185)
+  四模型: 動量 UP / 均值回歸 DOWN / 季節性 UP / 波動率 DOWN
+  當刻建議: ⏸️ 持有觀望 (無明顯 edge)
+
+_預測基於 20 年 walk-forward 回測; 勝率係歷史統計, 唔係保證。_
+  send VOO_20261029_2000.png: OK
+  send QQQ_20261029_2000.png: OK</pre></details>
+</article></div></section><section><h2>🎯 交易掃描<span class="count">25 個 job</span></h2><div class="grid"><article class="card ok" data-name="交易輔助_盤前掃描">
+  <div class="card-head"><h3>交易輔助_盤前掃描</h3><span class="badge ok">✅ 正常</span></div>
+  <div class="meta">🕐 <code>30 20 * * 1-5</code> · 最後運行 10-29 20:31 · 下次 10-30 20:30 · 推送 telegram</div>
+  
+  <details><summary>最新輸出（2026-10-29_20-31-19.md）</summary><pre># Cron Job: 交易輔助_盤前掃描
+
+**Job ID:** 1b58a326e3cb
+**Run Time:** 2026-10-29 20:31:19
+**Mode:** no_agent (script)
+
+---
+
+📊 **盤前掃描** (2026-10-29 HKT)
+掃描 500 隻股, 找到 **2** 個 setup
+━━━━━━━━━━━━━━━
+
+**1. 🔄 PLTR** — 趨勢回調 (分數 0.578)
+`當前 $196.81`
+`Trigger $203.04 | Stop $187.66 | Target $233.78`
+`R:R 1:2.0 | 306 股 (≈$62,130, 風險 1.994%)`
+RSI 53.9 · 量 0.92x · 50DMA 斜率 1.3%
+
+【進場邏輯】主升趨勢中縮量回踩關鍵均線整理，動能指標已充分沉澱，形成健康的多頭中繼架構。
+【操作觸發】待放量向上突破短期整理區間上限、確認買盤重啟時，順勢追隨動能切入。
+【失效防守】若實體跌破回調支撐與中期生命線，視為結構性破位，立即離場不留戀。
+【大師心法】貫徹 Livermore「唯有沿著最小阻力線、買進最強勢個股」的原則，以右側確認保護本金，博取不對稱上檔空間。
+
+━━━━━━━━━━━━━━━
+
+**2. 🔄 CRM** — 趨勢回調 (分數 0.493)
+`當前 $242.11`
+`Trigger $252.92 | Stop $235.86 | Target $287.06`
+`R:R 1:2.0 | 276 股 (≈$69,806, 風險 1.995%)`
+RSI 53.6 · 量 0.91x · 50DMA 斜率 2.18%
+
+CRM 處於強勢上升趨勢，回踩上揚的中期均線獲支撐且量能收斂，形成絕佳的波段防守點。
+等待價格帶量突破整理區間頸線時順勢進場，確認多方動能重新接管並開啟新一輪推升。
+若跌破均線防守帶及前低支撐，代表多頭結構遭到破壞，趨勢假設失效並立即無條件停損。
+正如 Livermore 原則：耐心等待走勢通過「最小阻力線」的關鍵點後再順勢重拳出擊，嚴控下檔並追求不對稱獲利。
+
+━━━━━━━━━━━━━━━
+
+_由 live_watcher 於開盤後監控觸發, 觸發時推送 alert。_
+_不會自動下單, 請手動在 IBKR 執行。_</pre></details>
+</article>
+<article class="card ok" data-name="交易輔助_盤中監控_上半段">
+  <div class="card-head"><h3>交易輔助_盤中監控_上半段</h3><span class="badge ok">✅ 正常</span></div>
+  <div class="meta">🕐 <code>*/30 21-23 * * 1-5</code> · 最後運行 10-29 22:30 · 下次 10-29 23:00 · 推送 telegram</div>
+  
+  <details><summary>最新輸出（2026-10-29_22-30-40.md）</summary><pre># Cron Job: 交易輔助_盤中監控_上半段
+
+**Job ID:** 041fc309b280
+**Run Time:** 2026-10-29 22:30:36
+**Mode:** no_agent (script)
+**Status:** silent (empty output)</pre></details>
+</article>
+<article class="card ok" data-name="交易輔助_盤中監控_後半段">
+  <div class="card-head"><h3>交易輔助_盤中監控_後半段</h3><span class="badge ok">✅ 正常</span></div>
+  <div class="meta">🕐 <code>0,30 0-3 * * 2-6</code> · 最後運行 10-29 03:30 · 下次 10-30 00:00 · 推送 telegram</div>
+  
+  <details><summary>最新輸出（2026-10-29_03-30-35.md）</summary><pre># Cron Job: 交易輔助_盤中監控_後半段
+
+**Job ID:** 88c69370ec39
+**Run Time:** 2026-10-29 03:30:34
+**Mode:** no_agent (script)
+**Status:** silent (empty output)</pre></details>
+</article>
+<article class="card ok" data-name="交易輔助_盤後復盤">
+  <div class="card-head"><h3>交易輔助_盤後復盤</h3><span class="badge ok">✅ 正常</span></div>
+  <div class="meta">🕐 <code>30 5 * * 2-6</code> · 最後運行 10-29 05:30 · 下次 10-30 05:30 · 推送 telegram</div>
+  
+  <details><summary>最新輸出（2026-10-29_05-30-44.md）</summary><pre># Cron Job: 交易輔助_盤後復盤
+
+**Job ID:** 8b5cc7ad244d
+**Run Time:** 2026-10-29 05:30:37
+**Mode:** no_agent (script)
+
+---
+
+📊 **盤後復盤** (2026-10-29)
+
+今日無任何 scanner 給出信號, 無需復盤。</pre></details>
+</article>
+<article class="card ok" data-name="交易輔助_週六深度復盤">
+  <div class="card-head"><h3>交易輔助_週六深度復盤</h3><span class="badge ok">✅ 正常</span></div>
+  <div class="meta">🕐 <code>0 9 * * 6</code> · 最後運行 10-24 09:02 · 下次 10-31 09:00 · 推送 telegram</div>
+  
+  <details><summary>最新輸出（2026-10-24_09-02-11.md）</summary><pre># Cron Job: 交易輔助_週六深度復盤
+
+**Job ID:** 1a387fb312e6
+**Run Time:** 2026-10-24 09:02:11
+**Mode:** no_agent (script)
+
+---
+
+📈 **週六深度復盤** (2026-10-24 HKT)
+━━━━━━━━━━━━━━━
+
+**30 天統計**
+  總 setup: 110
+  勝率: 5/32 = 16% (含同日雙觸保守當輸)
+  雙觸 ambiguous: 4 (12%)
+  累計 R: -18.50
+  平均 R: -0.17
+
+**分策略表現**
+  B: 勝率 0%, 平均 R 0.00
+  C: 勝率 0%, 平均 R -0.28
+  D: 勝率 0%, 平均 R -0.23
+  E: 勝率 0%, 平均 R 0.08
+  F: 勝率 21%, 平均 R -0.14 (⚠️4 amb)
+
+
+━━━━━━━━━━━━━━━
+**🧠 LLM 策略分析**
+
+# 交易策略表現評估報告
+
+---
+
+## 1. 表現診斷
+
+**核心警訊：66% 交易長期未結案 + 已結案交易勝率僅 8%（90天）**
+
+| 時間區間 | 已結案 | 勝率 | 均值 R | 未結案佔比 |
+|---------|--------|------|--------|-----------|
+| 90 天 | 87 筆 | 8.0% | -0.220R | 66.1% |
+| 30 天 | 28 筆 | 17.9% | -0.168R | 66.4% |
+| 7 天 | 10 筆 | 30.0% | -0.004R | 60.5% |
+
+**關鍵發現：**
+
+- **Strategy D（對應動能
+
+━━━━━━━━━━━━━━━
+_完整提案: `/home/jasonckfan/.hermes/scripts/trading_assistant/data/weekly_review_2026-10-24.md`_
+_⚠️ 若決定採納參數調整, 請手動編輯 `~/.hermes/scripts/trading_assistant/config/strategy_params.yaml`
+
+━━━━━━━━━━━━━━━
+**📋 本週待辦清單** (persistent across reviews)
+
+  🔍 **IBKR reconciliation (2026-08-28 待辦)**: 截圖 NLV +18.86% ≠ TQQQ +3.49%, 大概率是 8/27 全天累計未 reset 或 hidden positions. 用戶收市後查 IBKR Activity / Positions 全倉或拉 Statement 確認.
+
+[敏感行已遮蔽]
+
+[敏感行已遮蔽]</pre></details>
+</article>
+<article class="card ok" data-name="交易輔助_月度universe更新">
+  <div class="card-head"><h3>交易輔助_月度Universe更新</h3><span class="badge ok">✅ 正常</span></div>
+  <div class="meta">🕐 <code>0 9 1 * *</code> · 最後運行 10-01 09:00 · 下次 11-01 09:00 · 推送 telegram</div>
+  
+  <details><summary>最新輸出（2026-10-01_09-00-50.md）</summary><pre># Cron Job: 交易輔助_月度Universe更新
+
+**Job ID:** 53f74a02e1ea
+**Run Time:** 2026-10-01 09:00:50
+**Mode:** no_agent (script)
+
+---
+
+📋 **Universe 更新** (2026-10-01)
+
+S&amp;P 500: 503 隻
+NASDAQ 100: 0 隻
+去重合併: 503 隻
+流動性過濾 (≥$50M/日): 502 隻
+
+_明日 pre_market_scanner 將掃描新清單。_</pre></details>
+</article>
+<article class="card ok" data-name="每日活躍美股top5掃描">
+  <div class="card-head"><h3>每日活躍美股Top5掃描</h3><span class="badge ok">✅ 正常</span></div>
+  <div class="meta">🕐 <code>30 22 * * 1-5</code> · 最後運行 10-29 22:30 · 下次 10-30 22:30 · 推送 telegram</div>
+  
+  <details><summary>最新輸出（2026-10-29_22-30-43.md）</summary><pre># Cron Job: 每日活躍美股Top5掃描
+
+**Job ID:** b6b9125384d8
+**Run Time:** 2026-10-29 22:30:43
+**Mode:** no_agent (script)
+
+---
+
+🚀 **每日活躍美股 Top 5 即時掃描** (2026-10-29 HKT)
+掃描 24 隻活躍股，推薦 **Top 5**
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+**1. 💎 MSFT** — 評分 63.7
+`當前 $525.98 (-0.95%) | 量能 0.71x`
+`RSI 43.6 | 20DMA $531 | 50DMA $512`
+`52W距離 -4.6% | Fwd PE 22.206678`
+
+_LLM 分析生成中..._
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+**2. 💎 TSLA** — 評分 61.5
+`當前 $405.65 (+0.36%) | 量能 0.19x`
+`RSI 60.1 | 20DMA $379 | 50DMA $369`
+`52W距離 -1.3% | Fwd PE 188.21191`
+
+_LLM 分析生成中..._
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+**3. 💎 AAPL** — 評分 60.1
+`當前 $350.04 (+1.81%) | 量能 0.26x`
+`RSI 67.4 | 20DMA $342 | 50DMA $332`
+`52W距離 -0.5% | Fwd PE 36.605682`
+
+_LLM 分析生成中..._
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+**4. ⚠️ GOOGL** — 評分 53
+`當前 $285.76 (-12.04%) | 量能 1.93x`
+`RSI 15.9 | 20DMA $337 | 50DMA $340`
+`52W距離 -25.6% | Fwd PE 18.662699`
+
+_LLM 分析生成中..._
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+**5. ⚠️ META** — 評分 51.6
+`當前 $624.43 (+1.95%) | 量能 0.32x`
+`RSI 27.8 | 20DMA $697 | 50DMA $668`
+`52W距離 -19.9% | Fwd PE 17.546154`
+
+_LLM 分析生成中..._
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+_分析基於七書理論框架 | 不構成投資建議_
+_檔案已存檔至 ~/美股投資/市場分析/_</pre></details>
+</article>
+<article class="card ok" data-name="交易輔助_盤中監控_收市檢查">
+  <div class="card-head"><h3>交易輔助_盤中監控_收市檢查</h3><span class="badge ok">✅ 正常</span></div>
+  <div class="meta">🕐 <code>0 4 * * 2-6</code> · 最後運行 10-29 04:00 · 下次 10-30 04:00 · 推送 telegram</div>
+  
+  <details><summary>最新輸出（2026-10-29_04-00-38.md）</summary><pre># Cron Job: 交易輔助_盤中監控_收市檢查
+
+**Job ID:** 89d4846bd9f2
+**Run Time:** 2026-10-29 04:00:35
+**Mode:** no_agent (script)
+**Status:** silent (empty output)</pre></details>
+</article>
+<article class="card ok" data-name="交易輔助_humbled_scannera_盤前gappers">
+  <div class="card-head"><h3>交易輔助_Humbled_ScannerA_盤前Gappers</h3><span class="badge ok">✅ 正常</span></div>
+  <div class="meta">🕐 <code>30 20 * * 1-5</code> · 最後運行 10-29 20:33 · 下次 10-30 20:30 · 推送 telegram</div>
+  
+  <details><summary>最新輸出（2026-10-29_20-33-25.md）</summary><pre># Cron Job: 交易輔助_Humbled_ScannerA_盤前Gappers
+
+**Job ID:** 2290289cb158
+**Run Time:** 2026-10-29 20:33:25
+**Mode:** no_agent (script)
+
+---
+
+Premarket Gappers: 0 names. Top:</pre></details>
+</article>
+<article class="card ok" data-name="交易輔助_humbled_scannerb_tjl_晚段">
+  <div class="card-head"><h3>交易輔助_Humbled_ScannerB_TJL_晚段</h3><span class="badge ok">✅ 正常</span></div>
+  <div class="meta">🕐 <code>0,30 22-23 * * 1-5</code> · 最後運行 10-29 22:30 · 下次 10-29 23:00 · 推送 telegram</div>
+  
+  <details><summary>最新輸出（2026-10-29_22-30-40.md）</summary><pre># Cron Job: 交易輔助_Humbled_ScannerB_TJL_晚段
+
+**Job ID:** 971501df1bd8
+**Run Time:** 2026-10-29 22:30:36
+**Mode:** no_agent (script)
+**Status:** silent (empty output)</pre></details>
+</article>
+<article class="card ok" data-name="交易輔助_humbled_scannerb_tjl_凌晨段">
+  <div class="card-head"><h3>交易輔助_Humbled_ScannerB_TJL_凌晨段</h3><span class="badge ok">✅ 正常</span></div>
+  <div class="meta">🕐 <code>0,30 0-1 * * 2-6</code> · 最後運行 10-29 01:30 · 下次 10-30 00:00 · 推送 telegram</div>
+  
+  <details><summary>最新輸出（2026-10-29_01-30-40.md）</summary><pre># Cron Job: 交易輔助_Humbled_ScannerB_TJL_凌晨段
+
+**Job ID:** 93ab8a2af180
+**Run Time:** 2026-10-29 01:30:40
+**Mode:** no_agent (script)
+**Status:** silent (empty output)</pre></details>
+</article>
+<article class="card ok" data-name="交易輔助_策略d_8ema中午swing">
+  <div class="card-head"><h3>交易輔助_策略D_8EMA中午Swing</h3><span class="badge ok">✅ 正常</span></div>
+  <div class="meta">🕐 <code>30 0 * * 2-6</code> · 最後運行 10-29 00:31 · 下次 10-30 00:30 · 推送 telegram</div>
+  
+  <details><summary>最新輸出（2026-10-29_00-31-24.md）</summary><pre># Cron Job: 交易輔助_策略D_8EMA中午Swing
+
+**Job ID:** dff00c6cf7aa
+**Run Time:** 2026-10-29 00:31:24
+**Mode:** no_agent (script)
+
+---
+
+📊 **策略D Midday Swing 掃描** (2026-10-28 ET)
+
+掃描 500 隻股，今日暫無符合 8EMA Reclaim Swing setup。
+_紀律：沒有 setup 就不交易。_</pre></details>
+</article>
+<article class="card ok" data-name="交易輔助_板塊rs_sector_rs">
+  <div class="card-head"><h3>交易輔助_板塊RS_Sector_RS</h3><span class="badge ok">✅ 正常</span></div>
+  <div class="meta">🕐 <code>0 20 * * 1-5</code> · 最後運行 10-29 20:00 · 下次 10-30 20:00 · 推送 telegram</div>
+  
+  <details><summary>最新輸出（2026-10-29_20-00-38.md）</summary><pre># Cron Job: 交易輔助_板塊RS_Sector_RS
+
+**Job ID:** 2939b402f2f2
+**Run Time:** 2026-10-29 20:00:37
+**Mode:** no_agent (script)
+
+---
+
+📊 &lt;b&gt;板塊相對強度 報告&lt;/b&gt; (2026-10-29 HKT)
+基準 SPY: 1週 -0.10% | 4週 +1.27% | 13週 +4.39%
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📋 &lt;b&gt;完整排名&lt;/b&gt; (RS Score 降序)
+&lt;pre&gt;
+#      ETF          板塊     RS   超SPY 1w   超SPY 4w  超SPY 13w
+───────────────────────────────────────────────────────────
+1      XLE          能源  +6.54    +0.53%   +10.03%   +12.40%
+2      XLV          醫療  +4.81    +0.54%    +5.44%    +5.94%
+3      XLK          科技  +1.46    +1.41%    -3.70%    +4.43%
+4      XLP        必需消費  +1.14    -0.21%    +6.47%    -2.12%
+5      XLB          材料  +0.68    +1.15%    +5.22%    -3.50%
+6      XLF          金融  +0.12    +0.26%    +3.84%    -5.56%
+7      XLY       非必需消費  +0.07    -0.07%    +4.69%    -1.55%
+8      XLU        公用事業  -0.74    +1.27%    +6.46%    -8.55%
+9     XLRE         房地產  -2.59    +0.27%    +1.71%   -10.60%
+10     XLI          工業  -2.90    +0.21%    -0.36%    -9.68%
+11     XLC        通訊服務  -7.97    -5.25%    -8.33%    -7.30%
+&lt;/pre&gt;
+
+🎯 &lt;b&gt;重點摘要&lt;/b&gt;
+　🟢 重倉 Top 3: XLE, XLV, XLK
+　🔴 避開 Bottom 3: XLRE, XLI, XLC
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💡 &lt;b&gt;如何用 (ABCD 策略加權過濾)&lt;/b&gt;
+Top 3 sector 內成分股 → 維持或加倉
+Bottom 3 sector 內成分股 → 降倉或避開
+XLE/RS 排名 = 觀察板塊輪動訊號
+
+_基於 IBD/O&#x27;Neil RS Rating 改進算法_</pre></details>
+</article>
+<article class="card ok" data-name="交易輔助_orb_盤中每15分鐘">
+  <div class="card-head"><h3>交易輔助_ORB_盤中每15分鐘</h3><span class="badge ok">✅ 正常</span></div>
+  <div class="meta">🕐 <code>*/15 21-22 * * 1-5</code> · 最後運行 10-29 22:45 · 下次 10-30 21:00 · 推送 telegram</div>
+  
+  <details><summary>最新輸出（2026-10-29_22-45-32.md）</summary><pre># Cron Job: 交易輔助_ORB_盤中每15分鐘
+
+**Job ID:** b1d7b306ab78
+**Run Time:** 2026-10-29 22:45:32
+**Mode:** no_agent (script)
+**Status:** silent (empty output)</pre></details>
+</article>
+<article class="card ok" data-name="交易輔助_vcp_盤前掃描">
+  <div class="card-head"><h3>交易輔助_VCP_盤前掃描</h3><span class="badge ok">✅ 正常</span></div>
+  <div class="meta">🕐 <code>30 20 * * 1-5</code> · 最後運行 10-29 20:30 · 下次 10-30 20:30 · 推送 telegram</div>
+  
+  <details><summary>最新輸出（2026-10-29_20-30-39.md）</summary><pre># Cron Job: 交易輔助_VCP_盤前掃描
+
+**Job ID:** 833082f43ccb
+**Run Time:** 2026-10-29 20:30:39
+**Mode:** no_agent (script)
+
+---
+
+📊 &lt;b&gt;VCP 變盤 訊號&lt;/b&gt; (2026-10-29 HKT)
+Trend Template + VCP 形態 | 掃描 30 隻
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📋 &lt;b&gt;VCP setup 列表&lt;/b&gt; (2 隻)
+&lt;pre&gt;
+代碼       Trend       當前    Pivot                  收縮序列     量能爆發
+───────────────────────────────────────────────────────────────
+TXN        8/9   309.83   298.75          11.9% → 8.9%      — 否
+QCOM       7/9   182.97   180.78          16.9% → 6.6%      — 否
+&lt;/pre&gt;
+
+🎯 &lt;b&gt;META 評估 (各 setup)&lt;/b&gt;
+&lt;code&gt;TXN&lt;/code&gt;: META ⚠️ TXN (vcp): 2/6 NEEDS MORE EDGES |   ❌ E1 |   ❌ E2 |   ❌ E3 |   ❌ E4 |   ✅ E5 |   ✅ E6
+&lt;code&gt;QCOM&lt;/code&gt;: META ⚠️ QCOM (vcp): 1/6 NEEDS MORE EDGES |   ❌ E1 |   ❌ E2 |   ❌ E3 |   ❌ E4 |   ❌ E5 |   ✅ E6
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💡 &lt;b&gt;VCP 玩法&lt;/b&gt;
+突破 Pivot 價買入, 止損 = VCP 區間低端
+VCP = Mark Minervini 核心策略, 歷史勝率 60-70%</pre></details>
+</article>
+<article class="card ok" data-name="交易輔助_excel統一報告">
+  <div class="card-head"><h3>交易輔助_Excel統一報告</h3><span class="badge ok">✅ 正常</span></div>
+  <div class="meta">🕐 <code>*/30 21-23,0-5 * * 1-5</code> · 最後運行 10-29 22:30 · 下次 10-29 23:00 · 推送 telegram</div>
+  
+  <details><summary>最新輸出（2026-10-29_22-30-40.md）</summary><pre># Cron Job: 交易輔助_Excel統一報告
+
+**Job ID:** e83182ddf4ce
+**Run Time:** 2026-10-29 22:30:39
+**Mode:** no_agent (script)
+
+---
+
+📊 Excel 報告: /home/jasonckfan/美股投資/交易記錄/unified_signals_20261029.xlsx
+   總信號: 18
+   E VCP 形態: 2 個 (TXN, QCOM)
+   F ORB 突破: 5 個 (FROG, CVNA, TENB, OLED, INSM)
+   I 板塊相對強度: 11 個 (XLC, XLV, XLF, XLRE, XLP, XLB, XLY, XLK, XLI, XLE, XLU)
+
+   ✅ Telegram 附件已推送
+MEDIA:/home/jasonckfan/美股投資/交易記錄/unified_signals_20261029.xlsx</pre></details>
+</article>
+<article class="card off" data-name="持倉價格警報 (盤前1h + 盤中)">
+  <div class="card-head"><h3>持倉價格警報 (盤前1h + 盤中)</h3><span class="badge off">⏸️ 已停用</span></div>
+  <div class="meta">🕐 <code>*/30 20-23,0-4 * * 1-5</code> · 最後運行 07-20 20:00 · 下次 07-20 20:30 · 推送 telegram</div>
+  
+  <details><summary>最新輸出（2026-07-20_20-00-37.md）</summary><pre>[持倉章節已於公開版遮蔽]</pre></details>
+</article>
+<article class="card ok" data-name="交易輔助_abcd策略備忘錄">
+  <div class="card-head"><h3>交易輔助_ABCD策略備忘錄</h3><span class="badge ok">✅ 正常</span></div>
+  <div class="meta">🕐 <code>5,35 * * * 1-5</code> · 最後運行 10-29 22:35 · 下次 10-29 23:05 · 推送 telegram</div>
+  
+  <details><summary>最新輸出（2026-10-29_22-35-36.md）</summary><pre># Cron Job: 交易輔助_ABCD策略備忘錄
+
+**Job ID:** 0f52af1be96c
+**Run Time:** 2026-10-29 22:35:35
+**Mode:** no_agent (script)
+
+---
+
+══════════════════════════════════════════════════
+📊 ABCDEFI 策略新命中 (5 個)
+📅 2026-10-29 22:35 HKT
+
+🆕 CVNA (F ORB 突破) — R:R 2.01 信心 100/100
+   進場 $67.96 → 目標 $71.57 → 止損 $66.16
+🆕 INSM (F ORB 突破) — R:R 2.01 信心 100/100
+   進場 $110.05 → 目標 $113.74 → 止損 $108.21
+🆕 TENB (F ORB 突破) — R:R 1.99 信心 100/100
+   進場 $50.35 → 目標 $53.16 → 止損 $48.94
+🆕 OLED (F ORB 突破) — R:R 2.01 信心 100/100
+   進場 $85.63 → 目標 $82.00 → 止損 $87.44
+🆕 FROG (F ORB 突破) — R:R 2.00 信心 87/100
+   進場 $98.18 → 目標 $104.71 → 止損 $94.92
+
+📁 Log: /home/jasonckfan/美股投資/交易記錄/abcd_notes_log.md
+📨 Telegram: ✅ 推送成功
+🍎 Apple Notes: ⏭️ 跳過 (Mac Mini 離線或 SSH 失敗)
+MEDIA:/home/jasonckfan/美股投資/交易記錄/abcd_notes_log.md</pre></details>
+</article>
+<article class="card ok" data-name="g atr squeeze daily scanner">
+  <div class="card-head"><h3>G ATR Squeeze daily scanner</h3><span class="badge ok">✅ 正常</span></div>
+  <div class="meta">🕐 <code>0 21 * * 1-5</code> · 最後運行 10-29 21:01 · 下次 10-30 21:00 · 推送 local</div>
+  
+  <details><summary>最新輸出（2026-10-29_21-01-43.md）</summary><pre># Cron Job: G ATR Squeeze daily scanner
+
+**Job ID:** 057a1bc30424
+**Run Time:** 2026-10-29 21:01:42
+**Mode:** no_agent (script)
+
+---
+
+🌀 &lt;b&gt;ATR 收縮 突破訊號&lt;/b&gt; (2026-10-29 HKT)
+低波壓縮 + 上軌突破 + 量能確認 | 掃描 502 隻
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚠️ &lt;b&gt;掃描結果&lt;/b&gt;
+目前無可交易 setup。
+💡 條件:
+　• 找連續壓縮後爆破嘅股票
+　• 結合上升趨勢過濾 (close &gt; 50SMA &gt; 200SMA)
+　• 嚴守止損 = max(20SMA, entry - 1.5ATR)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💡 &lt;b&gt;玩法&lt;/b&gt;
+突破 BB 上軌 + 量能確認時買入, 持倉 3-15 日
+ATR Squeeze = TTM Squeeze 變體, 配合趨勢過濾勝率 60%+</pre></details>
+</article>
+<article class="card ok" data-name="h bull flag intraday scanner">
+  <div class="card-head"><h3>H Bull Flag intraday scanner</h3><span class="badge ok">✅ 正常</span></div>
+  <div class="meta">🕐 <code>*/15 22-23,0-3 * * 1-5</code> · 最後運行 10-29 22:46 · 下次 10-29 23:00 · 推送 local</div>
+  
+  <details><summary>最新輸出（2026-10-29_22-46-43.md）</summary><pre># Cron Job: H Bull Flag intraday scanner
+
+**Job ID:** cd2a7058a628
+**Run Time:** 2026-10-29 22:46:43
+**Mode:** no_agent (script)
+
+---
+
+🚩 &lt;b&gt;牛旗 突破訊號&lt;/b&gt; (2026-10-29 HKT)
+急漲 + 旗形整理 + 突破上沿 | 掃描 502 隻
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚠️ &lt;b&gt;掃描結果&lt;/b&gt;
+目前無可交易 setup。
+💡 條件:
+　• Pole = 5-15 日急漲 ≥ +15%
+　• Flag = 5-15 日窄幅整理 (回撤 &lt; 38.2%)
+　• 突破上沿 + 量能 1.5x = 進場
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💡 &lt;b&gt;玩法&lt;/b&gt;
+突破 Flag 上沿 + 量能買入, T1 = entry + Pole 高度
+Bull Flag = O&#x27;Neil/Weinstein 經典形態, 勝率 55-65%</pre></details>
+</article>
+<article class="card ok" data-name="j cup &amp;amp; handle daily scanner">
+  <div class="card-head"><h3>J Cup &amp;amp; Handle daily scanner</h3><span class="badge ok">✅ 正常</span></div>
+  <div class="meta">🕐 <code>30 20 * * 1-5</code> · 最後運行 10-29 20:31 · 下次 10-30 20:30 · 推送 local</div>
+  
+  <details><summary>最新輸出（2026-10-29_20-31-36.md）</summary><pre># Cron Job: J Cup &amp;amp; Handle daily scanner
+
+**Job ID:** f60db0d978f4
+**Run Time:** 2026-10-29 20:31:36
+**Mode:** no_agent (script)
+
+---
+
+☕ &lt;b&gt;杯柄 突破訊號&lt;/b&gt; (2026-10-29 HKT)
+O&#x27;Neil 杯柄形態 + Pivot 突破 | 掃描 502 隻
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+⚠️ &lt;b&gt;掃描結果&lt;/b&gt;
+目前無可交易 setup。
+💡 條件:
+　• Cup 深 12-50%, U 字底 (非 V), 右壁回到左壁附近
+　• Handle 5-25 日輕微回撤 (≤ 12%)
+　• Pivot = Handle 高 + 0.1%, 量能 1.5x 50日均
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💡 &lt;b&gt;玩法&lt;/b&gt;
+突破 Pivot 買入, T1 = entry + Cup 深度
+Cup &amp; Handle = O&#x27;Neil CANSLIM 經典 base, 大牛市勝率 60%+</pre></details>
+</article>
+<article class="card ok" data-name="f_orb_r_multiple_daily_scan">
+  <div class="card-head"><h3>F_ORB_r_multiple_daily_scan</h3><span class="badge ok">✅ 正常</span></div>
+  <div class="meta">🕐 <code>45 5 * * 2-6</code> · 最後運行 10-29 05:45 · 下次 10-30 05:45 · 推送 origin</div>
+  
+  <details><summary>最新輸出（2026-10-29_05-45-34.md）</summary><pre># Cron Job: F_ORB_r_multiple_daily_scan
+
+**Job ID:** 1acafb14a4cc
+**Run Time:** 2026-10-29 05:45:34
+**Mode:** no_agent (script)
+**Status:** silent (empty output)</pre></details>
+</article>
+<article class="card off" data-name="aapl trigger alert @ $302.67">
+  <div class="card-head"><h3>AAPL trigger alert @ $302.67</h3><span class="badge off">⏸️ 已停用</span></div>
+  <div class="meta">🕐 <code>* * * * *</code> · 最後運行 07-20 20:07 · 下次 07-20 20:08 · 推送 origin</div>
+  
+  <details><summary>最新輸出（2026-07-20_20-07-21.md）</summary><pre># Cron Job: AAPL trigger alert @ $302.67
+
+**Job ID:** 949e08711474
+**Run Time:** 2026-07-20 20:07:21
+**Mode:** no_agent (script)
+**Status:** silent (empty output)</pre></details>
+</article>
+<article class="card ok" data-name="mae/mfe 週報 (週六 hkt 09:00)">
+  <div class="card-head"><h3>MAE/MFE 週報 (週六 HKT 09:00)</h3><span class="badge ok">✅ 正常</span></div>
+  <div class="meta">🕐 <code>0 9 * * 6</code> · 最後運行 10-24 09:01 · 下次 10-31 09:00 · 推送 origin</div>
+  
+  <details><summary>最新輸出（2026-10-24_09-01-49.md）</summary><pre># Cron Job: MAE/MFE 週報 (週六 HKT 09:00)
+
+**Job ID:** 91bf166f6454
+**Run Time:** 2026-10-24 09:01:44
+**Schedule:** 0 9 * * 6
+
+**Prompt Characters:** 1428
+## Prompt
+
+[IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final response will be automatically delivered to the user — do NOT use send_message or try to deliver the output yourself. Just produce your report/output as your final response and the system handles the rest. SILENT: If there is genuinely nothing new to report, respond with exactly &quot;[SILENT]&quot; (nothing else) to suppress delivery. [SILENT] is a literal ASCII control token — never translate or rephrase it, whatever language the rest of your answer uses. Never combine [SILENT] with content — either report your findings normally, or say [SILENT] and nothing more. FAILURE: If a delegated child fails and this cron run must be recorded as failed, put [CRON_FAILURE] on the first line by itself, then explain the child failure on following lines. RECURSION: This is a run of an EXISTING scheduled job — execute the task now. NEVER create or update a cron job because of recurring or future-schedule language in the task prompt below; treat phrasing like &quot;each Monday&quot; or &quot;every day at 9&quot; as context for this run, not as a request to schedule another job.]
+
+執行 MAE/MFE 週報: 跑 `python3 /home/jasonckfan/.hermes/scripts/trading_assistant/mae_mfe_weekly_review.py`, 從 trading_history.db 拉近 7 日 outcomes, 對每個 strategy 算 median MAE/MFE + 止損太緊/目標太遠計數, 推 Telegram。最後 echo &quot;MEDIA:/home/jasonckfan/.hermes/scripts/trading_assistant/logs/mae_mfe_weekly_*.log&quot; 確保 log 存檔。
+
+**Response Characters:** 976
+## Response
+
+MAE/MFE 週報已執行完成 ✅
+
+**執行結果**
+- `python3 mae_mfe_weekly_review.py` exit 0，近 7 日共 **38 筆 outcomes**
+- Telegram 推送：**成功**（`✅ Telegram 推送成功`）
+
+**各策略偏移分佈（中位數）**
+
+- **趨勢回調 (B)**：5 筆，MAE +0.00% / MFE +0.00%，止損緊 0、目標遠 0（多為未觸發紀錄）
+- **趨勢接刀 (C)**：2 筆，MAE -33.38% / MFE +2.16%，止損緊 1、目標遠 0
+- **8EMA 回踩 (D)**：15 筆，MAE -39.12% / MFE +6.54%，止損緊 **12**、目標遠 9
+- **VCP 變盤 (E)**：2 筆，MAE -25.67% / MFE +11.84%，止損緊 2、目標遠 2
+- **ORB 區間突破 (F)**：14 筆，MAE -34.80% / MFE +58.37%，止損緊 **10**、目標遠 **11**
+
+**七書框架建議（已隨報告推送）**
+- ORB 區間突破：中位止損 17.4R（Schwager 應 ≤1R）、中位目標 29.18R（Livermore 1.5–2.5R 為佳）
+- VCP 變盤：止損 12.84R、目標 5.92R — 兩邊都過極端
+- 8EMA 回踩：止損 19.56R、目標 3.27R — 止損太緊訊號最重（15 筆中 12 筆）
+- 趨勢接刀：止損 16.69R 偏緊
+
+**⚠️ 數據可信度提醒**：中位 MAE 普遍在 -25% ~ -39%、R 倍數高達 12–19R，遠超 2% 風險法則的合理範圍。這不代表實際虧損，更像是 `outcomes.mae_pct` 欄位存的是絕對百分比而非按 risk_pct 正規化的 R 值（或 MAE 計算基準有誤）。本周建議只把「止損緊 vs 目標遠」的相對計數當訊號，絕對 MAE/MFE 數值需先校準欄位定義再引用。
+
+**Log 已存檔**
+MEDIA:/home/jasonckfan/.hermes/scripts/trading_assistant/logs/mae_mfe_weekly_20261024.log</pre></details>
+</article>
+<article class="card ok" data-name="交易輔助_watchlistcurated_監控">
+  <div class="card-head"><h3>交易輔助_WatchlistCurated_監控</h3><span class="badge ok">✅ 正常</span></div>
+  <div class="meta">🕐 <code>*/30 20-23,0-4 * * 1-5</code> · 最後運行 10-29 22:30 · 下次 10-29 23:00 · 推送 telegram</div>
+  
+  <details><summary>最新輸出（2026-10-29_22-30-35.md）</summary><pre># Cron Job: 交易輔助_WatchlistCurated_監控
+
+**Job ID:** 2c537592c42e
+**Run Time:** 2026-10-29 22:30:34
+**Mode:** no_agent (script)
+
+---
+
+ℹ No curated watchlist for today</pre></details>
+</article></div></section><section><h2>👀 KOL／專題監控<span class="count">2 個 job</span></h2><div class="grid"><article class="card ok" data-name="hard penny market 週度檢查">
+  <div class="card-head"><h3>Hard Penny Market 週度檢查</h3><span class="badge ok">✅ 正常</span></div>
+  <div class="meta">🕐 <code>0 7 * * 6</code> · 最後運行 10-24 07:01 · 下次 10-31 07:00 · 推送 telegram</div>
+  
+  <details><summary>最新輸出（2026-10-24_07-01-07.md）</summary><pre># Cron Job: Hard Penny Market 週度檢查
+
+**Job ID:** ea275bddc4c5
+**Run Time:** 2026-10-24 07:01:07
+**Mode:** no_agent (script)
+
+---
+
+📊 **Hard Penny Market 週度檢查**
+_2026-10-24 07:01 HKT_
+
+**📈 主要指數狀態**
+• S&amp;P 500: 7623.68 | 50DMA偏離 -1.0% | ATR×-1.8 🟢
+  趨勢: 200DMA 之上 🟢
+• Nasdaq: 25955.34 | 50DMA偏離 -2.4% 🟢
+• **VIX 波幅**: 19.45 🟡  (&lt;15=低 / 15-22=正常 / &gt;22=警戒)
+
+**🚀 動能股健康度** (50DMA 偏離 + 5日表現)
+• NVDA: $210.96 | 50DMA -5.2% | 5日 -2.8% 🟢
+• TSLA: $372.22 | 50DMA +2.3% | 5日 +1.1% 🟢
+• AMD: $516.79 | 50DMA -4.7% | 5日 -4.0% 🟢
+• SOXL: $83.56 | 50DMA -33.1% | 5日 -15.3% 🔴
+• MSFT: $524.51 | 50DMA +3.2% | 5日 -1.7% 🟢
+• META: $642.62 | 50DMA -3.2% | 5日 -8.9% 🔴
+• GOOGL: $320.21 | 50DMA -6.6% | 5日 -7.0% 🟢
+• AAPL: $347.73 | 50DMA +5.5% | 5日 +1.4% 🟢
+
+**🚦 Hard Penny Market 警號**
+⚠️ 動能破位 (Breakdown): SOXL (-15% 5d)
+
+🟢 **市況尚可** — 保持紀律，留意突破成功率
+
+_警號計數: 1/5_
+
+⚠️ 僅供參考，不構成投資建議</pre></details>
+</article>
+<article class="card ok" data-name="茄利略cup_新影片監控">
+  <div class="card-head"><h3>茄利略CUP_新影片監控</h3><span class="badge ok">✅ 正常</span></div>
+  <div class="meta">🕐 <code>0 */6 * * *</code> · 最後運行 10-29 18:00 · 下次 10-30 00:00 · 推送 telegram</div>
+  
+  <details><summary>最新輸出（2026-10-29_18-00-34.md）</summary><pre># Cron Job: 茄利略CUP_新影片監控
+
+**Job ID:** f03d4ac0fb8f
+**Run Time:** 2026-10-29 18:00:34
+**Mode:** no_agent (script)
+**Status:** silent (empty output)</pre></details>
+</article></div></section><section><h2>🛠️ 系統維護<span class="count">6 個 job</span></h2><div class="grid"><article class="card ok" data-name="投資助理_本地git備份">
+  <div class="card-head"><h3>投資助理_本地Git備份</h3><span class="badge ok">✅ 正常</span></div>
+  <div class="meta">🕐 <code>15 9 * * *</code> · 最後運行 10-29 09:17 · 下次 10-30 09:15 · 推送 telegram</div>
+  
+  <details><summary>最新輸出（2026-10-29_09-17-08.md）</summary><pre># Cron Job: 投資助理_本地Git備份
+
+**Job ID:** 2480e3dfe54e
+**Run Time:** 2026-10-29 09:17:08
+**Mode:** no_agent (script)
+
+---
+
+Investment backup OK: changed=yes remote=failed head=fe012ed7</pre></details>
+</article>
+<article class="card ok" data-name="cron jobs 自動備份至 gitea">
+  <div class="card-head"><h3>Cron Jobs 自動備份至 Gitea</h3><span class="badge ok">✅ 正常</span></div>
+  <div class="meta">🕐 <code>0 9 * * *</code> · 最後運行 10-29 09:02 · 下次 10-30 09:00 · 推送 local</div>
+  
+  <details><summary>最新輸出（2026-10-29_09-02-07.md）</summary><pre># Cron Job: Cron Jobs 自動備份至 Gitea
+
+**Job ID:** 46141cbff660
+**Run Time:** 2026-10-29 09:02:07
+**Mode:** no_agent (script)
+
+---
+
+⚠️  Local backup committed, Gitea push FAILED after retries: 40 jobs
+    Host may be down. Local backup preserved in /home/jasonckfan/backup-repos/jason-investment-agent-code/cron_backup</pre></details>
+</article>
+<article class="card ok" data-name="dashboard 每日重生 + push gitea">
+  <div class="card-head"><h3>Dashboard 每日重生 + Push Gitea</h3><span class="badge ok">✅ 正常</span></div>
+  <div class="meta">🕐 <code>35 23 * * 1-5</code> · 最後運行 10-28 23:37 · 下次 10-29 23:35 · 推送 local</div>
+  
+  <details><summary>最新輸出（2026-10-28_23-37-07.md）</summary><pre># Cron Job: Dashboard 每日重生 + Push Gitea
+
+**Job ID:** 10ac3bae86d8
+**Run Time:** 2026-10-28 23:37:07
+**Mode:** no_agent (script)
+
+---
+
+[2026-10-28 23:35:33 CST] Start dashboard regen
+  ⚠️  push attempt 1/4 failed (rc=128), retrying in 10s...
+  ⚠️  push attempt 2/4 failed (rc=128), retrying in 20s...
+  ⚠️  push attempt 3/4 failed (rc=128), retrying in 40s...
+[2026-10-28 23:37:07 CST] ⚠️ Dashboard regenerated + committed, but Gitea push FAILED
+    Local commit preserved in /home/jasonckfan/backup-repos/jason-investment-agent-code. Gitea host may be down.</pre></details>
+</article>
+<article class="card ok" data-name="funnel-analyzer-daily">
+  <div class="card-head"><h3>funnel-analyzer-daily</h3><span class="badge ok">✅ 正常</span></div>
+  <div class="meta">🕐 <code>30 23 * * 1-5</code> · 最後運行 10-28 23:31 · 下次 10-29 23:30 · 推送 local</div>
+  
+  <details><summary>最新輸出（2026-10-28_23-31-14.md）</summary><pre># Cron Job: funnel-analyzer-daily
+
+**Job ID:** de5c6acb19f4
+**Run Time:** 2026-10-28 23:31:14
+**Mode:** no_agent (script)
+**Status:** silent (empty output)</pre></details>
+</article>
+<article class="card err" data-name="每日工作報告">
+  <div class="card-head"><h3>每日工作報告</h3><span class="badge err">❌ 出錯</span></div>
+  <div class="meta">🕐 <code>0 23 * * *</code> · 最後運行 10-28 23:01 · 下次 10-29 23:00 · 推送 origin</div>
+  <div class="err-msg">⚠️ RuntimeError: HTTP 429: 您已达到每周/每月使用上限，您的限额将在 2026-10-29 21:27:10 重置。</div>
+  <details><summary>最新輸出（2026-10-28_23-00-56.md）</summary><pre># Cron Job: 每日工作報告 (FAILED)
+
+**Job ID:** 69aaca70973e
+**Run Time:** 2026-10-28 23:00:55
+**Schedule:** 0 23 * * *
+
+## Prompt
+
+[IMPORTANT: The user has invoked the &quot;hermes-cron-operations&quot; skill, indicating they want you to follow its instructions. The full skill content is loaded below.]
+
+---
+name: hermes-cron-operations
+description: Use when diagnosing Hermes cron job failures, doing a dry-run of scheduled jobs, fixing delivery errors (Discord 404, Telegram 403, channel routing), checking host connectivity for backup/SSH endpoints, or auditing the cron health of a deployed system. Covers hermes cron list, jobs.json schema, scheduler.py delivery routing, and the dry-run methodology that distinguishes syntax bugs from runtime bugs from data-source bugs.
+version: 1.0.0
+author: Hermes Agent
+license: MIT
+metadata:
+  hermes:
+    tags: [cron, operations, diagnostics, delivery, hermes, health-check, dry-run]
+    related_skills: [hermes-agent, trading-assistant-system, webhook-subscriptions]
+---
+
+# Hermes Cron Operations
+
+Operational playbook for diagnosing and maintaining Hermes cron jobs in a deployed environment. The skill is **about** the class of work that comes after you&#x27;ve written a cron job: how do you tell a syntax bug from a runtime bug from a data-source bug? How do you triage `last_delivery_error` fields that linger from a previous failure? How do you know if it&#x27;s your script, your env, your delivery target, or your data feed?
+
+## When to Use
+
+- User says &quot;dry-run my cron jobs&quot;, &quot;why is my cron not working&quot;, &quot;cron job failing&quot;, &quot;delivery error&quot;
+- `hermes cron list` shows a job with `error: ...` or stale `last_delivery_error`
+- A `no-agent` push script is silently dying (script exits 1 with no Telegram/Discord message)
+- A backup / SSH / web endpoint that a cron job depends on has gone away
+- A previously-working pipeline suddenly starts failing after a config change
+- After adding a new platform (Discord, Slack, etc.) and wondering why cron still goes to old place
+- Code audit / health check across the whole cron fleet (30+ jobs)
+- **Bulk-switching LLM model/provider across cron jobs** (rotating API key, migrating from one provider to another, changing the global fallback chain, fixing `auxiliary.vision` config drift)
+
+**Don&#x27;t use for:** writing a new cron job (just use the `cronjob` tool / `hermes cron create`), or debugging a specific script&#x27;s logic (use `systematic-debugging`).
+
+## TL;DR — The 4-Layer Diagnostic Stack
+
+Cron job failures have **four layers**, and the wrong fix targets the wrong layer. Always diagnose in this order:
+
+| Layer | Question | Tool | Symptom |
+|---|---|---|---|
+| **1. Syntax** | Does the script even parse? | `bash -n script.sh` / `py_compile.compile(..., doraise=True)` | Import error on import, syntax error on run |
+| **2. Runtime** | Does it run end-to-end? | `--dry-run` flag or `timeout 30 script.py` | Exit code 1, traceback mid-execution |
+| **3. Data source** | Does the external API work? | `curl -I &lt;endpoint&gt;`</pre></details>
+</article>
+<article class="card ok" data-name="free model check (6h)">
+  <div class="card-head"><h3>Free model check (6h)</h3><span class="badge ok">✅ 正常</span></div>
+  <div class="meta">🕐 <code>0 */6 * * *</code> · 最後運行 10-29 18:01 · 下次 10-30 00:00 · 推送 origin</div>
+  
+  <details><summary>最新輸出（2026-10-29_18-01-05.md）</summary><pre># Cron Job: Free model check (6h)
+
+**Job ID:** ae614505479b
+**Run Time:** 2026-10-29 18:01:05
+**Schedule:** 0 */6 * * *
+
+**Prompt Characters:** 12851
+## Prompt
+
+[IMPORTANT: The user has invoked the &quot;free-model-auto-switch&quot; skill, indicating they want you to follow its instructions. The full skill content is loaded below.]
+
+---
+name: free-model-auto-switch
+description: Use when 路由 opencode-go 免費模型 (check_free_models.py).
+metadata:
+  hermes:
+    version: 1.0.0
+    author: Jason Fan
+    license: MIT
+    tags: [opencode-go, model-routing, cost, cron]
+    related_skills: [hermes-llm-config]
+---
+
+## When to Use
+
+- 免費模型 cron 檢查回報異常（SWITCHED / PROBE-FAIL / WRITE-FAIL）時。
+- 要手動重跑、回歸測試，或修改 `model.default` / `fallback_providers` 路由時。
+- 換 opencode-go key、懷疑 config.yaml 被寫壞、或要新增/調整 6h 檢查 cron 時。
+
+# Free-model auto-switch (opencode-go, 本機 linux)
+
+自動把 Hermes 的推理路由維持在「最便宜的可用層級」：探測 opencode-go 上的免費／preview 模型，
+把 `model.default` 指到最強的那個，其餘免費模型（最多 2 個）+ `zai/glm-5.3-flash` 依序放進
+`fallback_providers`；免費模型全消失時自動退回 `glm-5.3-flash`。
+
+## 0. 本機部署事實 (2026-10-21)
+
+- 腳本：`/home/jasonckfan/.hermes/scripts/check_free_models.py`（`HERMES_HOME` 用預設 `~/.hermes`）。
+- **PyYAML 坑：cron 的 `python3` 會用 `-I`（isolated mode）** — 這是 2026-10-21 cron 首次執行的真實失敗原因。
+  `-I` 會丟棄 `~/.local/lib/pythonX.Y/site-packages`，所以 `pip install --user` 裝的 PyYAML
+  **在 cron session 裡看不到**（`ModuleNotFoundError: yaml`），但同一個 python 在一般 shell 裡跑卻正常。
+  正確理解：
+  1. Hermes bundled `python3` = `~/.hermes/tools/python-3.14.7+.../bin/python3`（3.14.7），
+     `-I` 下看不到 `~/.local`，但有 `pip` module。
+  2. `/usr/bin/python3` = 3.10.12，PyYAML 5.4.1 在 `/usr/lib/python3/dist-packages`（**不受 `-I` 影響**），
+     是最保險的選擇。
+  3. 腳本已內建 `_yaml()`：import 失敗時手動把 `~/.local/lib/python3.*/site-packages` 加回 `sys.path`，
+     所以**任何** python3 都能跑（已驗：bundled / bundled `-I` / `/usr/bin/python3` / `/usr/bin/python3 -I`，
+     全部 `NO-CHANGE` + config byte-identical）。
+  4. cron prompt 一律寫絕對路徑 `/usr/bin/python3`；`#!/usr/bin/env python3` 的 shebang 在此環境會揀錯。
+- 本機 Hermes **v0.21.5 已內建** `agent/opencode_affinity.py`（`x-opencode-session` 由 Hermes 自己帶），
+  **不需要** user plugin；但獨立探測腳本仍要自己帶 header（見 §3）。
+- **`fallback_providers` 必須是 dict list**：`  - {provider: X, model: Y}`。
+  舊寫法 `- glm`（純字串）會被 `hermes_cli/fallback_config.get_fallback_chain()` 靜默丟棄 =
+  形同沒有 fallback；2026-10-21 已被腳本改成 dict 格式。
+- config 改動後備份會被搬到 `~/.hermes/backups/config/config.yaml.bak.&lt;tag&gt;`（不是 `~/.hermes/` 根目錄），
+  rollback 從那裡拿。
+- `model.available_models` 只給 picker 用，不驗證 `model.default`，切換後**不用**同步它；
+  `providers.opencode-go.model` 同理（`runtime_provider._get_model_config()` 以 `model.default` 為準）。
+
+## 1. 路由表
+
+| 免費模型數量 | `model.default` | `fallback_providers` |
+|---|---|---|
+| ≥ 2 | 最強免費模型 | 其他免費模型 → `zai/glm-5.3-flash` |
+| 1 | 該模型 | `zai/glm-5.3-flash` |
+| 0 | `glm-5.3-flash` (zai) | `opencode-go/glm-5.3-flash` |
+
+**使用者策略（2026-10-18）**：**優先用盡所有免費模型，真的不行才 fallback 到 `glm-5.3-flash`**。
+免費鏈最多排 3 個（default + 2 fallback），`zai/glm-5.3-flash` 永遠坐最後一順位。
+
+免費判定 = **官方 OpenCode Go 計價表的明確清單**（2026-10-21 核實：
+https:</pre></details>
+</article></div></section>
+<section><h2>📊 今日市場分析輸出</h2><details class="report"><summary>📄 2026-10-29_市況匯總.md</summary><pre># 📊 美股市況匯總 — 2026-10-29
+_生成時間: 2026-10-29 05:32 HKT_
+
+---
+
+## 1️⃣ Hard Penny Market 警號檢查
+
+📊 **Hard Penny Market 週度檢查**
+_2026-10-29 05:32 HKT_
+
+**📈 主要指數狀態**
+• S&amp;P 500: 7743.98 | 50DMA偏離 +0.6% | ATR×1.1 🟢
+  趨勢: 200DMA 之上 🟢
+• Nasdaq: 26549.85 | 50DMA偏離 -0.1% 🟢
+• **VIX 波幅**: 16.91 🟡  (&lt;15=低 / 15-22=正常 / &gt;22=警戒)
+
+**🚀 動能股健康度** (50DMA 偏離 + 5日表現)
+• NVDA: $215.38 | 50DMA -3.0% | 5日 +1.5% 🟢
+• TSLA: $404.22 | 50DMA +10.0% | 5日 +7.9% 🟡
+• AMD: $578.44 | 50DMA +6.0% | 5日 +13.9% 🟢
+• SOXL: $107.35 | 50DMA -12.3% | 5日 +30.7% 🟢
+• MSFT: $531.01 | 50DMA +3.9% | 5日 +1.9% 🟢
+• META: $612.49 | 50DMA -8.2% | 5日 -5.6% 🟢
+• GOOGL: $324.89 | 50DMA -4.9% | 5日 +0.2% 🟢
+• AAPL: $343.83 | 50DMA +3.6% | 5日 -1.3% 🟢
+
+**🚦 Hard Penny Market 警號**
+
+🟢 **健康市況** — Easy Money 環境
+
+_警號計數: 0/5_
+
+⚠️ 僅供參考，不構成投資建議
+
+
+---
+
+## 2️⃣ 動能股技術指標
+
+🎯 **動能股技術指標 (Daily)**
+_2026-10-29 05:32 HKT_
+
+**NVDA** — $215.38
+📈 趨勢: 🟡 趨勢分歧
+📊 10DMA $215.94 | 20DMA $223.79 | 50DMA $222.07 | 200DMA $204.14
+📏 50DMA 偏離 -3.0% | ATR 2.8%/日 | RSI 35
+🎯 距 52週高位 $243.37 (-11.5%)
+⚠️ 警號: 🔴 短線破位 (跌穿 10DMA &amp; 10&lt;20)
+🛑 建議止損: $209.46 (-2.7%)
+─────────────────────────
+**TSLA** — $404.22
+📈 趨勢: 🟡 趨勢分歧
+📊 10DMA $379.55 | 20DMA $376.78 | 50DMA $367.47 | 200DMA $385.72
+📏 50DMA 偏離 +10.0% | ATR 3.5%/日 | RSI 62
+🎯 距 52週高位 $498.83 (-19.0%)
+⚠️ 警號: 🟢 短線強勢 (10&gt;20DMA)
+🛑 建議止損: $383.13 (-5.2%)
+─────────────────────────
+**SOXL** — $107.35
+📈 趨勢: 🔴 下跌趨勢
+📊 10DMA $96.51 | 20DMA $120.93 | 50DMA $122.34 | 200DMA $123.91
+📏 50DMA 偏離 -12.3% | ATR 11.5%/日 | RSI 34
+🎯 距 52週高位 $302.00 (-64.5%)
+🛑 建議止損: $93.61 (-12.8%)
+─────────────────────────
+**AMD** — $578.44
+📈 趨勢: 🟢 上升趨勢
+📊 10DMA $541.12 | 20DMA $579.36 | 50DMA $545.58 | 200DMA $407.36
+📏 50DMA 偏離 +6.0% | ATR 5.0%/日 | RSI 42
+🎯 距 52週高位 $658.52 (-12.2%)
+🛑 建議止損: $535.42 (-7.4%)
+─────────────────────────
+**QQQ** — $725.61
+📈 趨勢: 🟢 上升趨勢
+📊 10DMA $716.69 | 20DMA $732.48 | 50DMA $725.42 | 200DMA $678.72
+📏 50DMA 偏離 +0.0% | ATR 1.6%/日 | RSI 39
+🎯 距 52週高位 $762.86 (-4.9%)
+🛑 建議止損: $707.71 (-2.5%)
+─────────────────────────
+
+⚠️ 僅供參考，不構成投資建議
+💡 框架: 茄利略 CUP (@KelileoCUP) Hard Penny Market 識別法
+
+
+---
+
+[持倉章節已於公開版遮蔽]
+[持倉章節已於公開版遮蔽]
+## 💼 組合總覽
+[敏感行已遮蔽]
+[敏感行已遮蔽]
+- **總損益**: 🔴 $-7,568.00 (-15.98%)
+- **持倉數**: 1 隻
+
+## ⚠️ 警報
+- ⚠️ **TQQQ** 已接近止損位 ($72.70),現價 $72.36
+
+---
+_本數據僅供參考,不構成投資建議_
+
+
+---
+
+
+_⚠️ 本匯總僅供參考,不構成投資建議_</pre></details>
+<details class="report"><summary>📄 2026-10-29_開市前簡報.md</summary><pre>🌅 **美股開市前簡報** (2026-10-29 21:00 HKT)
+
+## 🌏 隔夜全球市場
+• 日經 225: 64,659.47 (+1.10%) 🟢
+• 恒指: 22,958.65 (-0.36%) ⚪
+• 歐洲 STOXX 50: 6,195.04 (+0.44%) ⚪
+• VIX 波幅: 17.07 (+0.95%) 🟢
+• 10Y 美債息率: 5.01 (-0.79%) 🔴
+• 美元指數 DXY: 102.22 (+0.02%) ⚪
+
+## 📊 美股期貨指示
+• S&amp;P 500 期貨: 7,751.00 (-0.41%) ⚪
+• Nasdaq 100 期貨: 29,610.00 (-1.23%) 🔴
+• 道指期貨: 52,563.00 (-0.25%) ⚪
+
+## 🚀 大型科技股盤前
+• NVDA: $214.60 (-1.53%) 🔴
+• TSLA: $405.08 (-0.58%) 🔴
+• AMD: $562.99 (+0.49%) ⚪
+• MSFT: $541.81 (+1.97%) 🟢
+• META: $617.31 (-0.46%) ⚪
+• GOOGL: $287.86 (-10.21%) 🔴⚠️
+• AAPL: $348.25 (+0.33%) ⚪
+• QQQ: $718.37 (-0.40%) ⚪
+• SOXL: $101.16 (+0.08%) ⚪
+
+[持倉章節已於公開版遮蔽]
+### 🚨 立即注意
+- **TQQQ** 已接近止損位 $72.70 (現價 $70.12)
+
+## ⚡ 盤前大幅異動 (|%|≥2%)
+- **GOOGL** -10.21%
+
+---
+_⚠️ 盤前報價成交量薄,實際開市後可能反轉。不構成投資建議_</pre></details>
+<details class="report"><summary>📄 atr_squeeze_20261029.md</summary><pre># ATR Squeeze 突破訊號 — 2026-10-29
+
+&gt; 掃描時間: 2026-10-29 21:01 HKT
+&gt; 掃描範圍: 502 隻
+&gt; 過濾: 上升趨勢 + BB Width 6 月 20-percentile + 上軌突破 + 量能 1.5x
+
+## Setup 列表
+
+| Ticker | 信心 | 進場 | 止損 | T1 | T2 | R:R | 壓縮% | 量能 | 距 52W 高 |
+|--------|------|------|------|------|------|-----|-------|------|-----------|
+| — | — | — | — | — | — | — | — | — | — |
+
+## 策略說明
+
+**ATR Squeeze 突破** 係 TTM Squeeze 概念變體:
+- BB Width 收窄至 6 月 20-percentile = 波動率歷史低位
+- 上升趨勢中 (close &gt; 50SMA &gt; 200SMA) 嘅低波 = 蓄勢階段
+- 突破上軌 + 量能 1.5x 以上 = 動能釋放確認
+- 持倉 3-15 日, R:R ≥ 1:2
+
+## 風控
+
+- Stop = max(20-SMA, entry - 1.5 ATR), 取較高者
+- Target1 = entry + 2× risk (R:R 1:2)
+- Target2 = entry + 3× risk (R:R 1:3, 跑長線用)
+- 倉位 = 2% 帳戶風險 / risk_per_share
+
+_由 Hermes atr_squeeze_scanner 自動生成_
+_不構成投資建議_</pre></details>
+<details class="report"><summary>📄 bull_flag_20261029.md</summary><pre># Bull Flag 突破訊號 — 2026-10-29
+
+&gt; 掃描時間: 2026-10-29 22:46 HKT
+&gt; 掃描範圍: 502 隻
+&gt; 過濾: 上升趨勢 + Pole ≥ +15.0% + Flag 5-15 日 + 上沿突破 + 量能 1.5x
+
+## Setup 列表
+
+| Ticker | 信心 | 進場 | 止損 | T1 | T2 | R:R | Pole% | Flag 日 | 緊度 | 量能 |
+|--------|------|------|------|------|------|-----|-------|---------|------|------|
+| — | — | — | — | — | — | — | — | — | — | — |
+
+## 策略說明
+
+**Bull Flag** 係 O&#x27;Neil/Weinstein 經典形態:
+- **Pole**: 急漲段, 5-15 日 +15% 或更多
+- **Flag**: 急漲後窄幅整理, 5-15 日, 回撤不超過 Pole 38.2% Fibonacci
+- **突破**: Flag 上沿 + 量能 1.5x = 續勢爆發
+- **量度目標** (Flag pole projection): T1 = entry + Pole 高度
+
+## 風控
+
+- Stop = Flag 低位 × 0.99 (旗下緣失守 = 形態失效)
+- T1 = entry + Pole 高度
+- T2 = entry + 1.5× Pole 高度 (跑長線)
+- R:R 必須 ≥ 1.5, 否則棄置
+
+_由 Hermes bull_flag_scanner 自動生成_
+_不構成投資建議_</pre></details>
+<details class="report"><summary>📄 cup_handle_20261029.md</summary><pre># Cup &amp; Handle 突破訊號 — 2026-10-29
+
+&gt; 掃描時間: 2026-10-29 20:31 HKT
+&gt; 掃描範圍: 502 隻
+&gt; 過濾: 上升趨勢 + Cup 30-100d + Cup 深 8-50% + Handle 5-25d + Pivot 突破 + 量能 1.5x
+
+## Setup 列表
+
+| Ticker | 信心 | 進場 | 止損 | T1 | T2 | R:R | Cup% | Cup d | Handle% | Handle d | 量能 |
+|--------|------|------|------|------|------|-----|------|-------|---------|----------|------|
+| — | — | — | — | — | — | — | — | — | — | — | — |
+
+## 策略說明
+
+**Cup &amp; Handle** 係 William O&#x27;Neil CANSLIM 體系核心 base 形態:
+- **Cup**: 7-65 週左壁 → 圓底 → 右壁 (容許 5% 偏差) 嘅 U 字回升
+- **Handle**: 右壁完成後 5-25 日輕微回撤 (≤ 12%, 不破 cup midpoint)
+- **Pivot**: Handle 高位 + 0.1% (傳統 +$0.10) = 突破進場點
+- **量能**: 突破日 ≥ 1.5× 50 日均量 (O&#x27;Neil 經典 1.4-2x)
+- **量度目標** (Cup depth projection): T1 = entry + Cup 深度
+
+## 風控
+
+- Stop = Handle 低位 × 0.99 (柄底失守 = 形態失效)
+- T1 = entry + Cup 高度
+- T2 = entry + 1.5× Cup 高度
+- R:R 必須 ≥ 1.5
+
+_由 Hermes cup_handle_scanner 自動生成_
+_不構成投資建議_</pre></details>
+<details class="report"><summary>📄 sector_rs_20261029.md</summary><pre># 板塊相對強度 (Sector RS) 報告 — 2026-10-29
+
+&gt; 掃描時間: 2026-10-29 20:00 HKT
+&gt; 算法: IBD/O&#x27;Neil RS Rating 改進 (1w/4w/13w/26w 加權, 權重 {&#x27;1w&#x27;: 0.4, &#x27;4w&#x27;: 0.3, &#x27;13w&#x27;: 0.2, &#x27;26w&#x27;: 0.1})
+&gt; 基準: SPY
+
+## SPY 基準回報
+- 1週: -0.10%
+- 4週: +1.27%
+- 13週: +4.39%
+- 26週: +9.08%
+
+## 排名 (RS Score 降序)
+
+| 排名 | ETF | 板塊 | RS Score | 1w 超SPY | 4w 超SPY | 13w 超SPY | 26w 超SPY | 建議 |
+|------|-----|------|----------|----------|----------|----------|----------|------|
+| 1 | XLE | 能源 | +6.54 | +0.53% | +10.03% | +12.40% | +8.40% | 🟢 強烈買入 |
+| 2 | XLV | 醫療 | +4.81 | +0.54% | +5.44% | +5.94% | +17.77% | 🟢 強烈買入 |
+| 3 | XLK | 科技 | +1.46 | +1.41% | -3.70% | +4.43% | +11.24% | 🟢 強烈買入 |
+| 4 | XLP | 必需消費 | +1.14 | -0.21% | +6.47% | -2.12% | -2.94% | 🟢 買入 |
+| 5 | XLB | 材料 | +0.68 | +1.15% | +5.22% | -3.50% | -6.47% | 🟢 買入 |
+| 6 | XLF | 金融 | +0.12 | +0.26% | +3.84% | -5.56% | -0.21% | 🟡 中性 |
+| 7 | XLY | 非必需消費 | +0.07 | -0.07% | +4.69% | -1.55% | -9.96% | 🟡 中性 |
+| 8 | XLU | 公用事業 | -0.74 | +1.27% | +6.46% | -8.55% | -14.79% | 🔴 避開 |
+| 9 | XLRE | 房地產 | -2.59 | +0.27% | +1.71% | -10.60% | -10.88% | 🔴 避開 |
+| 10 | XLI | 工業 | -2.90 | +0.21% | -0.36% | -9.68% | -9.42% | 🔴 強烈避開 |
+| 11 | XLC | 通訊服務 | -7.97 | -5.25% | -8.33% | -7.30% | -19.09% | 🔴 強烈避開 |
+
+## 解讀指引
+
+### 🟢 Top 3 強勢板塊
+- 應重倉/優先買入該 sector 內成分股
+- 給 ABCD 策略的 setup 加分
+
+### 🔴 Bottom 3 弱勢板塊
+- 應避開或降倉該 sector 內成分股
+- 即使有 ABCD setup 訊號, 該 sector 內成功率會較低
+
+### 進階應用
+- **板塊輪動訊號**: 觀察 XLK (科技) vs XLU (公用事業) 的相對走勢
+  - XLK 上 / XLU 下 = Risk-On (有利進攻型板塊)
+  - XLK 下 / XLU 上 = Risk-Off (應避開高 beta, 轉防禦)
+- **能源特殊訊號**: XLE 連續 4 週 RS Score &gt; +3 = 商品週期可能啟動
+
+_由 Hermes sector_rs_scanner 自動生成_
+_不構成投資建議_</pre></details>
+<details class="report"><summary>📄 vcp_20261029.md</summary><pre># Minervini VCP 訊號 — 2026-10-29
+
+&gt; 掃描時間: 2026-10-29 20:30 HKT
+&gt; 掃描範圍: 30 隻
+&gt; 過濾: Trend Template 8 條件 + VCP 形態
+&gt; Lookback: 60 日
+
+## Setup 列表
+
+| Ticker | Trend | 收縮序列 | 當前價 | Pivot 價 | 量能爆發 |
+|--------|-------|----------|--------|----------|----------|
+| TXN | 8/9 | 11.9% → 8.9% | $309.83 | $298.75 | — |
+| QCOM | 7/9 | 16.9% → 6.6% | $182.97 | $180.78 | — |
+
+## 策略說明
+
+**VCP (Volatility Contraction Pattern)** 是 Mark Minervini 提出的中線持倉形態:
+- 連續 2-4 次擺動高/低間距遞減 (例: 10% → 7% → 5%)
+- 反映供需關係: 賣壓逐步耗盡, 突破時動能釋放
+- 配合 Minervini Trend Template 8 條件, 勝率可達 60-70%
+
+_由 Hermes vcp_scanner 自動生成_
+_不構成投資建議_</pre></details>
+<details class="report"><summary>📄 即時掃描_20261029.md</summary><pre># 每日活躍美股 Top 5 即時掃描 — 2026-10-29
+
+&gt;掃描時間: 2026-10-29 22:30 HKT
+&gt;掃描範圍: 24 隻活躍美股
+&gt;分析框架: 七書理論
+
+---
+
+## 1. MSFT (評分 63.7)
+
+- 當前價: $525.98 (-0.95%)
+- 20DMA: $530.55 | 50DMA: $512.01
+- RSI: 43.6 | ATR%: 2.1%
+- 52W高點距離: -4.6%
+- 量能比: 0.71x
+- Forward PE: 22.206678
+- Beta: 1.099
+- 評分原因: 趨勢向上, 近高點, RSI健康, PE尚可, 波動可控
+
+### 七書即時分析
+
+(LLM 分析生成失敗)
+
+---
+
+## 2. TSLA (評分 61.5)
+
+- 當前價: $405.65 (+0.36%)
+- 20DMA: $379.35 | 50DMA: $368.56
+- RSI: 60.1 | ATR%: 3.3%
+- 52W高點距離: -1.3%
+- 量能比: 0.19x
+- Forward PE: 188.21191
+- Beta: 1.916
+- 評分原因: 強趨勢, 近高點, RSI健康, 波動可控
+
+### 七書即時分析
+
+(LLM 分析生成失敗)
+
+---
+
+## 3. AAPL (評分 60.1)
+
+- 當前價: $350.04 (+1.81%)
+- 20DMA: $341.59 | 50DMA: $332.40
+- RSI: 67.4 | ATR%: 1.7%
+- 52W高點距離: -0.5%
+- 量能比: 0.26x
+- Forward PE: 36.605682
+- Beta: 1.069
+- 評分原因: 強趨勢, 近高點, 波動可控
+
+### 七書即時分析
+
+(LLM 分析生成失敗)
+
+---
+
+## 4. GOOGL (評分 53)
+
+- 當前價: $285.76 (-12.04%)
+- 20DMA: $337.19 | 50DMA: $340.28
+- RSI: 15.9 | ATR%: 3.8%
+- 52W高點距離: -25.6%
+- 量能比: 1.93x
+- Forward PE: 18.662699
+- Beta: 1.211
+- 評分原因: 放量, RSI超賣, PE合理, 波動可控, 高波動
+
+### 七書即時分析
+
+(LLM 分析生成失敗)
+
+---
+
+## 5. META (評分 51.6)
+
+- 當前價: $624.43 (+1.95%)
+- 20DMA: $696.76 | 50DMA: $668.40
+- RSI: 27.8 | ATR%: 4.1%
+- 52W高點距離: -19.9%
+- 量能比: 0.32x
+- Forward PE: 17.546154
+- Beta: 1.185
+- 評分原因: 趨勢向上, RSI超賣, PE合理
+
+### 七書即時分析
+
+(LLM 分析生成失敗)
+
+---
+
+
+_分析由 Hermes us-stock-realtime-analysis skill 自動生成_
+_不構成投資建議_</pre></details></section>
+</main>
+<footer>資料來源：.240（100.79.111.8）Hermes cron 系統，每日自動同步一次。頁面只載 job 狀態與輸出摘要，已自動遮蔽疑似密鑰／令牌字串；不含持倉檔案與任何憑證。<br>由 Pison 彙整發布 · <a style="color:var(--accent)" href="data.json">data.json</a></footer>
+<script>
+const q=document.getElementById('search');
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();
+document.querySelectorAll('.card').forEach(c=>{c.style.display=c.dataset.name.includes(v)?'':'none'});});
+</script>
+</body></html>
