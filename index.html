@@ -28,12 +28,12 @@ footer{color:var(--muted);font-size:12px;max-width:1100px;margin:0 auto;padding:
 </style></head><body>
 <header>
 <h1>🤖 HermesTam Runtime</h1>
-<div class="sub">.240 美股投資 Hermes Agent · 全部 cron job 運行狀態與最新輸出 · 更新：2026-11-01 00:47 HKT</div>
+<div class="sub">.240 美股投資 Hermes Agent · 全部 cron job 運行狀態與最新輸出 · 更新：2026-11-02 00:47 HKT</div>
 <div class="stats">
 <div class="stat"><b>40</b><span>Job 總數</span></div>
 <div class="stat"><b>38</b><span>啟用中</span></div>
-<div class="stat"><b style="color:var(--ok)">38</b><span>最近運行正常</span></div>
-<div class="stat"><b style="color:var(--err)">0</b><span>最近出錯</span></div>
+<div class="stat"><b style="color:var(--ok)">37</b><span>最近運行正常</span></div>
+<div class="stat"><b style="color:var(--err)">1</b><span>最近出錯</span></div>
 </div>
 <input id="search" type="search" placeholder="🔍 搜尋 job 名稱…">
 </header>
@@ -129,18 +129,18 @@ footer{color:var(--muted);font-size:12px;max-width:1100px;margin:0 auto;padding:
 </article>
 <article class="card ok" data-name="美股科技股新聞推送">
   <div class="card-head"><h3>美股科技股新聞推送</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>0 */2 * * *</code> · 最後運行 11-01 00:00 · 下次 11-01 02:00 · 推送 telegram</div>
+  <div class="meta">🕐 <code>0 */2 * * *</code> · 最後運行 11-02 00:01 · 下次 11-02 02:00 · 推送 telegram</div>
   
-  <details><summary>最新輸出（2026-11-01_00-00-40.md）</summary><pre># Cron Job: 美股科技股新聞推送
+  <details><summary>最新輸出（2026-11-02_00-01-04.md）</summary><pre># Cron Job: 美股科技股新聞推送
 
 **Job ID:** a1f7931bffc6
-**Run Time:** 2026-11-01 00:00:36
+**Run Time:** 2026-11-02 00:01:01
 **Mode:** no_agent (script)
 
 ---
 
 🚀 美股科技股投資新聞推送系統 (完整中文版)
-⏰ 執行時間: 2026-11-01 00:00:36
+⏰ 執行時間: 2026-11-02 00:01:01
 ------------------------------------------------------------
 ✅ 已從本地配置載入 API Keys (default model=gemini-3.8-flash-high, temp=0.3)
    Available models: GLM-5.3-flash, gemini-3.8-flash-high
@@ -149,7 +149,7 @@ footer{color:var(--muted);font-size:12px;max-width:1100px;margin:0 auto;padding:
 
 📭 沒有找到符合條件的新聞
 
-📄 完整 cron log: /home/jasonckfan/.hermes/cron/output/a1f7931bffc6/2026-10-31_22-02-47.md
+📄 完整 cron log: /home/jasonckfan/.hermes/cron/output/a1f7931bffc6/2026-11-01_22-02-09.md
 [敏感行已遮蔽]</pre></details>
 </article>
 <article class="card ok" data-name="動能股技術指標日報">
@@ -579,22 +579,22 @@ _⚠️ 若決定採納參數調整, 請手動編輯 `~/.hermes/scripts/trading_
 </article>
 <article class="card ok" data-name="交易輔助_月度universe更新">
   <div class="card-head"><h3>交易輔助_月度Universe更新</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>0 9 1 * *</code> · 最後運行 10-01 09:00 · 下次 11-01 09:00 · 推送 telegram</div>
+  <div class="meta">🕐 <code>0 9 1 * *</code> · 最後運行 11-01 09:01 · 下次 12-01 09:00 · 推送 telegram</div>
   
-  <details><summary>最新輸出（2026-10-01_09-00-50.md）</summary><pre># Cron Job: 交易輔助_月度Universe更新
+  <details><summary>最新輸出（2026-11-01_09-01-00.md）</summary><pre># Cron Job: 交易輔助_月度Universe更新
 
 **Job ID:** 53f74a02e1ea
-**Run Time:** 2026-10-01 09:00:50
+**Run Time:** 2026-11-01 09:00:58
 **Mode:** no_agent (script)
 
 ---
 
-📋 **Universe 更新** (2026-10-01)
+📋 **Universe 更新** (2026-11-01)
 
 S&amp;P 500: 503 隻
 NASDAQ 100: 0 隻
 去重合併: 503 隻
-流動性過濾 (≥$50M/日): 502 隻
+流動性過濾 (≥$50M/日): 499 隻
 
 _明日 pre_market_scanner 將掃描新清單。_</pre></details>
 </article>
@@ -831,24 +831,20 @@ VCP = Mark Minervini 核心策略, 歷史勝率 60-70%</pre></details>
 </article>
 <article class="card ok" data-name="交易輔助_excel統一報告">
   <div class="card-head"><h3>交易輔助_Excel統一報告</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>*/30 21-23,0-5 * * 1-5</code> · 最後運行 10-30 23:30 · 下次 11-02 00:00 · 推送 telegram</div>
+  <div class="meta">🕐 <code>*/30 21-23,0-5 * * 1-5</code> · 最後運行 11-02 00:30 · 下次 11-02 01:00 · 推送 telegram</div>
   
-  <details><summary>最新輸出（2026-10-30_23-30-36.md）</summary><pre># Cron Job: 交易輔助_Excel統一報告
+  <details><summary>最新輸出（2026-11-02_00-30-36.md）</summary><pre># Cron Job: 交易輔助_Excel統一報告
 
 **Job ID:** e83182ddf4ce
-**Run Time:** 2026-10-30 23:30:36
+**Run Time:** 2026-11-02 00:30:35
 **Mode:** no_agent (script)
 
 ---
 
-📊 Excel 報告: /home/jasonckfan/美股投資/交易記錄/unified_signals_20261030.xlsx
-   總信號: 18
-   E VCP 形態: 5 個 (TXN, SPY, AAPL, QCOM, ADI)
-   F ORB 突破: 2 個 (RBLX, PTCT)
-   I 板塊相對強度: 11 個 (XLP, XLE, XLU, XLK, XLF, XLY, XLRE, XLC, XLB, XLV, XLI)
+📊 Excel 報告: /home/jasonckfan/美股投資/交易記錄/unified_signals_20261102.xlsx
+   總信號: 0
 
-   ✅ Telegram 附件已推送
-MEDIA:/home/jasonckfan/美股投資/交易記錄/unified_signals_20261030.xlsx</pre></details>
+   ℹ️  今日無信號, 跳過 Telegram 附件推送</pre></details>
 </article>
 <article class="card off" data-name="持倉價格警報 (盤前1h + 盤中)">
   <div class="card-head"><h3>持倉價格警報 (盤前1h + 盤中)</h3><span class="badge off">⏸️ 已停用</span></div>
@@ -858,12 +854,12 @@ MEDIA:/home/jasonckfan/美股投資/交易記錄/unified_signals_20261030.xlsx</
 </article>
 <article class="card ok" data-name="交易輔助_abcd策略備忘錄">
   <div class="card-head"><h3>交易輔助_ABCD策略備忘錄</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>5,35 * * * 1-5</code> · 最後運行 10-30 23:35 · 下次 11-02 00:05 · 推送 telegram</div>
+  <div class="meta">🕐 <code>5,35 * * * 1-5</code> · 最後運行 11-02 00:35 · 下次 11-02 01:05 · 推送 telegram</div>
   
-  <details><summary>最新輸出（2026-10-30_23-35-32.md）</summary><pre># Cron Job: 交易輔助_ABCD策略備忘錄
+  <details><summary>最新輸出（2026-11-02_00-35-36.md）</summary><pre># Cron Job: 交易輔助_ABCD策略備忘錄
 
 **Job ID:** 0f52af1be96c
-**Run Time:** 2026-10-30 23:35:32
+**Run Time:** 2026-11-02 00:35:35
 **Mode:** no_agent (script)
 **Status:** silent (empty output)</pre></details>
 </article>
@@ -899,18 +895,18 @@ ATR Squeeze = TTM Squeeze 變體, 配合趨勢過濾勝率 60%+</pre></details>
 </article>
 <article class="card ok" data-name="h bull flag intraday scanner">
   <div class="card-head"><h3>H Bull Flag intraday scanner</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>*/15 22-23,0-3 * * 1-5</code> · 最後運行 10-30 23:46 · 下次 11-02 00:00 · 推送 local</div>
+  <div class="meta">🕐 <code>*/15 22-23,0-3 * * 1-5</code> · 最後運行 11-02 00:46 · 下次 11-02 01:00 · 推送 local</div>
   
-  <details><summary>最新輸出（2026-10-30_23-46-41.md）</summary><pre># Cron Job: H Bull Flag intraday scanner
+  <details><summary>最新輸出（2026-11-02_00-46-44.md）</summary><pre># Cron Job: H Bull Flag intraday scanner
 
 **Job ID:** cd2a7058a628
-**Run Time:** 2026-10-30 23:46:41
+**Run Time:** 2026-11-02 00:46:42
 **Mode:** no_agent (script)
 
 ---
 
-🚩 &lt;b&gt;牛旗 突破訊號&lt;/b&gt; (2026-10-30 HKT)
-急漲 + 旗形整理 + 突破上沿 | 掃描 502 隻
+🚩 &lt;b&gt;牛旗 突破訊號&lt;/b&gt; (2026-11-02 HKT)
+急漲 + 旗形整理 + 突破上沿 | 掃描 499 隻
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 
@@ -1034,12 +1030,12 @@ MEDIA:/home/jasonckfan/.hermes/scripts/trading_assistant/logs/mae_mfe_weekly_202
 </article>
 <article class="card ok" data-name="交易輔助_watchlistcurated_監控">
   <div class="card-head"><h3>交易輔助_WatchlistCurated_監控</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>*/30 20-23,0-4 * * 1-5</code> · 最後運行 10-30 23:30 · 下次 11-02 00:00 · 推送 telegram</div>
+  <div class="meta">🕐 <code>*/30 20-23,0-4 * * 1-5</code> · 最後運行 11-02 00:30 · 下次 11-02 01:00 · 推送 telegram</div>
   
-  <details><summary>最新輸出（2026-10-30_23-30-33.md）</summary><pre># Cron Job: 交易輔助_WatchlistCurated_監控
+  <details><summary>最新輸出（2026-11-02_00-30-35.md）</summary><pre># Cron Job: 交易輔助_WatchlistCurated_監控
 
 **Job ID:** 2c537592c42e
-**Run Time:** 2026-10-30 23:30:33
+**Run Time:** 2026-11-02 00:30:34
 **Mode:** no_agent (script)
 
 ---
@@ -1085,38 +1081,38 @@ _警號計數: 1/5_
 
 ⚠️ 僅供參考，不構成投資建議</pre></details>
 </article>
-<article class="card ok" data-name="茄利略cup_新影片監控">
-  <div class="card-head"><h3>茄利略CUP_新影片監控</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>0 */6 * * *</code> · 最後運行 11-01 00:00 · 下次 11-01 06:00 · 推送 telegram</div>
-  
-  <details><summary>最新輸出（2026-11-01_00-00-38.md）</summary><pre># Cron Job: 茄利略CUP_新影片監控
+<article class="card err" data-name="茄利略cup_新影片監控">
+  <div class="card-head"><h3>茄利略CUP_新影片監控</h3><span class="badge err">❌ 出錯</span></div>
+  <div class="meta">🕐 <code>0 */6 * * *</code> · 最後運行 11-02 00:01 · 下次 11-02 06:00 · 推送 telegram</div>
+  <div class="err-msg">⚠️ Restart-safe cron worker dispatch failed: cron external worker exited before ownership acknowledgement (exit 1); worker stderr: &lt;frozen runpy&gt;:130: RuntimeWarning: &#x27;cron.scheduler&#x27; found in sys.modules after import of package &#x27;cron&#x27;, but prior to execution of &#x27;cron.scheduler&#x27;; this may result in unp</div>
+  <details><summary>最新輸出（2026-11-01_18-00-51.md）</summary><pre># Cron Job: 茄利略CUP_新影片監控
 
 **Job ID:** f03d4ac0fb8f
-**Run Time:** 2026-11-01 00:00:36
+**Run Time:** 2026-11-01 18:00:51
 **Mode:** no_agent (script)
 **Status:** silent (empty output)</pre></details>
 </article></div></section><section><h2>🛠️ 系統維護<span class="count">6 個 job</span></h2><div class="grid"><article class="card ok" data-name="投資助理_本地git備份">
   <div class="card-head"><h3>投資助理_本地Git備份</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>15 9 * * *</code> · 最後運行 10-31 09:17 · 下次 11-01 09:15 · 推送 telegram</div>
+  <div class="meta">🕐 <code>15 9 * * *</code> · 最後運行 11-01 09:17 · 下次 11-02 09:15 · 推送 telegram</div>
   
-  <details><summary>最新輸出（2026-10-31_09-17-06.md）</summary><pre># Cron Job: 投資助理_本地Git備份
+  <details><summary>最新輸出（2026-11-01_09-17-06.md）</summary><pre># Cron Job: 投資助理_本地Git備份
 
 **Job ID:** 2480e3dfe54e
-**Run Time:** 2026-10-31 09:17:06
+**Run Time:** 2026-11-01 09:17:06
 **Mode:** no_agent (script)
 
 ---
 
-Investment backup OK: changed=yes remote=failed head=c2900364</pre></details>
+Investment backup OK: changed=yes remote=failed head=a3d6e4c1</pre></details>
 </article>
 <article class="card ok" data-name="cron jobs 自動備份至 gitea">
   <div class="card-head"><h3>Cron Jobs 自動備份至 Gitea</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>0 9 * * *</code> · 最後運行 10-31 09:02 · 下次 11-01 09:00 · 推送 local</div>
+  <div class="meta">🕐 <code>0 9 * * *</code> · 最後運行 11-01 09:02 · 下次 11-02 09:00 · 推送 local</div>
   
-  <details><summary>最新輸出（2026-10-31_09-02-07.md）</summary><pre># Cron Job: Cron Jobs 自動備份至 Gitea
+  <details><summary>最新輸出（2026-11-01_09-02-30.md）</summary><pre># Cron Job: Cron Jobs 自動備份至 Gitea
 
 **Job ID:** 46141cbff660
-**Run Time:** 2026-10-31 09:02:07
+**Run Time:** 2026-11-01 09:02:30
 **Mode:** no_agent (script)
 
 ---
@@ -1156,12 +1152,12 @@ Investment backup OK: changed=yes remote=failed head=c2900364</pre></details>
 </article>
 <article class="card ok" data-name="每日工作報告">
   <div class="card-head"><h3>每日工作報告</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>0 23 * * *</code> · 最後運行 10-31 23:02 · 下次 11-01 23:00 · 推送 origin</div>
+  <div class="meta">🕐 <code>0 23 * * *</code> · 最後運行 11-01 23:04 · 下次 11-02 23:00 · 推送 origin</div>
   
-  <details><summary>最新輸出（2026-10-31_23-02-05.md）</summary><pre># Cron Job: 每日工作報告
+  <details><summary>最新輸出（2026-11-01_23-04-01.md）</summary><pre># Cron Job: 每日工作報告
 
 **Job ID:** 69aaca70973e
-**Run Time:** 2026-10-31 23:02:05
+**Run Time:** 2026-11-01 23:03:59
 **Schedule:** 0 23 * * *
 
 **Prompt Characters:** 38634
@@ -1210,12 +1206,12 @@ Cron job failures have **four layers**, and the wrong fix targets the wrong laye
 </article>
 <article class="card ok" data-name="free model check (6h)">
   <div class="card-head"><h3>Free model check (6h)</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>0 */6 * * *</code> · 最後運行 11-01 00:01 · 下次 11-01 06:00 · 推送 origin</div>
+  <div class="meta">🕐 <code>0 */6 * * *</code> · 最後運行 11-02 00:02 · 下次 11-02 06:00 · 推送 origin</div>
   
-  <details><summary>最新輸出（2026-11-01_00-01-06.md）</summary><pre># Cron Job: Free model check (6h)
+  <details><summary>最新輸出（2026-11-02_00-02-08.md）</summary><pre># Cron Job: Free model check (6h)
 
 **Job ID:** ae614505479b
-**Run Time:** 2026-11-01 00:01:05
+**Run Time:** 2026-11-02 00:02:06
 **Schedule:** 0 */6 * * *
 
 **Prompt Characters:** 12851
@@ -1286,7 +1282,35 @@ metadata:
 免費判定 = **官方 OpenCode Go 計價表的明確清單**（2026-10-21 核實：
 https:</pre></details>
 </article></div></section>
+<section><h2>📊 今日市場分析輸出</h2><details class="report"><summary>📄 bull_flag_20261102.md</summary><pre># Bull Flag 突破訊號 — 2026-11-02
 
+&gt; 掃描時間: 2026-11-02 00:46 HKT
+&gt; 掃描範圍: 499 隻
+&gt; 過濾: 上升趨勢 + Pole ≥ +15.0% + Flag 5-15 日 + 上沿突破 + 量能 1.5x
+
+## Setup 列表
+
+| Ticker | 信心 | 進場 | 止損 | T1 | T2 | R:R | Pole% | Flag 日 | 緊度 | 量能 |
+|--------|------|------|------|------|------|-----|-------|---------|------|------|
+| — | — | — | — | — | — | — | — | — | — | — |
+
+## 策略說明
+
+**Bull Flag** 係 O&#x27;Neil/Weinstein 經典形態:
+- **Pole**: 急漲段, 5-15 日 +15% 或更多
+- **Flag**: 急漲後窄幅整理, 5-15 日, 回撤不超過 Pole 38.2% Fibonacci
+- **突破**: Flag 上沿 + 量能 1.5x = 續勢爆發
+- **量度目標** (Flag pole projection): T1 = entry + Pole 高度
+
+## 風控
+
+- Stop = Flag 低位 × 0.99 (旗下緣失守 = 形態失效)
+- T1 = entry + Pole 高度
+- T2 = entry + 1.5× Pole 高度 (跑長線)
+- R:R 必須 ≥ 1.5, 否則棄置
+
+_由 Hermes bull_flag_scanner 自動生成_
+_不構成投資建議_</pre></details></section>
 </main>
 <footer>資料來源：.240（100.79.111.8）Hermes cron 系統，每日自動同步一次。頁面只載 job 狀態與輸出摘要，已自動遮蔽疑似密鑰／令牌字串；不含持倉檔案與任何憑證。<br>由 Pison 彙整發布 · <a style="color:var(--accent)" href="data.json">data.json</a></footer>
 <script>
