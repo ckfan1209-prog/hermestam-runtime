@@ -43,105 +43,98 @@ footer{color:var(--muted);font-size:12px;max-width:1100px;margin:0 auto;padding:
 </style></head><body>
 <header>
 <h1>🤖 HermesTam Runtime</h1>
-<div class="sub">.240 美股投資 Hermes Agent · 全部 cron job 運行狀態與最新輸出 · 更新：2026-11-06 00:47 HKT</div>
+<div class="sub">.240 美股投資 Hermes Agent · 全部 cron job 運行狀態與最新輸出 · 更新：2026-11-07 00:47 HKT</div>
 <div class="stats">
 <div class="stat"><b>40</b><span>Job 總數</span></div>
 <div class="stat"><b>38</b><span>啟用中</span></div>
-<div class="stat"><b style="color:var(--ok)">37</b><span>最近運行正常</span></div>
-<div class="stat"><b style="color:var(--err)">1</b><span>最近出錯</span></div>
+<div class="stat"><b style="color:var(--ok)">36</b><span>最近運行正常</span></div>
+<div class="stat"><b style="color:var(--err)">2</b><span>最近出錯</span></div>
 </div>
 <input id="search" type="search" placeholder="🔍 搜尋 job 名稱…">
 </header>
 <main>
 <section><h2>📰 市場報告<span class="count">7 個 job</span></h2><div class="grid"><article class="card ok" data-name="美股每日晨報">
   <div class="card-head"><h3>美股每日晨報</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>30 7 * * 2-6</code> · 最後運行 11-05 07:37 · 下次 11-06 07:30 · 推送 telegram</div>
+  <div class="meta">🕐 <code>30 7 * * 2-6</code> · 最後運行 11-06 07:34 · 下次 11-07 07:30 · 推送 telegram</div>
   
-  <details><summary>最新輸出（d740ace88192_20261105_073720.txt）</summary><div class="md"><h4 class="md-h1">📊 美股市場晨報 (US Stock Market Morning Briefing)</h4>
-<p><strong>報告日期</strong>：2026 年 11 月 5 日（週四）<br><strong>參考交易日</strong>：2026 年 11 月 4 日（週三美股收盤）<br><strong>數據來源</strong>：CNBC Quote Cache、Yahoo Finance、WSJ Market Data</p>
+  <details><summary>最新輸出（d740ace88192_20261106_073404.txt）</summary><div class="md"><h4 class="md-h1">📊 美股市場晨報 (US Market Morning Briefing)</h4>
+<p><strong>報告日期</strong>：2026年11月06日（星期五）<br><strong>參考交易日</strong>：2026年11月05日（星期四美股收盤）<br><strong>資料來源</strong>：CNBC Quote Cache / AP / Reuters / Macro Bullseye</p>
 <hr>
-<h5 class="md-h2">一、主要指數表現（前一交易日收盤）</h5>
-<p>美國 2026 年期中選舉結果揭曉，民主黨全面掌控參眾兩院，總統川普表態接受選舉結果並願與新國會合作，化解了市場長期擔憂的法律爭端與政治僵局。美股三大指數與中小型股迎來報復性大漲，道指創下 2025 年 4 月以來最大單日漲幅。</p>
-<div class="tbl-wrap"><table><thead><tr><th style="text-align:left">指數名稱</th><th style="text-align:left">代碼</th><th style="text-align:left">收盤價</th><th style="text-align:left">漲跌點數</th><th style="text-align:left">漲跌幅</th><th style="text-align:left">成交量</th></tr></thead><tbody><tr><td style="text-align:left"><strong>標普 500 指數</strong></td><td style="text-align:left"><code>.SPX</code></td><td style="text-align:left"><strong>7,688.62</strong></td><td style="text-align:left">+119.70</td><td style="text-align:left">🟢 <strong>+1.58%</strong></td><td style="text-align:left">—</td></tr><tr><td style="text-align:left"><strong>道瓊斯工業指數</strong></td><td style="text-align:left"><code>.DJI</code></td><td style="text-align:left"><strong>53,356.12</strong></td><td style="text-align:left">+1,569.40</td><td style="text-align:left">🟢 <strong>+3.03%</strong></td><td style="text-align:left">712.5M</td></tr><tr><td style="text-align:left"><strong>納斯達克綜合指數</strong></td><td style="text-align:left"><code>.IXIC</code></td><td style="text-align:left"><strong>25,736.51</strong></td><td style="text-align:left">+364.50</td><td style="text-align:left">🟢 <strong>+1.44%</strong></td><td style="text-align:left">1.99B</td></tr><tr><td style="text-align:left"><strong>羅素 2000 指數</strong></td><td style="text-align:left"><code>.RUT</code></td><td style="text-align:left"><strong>2,856.95</strong></td><td style="text-align:left">+44.50</td><td style="text-align:left">🟢 <strong>+1.58%</strong></td><td style="text-align:left">—</td></tr></tbody></table></div>
+<h5 class="md-h2">一、主要指數表現（前一交易日）</h5>
+<p>週四美股遭遇強烈拋售，受期中選舉後政策預期轉變及 AI 數據中心擴建放緩疑慮衝擊，四大指數全線大幅重挫，標普 500 創下 2025 年 4 月關稅衝擊以來最大單日跌幅，那斯達克指數正式跌入修正區間（自高點回撤逾 10%）。</p>
+<div class="tbl-wrap"><table><thead><tr><th style="text-align:left">指數名稱</th><th style="text-align:center">收盤價</th><th style="text-align:center">漲跌點數</th><th style="text-align:center">漲跌幅</th><th style="text-align:center">成交量</th><th style="text-align:center">狀態評估</th></tr></thead><tbody><tr><td style="text-align:left"><strong>標普 500 指數 (<code>.SPX</code>)</strong></td><td style="text-align:center">7,353.73</td><td style="text-align:center">-334.89</td><td style="text-align:center">🔴 -4.36%</td><td style="text-align:center">—</td><td style="text-align:center">創 19 個月來最大單日跌幅</td></tr><tr><td style="text-align:left"><strong>納斯達克綜合指數 (<code>.IXIC</code>)</strong></td><td style="text-align:center">24,315.00</td><td style="text-align:center">-1,421.52</td><td style="text-align:center">🔴 -5.52%</td><td style="text-align:center">2.43B</td><td style="text-align:center">進入技術性修正區間</td></tr><tr><td style="text-align:left"><strong>道瓊斯工業指數 (<code>.DJI</code>)</strong></td><td style="text-align:center">51,523.06</td><td style="text-align:center">-1,833.06</td><td style="text-align:center">🔴 -3.44%</td><td style="text-align:center">854.8M</td><td style="text-align:center">抹平週三選後全部漲幅</td></tr><tr><td style="text-align:left"><strong>羅素 2000 指數 (<code>.RUT</code>)</strong></td><td style="text-align:center">2,729.89</td><td style="text-align:center">-127.06</td><td style="text-align:center">🔴 -4.45%</td><td style="text-align:center">—</td><td style="text-align:center">中小型股同步遭流動性拋售</td></tr></tbody></table></div>
 <hr>
 <h5 class="md-h2">二、市場情緒指標</h5>
-<ul><li><strong>VIX 恐慌指數</strong>：<strong>16.61</strong>（單日大跌 <strong>-4.22</strong>，跌幅 <strong>-20.26%</strong>）</li><li><strong>52 週區間</strong>：13.38 — 35.30</li><li><strong>市場整體情緒評估</strong>：🟡 <strong>中性偏樂觀 (Neutral to Greed)</strong><ul><li>選舉日前投資人對大選爭議的避險溢價迅速蒸發，恐慌指數自 20 以上的偏謹慎水位重挫回歸至 16.61，反映極端風險警報解除，資金回流風險資產。</li></ul></li></ul>
+<ul><li><strong>VIX 恐慌指數</strong>：<strong>28.18</strong>（單日飆升 <strong>+11.57</strong> 點，漲幅 <strong>+69.66%</strong>）</li><li><strong>52 週區間</strong>：13.38 — 35.30</li><li><strong>市場整體情緒評估</strong>：🔴 <strong>恐懼 (Fear) / 避險情緒急遽升溫</strong>  </li></ul>
+<p><em>解讀</em>：VIX 單日暴漲近 70%，創下 2025 年 4 月以來最大單日跳升幅度，直接突破 25 警戒線衝向 30 大關，反映期權市場對短期下行風險的對沖保護需求呈井噴式爆發。</p>
 <hr>
 <h5 class="md-h2">三、板塊表現 (GICS Sector ETFs)</h5>
-<p>美股板塊呈現顯著的<strong>結構性輪動</strong>：資金大舉湧入受惠於分裂政府預期與生活成本扶助政策的消費零售、金融板塊；而受油價重挫與中東局勢降溫預期的影響，能源股大幅承壓；科技板塊則因 AI 監管審查擔憂而表現落後。</p>
-<h6 class="md-h3">🟢 漲幅前 3 大板塊</h6>
-<ol><li><strong>非必需消費 (Consumer Discretionary - XLY)</strong>：<strong>122.33</strong>（+5.00，<strong>+4.26%</strong>）</li><li><strong>金融 (Financials - XLF)</strong>：<strong>59.20</strong>（+2.01，<strong>+3.51%</strong>）</li><li><strong>通訊服務 (Communication Services - XLC)</strong>：<strong>104.96</strong>（+3.52，<strong>+3.47%</strong>）</li></ol>
-<h6 class="md-h3">🔴 跌幅前 3 大板塊</h6>
-<ol><li><strong>能源 (Energy - XLE)</strong>：<strong>63.52</strong>（-3.16，<strong>-4.74%</strong>）</li><li><strong>工業 (Industrials - XLI)</strong>：<strong>169.46</strong>（-1.86，<strong>-1.09%</strong>）</li><li><strong>科技 (Technology - XLK)</strong>：<strong>176.50</strong>（-0.01，<strong>-0.01%</strong>）</li></ol>
+<p>標普 500 十一個板塊<strong>全軍覆沒</strong>，呈現典型的「極端防禦輪動與科技拋售」特徵：資金大舉撤離高估值成長股與景氣循環股，湧向防禦性板塊避險。</p>
+<h6 class="md-h3">🟢 相對抗跌前 3 名（跌幅最小）</h6>
+<ol><li><strong>通訊服務 (<code>XLC</code>)</strong>：104.34 | -0.62 (<strong>-0.59%</strong>)</li><li><strong>公用事業 (<code>XLU</code>)</strong>：43.30 | -0.31 (<strong>-0.71%</strong>)</li><li><strong>必需消費 (<code>XLP</code>)</strong>：91.25 | -0.69 (<strong>-0.75%</strong>)</li></ol>
+<h6 class="md-h3">🔴 跌幅最大前 3 名</h6>
+<ol><li><strong>科技板塊 (<code>XLK</code>)</strong>：162.38 | -14.12 (<strong>-8.00%</strong>) — <em>創 2020 年 3 月以來最慘單日表現</em></li><li><strong>工業板塊 (<code>XLI</code>)</strong>：162.47 | -6.99 (<strong>-4.12%</strong>)</li><li><strong>非必需消費 (<code>XLY</code>)</strong>：117.64 | -4.69 (<strong>-3.83%</strong>)</li></ol>
 <hr>
 <h5 class="md-h2">四、個股亮點</h5>
-<h6 class="md-h3">🚀 大型股漲幅前 5</h6>
-<ul><li><strong>微軟 (MSFT)</strong>：$555.80（+34.81，<strong>+6.68%</strong>）— 軟體及雲端巨頭領銜反彈。</li><li><strong>家得寶 (HD)</strong>：$355.44（+21.78，<strong>+6.53%</strong>）— 地產與家居消費買氣回升。</li><li><strong>麥當勞 (MCD)</strong>：$280.22（+17.18，<strong>+6.53%</strong>）— 必需/平價消費防禦與現金流獲青睞。</li><li><strong>亞馬遜 (AMZN)</strong>：$266.03（+15.34，<strong>+6.12%</strong>）— 零售與 AWS 雙輪驅動。</li><li><strong>雅培 (ABT)</strong>：$115.51（+6.11，<strong>+5.59%</strong>）— 醫療保健龍頭大幅補漲。</li></ul>
-<h6 class="md-h3">📉 大型股跌幅前 5</h6>
-<ul><li><strong>卡特彼勒 (CAT)</strong>：$591.30（-32.64，<strong>-5.23%</strong>）— 工業機械受基礎建設計畫預期調整承壓。</li><li><strong>埃克森美孚 (XOM)</strong>：$169.27（-8.19，<strong>-4.62%</strong>）— 國際油價重挫引發重度拋售。</li><li><strong>英特爾 (INTC)</strong>：$58.27（-2.28，<strong>-3.77%</strong>）— 晶片補助與資本支出前景重估。</li><li><strong>雪佛龍 (CVX)</strong>：$216.96（-8.31，<strong>-3.69%</strong>）— 跟隨能源板塊集體回調。</li><li><strong>特斯拉 (TSLA)</strong>：$385.19（-13.31，<strong>-3.34%</strong>）— 政治關聯題材退潮，面臨國會審查擔憂。</li></ul>
-<h6 class="md-h3">⚠️ 成交量異常與焦點標的</h6>
-<ul><li><strong>特朗普媒體 (DJT)</strong>：暴跌 <strong>-24.5%</strong>，成交量爆出數倍均量，選情利空重創川普概念股。</li><li><strong>英偉達 (NVDA)</strong>：下跌 <strong>-3.2%</strong>，作為 S&amp;P 500 權重股拖累大盤科技股表現；德州州長由反對無序擴建數據中心的民主黨人勝出，引發 AI 數據中心擴建速度與能耗監管的擔憂。</li><li><strong>CoreWeave</strong>：重挫 <strong>-9.9%</strong>，AI 雲端算力板塊遭遇獲利了結與政策審查預期。</li><li><strong>零售族群 (Walmart, Dollar Tree)</strong>：Dollar Tree 暴漲 <strong>+9.6%</strong>，沃爾瑪漲逾 <strong>+3%</strong>，受惠於新國會可能轉向平抑生活成本政策，平價消費鏈量能大增。</li></ul>
+<p>大型科技「七巨頭 (Magnificent Seven)」單日市值蒸發逾 <strong>1 兆美元</strong>，半導體板塊（SOX 費半指數暴跌逾 12%）成為拋售重災區。</p>
+<div class="tbl-wrap"><table><thead><tr><th style="text-align:left">股票代號</th><th style="text-align:left">公司名稱</th><th style="text-align:center">收盤價</th><th style="text-align:center">漲跌幅</th><th style="text-align:left">成交量 / 異常觀察</th></tr></thead><tbody><tr><td style="text-align:left"><strong>COST</strong></td><td style="text-align:left">Costco Wholesale</td><td style="text-align:center">$1,065.59</td><td style="text-align:center">🟢 <strong>+1.83%</strong></td><td style="text-align:left">防禦型零售龍頭逆市抗跌</td></tr><tr><td style="text-align:left"><strong>PEP</strong></td><td style="text-align:left">PepsiCo</td><td style="text-align:center">$142.71</td><td style="text-align:center">🟢 <strong>+0.20%</strong></td><td style="text-align:left">必需消費品資金避風港</td></tr><tr><td style="text-align:left"><strong>AMD</strong></td><td style="text-align:left">Advanced Micro Devices</td><td style="text-align:center">$404.40</td><td style="text-align:center">🔴 <strong>-17.26%</strong></td><td style="text-align:left">⭐ <strong>異常爆量</strong>：AI 數據中心支出疑慮引發拋售</td></tr><tr><td style="text-align:left"><strong>TXN</strong></td><td style="text-align:left">Texas Instruments</td><td style="text-align:center">$278.15</td><td style="text-align:center">🔴 <strong>-10.70%</strong></td><td style="text-align:left">類比晶片與工業需求承壓</td></tr><tr><td style="text-align:left"><strong>TSLA</strong></td><td style="text-align:left">Tesla</td><td style="text-align:center">$343.69</td><td style="text-align:center">🔴 <strong>-10.77%</strong></td><td style="text-align:left">高 Beta 與政治預期逆轉雙重打擊</td></tr><tr><td style="text-align:left"><strong>AVGO</strong></td><td style="text-align:left">Broadcom</td><td style="text-align:center">$291.53</td><td style="text-align:center">🔴 <strong>-10.43%</strong></td><td style="text-align:left">網通與 AI ASIC 晶片全面回調</td></tr><tr><td style="text-align:left"><strong>INTC</strong></td><td style="text-align:left">Intel</td><td style="text-align:center">$52.25</td><td style="text-align:center">🔴 <strong>-10.33%</strong></td><td style="text-align:left">晶圓代工與伺服器展望受壓</td></tr><tr><td style="text-align:left"><strong>NVDA</strong></td><td style="text-align:left">Nvidia</td><td style="text-align:center">—</td><td style="text-align:center">🔴 <strong>-9.30%</strong></td><td style="text-align:left">⭐ <strong>市值單日蒸發逾 4,400 億美元</strong>，年初至今轉跌 -2.6%</td></tr><tr><td style="text-align:left"><strong>XLK</strong></td><td style="text-align:left">科技精選 ETF</td><td style="text-align:center">$162.38</td><td style="text-align:center">🔴 <strong>-8.00%</strong></td><td style="text-align:left">⭐ <strong>巨量異常</strong>：成交量逾 3,300 萬股，達 30 日均量 3 倍以上</td></tr></tbody></table></div>
 <hr>
 <h5 class="md-h2">五、宏觀因素</h5>
-<p>債券殖利率全線走低，主要因油價大跌直接壓制通膨預期，且兩黨分治的國會通常有利於遏制聯邦財政赤字的失控擴張。</p>
-<div class="tbl-wrap"><table><thead><tr><th style="text-align:left">宏觀指標</th><th style="text-align:left">代碼</th><th style="text-align:left">最新數值</th><th style="text-align:left">日變動</th><th style="text-align:left">關鍵觀察</th></tr></thead><tbody><tr><td style="text-align:left"><strong>10年期美債殖利率</strong></td><td style="text-align:left"><code>.TNX</code></td><td style="text-align:left"><strong>4.894%</strong></td><td style="text-align:left">🔴 <strong>-5.8 bps</strong></td><td style="text-align:left">油價下挫緩解通脹壓力，國債價格反彈</td></tr><tr><td style="text-align:left"><strong>5年期美債殖利率</strong></td><td style="text-align:left"><code>.FVX</code></td><td style="text-align:left"><strong>4.689%</strong></td><td style="text-align:left">🔴 <strong>-5.4 bps</strong></td><td style="text-align:left">中期利率回落，支撐中小企業估值</td></tr><tr><td style="text-align:left"><strong>30年期美債殖利率</strong></td><td style="text-align:left"><code>.TYX</code></td><td style="text-align:left"><strong>5.282%</strong></td><td style="text-align:left">🔴 <strong>-4.2 bps</strong></td><td style="text-align:left">長端債券供給壓力預期邊際緩解</td></tr><tr><td style="text-align:left"><strong>美元指數 (DXY)</strong></td><td style="text-align:left"><code>.DXY</code></td><td style="text-align:left"><strong>101.57</strong></td><td style="text-align:left">🟢 <strong>+0.00</strong></td><td style="text-align:left">避險買盤撤出，非美貨幣普遍回穩</td></tr><tr><td style="text-align:left"><strong>WTI 原油期貨</strong></td><td style="text-align:left"><code>@CL.1</code></td><td style="text-align:left"><strong>88.18 美元/桶</strong></td><td style="text-align:left">🟢 <strong>+0.06</strong></td><td style="text-align:left">日內曾重挫逾 8% 觸及兩個月低點；布蘭特跌破 $95</td></tr><tr><td style="text-align:left"><strong>COMEX 黃金期貨</strong></td><td style="text-align:left"><code>@GC.1</code></td><td style="text-align:left"><strong>4,072.10 美元/盎司</strong></td><td style="text-align:left">🔴 <strong>-0.90</strong></td><td style="text-align:left">避險需求降溫，維持四千美元高位震盪</td></tr><tr><td style="text-align:left"><strong>COMEX 白銀期貨</strong></td><td style="text-align:left"><code>@SI.1</code></td><td style="text-align:left"><strong>52.39 美元/盎司</strong></td><td style="text-align:left">🟢 <strong>+0.11</strong></td><td style="text-align:left">貴金屬整體高位盤整</td></tr><tr><td style="text-align:left"><strong>比特幣 (CME)</strong></td><td style="text-align:left"><code>@BTC.1</code></td><td style="text-align:left"><strong>80,720.00 美元</strong></td><td style="text-align:left">🟢 <strong>+385.00</strong></td><td style="text-align:left">風險偏好回溫，站穩 8 萬美元關口</td></tr></tbody></table></div>
+<p>避險資金湧入長天期美債推動殖利率自高位回落；原油在地緣與前期大跌後小幅反彈。</p>
+<div class="tbl-wrap"><table><thead><tr><th style="text-align:left">指標項目</th><th style="text-align:center">最新收盤</th><th style="text-align:center">變動幅度</th><th style="text-align:left">宏觀解讀</th></tr></thead><tbody><tr><td style="text-align:left"><strong>10年期美債殖利率 (<code>.TNX</code>)</strong></td><td style="text-align:center"><strong>4.837%</strong></td><td style="text-align:center">🔴 -5.7 bps</td><td style="text-align:left">股市重挫引發債券避險買盤，殖利率微幅降溫</td></tr><tr><td style="text-align:left"><strong>5年期美債殖利率 (<code>.FVX</code>)</strong></td><td style="text-align:center"><strong>4.608%</strong></td><td style="text-align:center">🔴 -8.1 bps</td><td style="text-align:left">反映市場對短期經濟降溫及降息預期的重新定價</td></tr><tr><td style="text-align:left"><strong>30年期美債殖利率 (<code>.TYX</code>)</strong></td><td style="text-align:center"><strong>5.251%</strong></td><td style="text-align:center">🔴 -3.1 bps</td><td style="text-align:left">長端殖利率仍居高位，融資成本壓力未減</td></tr><tr><td style="text-align:left"><strong>美元指數 (<code>.DXY</code>)</strong></td><td style="text-align:center"><strong>101.55</strong></td><td style="text-align:center">🟢 +0.00</td><td style="text-align:left">高位窄幅整理，避險需求支撐美元強勢</td></tr><tr><td style="text-align:left"><strong>WTI 原油期貨 (<code>@CL.1</code>)</strong></td><td style="text-align:center"><strong>$91.35/桶</strong></td><td style="text-align:center">🟢 +$0.83 (+0.92%)</td><td style="text-align:left">中東地緣局勢仍緊繃，前期大跌後技術性回抽</td></tr><tr><td style="text-align:left"><strong>紐約期金 (<code>@GC.1</code>)</strong></td><td style="text-align:center"><strong>$4,084.30/盎司</strong></td><td style="text-align:center">🔴 -$29.20 (-0.71%)</td><td style="text-align:left">股市流動性擠壓引發部分黃金獲利平倉</td></tr><tr><td style="text-align:left"><strong>比特幣 CME (<code>@BTC.1</code>)</strong></td><td style="text-align:center"><strong>$75,770</strong></td><td style="text-align:center">🔴 -$480 (-0.63%)</td><td style="text-align:left">風險偏好受挫，高位轉入防守震盪</td></tr></tbody></table></div>
 <hr>
 <h5 class="md-h2">六、市場要聞摘要</h5>
-<ol><li><strong>美國期中選舉民主黨橫掃兩院，川普表態承認結果</strong>  </li></ol>
-<p>民主黨奪回參眾兩院控制權，川普總統公開表示接受選舉結果並願與反對黨合作。華爾街原本高度擔憂的曠日持久法律戰與選舉舞弊訴訟疑慮瞬間消除，市場迎來「消除不確定性」的大幅反彈。</p>
-<ol><li><strong>國際油價重挫逾 8%，中東戰局政策轉向預期升溫</strong>  </li></ol>
-<p>副總統萬斯直言伊朗戰事推高油價是共和黨敗選關鍵。市場預期新任民主黨國會將嚴格限制政府未經授權的軍事行動，推動中東局勢降溫，WTI 原油重挫至每桶 88 美元。</p>
-<ol><li><strong>AI 與數據中心面臨新一輪監管壓力</strong>  </li></ol>
-<p>民主黨選民傾向對人工智慧與大型數據中心加強監管。德州由呼籲限制電力消耗與數據中心建設的民主黨人贏得州長，引發英偉達 (-3.2%)、CoreWeave (-9.9%) 等算力股承壓回調。</p>
-<ol><li><strong>道指飆漲逾 1,560 點，防禦與內需消費股大放異彩</strong>  </li></ol>
-<p>歷史數據顯示美股在期中選舉後普遍走強，傳統價值股、醫療醫院（如 HCA 飆升 +10.3%）及低收入消費零售股全線走揚。</p>
-<ol><li><strong>盤後重要財報動態</strong>  </li></ol>
-<p>晶片巨頭高通 (Qualcomm) 盤後公布業績雖超預期，但因部分業務前景保守盤後下挫 -6.5%；AI 廣告技術商 AppLovin (APP) 業績與指引大幅優於預期，盤後狂飆近 +24%。</p>
+<ol><li><strong>AI 資本開支與監管隱憂引爆拋售潮</strong>：美國期中選舉民主黨取得關鍵勝利後，市場開始重新評估高能耗 AI 數據中心的建設審批風險及潛在政策收緊，引發華爾街對科技巨頭龐大資本支出能否如期變現的深度焦慮。</li><li><strong>科技「七巨頭」蒸發兆元，費半崩跌逾 12%</strong>：晶片股遭遇歷史級別重挫，AMD 暴跌 17.3%、Nvidia 下跌 9.3%、美光跌 17%，那斯達克跌入修正區間，市場多頭情緒遭遇重創。</li><li><strong>市場寬度極度惡化</strong>：紐約證券交易所（NYSE）下跌與上漲家數比逼近 6:1；標普 500 指數中超過 61% 的成份股自 52 週高點回撤逾 10%，顯示拋售潮已從 AI 核心擴散至廣泛領域。</li><li><strong>降息預期與政治格局重整</strong>：期中選舉打破單一政黨全面控制預期，國債上限僵局與財政政策不確定性重回投資人視野，利率期貨交易員將後續降息押注時點推遲。</li></ol>
 <hr>
 <h5 class="md-h2">七、技術面簡評</h5>
-<p>主要指數在突破關鍵短線壓力後全線轉強，大選前壓抑的買盤集中釋放。</p>
-<div class="tbl-wrap"><table><thead><tr><th style="text-align:left">指數名稱</th><th style="text-align:left">收盤價</th><th style="text-align:left">短期趨勢</th><th style="text-align:left">關鍵支撐位</th><th style="text-align:left">關鍵阻力位</th><th style="text-align:left">技術評估</th></tr></thead><tbody><tr><td style="text-align:left"><strong>標普 500</strong></td><td style="text-align:left"><strong>7,688.62</strong></td><td style="text-align:left">🟢 <strong>強勢</strong></td><td style="text-align:left">7,560 / 7,480</td><td style="text-align:left">7,75</td><td style="text-align:left"></td></tr></tbody></table></div><p class="trunc">…（上為節錄）</p></div></details>
+<p>主要指數短線形態遭受結構性破壞，多數均線失守，短線進入高波動修復階段。</p>
+<h6 class="md-h3">1. 標普 500 指數 (<code>.SPX</code>) — 🔴 <strong>短線轉弱 (Correction Mode)</strong></h6>
+<ul><li><strong>最新收盤</strong>：7,353.73（距 52 週高點 7,844.52 回撤 <strong>-6.26%</strong>）</li><li><strong>關鍵支撐位</strong>：<strong>7,300</strong>（短線整數關口）/ <strong>7,150</strong>（波段重要頸線）</li><li><strong>關鍵阻力位</strong>：<strong>7,500</strong>（整數心理位，原支撐轉壓力）/ <strong>7,688</strong>（跳空缺口上緣）</li><li><strong>趨勢判斷</strong>：長黑棒跌破多道短期均線，需觀察 7,300 整數關口能否止跌築底。</li></ul>
+<h6 class="md-h3">2. 納斯達克綜合指數 (<code>.IXIC</code>) — 🔴 <strong>弱勢（正式落入技術性修正）</strong></h6>
+<ul><li><strong>最新收盤</strong>：24,315.00（距 52 週高點 27,722.75 回撤 <strong>-12.29%</strong>）</li><li><strong>關鍵支撐位</strong>：<strong>24,000</strong>（重大整數防線）/ <strong>23,500</strong></li><li><strong>關鍵阻力位</strong>：<strong>25,000</strong> / <strong>25,736</strong></li><li><strong>趨勢判斷</strong>：科技權值股集體破位，短期需等待 VIX 回落與量能萎縮以確認賣壓耗竭。</li></ul>
+<h6 class="md-h3">3. 道瓊斯工業指數 (<code>.DJI</code>) — 🔴 <strong>偏弱</strong></h6>
+<ul><li><strong>最新收盤</strong>：51,523.06（距 52 週高點 54,744.33 回撤 <strong>-5.88%</strong>）</li><li><strong>關鍵支撐位</strong>：<strong>51,000</strong> / <strong>50,000</strong> 大關</li><li><strong>關鍵阻力位</strong>：<strong>52,500</strong> / **53,350</li></ul><p class="trunc">…（上為節錄）</p></div></details>
 </article>
 <article class="card ok" data-name="美股科技股新聞推送">
   <div class="card-head"><h3>美股科技股新聞推送</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>0 */2 * * *</code> · 最後運行 11-06 00:00 · 下次 11-06 02:00 · 推送 telegram</div>
+  <div class="meta">🕐 <code>0 */2 * * *</code> · 最後運行 11-07 00:00 · 下次 11-07 02:00 · 推送 telegram</div>
   
-  <details><summary>最新輸出（2026-11-06_00-00-45.md）</summary><div class="md"><p>🚀 美股科技股投資新聞推送系統 (完整中文版)<br>⏰ 執行時間: 2026-11-06 00:00:38</p>
+  <details><summary>最新輸出（2026-11-07_00-00-29.md）</summary><div class="md"><p>🚀 美股科技股投資新聞推送系統 (完整中文版)<br>⏰ 執行時間: 2026-11-07 00:00:28</p>
 <hr>
 <p>✅ 已從本地配置載入 API Keys (default model=gemini-3.8-flash-high, temp=0.3)<br>Available models: GLM-5.3-flash, gemini-3.8-flash-high<br>Per-task models: translation=gemini-3.8-flash-high, portfolio_analysis=gemini-3.8-flash-high<br>🌙 靜音時段, 跳過 (HKT 23-06, 現在 0:00)</p>
 <p>📭 沒有找到符合條件的新聞</p></div></details>
 </article>
 <article class="card ok" data-name="動能股技術指標日報">
   <div class="card-head"><h3>動能股技術指標日報</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>0 8 * * 2-6</code> · 最後運行 11-05 08:00 · 下次 11-06 08:00 · 推送 telegram</div>
+  <div class="meta">🕐 <code>0 8 * * 2-6</code> · 最後運行 11-06 08:00 · 下次 11-07 08:00 · 推送 telegram</div>
   
-  <details><summary>最新輸出（2026-11-05_08-00-34.md）</summary><div class="md"><p>🎯 <strong>動能股技術指標 (Daily)</strong><br>_2026-11-05 08:00 HKT_</p>
-<p><strong>NVDA</strong> — $200.13<br>📈 趨勢: 🔴 下跌趨勢<br>📊 10DMA $209.97 | 20DMA $216.12 | 50DMA $221.20 | 200DMA $204.67<br>📏 50DMA 偏離 -9.5% | ATR 3.3%/日 | RSI 35<br>🎯 距 52週高位 $243.37 (-17.8%)<br>⚠️ 警號: 🔴 短線破位 (跌穿 10DMA &amp; 10&lt;20)<br>🛑 短線阻力: $203.67 (+1.8%)<br>─────────────────────────<br><strong>TSLA</strong> — $385.19<br>📈 趨勢: 🟡 趨勢分歧<br>📊 10DMA $394.07 | 20DMA $383.21 | 50DMA $372.11 | 200DMA $384.76<br>📏 50DMA 偏離 +3.5% | ATR 4.1%/日 | RSI 60<br>🎯 距 52週高位 $498.83 (-22.8%)<br>⚠️ 警號: 🟢 短線強勢 (10&gt;20DMA)<br>🛑 建議止損: $382.25 (-0.8%)<br>─────────────────────────<br><strong>SOXL</strong> — $66.68<br>📈 趨勢: 🔴 下跌趨勢<br>📊 10DMA $85.20 | 20DMA $100.06 | 50DMA $118.28 | 200DMA $124.40<br>📏 50DMA 偏離 -43.6% | ATR 19.3%/日 | RSI 33<br>🎯 距 52週高位 $302.00 (-77.9%)<br>⚠️ 警號: 🔴 短線破位 (跌穿 10DMA &amp; 10&lt;20)<br>🛑 短線阻力: $82.64 (+23.9%)<br>─────────────────────────<br><strong>AMD</strong> — $488.78<br>📈 趨勢: 🟡 趨勢分歧<br>📊 10DMA $520.54 | 20DMA $546.06 | 50DMA $548.90 | 200DMA $414.23<br>📏 50DMA 偏離 -11.0% | ATR 6.6%/日 | RSI 38<br>🎯 距 52週高位 $658.52 (-25.8%)<br>⚠️ 警號: 🔴 短線破位 (跌穿 10DMA &amp; 10&lt;20)<br>🛑 短線阻力: $504.93 (+3.3%)<br>─────────────────────────<br><strong>QQQ</strong> — $691.95<br>📈 趨勢: 🟡 趨勢分歧<br>📊 10DMA $703.21 | 20DMA $717.42 | 50DMA $723.56 | 200DMA $680.56<br>📏 50DMA 偏離 -4.4% | ATR 2.1%/日 | RSI 36<br>🎯 距 52週高位 $762.86 (-9.3%)<br>⚠️ 警號: 🔴 短線破位 (跌穿 10DMA &amp; 10&lt;20)<br>🛑 建議止損: $682.11 (-1.4%)<br>─────────────────────────</p>
+  <details><summary>最新輸出（2026-11-06_08-00-28.md）</summary><div class="md"><p>🎯 <strong>動能股技術指標 (Daily)</strong><br>_2026-11-06 08:00 HKT_</p>
+<p><strong>NVDA</strong> — $181.60<br>📈 趨勢: 🔴 下跌趨勢<br>📊 10DMA $206.91 | 20DMA $213.68 | 50DMA $220.64 | 200DMA $204.66<br>📏 50DMA 偏離 -17.7% | ATR 4.1%/日 | RSI 28<br>🎯 距 52週高位 $243.37 (-25.4%)<br>⚠️ 警號: 💡 RSI 超賣 (&lt;30) 反彈機會; 🔴 短線破位 (跌穿 10DMA &amp; 10&lt;20)<br>🛑 短線阻力: $200.70 (+10.5%)<br>─────────────────────────<br><strong>TSLA</strong> — $343.69<br>📈 趨勢: 🔴 下跌趨勢<br>📊 10DMA $390.98 | 20DMA $381.65 | 50DMA $372.07 | 200DMA $384.32<br>📏 50DMA 偏離 -7.6% | ATR 5.1%/日 | RSI 46<br>🎯 距 52週高位 $498.83 (-31.1%)<br>🛑 短線阻力: $379.25 (+10.3%)<br>─────────────────────────<br><strong>SOXL</strong> — $40.87<br>📈 趨勢: 🔴 下跌趨勢<br>📊 10DMA $81.08 | 20DMA $94.98 | 50DMA $116.76 | 200DMA $124.29<br>📏 50DMA 偏離 -65.0% | ATR 33.7%/日 | RSI 30<br>🎯 距 52週高位 $302.00 (-86.5%)<br>⚠️ 警號: 🔴 短線破位 (跌穿 10DMA &amp; 10&lt;20)<br>🛑 短線阻力: $78.64 (+92.4%)<br>─────────────────────────<br><strong>AMD</strong> — $404.40<br>📈 趨勢: 🔴 下跌趨勢<br>📊 10DMA $510.19 | 20DMA $535.25 | 50DMA $547.37 | 200DMA $415.00<br>📏 50DMA 偏離 -26.1% | ATR 8.9%/日 | RSI 33<br>🎯 距 52週高位 $658.52 (-38.6%)<br>⚠️ 警號: 🔴 短線破位 (跌穿 10DMA &amp; 10&lt;20)<br>🛑 短線阻力: $494.89 (+22.4%)<br>─────────────────────────<br><strong>QQQ</strong> — $647.05<br>📈 趨勢: 🔴 下跌趨勢<br>📊 10DMA $697.47 | 20DMA $712.40 | 50DMA $722.27 | 200DMA $680.71<br>📏 50DMA 偏離 -10.4% | ATR 2.5%/日 | RSI 30<br>🎯 距 52週高位 $762.86 (-15.2%)<br>⚠️ 警號: 🔴 短線破位 (跌穿 10DMA &amp; 10&lt;20)<br>🛑 短線阻力: $676.54 (+4.6%)<br>─────────────────────────</p>
 <p>⚠️ 僅供參考，不構成投資建議<br>💡 框架: 茄利略 CUP (@KelileoCUP) Hard Penny Market 識別法</p></div></details>
 </article>
 <article class="card ok" data-name="美股開市前簡報">
   <div class="card-head"><h3>美股開市前簡報</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>0 21 * * 1-5</code> · 最後運行 11-05 21:00 · 下次 11-06 21:00 · 推送 telegram</div>
+  <div class="meta">🕐 <code>0 21 * * 1-5</code> · 最後運行 11-06 21:00 · 下次 11-09 21:00 · 推送 telegram</div>
   
-  <details><summary>最新輸出（2026-11-05_21-00-34.md）</summary><div class="md"><p>🌅 <strong>美股開市前簡報</strong> (2026-11-05 21:00 HKT)</p>
+  <details><summary>最新輸出（2026-11-06_21-00-32.md）</summary><div class="md"><p>🌅 <strong>美股開市前簡報</strong> (2026-11-06 21:00 HKT)</p>
 <h5 class="md-h2">🌏 隔夜全球市場</h5>
-<ul><li>日經 225: 61,077.90 (-1.79%) 🔴</li><li>恒指: 24,796.98 (+5.40%) 🟢🚀</li><li>歐洲 STOXX 50: 6,293.03 (+0.44%) ⚪</li><li>VIX 波幅: 16.99 (-18.43%) 🔴⚠️</li><li>10Y 美債息率: 4.89 (-1.17%) 🔴</li><li>美元指數 DXY: 101.60 (+0.03%) ⚪</li></ul>
+<ul><li>日經 225: 57,434.77 (-5.96%) 🔴⚠️</li><li>恒指: 24,481.86 (+2.35%) 🟢🚀</li><li>歐洲 STOXX 50: 6,138.30 (-1.50%) 🔴</li><li>VIX 波幅: 27.12 (-3.76%) 🔴⚠️</li><li>10Y 美債息率: 4.84 (-1.16%) 🔴</li><li>美元指數 DXY: 102.04 (+0.48%) ⚪</li></ul>
 <h5 class="md-h2">📊 美股期貨指示</h5>
-<ul><li>S&amp;P 500 期貨: 7,726.00 (+0.07%) ⚪</li><li>Nasdaq 100 期貨: 28,315.50 (-0.88%) 🔴</li><li>道指期貨: 53,833.00 (+0.62%) 🟢</li></ul>
+<ul><li>S&amp;P 500 期貨: 7,390.75 (+0.10%) ⚪</li><li>Nasdaq 100 期貨: 27,115.00 (+1.36%) 🟢</li><li>道指期貨: 51,091.00 (-1.02%) 🔴</li></ul>
 <h5 class="md-h2">🚀 大型科技股盤前</h5>
-<ul><li>NVDA: $196.77 (-4.80%) 🔴⚠️</li><li>TSLA: $376.33 (-5.56%) 🔴⚠️</li><li>AMD: $465.90 (-3.72%) 🔴⚠️</li><li>MSFT: $557.26 (+6.96%) 🟢🚀</li><li>META: $636.20 (+2.44%) 🟢🚀</li><li>GOOGL: $292.38 (+4.41%) 🟢🚀</li><li>AAPL: $353.72 (+6.57%) 🟢🚀</li><li>QQQ: $686.15 (+0.13%) ⚪</li><li>SOXL: $59.00 (-19.31%) 🔴⚠️</li></ul>
+<ul><li>NVDA: $189.04 (-5.54%) 🔴⚠️</li><li>TSLA: $349.50 (-9.27%) 🔴⚠️</li><li>AMD: $436.53 (-10.69%) 🔴⚠️</li><li>MSFT: $531.00 (-4.46%) 🔴⚠️</li><li>META: $604.00 (-4.13%) 🔴⚠️</li><li>GOOGL: $281.56 (-2.55%) 🔴⚠️</li><li>AAPL: $340.00 (-2.72%) 🔴⚠️</li><li>QQQ: $657.02 (-5.05%) 🔴⚠️</li><li>SOXL: $47.89 (-28.18%) 🔴⚠️</li></ul>
 <p>[持倉章節已於公開版遮蔽]</p>
 <h6 class="md-h3">🚨 立即注意</h6>
-<ul><li><strong>TQQQ</strong> 已接近止損位 $72.70 (現價 $60.68)</li></ul>
+<ul><li><strong>TQQQ</strong> 已接近止損位 $72.70 (現價 $52.46)</li></ul>
 <h5 class="md-h2">⚡ 盤前大幅異動 (|%|≥2%)</h5>
-<ul><li><strong>NVDA</strong> -4.80%</li><li><strong>TSLA</strong> -5.56%</li><li><strong>AMD</strong> -3.72%</li><li><strong>MSFT</strong> +6.96%</li><li><strong>META</strong> +2.44%</li><li><strong>GOOGL</strong> +4.41%</li><li><strong>AAPL</strong> +6.57%</li><li><strong>SOXL</strong> -19.31%</li></ul>
+<ul><li><strong>NVDA</strong> -5.54%</li><li><strong>TSLA</strong> -9.27%</li><li><strong>AMD</strong> -10.69%</li><li><strong>MSFT</strong> -4.46%</li><li><strong>META</strong> -4.13%</li><li><strong>GOOGL</strong> -2.55%</li><li><strong>AAPL</strong> -2.72%</li><li><strong>QQQ</strong> -5.05%</li><li><strong>SOXL</strong> -28.18%</li></ul>
 <hr>
 <p>_⚠️ 盤前報價成交量薄,實際開市後可能反轉。不構成投資建議_</p></div></details>
 </article>
-<article class="card ok" data-name="美股收市後深度分析">
-  <div class="card-head"><h3>美股收市後深度分析</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>30 5 * * 2-6</code> · 最後運行 11-05 05:41 · 下次 11-06 05:30 · 推送 telegram</div>
-  
+<article class="card err" data-name="美股收市後深度分析">
+  <div class="card-head"><h3>美股收市後深度分析</h3><span class="badge err">❌ 出錯</span></div>
+  <div class="meta">🕐 <code>30 5 * * 2-6</code> · 最後運行 11-06 05:34 · 下次 11-07 05:30 · 推送 telegram</div>
+  <div class="err-msg">⚠️ Restart-safe cron worker dispatch failed: cron external worker exited before ownership acknowledgement (exit 1); worker stderr: &lt;frozen runpy&gt;:130: RuntimeWarning: &#x27;cron.scheduler&#x27; found in sys.modules after import of package &#x27;cron&#x27;, but prior to execution of &#x27;cron.scheduler&#x27;; this may result in unp</div>
   <details><summary>最新輸出（274f6ff8ab0b_20261105_054139.txt）</summary><div class="md"><p>[持倉章節已於公開版遮蔽]</p>
 <h5 class="md-h2">🚨 執行摘要：綜合警號 3.5/5 🟡🔴 — 大選後 IV Crush 指數暴力翻紅，難掩科技內部「極端撕裂」！</h5>
 <blockquote><strong>核心結論</strong>：大選不確定性出清觸發美股全線大漲與 VIX 暴瀉（-20.3% 至 16.61），但這場狂歡掩蓋了極其危險的<strong>「結構性絞殺」</strong>——微軟 (+6.7%) 與蘋果 (+5.3%) 護盤翻紅，而 AI 硬件與半導體供應鏈卻遭遇全面「定點血洗」（<strong>NVDA 跌穿 200DMA 年線，SOXL 斷崖暴跌 -8.8%</strong>）。XLK 科技板塊相對強度依然在 11 大板塊中<strong>穩居倒數第一 (-7.09)</strong>。<br></blockquote>
@@ -191,59 +184,71 @@ footer{color:var(--muted);font-size:12px;max-width:1100px;margin:0 auto;padding:
 </article>
 <article class="card ok" data-name="voo/qqq 預測_收市後">
   <div class="card-head"><h3>VOO/QQQ 預測_收市後</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>30 5 * * 2-6</code> · 最後運行 11-05 05:31 · 下次 11-06 05:30 · 推送 origin</div>
+  <div class="meta">🕐 <code>30 5 * * 2-6</code> · 最後運行 11-06 05:34 · 下次 11-07 05:30 · 推送 origin</div>
   
-  <details><summary>最新輸出（2026-11-05_05-30-59.md）</summary><div class="md"><p>📊 VOO/QQQ 趨勢預測 (收市報告) — 2026-11-05 05:30 HKT</p>
-<p><strong>VOO</strong> — 🟡 橫行 | 信心 31% | 收市 704.78<br>2 週預測區間: <strong>682.75 – 726.81</strong> (中值 704.78)<br>回測命中 (walk-forward, 751 樣本): <strong>55%</strong><br>UP訊號勝率 65% (n=522) | DOWN訊號勝率 34% (n=53)<br>四模型: 動量 UP / 均值回歸 DOWN / 季節性 UP / 波動率 DOWN<br>當刻建議: ⏸️ 持有觀望 (無明顯 edge)</p>
-<p><strong>QQQ</strong> — 🟡 橫行 | 信心 49% | 收市 691.95<br>2 週預測區間: <strong>654.36 – 729.54</strong> (中值 691.95)<br>回測命中 (walk-forward, 1330 樣本): <strong>46%</strong><br>UP訊號勝率 62% (n=729) | DOWN訊號勝率 51% (n=185)<br>四模型: 動量 UP / 均值回歸 FLAT / 季節性 UP / 波動率 DOWN<br>當刻建議: ⏸️ 持有觀望 (無明顯 edge)</p>
-<p>_預測基於 20 年 walk-forward 回測; 勝率係歷史統計, 唔係保證。_<br>send VOO_20261105_0530.png: OK<br>send QQQ_20261105_0530.png: OK</p></div></details>
+  <details><summary>最新輸出（2026-11-06_05-34-39.md）</summary><div class="md"><p>📊 VOO/QQQ 趨勢預測 (收市報告) — 2026-11-06 05:34 HKT</p>
+<p><strong>VOO</strong> — 🟢 上漲 | 信心 66% | 收市 673.97<br>2 週預測區間: <strong>666.87 – 737.88</strong> (中值 702.38)<br>回測命中 (walk-forward, 751 樣本): <strong>55%</strong><br>UP訊號勝率 65% (n=522) | DOWN訊號勝率 34% (n=53)<br>四模型: 動量 UP / 均值回歸 UP / 季節性 UP / 波動率 DOWN<br>當刻建議: 🛒 買入傾向 (歷史同狀態下 10 日平均為正)</p>
+<p><strong>QQQ</strong> — 🟡 橫行 | 信心 40% | 收市 647.05<br>2 週預測區間: <strong>596.07 – 698.03</strong> (中值 647.05)<br>回測命中 (walk-forward, 1330 樣本): <strong>46%</strong><br>UP訊號勝率 62% (n=729) | DOWN訊號勝率 51% (n=185)<br>四模型: 動量 FLAT / 均值回歸 UP / 季節性 UP / 波動率 DOWN<br>當刻建議: ⏸️ 持有觀望 (無明顯 edge)</p>
+<p>_預測基於 20 年 walk-forward 回測; 勝率係歷史統計, 唔係保證。_<br>send VOO_20261106_0534.png: OK<br>send QQQ_20261106_0534.png: OK</p></div></details>
 </article>
 <article class="card ok" data-name="voo/qqq 預測_開市前">
   <div class="card-head"><h3>VOO/QQQ 預測_開市前</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>0 20 * * 1-5</code> · 最後運行 11-05 20:00 · 下次 11-06 20:00 · 推送 origin</div>
+  <div class="meta">🕐 <code>0 20 * * 1-5</code> · 最後運行 11-06 20:00 · 下次 11-09 20:00 · 推送 origin</div>
   
-  <details><summary>最新輸出（2026-11-05_20-00-46.md）</summary><div class="md"><p>📊 VOO/QQQ 趨勢預測 (盤前報告) — 2026-11-05 20:00 HKT</p>
-<p><strong>VOO</strong> — 🟡 橫行 | 信心 31% | 收市 704.78<br>2 週預測區間: <strong>682.75 – 726.81</strong> (中值 704.78)<br>回測命中 (walk-forward, 751 樣本): <strong>55%</strong><br>UP訊號勝率 65% (n=522) | DOWN訊號勝率 34% (n=53)<br>四模型: 動量 UP / 均值回歸 DOWN / 季節性 UP / 波動率 DOWN<br>當刻建議: ⏸️ 持有觀望 (無明顯 edge)</p>
-<p><strong>QQQ</strong> — 🟡 橫行 | 信心 49% | 收市 691.95<br>2 週預測區間: <strong>654.36 – 729.54</strong> (中值 691.95)<br>回測命中 (walk-forward, 1330 樣本): <strong>46%</strong><br>UP訊號勝率 62% (n=729) | DOWN訊號勝率 51% (n=185)<br>四模型: 動量 UP / 均值回歸 FLAT / 季節性 UP / 波動率 DOWN<br>當刻建議: ⏸️ 持有觀望 (無明顯 edge)</p>
-<p>_預測基於 20 年 walk-forward 回測; 勝率係歷史統計, 唔係保證。_<br>send VOO_20261105_2000.png: OK<br>send QQQ_20261105_2000.png: OK</p></div></details>
+  <details><summary>最新輸出（2026-11-06_20-00-38.md）</summary><div class="md"><p>📊 VOO/QQQ 趨勢預測 (盤前報告) — 2026-11-06 20:00 HKT</p>
+<p><strong>VOO</strong> — 🟢 上漲 | 信心 66% | 收市 673.97<br>2 週預測區間: <strong>666.87 – 737.88</strong> (中值 702.38)<br>回測命中 (walk-forward, 751 樣本): <strong>55%</strong><br>UP訊號勝率 65% (n=522) | DOWN訊號勝率 34% (n=53)<br>四模型: 動量 UP / 均值回歸 UP / 季節性 UP / 波動率 DOWN<br>當刻建議: 🛒 買入傾向 (歷史同狀態下 10 日平均為正)</p>
+<p><strong>QQQ</strong> — 🟡 橫行 | 信心 40% | 收市 647.05<br>2 週預測區間: <strong>596.07 – 698.03</strong> (中值 647.05)<br>回測命中 (walk-forward, 1330 樣本): <strong>46%</strong><br>UP訊號勝率 62% (n=729) | DOWN訊號勝率 51% (n=185)<br>四模型: 動量 FLAT / 均值回歸 UP / 季節性 UP / 波動率 DOWN<br>當刻建議: ⏸️ 持有觀望 (無明顯 edge)</p>
+<p>_預測基於 20 年 walk-forward 回測; 勝率係歷史統計, 唔係保證。_<br>send VOO_20261106_2000.png: OK<br>send QQQ_20261106_2000.png: OK</p></div></details>
 </article></div></section><section><h2>🎯 交易掃描<span class="count">25 個 job</span></h2><div class="grid"><article class="card ok" data-name="交易輔助_盤前掃描">
   <div class="card-head"><h3>交易輔助_盤前掃描</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>30 20 * * 1-5</code> · 最後運行 11-05 20:31 · 下次 11-06 20:30 · 推送 telegram</div>
+  <div class="meta">🕐 <code>30 20 * * 1-5</code> · 最後運行 11-06 20:31 · 下次 11-09 20:30 · 推送 telegram</div>
   
-  <details><summary>最新輸出（2026-11-05_20-31-27.md）</summary><div class="md"><p>📊 <strong>盤前掃描</strong> (2026-11-05 HKT)<br>掃描 498 隻股, 找到 <strong>5</strong> 個 setup<br>━━━━━━━━━━━━━━━</p>
-<p><strong>1. 🔄 CRL</strong> — 趨勢回調 (分數 0.718)<br><code>當前 $326.29</code><br><code>Trigger $380.39 | Stop $347.22 | Target $446.73</code><br><code>R:R 1:2.0 | 142 股 (≈$54,015, 風險 1.996%)</code><br>RSI 49.9 · 量 1.4x · 50DMA 斜率 1.87%</p>
-<p>CRL 於強勢上升軌道中回踩均線消化浮額，指標重回中性、量能穩健，是經典的多頭蓄勢回調。<br>待帶量強勢突破整理平台時順勢進場，確認多頭動能重啟以博取波段延伸空間。<br>若跌破回踩建立的防守支撐則視為結構破位，交易邏輯失效，必須果斷止損離場。<br>實踐 Livermore 的關鍵點法則：「不要猜測底部，耐心等待市場在關鍵阻力突破時證明自己。」嚴控單筆 2% 風險，讓獲利奔馳。</p>
+  <details><summary>最新輸出（2026-11-06_20-31-42.md）</summary><div class="md"><p>📊 <strong>盤前掃描</strong> (2026-11-06 HKT)<br>掃描 498 隻股, 找到 <strong>9</strong> 個 setup<br>━━━━━━━━━━━━━━━</p>
+<p><strong>1. 🔄 WST</strong> — 趨勢回調 (分數 0.678)<br><code>當前 $392.48</code><br><code>Trigger $422.92 | Stop $400.82 | Target $467.14</code><br><code>R:R 1:2.0 | 213 股 (≈$90,082, 風險 1.995%)</code><br>RSI 52.5 · 量 1.15x · 50DMA 斜率 1.47%</p>
+<p>WST 處於強勁上升軌道，股價於均線支撐區完成健康洗盤且動能重啟，具備標準的多頭蓄勢架構。<br>待帶量強勢突破整理平台頸線時順勢進場，以動能確認趨勢延續，不提早猜底承擔震盪風險。<br>一旦價格反轉跌破短線支撐結構，即判定為假突破與技術破位，無條件果斷停損離場。<br>實踐 Livermore 關鍵點原則：「在阻力最小路線顯現時才出手」，鎖定可控風險，讓利潤在順勢中奔跑。</p>
 <p>━━━━━━━━━━━━━━━</p>
-<p><strong>2. 🔄 ADI</strong> — 趨勢回調 (分數 0.664)<br><code>當前 $406.24</code><br><code>Trigger $434.59 | Stop $402.31 | Target $499.14</code><br><code>R:R 1:2.0 | 146 股 (≈$63,450, 風險 1.997%)</code><br>RSI 50.3 · 量 1.34x · 50DMA 斜率 1.21%</p>
-<p>中長期均線維持強勁上升斜率，股價回踩均線獲得支撐且量能沉澱，為典型強勢股健康回調。<br>待帶量向上突破整理區間高點時順勢切入，確認最小阻力線重回多頭，捕捉動能重啟的波段利潤。<br>一旦跌破回調形成的短期平台支撐與關鍵均線，技術結構即告失效，嚴格執行紀律出場。<br>謹記 Livermore 原則：「絕不在市場回調時盲目抄底，只在突破確認最小阻力方向時出手。」</p>
+<p><strong>2. 🔄 WAT</strong> — 趨勢回調 (分數 0.586)<br><code>當前 $453.08</code><br><code>Trigger $481.59 | Stop $450.08 | Target $544.61</code><br><code>R:R 1:2.0 | 149 股 (≈$71,757, 風險 1.989%)</code><br>RSI 52.1 · 量 1.09x · 50DMA 斜率 1.11%</p>
+<p>多頭趨勢結構明確，股價回踩均線獲支撐且量能收斂蓄勢，提供絕佳的順勢切入點。<br>待放量向上突破整理區間頸線時確認動能回歸，即可果斷進場捕捉主升浪。<br>若跌破均線支撐與盤整低點，即宣告趨勢回調失效，必須無條件離場控制下檔。<br>恪守 Livermore 的關鍵點哲學：「唯有走勢突破阻力、展現強勢時進場，才能讓市場證明你是對的。」</p>
 <p>━━━━━━━━━━━━━━━</p>
-<p><strong>3. 🚀 EMR</strong> — 動能突破 (分數 0.637)<br><code>當前 $170.44</code><br><code>Trigger $172.17 | Stop $162.47 | Target $191.58</code><br><code>R:R 1:2.0 | 486 股 (≈$83,675, 風險 1.998%)</code><br>RSI 64.5 · 量 1.58x · 50DMA 斜率 0.72%</p>
-<p>【買入理由】股價緊貼歷史高點強勢整理，伴隨顯著放大的攻擊量能與均線斜率支撐，蓄勢展開主升段。<br>【進場執行】確認放量實體突破高點即刻順勢切入，若遇量縮回踩頸線守穩，則視為多頭結構確認並抱牢。<br>【失效條件】若向上突破後迅速翻黑失守整理平台下緣，即構成假突破技術破位，必須無條件果斷停損。<br>【大師心法】貫徹 Livermore「阻力最小路徑」原則：創 52 週新高的強勢股上檔毫無套牢賣壓，順勢交易勝率最高。</p>
+<p><strong>3. 🚀 TECH</strong> — 動能突破 (分數 0.576)<br><code>當前 $72.66</code><br><code>Trigger $72.9 | Stop $72.63 | Target $73.44</code><br><code>R:R 1:2.0 | 17481 股 (≈$1,274,365, 風險 2.0%)</code><br>RSI 55.8 · 量 1.59x · 50DMA 斜率 0.05%</p>
+<p>股價緊貼歷史高點強勢蓄勢，配合量能顯著放大且動能健康，呈現典型的向上突破型態。<br>帶量越過關鍵前高即順勢切入，若回踩獲支撐則抱緊倉位，博取無套牢籌碼區間的趨勢延伸。<br>一旦衝高乏力迅速跌回起漲平台之下，即判定為假突破訊號，必須堅決砍倉止損、絕不硬扛。<br>正如 Livermore 所言：「沿著最小阻力線交易，永遠只做市場上最強勢的領頭羊。」</p>
 <p>━━━━━━━━━━━━━━━</p>
-<p><strong>4. 🚀 PFE</strong> — 動能突破 (分數 0.631)<br><code>當前 $30.79</code><br><code>Trigger $31.09 | Stop $29.78 | Target $33.71</code><br><code>R:R 1:2.0 | 3603 股 (≈$112,017, 風險 2.0%)</code><br>RSI 64.5 · 量 1.51x · 50DMA 斜率 0.79%</p>
-<p>股價緊貼年度高點且均線多頭排列，配合顯著放大的成交量，展現出「最小阻力線」向上突破的強勢動能。<br>帶量攻克阻力時順勢進場建立部位，若強勢回踩平台頸線獲得支撐，則堅定持股讓利潤奔馳。<br>若出現假突破反噬並摜破近期整理平台低點，技術結構即告失效，必須果斷砍倉以鎖死下檔風險。<br>正如 O&#x27;Neil 所強調：市場只犒賞真正強勢的領頭羊，在基底突破且成交量點火時買進，勝率自然站在我們這邊。</p>
+<p><strong>4. 🔄 BIIB</strong> — 趨勢回調 (分數 0.568)<br><code>當前 $243.93</code><br><code>Trigger $259.25 | Stop $243.1 | Target $291.53</code><br><code>R:R 1:2.0 | 292 股 (≈$75,701, 風險 1.998%)</code><br>RSI 53.6 · 量 0.9x · 50DMA 斜率 1.4%</p>
+<p>中長期均線維持多頭排列且回踩呈現良性量縮，股價於均線支撐處完成健康換手，蓄勢重啟多頭動能。<br>待放量貫穿短期整理區間阻力、確認買盤回流時順勢進場，直接捕捉主升段動能。<br>若反轉跌破本輪回踩支撐與均線防線，即宣告趨勢轉弱且整理失敗，須果斷砍倉絕不凹單。<br>正如 Livermore 所言：「市場永遠朝阻力最小的方向運行，只在關鍵點突破時出手」，落實 2% 風險控制換取翻倍上檔空間。</p>
 <p>━━━━━━━━━━━━━━━</p>
-<p><strong>5. 🚀 ABBV</strong> — 動能突破 (分數 0.616)<br><code>當前 $294.83</code><br><code>Trigger $299.04 | Stop $285.08 | Target $326.95</code><br><code>R:R 1:2.0 | 338 股 (≈$101,076, 風險 1.999%)</code><br>RSI 66.1 · 量 1.53x · 50DMA 斜率 1.05%</p>
-<p>ABBV 逼近歷史高位且伴隨量能顯著擴大，中期均線強勢上揚，展現出教科書級別的動能突破架構。<br>放量衝破阻力區即順勢進場，若遇良性縮量回踩並確認承接力，即為最佳持倉確認點。<br>若回跌失守盤整平台的結構支撐，即判定為假突破訊號失效，必須果斷市價砍倉、截斷虧損。<br>貫徹 Livermore「永遠只買創新高強勢股」的原則，沿著阻力最小的路徑順勢而為，並用嚴格的下檔防線鎖定利潤空間。</p>
+<p><strong>5. 🔄 TMO</strong> — 趨勢回調 (分數 0.541)<br><code>當前 $676.94</code><br><code>Trigger $713.59 | Stop $671.14 | Target $798.5</code><br><code>R:R 1:2.0 | 111 股 (≈$79,208, 風險 1.997%)</code><br>RSI 49.2 · 量 1.2x · 50DMA 斜率 0.97%</p>
+<p>多頭架構下中期均線持續上揚，股價於短均線良性量縮回踩並充分消化過熱指標，醞釀下一輪主升段。<br>待帶量突破整理區間上緣、確認動能重啟後順勢追擊，直取波段延伸空間。<br>若走勢反轉跌破回踩支撐低點與均線防線，即視為多頭架構破位，立刻嚴守紀律停損。<br>實踐 Schwager 嚴控單筆 2% 風險法則，在下檔有限的前提下，用不對稱勝率博取雙倍利潤。</p>
+<p>━━━━━━━━━━━━━━━</p>
+<p><strong>6. 🔄 EMR</strong> — 趨勢回調 (分數 0.516)<br><code>當前 $162.61</code><br><code>Trigger $172.34 | Stop $161.82 | Target $193.39</code><br><code>R:R 1:2.0 | 448 股 (≈$77,208, 風險 1.997%)</code><br>RSI 50.0 · 量 1.85x · 50DMA 斜率 0.61%</p>
+<p>中期均線上行結構完好，動能指標回歸中軸完成籌碼沉澱，回踩均線形成極具防守價值的順勢買點。<br>待放量突破區間整理上緣、確認買盤重啟時果斷進場，順勢捕捉波段主升浪。<br>一旦實體跌破整理平台低點與均線防線，即宣告多頭結構失效，必須堅決砍倉離場。<br>實踐 Livermore 的關鍵點思維：「絕不在方向未明前預測，只在行情朝阻力最小方向突破時果斷出手。」</p>
+<p>━━━━━━━━━━━━━━━</p>
+<p><strong>7. 🔄 A</strong> — 趨勢回調 (分數 0.512)<br><code>當前 $171.78</code><br><code>Trigger $181.34 | Stop $170.67 | Target $202.7</code><br><code>R:R 1:2.0 | 442 股 (≈$80,152, 風險 1.998%)</code><br>RSI 49.5 · 量 1.31x · 50DMA 斜率 1.15%</p>
+<p>中期上行均線提供強勁支撐，股價健康拉回消化浮籌且籌碼沉澱，為典型強勢股回踩買點。<br>待放量突破整理區間上緣確認動能回歸後順勢進場，捕捉重啟主升浪的右側機會。<br>若跌破近期回調支撐平台導致結構破位，即宣告波段失效，須果斷停損。<br>恪守 Livermore 關鍵點原則：永遠等市場證明你正確才出手，用最小的確定風險博取潛在利潤。</p>
+<p>━━━━━━━━━━━━━━━</p>
+<p><strong>8. 🔄 DHR</strong> — 趨勢回調 (分數 0.47)<br><code>當前 $226.34</code><br><code>Trigger $238.94 | Stop $224.86 | Target $267.09</code><br><code>R:R 1:2.0 | 335 股 (≈$80,045, 風險 1.999%)</code><br>RSI 49.7 · 量 1.17x · 50DMA 斜率 0.66%</p>
+<p>中期均線維持多頭排列且斜率向上，股價回踩短均線整理並消化浮額，是經典的順勢回調買點。<br>靜待帶量向上突破盤整區間上緣、確認動能重啟時順勢切入，絕不提前猜底。<br>若股價跌破回踩波段支撐即宣告技術破位，趨勢反轉風險升高，必須果斷停損。<br>嚴格貫徹 Schwager 的風控核心：將單筆帳戶風險鎖在 2% 以內，用 1:2 盈虧比的數學優勢長期制勝。</p>
+<p>━━━━━━━━━━━━━━━</p>
+<p><strong>9. 🔄 PFE</strong> — 趨勢回調 (分數 0.4)<br><code>當前 $29.88</code><br><code>Trigger $31.5 | Stop $30.06 | Target $34.38</code><br><code>R:R 1:2.0 | 3277 股 (≈$103,226, 風險 2.0%)</code><br>RSI 54.1 · 量 1.58x · 50DMA 斜率 0.78%</p>
+<p>中期均線穩健向上且成交量放大，股價於短期均線附近完成良性洗盤，具備動能重啟的結構優勢。<br>待突破盤整區間高點時順勢進場，以確認買盤接力並啟動下一波趨勢走勢。<br>若跌破短期均線支撐則代表假突破與多頭力竭，必須嚴格執行停損以鎖定下檔風險。<br>正如 Livermore 所言：「耐心等待關鍵點出現，只在市場證明你正確時才全力出手。」</p>
 <p>━━━━━━━━━━━━━━━</p>
 <p>_由 live_watcher 於開盤後監控觸發, 觸發時推送 alert。_<br>_不會自動下單, 請手動在 IBKR 執行。_</p></div></details>
 </article>
 <article class="card ok" data-name="交易輔助_盤中監控_上半段">
   <div class="card-head"><h3>交易輔助_盤中監控_上半段</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>*/30 21-23 * * 1-5</code> · 最後運行 11-05 23:30 · 下次 11-06 21:00 · 推送 telegram</div>
+  <div class="meta">🕐 <code>*/30 21-23 * * 1-5</code> · 最後運行 11-06 23:30 · 下次 11-09 21:00 · 推送 telegram</div>
   
-  <details><summary>最新輸出（2026-11-05_23-30-36.md）</summary><div class="md"><p class="md-empty">（今次運行無輸出）</p></div></details>
+  <details><summary>最新輸出（2026-11-06_23-30-33.md）</summary><div class="md"><p class="md-empty">（今次運行無輸出）</p></div></details>
 </article>
 <article class="card ok" data-name="交易輔助_盤中監控_後半段">
   <div class="card-head"><h3>交易輔助_盤中監控_後半段</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>0,30 0-3 * * 2-6</code> · 最後運行 11-06 00:30 · 下次 11-06 01:00 · 推送 telegram</div>
+  <div class="meta">🕐 <code>0,30 0-3 * * 2-6</code> · 最後運行 11-07 00:30 · 下次 11-07 01:00 · 推送 telegram</div>
   
-  <details><summary>最新輸出（2026-11-06_00-30-37.md）</summary><div class="md"><p class="md-empty">（今次運行無輸出）</p></div></details>
+  <details><summary>最新輸出（2026-11-07_00-30-29.md）</summary><div class="md"><p class="md-empty">（今次運行無輸出）</p></div></details>
 </article>
-<article class="card ok" data-name="交易輔助_盤後復盤">
-  <div class="card-head"><h3>交易輔助_盤後復盤</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>30 5 * * 2-6</code> · 最後運行 11-05 05:30 · 下次 11-06 05:30 · 推送 telegram</div>
-  
+<article class="card err" data-name="交易輔助_盤後復盤">
+  <div class="card-head"><h3>交易輔助_盤後復盤</h3><span class="badge err">❌ 出錯</span></div>
+  <div class="meta">🕐 <code>30 5 * * 2-6</code> · 最後運行 11-06 05:33 · 下次 11-07 05:30 · 推送 telegram</div>
+  <div class="err-msg">⚠️ Restart-safe cron worker dispatch failed: cron external worker exited before ownership acknowledgement (exit 1); worker stderr: &lt;frozen runpy&gt;:130: RuntimeWarning: &#x27;cron.scheduler&#x27; found in sys.modules after import of package &#x27;cron&#x27;, but prior to execution of &#x27;cron.scheduler&#x27;; this may result in unp</div>
   <details><summary>最新輸出（2026-11-05_05-30-46.md）</summary><div class="md"><p>📊 <strong>盤後復盤</strong> (2026-11-05 HKT)<br>━━━━━━━━━━━━━━━</p>
 <p><strong>F ORB 突破</strong> (2 個, +3.48R)<br>📂 <strong>BMRN</strong> (持倉中) — +1.48R<br>EOD $57.13 | MAE -11.48% / MFE 27.55%<br>🎯 <strong>LCID</strong> (達標) — +2.00R<br>EOD $3.37 | MAE -21.26% / MFE 501.33%</p>
 <p><strong>今日總 R: +3.48</strong></p>
@@ -284,85 +289,85 @@ footer{color:var(--muted);font-size:12px;max-width:1100px;margin:0 auto;padding:
 </article>
 <article class="card ok" data-name="每日活躍美股top5掃描">
   <div class="card-head"><h3>每日活躍美股Top5掃描</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>30 22 * * 1-5</code> · 最後運行 11-05 22:30 · 下次 11-06 22:30 · 推送 telegram</div>
+  <div class="meta">🕐 <code>30 22 * * 1-5</code> · 最後運行 11-06 22:30 · 下次 11-09 22:30 · 推送 telegram</div>
   
-  <details><summary>最新輸出（2026-11-05_22-30-44.md）</summary><div class="md"><p>🚀 <strong>每日活躍美股 Top 5 即時掃描</strong> (2026-11-05 HKT)<br>掃描 24 隻活躍股，推薦 <strong>Top 5</strong><br>━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
-<p><strong>1. 💎 MSFT</strong> — 評分 65.4<br><code>當前 $554.99 (-0.14%) | 量能 0.05x</code><br><code>RSI 62.3 | 20DMA $533 | 50DMA $517</code><br><code>52W距離 -0.7% | Fwd PE 22.97789</code></p>
+  <details><summary>最新輸出（2026-11-06_22-30-41.md）</summary><div class="md"><p>🚀 <strong>每日活躍美股 Top 5 即時掃描</strong> (2026-11-06 HKT)<br>掃描 24 隻活躍股，推薦 <strong>Top 5</strong><br>━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+<p><strong>1. 💎 ROKU</strong> — 評分 60.1<br><code>當前 $160.37 (+0.00%) | 量能 0.01x</code><br><code>RSI 61.2 | 20DMA $157 | 50DMA $155</code><br><code>52W距離 -2.0% | Fwd PE 40.58972</code></p>
 <p>_LLM 分析生成中..._<br>━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
-<p><strong>2. 💎 AAPL</strong> — 評分 63.5<br><code>當前 $355.19 (+1.63%) | 量能 0.06x</code><br><code>RSI 58.5 | 20DMA $344 | 50DMA $336</code><br><code>52W距離 -0.0% | Fwd PE 33.33903</code></p>
+<p><strong>2. ⚠️ MSFT</strong> — 評分 58.4<br><code>當前 $525.15 (-2.01%) | 量能 0.05x</code><br><code>RSI 46.8 | 20DMA $531 | 50DMA $517</code><br><code>52W距離 -6.1% | Fwd PE 21.718964</code></p>
 <p>_LLM 分析生成中..._<br>━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
-<p><strong>3. ⚠️ ROKU</strong> — 評分 55.1<br><code>當前 $162.74 (-0.02%) | 量能 0.01x</code><br><code>RSI 70.4 | 20DMA $157 | 50DMA $155</code><br><code>52W距離 -0.3% | Fwd PE 41.115273</code></p>
+<p><strong>3. ⚠️ AAPL</strong> — 評分 56.2<br><code>當前 $339.77 (-1.28%) | 量能 0.03x</code><br><code>RSI 47.8 | 20DMA $343 | 50DMA $336</code><br><code>52W距離 -4.4% | Fwd PE 31.926582</code></p>
 <p>_LLM 分析生成中..._<br>━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
-<p><strong>4. 📊 AMZN</strong> — 評分 45.6<br><code>當前 $272.54 (+2.45%) | 量能 0.08x</code><br><code>RSI 64.0 | 20DMA $255 | 50DMA $254</code><br><code>52W距離 -3.6% | Fwd PE 24.968029</code></p>
+<p><strong>4. 📊 CRM</strong> — 評分 43.4<br><code>當前 $216.43 (-2.69%) | 量能 0.05x</code><br><code>RSI 26.5 | 20DMA $236 | 50DMA $239</code><br><code>52W距離 -19.2% | Fwd PE 13.51401</code></p>
 <p>_LLM 分析生成中..._<br>━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
-<p><strong>5. 📊 TSLA</strong> — 評分 43.5<br><code>當前 $370.85 (-3.72%) | 量能 0.06x</code><br><code>RSI 56.4 | 20DMA $383 | 50DMA $373</code><br><code>52W距離 -10.5% | Fwd PE 171.75185</code></p>
+<p><strong>5. 📊 TSLA</strong> — 評分 41.4<br><code>當前 $348.67 (+1.45%) | 量能 0.04x</code><br><code>RSI 43.3 | 20DMA $380 | 50DMA $372</code><br><code>52W距離 -15.8% | Fwd PE 161.47961</code></p>
 <p>_LLM 分析生成中..._<br>━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>_分析基於七書理論框架 | 不構成投資建議_<br>_檔案已存檔至 ~/美股投資/市場分析/_</p></div></details>
 </article>
 <article class="card ok" data-name="交易輔助_盤中監控_收市檢查">
   <div class="card-head"><h3>交易輔助_盤中監控_收市檢查</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>0 4 * * 2-6</code> · 最後運行 11-05 04:00 · 下次 11-06 04:00 · 推送 telegram</div>
+  <div class="meta">🕐 <code>0 4 * * 2-6</code> · 最後運行 11-06 04:00 · 下次 11-07 04:00 · 推送 telegram</div>
   
-  <details><summary>最新輸出（2026-11-05_04-00-32.md）</summary><div class="md"><p class="md-empty">（今次運行無輸出）</p></div></details>
+  <details><summary>最新輸出（2026-11-06_04-00-34.md）</summary><div class="md"><p class="md-empty">（今次運行無輸出）</p></div></details>
 </article>
 <article class="card ok" data-name="交易輔助_humbled_scannera_盤前gappers">
   <div class="card-head"><h3>交易輔助_Humbled_ScannerA_盤前Gappers</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>30 20 * * 1-5</code> · 最後運行 11-05 20:33 · 下次 11-06 20:30 · 推送 telegram</div>
+  <div class="meta">🕐 <code>30 20 * * 1-5</code> · 最後運行 11-06 20:33 · 下次 11-09 20:30 · 推送 telegram</div>
   
-  <details><summary>最新輸出（2026-11-05_20-33-23.md）</summary><div class="md"><p>Premarket Gappers: 0 names. Top:</p></div></details>
+  <details><summary>最新輸出（2026-11-06_20-33-21.md）</summary><div class="md"><p>Premarket Gappers: 0 names. Top:</p></div></details>
 </article>
 <article class="card ok" data-name="交易輔助_humbled_scannerb_tjl_晚段">
   <div class="card-head"><h3>交易輔助_Humbled_ScannerB_TJL_晚段</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>0,30 22-23 * * 1-5</code> · 最後運行 11-05 23:30 · 下次 11-06 22:00 · 推送 telegram</div>
+  <div class="meta">🕐 <code>0,30 22-23 * * 1-5</code> · 最後運行 11-06 23:30 · 下次 11-09 22:00 · 推送 telegram</div>
   
-  <details><summary>最新輸出（2026-11-05_23-30-39.md）</summary><div class="md"><p class="md-empty">（今次運行無輸出）</p></div></details>
+  <details><summary>最新輸出（2026-11-06_23-30-34.md）</summary><div class="md"><p class="md-empty">（今次運行無輸出）</p></div></details>
 </article>
 <article class="card ok" data-name="交易輔助_humbled_scannerb_tjl_凌晨段">
   <div class="card-head"><h3>交易輔助_Humbled_ScannerB_TJL_凌晨段</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>0,30 0-1 * * 2-6</code> · 最後運行 11-06 00:30 · 下次 11-06 01:00 · 推送 telegram</div>
+  <div class="meta">🕐 <code>0,30 0-1 * * 2-6</code> · 最後運行 11-07 00:30 · 下次 11-07 01:00 · 推送 telegram</div>
   
-  <details><summary>最新輸出（2026-11-06_00-30-40.md）</summary><div class="md"><p class="md-empty">（今次運行無輸出）</p></div></details>
+  <details><summary>最新輸出（2026-11-07_00-30-31.md）</summary><div class="md"><p class="md-empty">（今次運行無輸出）</p></div></details>
 </article>
 <article class="card ok" data-name="交易輔助_策略d_8ema中午swing">
   <div class="card-head"><h3>交易輔助_策略D_8EMA中午Swing</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>30 0 * * 2-6</code> · 最後運行 11-06 00:30 · 下次 11-07 00:30 · 推送 telegram</div>
+  <div class="meta">🕐 <code>30 0 * * 2-6</code> · 最後運行 11-07 00:30 · 下次 11-10 00:30 · 推送 telegram</div>
   
-  <details><summary>最新輸出（2026-11-06_00-30-38.md）</summary><div class="md"><p class="md-empty">（今次運行無輸出）</p></div></details>
+  <details><summary>最新輸出（2026-11-07_00-30-29.md）</summary><div class="md"><p class="md-empty">（今次運行無輸出）</p></div></details>
 </article>
 <article class="card ok" data-name="交易輔助_板塊rs_sector_rs">
   <div class="card-head"><h3>交易輔助_板塊RS_Sector_RS</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>0 20 * * 1-5</code> · 最後運行 11-05 20:00 · 下次 11-06 20:00 · 推送 telegram</div>
+  <div class="meta">🕐 <code>0 20 * * 1-5</code> · 最後運行 11-06 20:00 · 下次 11-09 20:00 · 推送 telegram</div>
   
-  <details><summary>最新輸出（2026-11-05_20-00-35.md）</summary><div class="md"><p>📊 &lt;b&gt;板塊相對強度 報告&lt;/b&gt; (2026-11-05 HKT)<br>基準 SPY: 1週 -0.71% | 4週 -1.34% | 13週 +0.02%<br>━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+  <details><summary>最新輸出（2026-11-06_20-00-30.md）</summary><div class="md"><p>📊 &lt;b&gt;板塊相對強度 報告&lt;/b&gt; (2026-11-06 HKT)<br>基準 SPY: 1週 -4.73% | 4週 -5.29% | 13週 -4.97%<br>━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>📋 &lt;b&gt;完整排名&lt;/b&gt; (RS Score 降序)<br>&lt;pre&gt;</p>
 <h4 class="md-h1">ETF          板塊     RS   超SPY 1w   超SPY 4w  超SPY 13w</h4>
-<p>───────────────────────────────────────────────────────────<br>1      XLV          醫療 +12.40    +6.24%   +13.69%   +15.75%<br>2      XLP        必需消費  +9.10    +6.59%   +13.87%    +8.72%<br>3      XLF          金融  +7.46    +6.18%   +11.48%    +2.75%<br>4     XLRE         房地產  +6.95    +7.81%   +12.55%    +1.52%<br>5      XLY       非必需消費  +6.57    +6.78%   +11.19%    +3.79%<br>6      XLB          材料  +5.90    +4.65%   +11.38%    +3.77%<br>7      XLU        公用事業  +2.95    +3.35%    +7.32%    +1.25%<br>8      XLE          能源  +0.64    -6.49%    +1.59%    +9.85%<br>9      XLI          工業  -1.28    +1.29%    +2.30%    -8.05%<br>10     XLC        通訊服務  -2.87    +2.48%    -4.32%    -5.30%<br>11     XLK          科技  -7.09    -6.88%   -11.02%    -4.67%<br>&lt;/pre&gt;</p>
-<p>🎯 &lt;b&gt;重點摘要&lt;/b&gt;<br>🟢 重倉 Top 3: XLV, XLP, XLF<br>🔴 避開 Bottom 3: XLI, XLC, XLK</p>
+<p>───────────────────────────────────────────────────────────<br>1      XLV          醫療 +12.87    +5.20%   +15.25%   +17.00%<br>2      XLP        必需消費 +11.20    +8.21%   +14.67%   +12.88%<br>3     XLRE         房地產  +8.10    +7.61%   +13.73%    +4.29%<br>4      XLF          金融  +7.87    +5.71%   +11.32%    +5.15%<br>5      XLB          材料  +6.27    +4.35%   +11.50%    +4.42%<br>6      XLY       非必需消費  +6.02    +5.97%   +10.60%    +3.34%<br>7      XLU        公用事業  +5.91    +5.10%   +10.72%    +4.99%<br>8      XLE          能源  +1.34    -5.58%    -0.24%   +12.79%<br>9      XLC        通訊服務  +1.33    +7.82%    -1.61%    -0.93%<br>10     XLI          工業  -1.48    +0.22%    +1.77%    -7.06%<br>11     XLK          科技  -9.67    -9.24%   -12.61%    -8.54%<br>&lt;/pre&gt;</p>
+<p>🎯 &lt;b&gt;重點摘要&lt;/b&gt;<br>🟢 重倉 Top 3: XLV, XLP, XLRE<br>🔴 避開 Bottom 3: XLC, XLI, XLK</p>
 <p>━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>💡 &lt;b&gt;如何用 (ABCD 策略加權過濾)&lt;/b&gt;<br>Top 3 sector 內成分股 → 維持或加倉<br>Bottom 3 sector 內成分股 → 降倉或避開<br>XLE/RS 排名 = 觀察板塊輪動訊號</p>
 <p>_基於 IBD/O&#x27;Neil RS Rating 改進算法_</p></div></details>
 </article>
 <article class="card ok" data-name="交易輔助_orb_盤中每15分鐘">
   <div class="card-head"><h3>交易輔助_ORB_盤中每15分鐘</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>*/15 21-22 * * 1-5</code> · 最後運行 11-05 22:45 · 下次 11-06 21:00 · 推送 telegram</div>
+  <div class="meta">🕐 <code>*/15 21-22 * * 1-5</code> · 最後運行 11-06 22:45 · 下次 11-09 21:00 · 推送 telegram</div>
   
-  <details><summary>最新輸出（2026-11-05_22-45-34.md）</summary><div class="md"><p class="md-empty">（今次運行無輸出）</p></div></details>
+  <details><summary>最新輸出（2026-11-06_22-45-29.md）</summary><div class="md"><p class="md-empty">（今次運行無輸出）</p></div></details>
 </article>
 <article class="card ok" data-name="交易輔助_vcp_盤前掃描">
   <div class="card-head"><h3>交易輔助_VCP_盤前掃描</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>30 20 * * 1-5</code> · 最後運行 11-05 20:30 · 下次 11-06 20:30 · 推送 telegram</div>
+  <div class="meta">🕐 <code>30 20 * * 1-5</code> · 最後運行 11-06 20:30 · 下次 11-09 20:30 · 推送 telegram</div>
   
-  <details><summary>最新輸出（2026-11-05_20-30-46.md）</summary><div class="md"><p>📊 &lt;b&gt;VCP 變盤 訊號&lt;/b&gt; (2026-11-05 HKT)<br>Trend Template + VCP 形態 | 掃描 30 隻<br>━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
-<p>📋 &lt;b&gt;VCP setup 列表&lt;/b&gt; (5 隻)<br>&lt;pre&gt;<br>代碼       Trend       當前    Pivot                  收縮序列     量能爆發<br>───────────────────────────────────────────────────────────────<br>AAPL       9/9   349.51   351.73           5.7% → 2.7%      🔥 是<br>MSFT       9/9   555.80   551.15           6.1% → 6.4%      🔥 是<br>AMZN       9/9   266.03   265.34           5.8% → 5.7%      — 否<br>ROKU       9/9   162.77   160.22           4.3% → 3.2%      — 否<br>SPY        8/9   766.81   773.36           2.7% → 2.0%      — 否<br>&lt;/pre&gt;</p>
-<p>🎯 &lt;b&gt;META 評估 (各 setup)&lt;/b&gt;<br>&lt;code&gt;AAPL&lt;/code&gt;: META ⚠️ AAPL (vcp): 2/6 NEEDS MORE EDGES |   ❌ E1 |   ❌ E2 |   ❌ E3 |   ❌ E4 |   ✅ E5 |   ✅ E6<br>&lt;code&gt;MSFT&lt;/code&gt;: META ⚠️ MSFT (vcp): 2/6 NEEDS MORE EDGES |   ❌ E1 |   ❌ E2 |   ❌ E3 |   ❌ E4 |   ✅ E5 |   ✅ E6<br>&lt;code&gt;AMZN&lt;/code&gt;: META ⚠️ AMZN (vcp): 2/6 NEEDS MORE EDGES |   ❌ E1 |   ❌ E2 |   ❌ E3 |   ❌ E4 |   ✅ E5 |   ✅ E6<br>&lt;code&gt;ROKU&lt;/code&gt;: META ⚠️ ROKU (vcp): 2/6 NEEDS MORE EDGES |   ❌ E1 |   ❌ E2 |   ❌ E3 |   ❌ E4 |   ✅ E5 |   ✅ E6<br>&lt;code&gt;SPY&lt;/code&gt;: META ⚠️ SPY (vcp): 2/6 NEEDS MORE EDGES |   ❌ E1 |   ❌ E2 |   ❌ E3 |   ❌ E4 |   ✅ E5 |   ✅ E6</p>
+  <details><summary>最新輸出（2026-11-06_20-30-37.md）</summary><div class="md"><p>📊 &lt;b&gt;VCP 變盤 訊號&lt;/b&gt; (2026-11-06 HKT)<br>Trend Template + VCP 形態 | 掃描 30 隻<br>━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+<p>📋 &lt;b&gt;VCP setup 列表&lt;/b&gt; (1 隻)<br>&lt;pre&gt;<br>代碼       Trend       當前    Pivot                  收縮序列     量能爆發<br>───────────────────────────────────────────────────────────────<br>ROKU       9/9   160.37   160.22           4.3% → 3.2%      — 否<br>&lt;/pre&gt;</p>
+<p>🎯 &lt;b&gt;META 評估 (各 setup)&lt;/b&gt;<br>&lt;code&gt;ROKU&lt;/code&gt;: META ⚠️ ROKU (vcp): 2/6 NEEDS MORE EDGES |   ❌ E1 |   ❌ E2 |   ❌ E3 |   ❌ E4 |   ✅ E5 |   ✅ E6</p>
 <p>━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>💡 &lt;b&gt;VCP 玩法&lt;/b&gt;<br>突破 Pivot 價買入, 止損 = VCP 區間低端<br>VCP = Mark Minervini 核心策略, 歷史勝率 60-70%</p></div></details>
 </article>
 <article class="card ok" data-name="交易輔助_excel統一報告">
   <div class="card-head"><h3>交易輔助_Excel統一報告</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>*/30 21-23,0-5 * * 1-5</code> · 最後運行 11-06 00:30 · 下次 11-06 01:00 · 推送 telegram</div>
+  <div class="meta">🕐 <code>*/30 21-23,0-5 * * 1-5</code> · 最後運行 11-06 23:30 · 下次 11-09 00:00 · 推送 telegram</div>
   
-  <details><summary>最新輸出（2026-11-06_00-30-40.md）</summary><div class="md"><p>📊 Excel 報告: ~/美股投資/交易記錄/unified_signals_20261106.xlsx<br>總信號: 2<br>F ORB 突破: 2 個 (BKNG, BCRX)</p>
+  <details><summary>最新輸出（2026-11-06_23-30-33.md）</summary><div class="md"><p>📊 Excel 報告: ~/美股投資/交易記錄/unified_signals_20261106.xlsx<br>總信號: 14<br>E VCP 形態: 1 個 (ROKU)<br>F ORB 突破: 1 個 (VECO)<br>G ATR Squeeze: 1 個 (CPAY)<br>I 板塊相對強度: 11 個 (XLC, XLU, XLRE, XLB, XLE, XLI, XLK, XLF, XLV, XLY, XLP)</p>
 <p>✅ Telegram 附件已推送</p></div></details>
 </article>
 <article class="card off" data-name="持倉價格警報 (盤前1h + 盤中)">
@@ -373,25 +378,25 @@ footer{color:var(--muted);font-size:12px;max-width:1100px;margin:0 auto;padding:
 </article>
 <article class="card ok" data-name="交易輔助_abcd策略備忘錄">
   <div class="card-head"><h3>交易輔助_ABCD策略備忘錄</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>5,35 * * * 1-5</code> · 最後運行 11-06 00:35 · 下次 11-06 01:05 · 推送 telegram</div>
+  <div class="meta">🕐 <code>5,35 * * * 1-5</code> · 最後運行 11-06 23:35 · 下次 11-09 00:05 · 推送 telegram</div>
   
-  <details><summary>最新輸出（2026-11-06_00-35-31.md）</summary><div class="md"><p class="md-empty">（今次運行無輸出）</p></div></details>
+  <details><summary>最新輸出（2026-11-06_23-35-28.md）</summary><div class="md"><p class="md-empty">（今次運行無輸出）</p></div></details>
 </article>
 <article class="card ok" data-name="g atr squeeze daily scanner">
   <div class="card-head"><h3>G ATR Squeeze daily scanner</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>0 21 * * 1-5</code> · 最後運行 11-05 21:01 · 下次 11-06 21:00 · 推送 local</div>
+  <div class="meta">🕐 <code>0 21 * * 1-5</code> · 最後運行 11-06 21:01 · 下次 11-09 21:00 · 推送 local</div>
   
-  <details><summary>最新輸出（2026-11-05_21-01-52.md）</summary><div class="md"><p>🌀 &lt;b&gt;ATR 收縮 突破訊號&lt;/b&gt; (2026-11-05 HKT)<br>低波壓縮 + 上軌突破 + 量能確認 | 掃描 499 隻<br>━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
-<p>📋 &lt;b&gt;ATR 收縮 setup 列表&lt;/b&gt; (1 隻)<br>&lt;pre&gt;<br>代碼            信心    Entry     Stop       T1  R:R     壓縮%     量能    距52W高<br>────────────────────────────────────────────────────────────────────────<br>SW        69/100    45.19    42.78    50.02 2.00     46%  1.60x    14.0%<br>&lt;/pre&gt;</p>
-<p>🎯 &lt;b&gt;META 評估 (各 setup)&lt;/b&gt;<br>&lt;code&gt;SW&lt;/code&gt;: META ⚠️ SW (atr_squeeze): 1/6 NEEDS MORE EDGES |   ❌ E1 |   ❌ E2 |   ❌ E3 |   ❌ E4 |   ❌ E5 |   ✅ E6</p>
+  <details><summary>最新輸出（2026-11-06_21-01-55.md）</summary><div class="md"><p>🌀 &lt;b&gt;ATR 收縮 突破訊號&lt;/b&gt; (2026-11-06 HKT)<br>低波壓縮 + 上軌突破 + 量能確認 | 掃描 499 隻<br>━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+<p>📋 &lt;b&gt;ATR 收縮 setup 列表&lt;/b&gt; (1 隻)<br>&lt;pre&gt;<br>代碼            信心    Entry     Stop       T1  R:R     壓縮%     量能    距52W高<br>────────────────────────────────────────────────────────────────────────<br>CPAY      72/100   447.00   427.40   486.21 2.00     14%  3.41x     7.3%<br>&lt;/pre&gt;</p>
+<p>🎯 &lt;b&gt;META 評估 (各 setup)&lt;/b&gt;<br>&lt;code&gt;CPAY&lt;/code&gt;: META ⚠️ CPAY (atr_squeeze): 1/6 NEEDS MORE EDGES |   ❌ E1 |   ❌ E2 |   ❌ E3 |   ❌ E4 |   ❌ E5 |   ✅ E6</p>
 <p>━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>💡 &lt;b&gt;玩法&lt;/b&gt;<br>突破 BB 上軌 + 量能確認時買入, 持倉 3-15 日<br>ATR Squeeze = TTM Squeeze 變體, 配合趨勢過濾勝率 60%+</p></div></details>
 </article>
 <article class="card ok" data-name="h bull flag intraday scanner">
   <div class="card-head"><h3>H Bull Flag intraday scanner</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>*/15 22-23,0-3 * * 1-5</code> · 最後運行 11-06 00:46 · 下次 11-06 01:00 · 推送 local</div>
+  <div class="meta">🕐 <code>*/15 22-23,0-3 * * 1-5</code> · 最後運行 11-06 23:46 · 下次 11-09 00:00 · 推送 local</div>
   
-  <details><summary>最新輸出（2026-11-06_00-46-39.md）</summary><div class="md"><p>🚩 &lt;b&gt;牛旗 突破訊號&lt;/b&gt; (2026-11-06 HKT)<br>急漲 + 旗形整理 + 突破上沿 | 掃描 499 隻<br>━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+  <details><summary>最新輸出（2026-11-06_23-46-36.md）</summary><div class="md"><p>🚩 &lt;b&gt;牛旗 突破訊號&lt;/b&gt; (2026-11-06 HKT)<br>急漲 + 旗形整理 + 突破上沿 | 掃描 499 隻<br>━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>⚠️ &lt;b&gt;掃描結果&lt;/b&gt;<br>目前無可交易 setup。<br>💡 條件:</p>
 <ul><li>Pole = 5-15 日急漲 ≥ +15%</li><li>Flag = 5-15 日窄幅整理 (回撤 &lt; 38.2%)</li><li>突破上沿 + 量能 1.5x = 進場</li></ul>
 <p>━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
@@ -399,9 +404,9 @@ footer{color:var(--muted);font-size:12px;max-width:1100px;margin:0 auto;padding:
 </article>
 <article class="card ok" data-name="j cup &amp;amp; handle daily scanner">
   <div class="card-head"><h3>J Cup &amp;amp; Handle daily scanner</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>30 20 * * 1-5</code> · 最後運行 11-05 20:31 · 下次 11-06 20:30 · 推送 local</div>
+  <div class="meta">🕐 <code>30 20 * * 1-5</code> · 最後運行 11-06 20:31 · 下次 11-09 20:30 · 推送 local</div>
   
-  <details><summary>最新輸出（2026-11-05_20-31-44.md）</summary><div class="md"><p>☕ &lt;b&gt;杯柄 突破訊號&lt;/b&gt; (2026-11-05 HKT)<br>O&#x27;Neil 杯柄形態 + Pivot 突破 | 掃描 499 隻<br>━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+  <details><summary>最新輸出（2026-11-06_20-31-40.md）</summary><div class="md"><p>☕ &lt;b&gt;杯柄 突破訊號&lt;/b&gt; (2026-11-06 HKT)<br>O&#x27;Neil 杯柄形態 + Pivot 突破 | 掃描 499 隻<br>━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>⚠️ &lt;b&gt;掃描結果&lt;/b&gt;<br>目前無可交易 setup。<br>💡 條件:</p>
 <ul><li>Cup 深 12-50%, U 字底 (非 V), 右壁回到左壁附近</li><li>Handle 5-25 日輕微回撤 (≤ 12%)</li><li>Pivot = Handle 高 + 0.1%, 量能 1.5x 50日均</li></ul>
 <p>━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
@@ -409,9 +414,9 @@ footer{color:var(--muted);font-size:12px;max-width:1100px;margin:0 auto;padding:
 </article>
 <article class="card ok" data-name="f_orb_r_multiple_daily_scan">
   <div class="card-head"><h3>F_ORB_r_multiple_daily_scan</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>45 5 * * 2-6</code> · 最後運行 11-05 05:45 · 下次 11-06 05:45 · 推送 origin</div>
+  <div class="meta">🕐 <code>45 5 * * 2-6</code> · 最後運行 11-06 05:45 · 下次 11-07 05:45 · 推送 origin</div>
   
-  <details><summary>最新輸出（2026-11-05_05-45-32.md）</summary><div class="md"><p class="md-empty">（今次運行無輸出）</p></div></details>
+  <details><summary>最新輸出（2026-11-06_05-45-30.md）</summary><div class="md"><p class="md-empty">（今次運行無輸出）</p></div></details>
 </article>
 <article class="card off" data-name="aapl trigger alert @ $302.67">
   <div class="card-head"><h3>AAPL trigger alert @ $302.67</h3><span class="badge off">⏸️ 已停用</span></div>
@@ -439,9 +444,9 @@ ORB 區間突破 (F)  19   -17.56%    +49.07%       11        14</pre>
 </article>
 <article class="card ok" data-name="交易輔助_watchlistcurated_監控">
   <div class="card-head"><h3>交易輔助_WatchlistCurated_監控</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>*/30 20-23,0-4 * * 1-5</code> · 最後運行 11-06 00:30 · 下次 11-06 01:00 · 推送 telegram</div>
+  <div class="meta">🕐 <code>*/30 20-23,0-4 * * 1-5</code> · 最後運行 11-06 23:30 · 下次 11-09 00:00 · 推送 telegram</div>
   
-  <details><summary>最新輸出（2026-11-06_00-30-35.md）</summary><div class="md"><p>ℹ No curated watchlist for today</p></div></details>
+  <details><summary>最新輸出（2026-11-06_23-30-30.md）</summary><div class="md"><p>ℹ No curated watchlist for today</p></div></details>
 </article></div></section><section><h2>👀 KOL／專題監控<span class="count">2 個 job</span></h2><div class="grid"><article class="card ok" data-name="hard penny market 週度檢查">
   <div class="card-head"><h3>Hard Penny Market 週度檢查</h3><span class="badge ok">✅ 正常</span></div>
   <div class="meta">🕐 <code>0 7 * * 6</code> · 最後運行 10-31 07:00 · 下次 11-07 07:00 · 推送 telegram</div>
@@ -458,57 +463,48 @@ ORB 區間突破 (F)  19   -17.56%    +49.07%       11        14</pre>
 <p>_警號計數: 1/5_</p>
 <p>⚠️ 僅供參考，不構成投資建議</p></div></details>
 </article>
-<article class="card err" data-name="茄利略cup_新影片監控">
-  <div class="card-head"><h3>茄利略CUP_新影片監控</h3><span class="badge err">❌ 出錯</span></div>
-  <div class="meta">🕐 <code>0 */6 * * *</code> · 最後運行 11-06 00:00 · 下次 11-06 06:00 · 推送 telegram</div>
-  <div class="err-msg">⚠️ Restart-safe cron worker dispatch failed: cron external worker exited before ownership acknowledgement (exit 1); worker stderr: &lt;frozen runpy&gt;:130: RuntimeWarning: &#x27;cron.scheduler&#x27; found in sys.modules after import of package &#x27;cron&#x27;, but prior to execution of &#x27;cron.scheduler&#x27;; this may result in unp</div>
-  <details><summary>最新輸出（2026-11-05_18-00-31.md）</summary><div class="md"><p class="md-empty">（今次運行無輸出）</p></div></details>
+<article class="card ok" data-name="茄利略cup_新影片監控">
+  <div class="card-head"><h3>茄利略CUP_新影片監控</h3><span class="badge ok">✅ 正常</span></div>
+  <div class="meta">🕐 <code>0 */6 * * *</code> · 最後運行 11-07 00:00 · 下次 11-07 06:00 · 推送 telegram</div>
+  
+  <details><summary>最新輸出（2026-11-07_00-00-29.md）</summary><div class="md"><p class="md-empty">（今次運行無輸出）</p></div></details>
 </article></div></section><section><h2>🛠️ 系統維護<span class="count">6 個 job</span></h2><div class="grid"><article class="card ok" data-name="投資助理_本地git備份">
   <div class="card-head"><h3>投資助理_本地Git備份</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>15 9 * * *</code> · 最後運行 11-05 09:17 · 下次 11-06 09:15 · 推送 telegram</div>
+  <div class="meta">🕐 <code>15 9 * * *</code> · 最後運行 11-06 09:17 · 下次 11-07 09:15 · 推送 telegram</div>
   
-  <details><summary>最新輸出（2026-11-05_09-17-08.md）</summary><div class="md"><p>Investment backup OK: changed=yes remote=failed head=ed35e16d</p></div></details>
+  <details><summary>最新輸出（2026-11-06_09-17-15.md）</summary><div class="md"><p>Investment backup OK: changed=yes remote=failed head=dd0f93b4</p></div></details>
 </article>
 <article class="card ok" data-name="cron jobs 自動備份至 gitea">
   <div class="card-head"><h3>Cron Jobs 自動備份至 Gitea</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>0 9 * * *</code> · 最後運行 11-05 09:02 · 下次 11-06 09:00 · 推送 local</div>
+  <div class="meta">🕐 <code>0 9 * * *</code> · 最後運行 11-06 09:02 · 下次 11-07 09:00 · 推送 local</div>
   
-  <details><summary>最新輸出（2026-11-05_09-02-19.md）</summary><div class="md"><p>⚠️  Local backup committed, Gitea push FAILED after retries: 40 jobs<br>Host may be down. Local backup preserved in ~/backup-repos/jason-investment-agent-code/cron_backup</p></div></details>
+  <details><summary>最新輸出（2026-11-06_09-02-03.md）</summary><div class="md"><p>⚠️  Local backup committed, Gitea push FAILED after retries: 40 jobs<br>Host may be down. Local backup preserved in ~/backup-repos/jason-investment-agent-code/cron_backup</p></div></details>
 </article>
 <article class="card ok" data-name="dashboard 每日重生 + push gitea">
   <div class="card-head"><h3>Dashboard 每日重生 + Push Gitea</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>35 23 * * 1-5</code> · 最後運行 11-05 23:37 · 下次 11-06 23:35 · 推送 local</div>
+  <div class="meta">🕐 <code>35 23 * * 1-5</code> · 最後運行 11-06 23:37 · 下次 11-09 23:35 · 推送 local</div>
   
-  <details><summary>最新輸出（2026-11-05_23-37-07.md）</summary><div class="md"><p>[2026-11-05 23:35:32 CST] Start dashboard regen<br>⚠️  push attempt 1/4 failed (rc=128), retrying in 10s...<br>⚠️  push attempt 2/4 failed (rc=128), retrying in 20s...<br>⚠️  push attempt 3/4 failed (rc=128), retrying in 40s...<br>[2026-11-05 23:37:06 CST] ⚠️ Dashboard regenerated + committed, but Gitea push FAILED<br>Local commit preserved in ~/backup-repos/jason-investment-agent-code. Gitea host may be down.</p></div></details>
+  <details><summary>最新輸出（2026-11-06_23-37-13.md）</summary><div class="md"><p>[2026-11-06 23:35:27 CST] Start dashboard regen<br>⚠️  push attempt 1/4 failed (rc=128), retrying in 10s...<br>⚠️  push attempt 2/4 failed (rc=128), retrying in 20s...<br>⚠️  push attempt 3/4 failed (rc=128), retrying in 40s...<br>[2026-11-06 23:37:12 CST] ⚠️ Dashboard regenerated + committed, but Gitea push FAILED<br>Local commit preserved in ~/backup-repos/jason-investment-agent-code. Gitea host may be down.</p></div></details>
 </article>
 <article class="card ok" data-name="funnel-analyzer-daily">
   <div class="card-head"><h3>funnel-analyzer-daily</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>30 23 * * 1-5</code> · 最後運行 11-05 23:31 · 下次 11-06 23:30 · 推送 local</div>
+  <div class="meta">🕐 <code>30 23 * * 1-5</code> · 最後運行 11-06 23:31 · 下次 11-09 23:30 · 推送 local</div>
   
-  <details><summary>最新輸出（2026-11-05_23-31-15.md）</summary><div class="md"><p class="md-empty">（今次運行無輸出）</p></div></details>
+  <details><summary>最新輸出（2026-11-06_23-31-08.md）</summary><div class="md"><p class="md-empty">（今次運行無輸出）</p></div></details>
 </article>
 <article class="card ok" data-name="每日工作報告">
   <div class="card-head"><h3>每日工作報告</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>0 23 * * *</code> · 最後運行 11-05 23:02 · 下次 11-06 23:00 · 推送 origin</div>
+  <div class="meta">🕐 <code>0 23 * * *</code> · 最後運行 11-06 23:03 · 下次 11-07 23:00 · 推送 origin</div>
   
-  <details><summary>最新輸出（2026-11-05_23-02-52.md）</summary><div class="md"><p class="md-empty">（此輸出以任務指令為主，暫無報告內容）</p></div></details>
+  <details><summary>最新輸出（2026-11-06_23-03-47.md）</summary><div class="md"><p class="md-empty">（此輸出以任務指令為主，暫無報告內容）</p></div></details>
 </article>
 <article class="card ok" data-name="free model check (6h)">
   <div class="card-head"><h3>Free model check (6h)</h3><span class="badge ok">✅ 正常</span></div>
-  <div class="meta">🕐 <code>0 */6 * * *</code> · 最後運行 11-06 00:01 · 下次 11-06 06:00 · 推送 origin</div>
+  <div class="meta">🕐 <code>0 */6 * * *</code> · 最後運行 11-07 00:01 · 下次 11-07 06:00 · 推送 origin</div>
   
-  <details><summary>最新輸出（2026-11-06_00-01-16.md）</summary><div class="md"><p class="md-empty">（此輸出以任務指令為主，暫無報告內容）</p></div></details>
+  <details><summary>最新輸出（2026-11-07_00-01-03.md）</summary><div class="md"><p class="md-empty">（此輸出以任務指令為主，暫無報告內容）</p></div></details>
 </article></div></section>
-<section><h2>📊 今日市場分析輸出</h2><details class="report"><summary>📄 bull_flag_20261106.md</summary><div class="md"><h4 class="md-h1">Bull Flag 突破訊號 — 2026-11-06</h4>
-<blockquote>掃描時間: 2026-11-06 00:46 HKT<br>掃描範圍: 499 隻<br>過濾: 上升趨勢 + Pole ≥ +15.0% + Flag 5-15 日 + 上沿突破 + 量能 1.5x</blockquote>
-<h5 class="md-h2">Setup 列表</h5>
-<div class="tbl-wrap"><table><thead><tr><th style="text-align:left">Ticker</th><th style="text-align:left">信心</th><th style="text-align:left">進場</th><th style="text-align:left">止損</th><th style="text-align:left">T1</th><th style="text-align:left">T2</th><th style="text-align:left">R:R</th><th style="text-align:left">Pole%</th><th style="text-align:left">Flag 日</th><th style="text-align:left">緊度</th><th style="text-align:left">量能</th></tr></thead><tbody><tr><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td></tr></tbody></table></div>
-<h5 class="md-h2">策略說明</h5>
-<p><strong>Bull Flag</strong> 係 O&#x27;Neil/Weinstein 經典形態:</p>
-<ul><li><strong>Pole</strong>: 急漲段, 5-15 日 +15% 或更多</li><li><strong>Flag</strong>: 急漲後窄幅整理, 5-15 日, 回撤不超過 Pole 38.2% Fibonacci</li><li><strong>突破</strong>: Flag 上沿 + 量能 1.5x = 續勢爆發</li><li><strong>量度目標</strong> (Flag pole projection): T1 = entry + Pole 高度</li></ul>
-<h5 class="md-h2">風控</h5>
-<ul><li>Stop = Flag 低位 × 0.99 (旗下緣失守 = 形態失效)</li><li>T1 = entry + Pole 高度</li><li>T2 = entry + 1.5× Pole 高度 (跑長線)</li><li>R:R 必須 ≥ 1.5, 否則棄置</li></ul>
-<p>_由 Hermes bull_flag_scanner 自動生成_<br>_不構成投資建議_</p></div></details></section>
+
 </main>
 <footer>資料來源：.240（100.79.111.8）Hermes cron 系統，每日自動同步一次。頁面只載 job 狀態與輸出摘要，已自動遮蔽疑似密鑰／令牌字串；不含持倉檔案與任何憑證。<br>由 Pison 彙整發布 · <a style="color:var(--accent)" href="data.json">data.json</a></footer>
 <script>
