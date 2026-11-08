@@ -1,5 +1,5 @@
 {
- "generated_at_hkt": "2026-11-08 00:47 HKT",
+ "generated_at_hkt": "2026-11-09 00:47 HKT",
  "source": ".240 hermestam Hermes cron",
  "total": 40,
  "enabled": 38,
@@ -31,14 +31,14 @@
    "enabled": true,
    "deliver": "telegram",
    "script": "us_tech_stock_news_final.py",
-   "last_run_at": "2026-11-08T00:00:41.274745+08:00",
+   "last_run_at": "2026-11-09T00:00:32.335303+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-08T02:00:00+08:00",
+   "next_run_at": "2026-11-09T02:00:00+08:00",
    "output": {
-    "file": "2026-11-08_00-00-34.md",
-    "mtime": 1794067234.4101944,
-    "text": "# Cron Job: 美股科技股新聞推送\n\n**Job ID:** a1f7931bffc6\n**Run Time:** 2026-11-08 00:00:34\n**Mode:** no_agent (script)\n\n---\n\n🚀 美股科技股投資新聞推送系統 (完整中文版)\n⏰ 執行時間: 2026-11-08 00:00:34\n------------------------------------------------------------\n✅ 已從本地配置載入 API Keys (default model=gemini-3.8-flash-high, temp=0.3)\n   Available models: GLM-5.3-flash, gemini-3.8-flash-high\n   Per-task models: translation=gemini-3.8-flash-high, portfolio_analysis=gemini-3.8-flash-high\n🌙 靜音時段, 跳過 (HKT 23-06, 現在 0:00)\n\n📭 沒有找到符合條件的新聞\n\n📄 完整 cron log: /home/jasonckfan/.hermes/cron/output/a1f7931bffc6/2026-11-07_22-03-11.md"
+    "file": "2026-11-09_00-00-29.md",
+    "mtime": 1794153629.7764475,
+    "text": "# Cron Job: 美股科技股新聞推送\n\n**Job ID:** a1f7931bffc6\n**Run Time:** 2026-11-09 00:00:29\n**Mode:** no_agent (script)\n\n---\n\n🚀 美股科技股投資新聞推送系統 (完整中文版)\n⏰ 執行時間: 2026-11-09 00:00:29\n------------------------------------------------------------\n✅ 已從本地配置載入 API Keys (default model=gemini-3.8-flash-high, temp=0.3)\n   Available models: GLM-5.3-flash, gemini-3.8-flash-high\n   Per-task models: translation=gemini-3.8-flash-high, portfolio_analysis=gemini-3.8-flash-high\n🌙 靜音時段, 跳過 (HKT 23-06, 現在 0:00)\n\n📭 沒有找到符合條件的新聞\n\n📄 完整 cron log: /home/jasonckfan/.hermes/cron/output/a1f7931bffc6/2026-11-08_22-02-22.md"
    },
    "category": "市場報告"
   },
@@ -337,14 +337,14 @@
    "enabled": true,
    "deliver": "telegram",
    "script": "backup_investment_agent_git.sh",
-   "last_run_at": "2026-11-07T09:17:21.587166+08:00",
+   "last_run_at": "2026-11-08T09:17:08.425583+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-08T09:15:00+08:00",
+   "next_run_at": "2026-11-09T09:15:00+08:00",
    "output": {
-    "file": "2026-11-07_09-17-16.md",
-    "mtime": 1794014236.086381,
-    "text": "# Cron Job: 投資助理_本地Git備份\n\n**Job ID:** 2480e3dfe54e\n**Run Time:** 2026-11-07 09:17:15\n**Mode:** no_agent (script)\n\n---\n\nInvestment backup OK: changed=yes remote=failed head=364d00e8"
+    "file": "2026-11-08_09-17-03.md",
+    "mtime": 1794100623.1749437,
+    "text": "# Cron Job: 投資助理_本地Git備份\n\n**Job ID:** 2480e3dfe54e\n**Run Time:** 2026-11-08 09:17:03\n**Mode:** no_agent (script)\n\n---\n\nInvestment backup OK: changed=yes remote=failed head=e34f9677"
    },
    "category": "系統維護"
   },
@@ -409,14 +409,14 @@
    "enabled": true,
    "deliver": "telegram",
    "script": "trading_assistant/export_to_excel.py",
-   "last_run_at": "2026-11-06T23:30:37.699214+08:00",
+   "last_run_at": "2026-11-09T00:30:32.147661+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-09T00:00:00+08:00",
+   "next_run_at": "2026-11-09T01:00:00+08:00",
    "output": {
-    "file": "2026-11-06_23-30-33.md",
-    "mtime": 1793979033.2934608,
-    "text": "# Cron Job: 交易輔助_Excel統一報告\n\n**Job ID:** e83182ddf4ce\n**Run Time:** 2026-11-06 23:30:33\n**Mode:** no_agent (script)\n\n---\n\n📊 Excel 報告: /home/jasonckfan/美股投資/交易記錄/unified_signals_20261106.xlsx\n   總信號: 14\n   E VCP 形態: 1 個 (ROKU)\n   F ORB 突破: 1 個 (VECO)\n   G ATR Squeeze: 1 個 (CPAY)\n   I 板塊相對強度: 11 個 (XLC, XLU, XLRE, XLB, XLE, XLI, XLK, XLF, XLV, XLY, XLP)\n\n   ✅ Telegram 附件已推送\nMEDIA:/home/jasonckfan/美股投資/交易記錄/unified_signals_20261106.xlsx"
+    "file": "2026-11-09_00-30-28.md",
+    "mtime": 1794155428.6824834,
+    "text": "# Cron Job: 交易輔助_Excel統一報告\n\n**Job ID:** e83182ddf4ce\n**Run Time:** 2026-11-09 00:30:28\n**Mode:** no_agent (script)\n\n---\n\n📊 Excel 報告: /home/jasonckfan/美股投資/交易記錄/unified_signals_20261109.xlsx\n   總信號: 0\n   ℹ️  保留現有 Excel (unified_signals_20261109.xlsx, mtime=00:00:30), 不覆寫\n   ℹ️  今日無新信號, 跳過 Telegram 附件推送"
    },
    "category": "交易掃描"
   },
@@ -445,14 +445,14 @@
    "enabled": true,
    "deliver": "telegram",
    "script": "market_monitor/kelileo_watcher.py",
-   "last_run_at": "2026-11-08T00:00:35.254400+08:00",
+   "last_run_at": "2026-11-09T00:00:49.465249+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-08T06:00:00+08:00",
+   "next_run_at": "2026-11-09T06:00:00+08:00",
    "output": {
-    "file": "2026-11-08_00-00-35.md",
-    "mtime": 1794067235.1931927,
-    "text": "# Cron Job: 茄利略CUP_新影片監控\n\n**Job ID:** f03d4ac0fb8f\n**Run Time:** 2026-11-08 00:00:34\n**Mode:** no_agent (script)\n**Status:** silent (empty output)"
+    "file": "2026-11-09_00-00-47.md",
+    "mtime": 1794153647.1086454,
+    "text": "# Cron Job: 茄利略CUP_新影片監控\n\n**Job ID:** f03d4ac0fb8f\n**Run Time:** 2026-11-09 00:00:46\n**Mode:** no_agent (script)\n\n---\n\n📺 **茄利略 CUP 發佈新影片**\n\n🟢 **民主黨橫掃，AI 股血洗：data center 停批，what next？**\n📅 2026-11-08\n\n📝 重點:\n以下係針對影片重點、著重**投資建議**及**目標資產**嘅 3 個港式繁體中文重點摘要：\n\n* **咪亂盲目撈底 AI 供應鏈，大型雲端巨頭（Hyperscalers）相對硬淨：**\n  德州叫停 Data Center 審批重創成條 AI 硬件供應鏈，但大型雲端服務商（Hyperscalers）抗跌力明顯跑贏大市。影片警惕投資者切忌喺「半山腰」心急撈底單一 AI 個股，皆因政策同基本面轉向可以令跌浪深不見底。\n\n* **核心投資建議：買大市指數（如標普 500）好過搏單隻個股：**\n  影片引用歷史數據指出，2008 年撈底 Citigroup、AIG 等個股到今日都未返到家鄉，甚至可能好似 Enron 咁沒落；相反買全市場指數（如 S&P 500）有自動「汰弱留強」機制（踢走 Enron、換入 Nvidia），長遠「返家鄉」同創新高嘅勝率遠高於揀單一股票。\n\n* **操作警示：切忌用三倍槓桿 ETF（如 3x 指數 ETF）搏反彈：**\n  散戶喺大跌市好鍾意轉買三倍槓桿 ETF 搏大幅反彈，但影片提醒槓桿損耗極大（Volatility Decay），往往會出現「大市指數已經返番原位，但三倍 ETF 仲大幅蝕緊」嘅慘況，極度唔建議用槓桿產品做長線撈底工具。\n\n🔗 https://www.youtube.com/watch?v=x8u-jHjo0DQ"
    },
    "category": "KOL／專題監控"
   },
@@ -463,14 +463,14 @@
    "enabled": true,
    "deliver": "telegram",
    "script": "trading_assistant/abcd_notes_sync.py",
-   "last_run_at": "2026-11-06T23:35:28.947759+08:00",
+   "last_run_at": "2026-11-09T00:35:28.042066+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-09T00:05:00+08:00",
+   "next_run_at": "2026-11-09T01:05:00+08:00",
    "output": {
-    "file": "2026-11-06_23-35-28.md",
-    "mtime": 1793979328.9059155,
-    "text": "# Cron Job: 交易輔助_ABCD策略備忘錄\n\n**Job ID:** 0f52af1be96c\n**Run Time:** 2026-11-06 23:35:28\n**Mode:** no_agent (script)\n**Status:** silent (empty output)"
+    "file": "2026-11-09_00-35-27.md",
+    "mtime": 1794155727.9554067,
+    "text": "# Cron Job: 交易輔助_ABCD策略備忘錄\n\n**Job ID:** 0f52af1be96c\n**Run Time:** 2026-11-09 00:35:27\n**Mode:** no_agent (script)\n**Status:** silent (empty output)"
    },
    "category": "交易掃描"
   },
@@ -499,14 +499,14 @@
    "enabled": true,
    "deliver": "local",
    "script": "trading_assistant/bull_flag_scanner.py",
-   "last_run_at": "2026-11-06T23:46:37.070780+08:00",
+   "last_run_at": "2026-11-09T00:46:32.421221+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-09T00:00:00+08:00",
+   "next_run_at": "2026-11-09T01:00:00+08:00",
    "output": {
-    "file": "2026-11-06_23-46-36.md",
-    "mtime": 1793979996.961383,
-    "text": "# Cron Job: H Bull Flag intraday scanner\n\n**Job ID:** cd2a7058a628\n**Run Time:** 2026-11-06 23:46:36\n**Mode:** no_agent (script)\n\n---\n\n🚩 <b>牛旗 突破訊號</b> (2026-11-06 HKT)\n急漲 + 旗形整理 + 突破上沿 | 掃描 499 隻\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n\n⚠️ <b>掃描結果</b>\n目前無可交易 setup。\n💡 條件:\n　• Pole = 5-15 日急漲 ≥ +15%\n　• Flag = 5-15 日窄幅整理 (回撤 < 38.2%)\n　• 突破上沿 + 量能 1.5x = 進場\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n💡 <b>玩法</b>\n突破 Flag 上沿 + 量能買入, T1 = entry + Pole 高度\nBull Flag = O'Neil/Weinstein 經典形態, 勝率 55-65%"
+    "file": "2026-11-09_00-46-32.md",
+    "mtime": 1794156392.3006897,
+    "text": "# Cron Job: H Bull Flag intraday scanner\n\n**Job ID:** cd2a7058a628\n**Run Time:** 2026-11-09 00:46:32\n**Mode:** no_agent (script)\n\n---\n\n🚩 <b>牛旗 突破訊號</b> (2026-11-09 HKT)\n急漲 + 旗形整理 + 突破上沿 | 掃描 499 隻\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n\n⚠️ <b>掃描結果</b>\n目前無可交易 setup。\n💡 條件:\n　• Pole = 5-15 日急漲 ≥ +15%\n　• Flag = 5-15 日窄幅整理 (回撤 < 38.2%)\n　• 突破上沿 + 量能 1.5x = 進場\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n💡 <b>玩法</b>\n突破 Flag 上沿 + 量能買入, T1 = entry + Pole 高度\nBull Flag = O'Neil/Weinstein 經典形態, 勝率 55-65%"
    },
    "category": "交易掃描"
   },
@@ -535,14 +535,14 @@
    "enabled": true,
    "deliver": "local",
    "script": "backup_cron_jobs.sh",
-   "last_run_at": "2026-11-07T09:02:02.158769+08:00",
+   "last_run_at": "2026-11-08T09:02:01.443770+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-08T09:00:00+08:00",
+   "next_run_at": "2026-11-09T09:00:00+08:00",
    "output": {
-    "file": "2026-11-07_09-02-02.md",
-    "mtime": 1794013322.0398371,
-    "text": "# Cron Job: Cron Jobs 自動備份至 Gitea\n\n**Job ID:** 46141cbff660\n**Run Time:** 2026-11-07 09:02:01\n**Mode:** no_agent (script)\n\n---\n\n⚠️  Local backup committed, Gitea push FAILED after retries: 40 jobs\n    Host may be down. Local backup preserved in /home/jasonckfan/backup-repos/jason-investment-agent-code/cron_backup"
+    "file": "2026-11-08_09-02-01.md",
+    "mtime": 1794099721.2652535,
+    "text": "# Cron Job: Cron Jobs 自動備份至 Gitea\n\n**Job ID:** 46141cbff660\n**Run Time:** 2026-11-08 09:02:01\n**Mode:** no_agent (script)\n\n---\n\n⚠️  Local backup committed, Gitea push FAILED after retries: 40 jobs\n    Host may be down. Local backup preserved in /home/jasonckfan/backup-repos/jason-investment-agent-code/cron_backup"
    },
    "category": "系統維護"
   },
@@ -643,14 +643,14 @@
    "enabled": true,
    "deliver": "telegram",
    "script": "trading_assistant/watchlist_monitor.py",
-   "last_run_at": "2026-11-06T23:30:34.132486+08:00",
+   "last_run_at": "2026-11-09T00:30:30.723626+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-09T00:00:00+08:00",
+   "next_run_at": "2026-11-09T01:00:00+08:00",
    "output": {
-    "file": "2026-11-06_23-30-30.md",
-    "mtime": 1793979030.5774794,
-    "text": "# Cron Job: 交易輔助_WatchlistCurated_監控\n\n**Job ID:** 2c537592c42e\n**Run Time:** 2026-11-06 23:30:30\n**Mode:** no_agent (script)\n\n---\n\nℹ No curated watchlist for today"
+    "file": "2026-11-09_00-30-28.md",
+    "mtime": 1794155428.5184817,
+    "text": "# Cron Job: 交易輔助_WatchlistCurated_監控\n\n**Job ID:** 2c537592c42e\n**Run Time:** 2026-11-09 00:30:28\n**Mode:** no_agent (script)\n\n---\n\nℹ No curated watchlist for today"
    },
    "category": "交易掃描"
   },
@@ -661,14 +661,14 @@
    "enabled": true,
    "deliver": "origin",
    "script": null,
-   "last_run_at": "2026-11-07T23:01:54.645814+08:00",
+   "last_run_at": "2026-11-08T23:02:37.881068+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-08T23:00:00+08:00",
+   "next_run_at": "2026-11-09T23:00:00+08:00",
    "output": {
-    "file": "2026-11-07_23-01-52.md",
-    "mtime": 1794063712.1084068,
-    "text": "# Cron Job: 每日工作報告\n\n**Job ID:** 69aaca70973e\n**Run Time:** 2026-11-07 23:01:51\n**Schedule:** 0 23 * * *\n\n**Prompt Characters:** 38634\n## Prompt\n\n[IMPORTANT: The user has invoked the \"hermes-cron-operations\" skill, indicating they want you to follow its instructions. The full skill content is loaded below.]\n\n---\nname: hermes-cron-operations\ndescription: Use when diagnosing Hermes cron job failures, doing a dry-run of scheduled jobs, fixing delivery errors (Discord 404, Telegram 403, channel routing), checking host connectivity for backup/SSH endpoints, or auditing the cron health of a deployed system. Covers hermes cron list, jobs.json schema, scheduler.py delivery routing, and the dry-run methodology that distinguishes syntax bugs from runtime bugs from data-source bugs.\nversion: 1.0.0\nauthor: Hermes Agent\nlicense: MIT\nmetadata:\n  hermes:\n    tags: [cron, operations, diagnostics, delivery, hermes, health-check, dry-run]\n    related_skills: [hermes-agent, trading-assistant-system, webhook-subscriptions]\n---\n\n# Hermes Cron Operations\n\nOperational playbook for diagnosing and maintaining Hermes cron jobs in a deployed environment. The skill is **about** the class of work that comes after you've written a cron job: how do you tell a syntax bug from a runtime bug from a data-source bug? How do you triage `last_delivery_error` fields that linger from a previous failure? How do you know if it's your script, your env, your delivery target, or your data feed?\n\n## When to Use\n\n- User says \"dry-run my cron jobs\", \"why is my cron not working\", \"cron job failing\", \"delivery error\"\n- `hermes cron list` shows a job with `error: ...` or stale `last_delivery_error`\n- A `no-agent` push script is silently dying (script exits 1 with no Telegram/Discord message)\n- A backup / SSH / web endpoint that a cron job depends on has gone away\n- A previously-working pipeline suddenly starts failing after a config change\n- After adding a new platform (Discord, Slack, etc.) and wondering why cron still goes to old place\n- Code audit / health check across the whole cron fleet (30+ jobs)\n- **Bulk-switching LLM model/provider across cron jobs** (rotating API key, migrating from one provider to another, changing the global fallback chain, fixing `auxiliary.vision` config drift)\n\n**Don't use for:** writing a new cron job (just use the `cronjob` tool / `hermes cron create`), or debugging a specific script's logic (use `systematic-debugging`).\n\n## TL;DR — The 4-Layer Diagnostic Stack\n\nCron job failures have **four layers**, and the wrong fix targets the wrong layer. Always diagnose in this order:\n\n| Layer | Question | Tool | Symptom |\n|---|---|---|---|\n| **1. Syntax** | Does the script even parse? | `bash -n script.sh` / `py_compile.compile(..., doraise=True)` | Import error on import, syntax error on run |\n| **2. Runtime** | Does it run end-to-end? | `--dry-run` flag or `timeout 30 script.py` | Exit code 1, traceback mid-execution |\n| **3. Data source** | Does the external API work? | `curl -I <endpoint>` directly | HTTP 429, JSONDecodeError, network timeout |\n| **4. Delivery** | Does the result reach the user? | `hermes cron list` `last_delivery_error` field | \"no message received\", silent failures |\n\nA real dry-run walks all four layers. **The most common mistake is stopping at layer 1.** A script that passes `bash -n` and `import` can still be broken because Yahoo returned 429, the LLM timed out, or the Telegram bot token expired.\n\n## File Layout\n\n```\n~/.hermes/\n├── config.yaml                 # Main config (model, providers, fallbacks)\n├── .env                        # API keys + env vars (chmod 600)\n├── channel_directory.json      # Multi-platform channel routing\n├── cron/\n│   ├── jobs.json               # ⭐ Cron job definitions + state\n│   ├── scheduler.py            # ⭐ Delivery routing logic (read this to understand env vars)\n│   └── runs/                   # Per-job run history\n├── scripts/                    # Custom push scripts (cron usually calls these)\n├── hermes-agent/cron/          # Source code (if git-installed)\n│   ├── jobs.py\n│   └── scheduler.py\n└── logs/                       # gateway.log, agent.log\n```\n\n`jobs.json` is the **ground truth** for cron state — not `hermes cron list` (paginated, visual scrollback can hide rows). Always `jq` it.\n\n## CLI Reference\n\n```bash\n# List jobs\nhermes cron list                # Paginated table (10 rows visible)\nhermes cron list --all          # Include disabled\n\n# Count + audit (the right way)\njq 'length' ~/.hermes/cron/jobs.json                           # Total count\njq '[.[] | .deliver] | group_by(.) | map({deliver: .[0], count: length})' \\\n  ~/.hermes/cron/jobs.json                                     # Deliver distribution\njq '[.[] | select(.last_delivery_error != null) | {name, deliver, last_delivery_error}]' \\\n  ~/.hermes/cron/jobs.json                                     # ⭐ Stale errors\n\n# Inspect a single job\nhermes cron status <id>         # Verbose\njq '.[] | select(.name == \"美股每日晨報\")' ~/.hermes/cron/jobs.json\n\n# Run / control\nhermes cron run <id>            # Trigger on next tick\nhermes cron pause <id>\nhermes cron resume <id>\nhermes cron edit <id>           # Edit schedule, prompt, delivery\nhermes cron remove <id>\nhermes cron status              # Scheduler status (is the loop even running?)\n```\n\n## Layer 1 — Syntax / Import Audit (Bash)\n\n```bash\n# Bash scripts\nfor f in ~/.hermes/scripts/*.sh; do\n  echo \"=== $f ===\"; bash -n \"$f\" || echo \"❌ $f\"\ndone\n\n# Inline Python in heredocs (bash scripts that embed python3 - <<'PY' ... PY)\nfor f in ~/.hermes/scripts/*.sh; do\n  if grep -q \"^python3 - <<\" \"$f\"; then\n    echo \"=== $f (heredoc Python) ===\"\n    awk '/^python3 - <</{flag=1; next} /^[^A-Z]/{flag=0} flag' \"$f\" \\\n      | python3 -c \"import sys, py_compile; py_compile.compile(sys.stdin.read(), doraise=True)\" \\\n      && echo \"✅ heredoc OK\" || echo \"❌ $f heredoc\"\n  fi\ndone\n```\n\n## Layer 1 — Syntax / Import Audit (Python)\n\n```bash\n# Single file\npython3 -c \"import py_c"
+    "file": "2026-11-08_23-02-35.md",
+    "mtime": 1794150155.2682674,
+    "text": "# Cron Job: 每日工作報告\n\n**Job ID:** 69aaca70973e\n**Run Time:** 2026-11-08 23:02:34\n**Schedule:** 0 23 * * *\n\n**Prompt Characters:** 38634\n## Prompt\n\n[IMPORTANT: The user has invoked the \"hermes-cron-operations\" skill, indicating they want you to follow its instructions. The full skill content is loaded below.]\n\n---\nname: hermes-cron-operations\ndescription: Use when diagnosing Hermes cron job failures, doing a dry-run of scheduled jobs, fixing delivery errors (Discord 404, Telegram 403, channel routing), checking host connectivity for backup/SSH endpoints, or auditing the cron health of a deployed system. Covers hermes cron list, jobs.json schema, scheduler.py delivery routing, and the dry-run methodology that distinguishes syntax bugs from runtime bugs from data-source bugs.\nversion: 1.0.0\nauthor: Hermes Agent\nlicense: MIT\nmetadata:\n  hermes:\n    tags: [cron, operations, diagnostics, delivery, hermes, health-check, dry-run]\n    related_skills: [hermes-agent, trading-assistant-system, webhook-subscriptions]\n---\n\n# Hermes Cron Operations\n\nOperational playbook for diagnosing and maintaining Hermes cron jobs in a deployed environment. The skill is **about** the class of work that comes after you've written a cron job: how do you tell a syntax bug from a runtime bug from a data-source bug? How do you triage `last_delivery_error` fields that linger from a previous failure? How do you know if it's your script, your env, your delivery target, or your data feed?\n\n## When to Use\n\n- User says \"dry-run my cron jobs\", \"why is my cron not working\", \"cron job failing\", \"delivery error\"\n- `hermes cron list` shows a job with `error: ...` or stale `last_delivery_error`\n- A `no-agent` push script is silently dying (script exits 1 with no Telegram/Discord message)\n- A backup / SSH / web endpoint that a cron job depends on has gone away\n- A previously-working pipeline suddenly starts failing after a config change\n- After adding a new platform (Discord, Slack, etc.) and wondering why cron still goes to old place\n- Code audit / health check across the whole cron fleet (30+ jobs)\n- **Bulk-switching LLM model/provider across cron jobs** (rotating API key, migrating from one provider to another, changing the global fallback chain, fixing `auxiliary.vision` config drift)\n\n**Don't use for:** writing a new cron job (just use the `cronjob` tool / `hermes cron create`), or debugging a specific script's logic (use `systematic-debugging`).\n\n## TL;DR — The 4-Layer Diagnostic Stack\n\nCron job failures have **four layers**, and the wrong fix targets the wrong layer. Always diagnose in this order:\n\n| Layer | Question | Tool | Symptom |\n|---|---|---|---|\n| **1. Syntax** | Does the script even parse? | `bash -n script.sh` / `py_compile.compile(..., doraise=True)` | Import error on import, syntax error on run |\n| **2. Runtime** | Does it run end-to-end? | `--dry-run` flag or `timeout 30 script.py` | Exit code 1, traceback mid-execution |\n| **3. Data source** | Does the external API work? | `curl -I <endpoint>` directly | HTTP 429, JSONDecodeError, network timeout |\n| **4. Delivery** | Does the result reach the user? | `hermes cron list` `last_delivery_error` field | \"no message received\", silent failures |\n\nA real dry-run walks all four layers. **The most common mistake is stopping at layer 1.** A script that passes `bash -n` and `import` can still be broken because Yahoo returned 429, the LLM timed out, or the Telegram bot token expired.\n\n## File Layout\n\n```\n~/.hermes/\n├── config.yaml                 # Main config (model, providers, fallbacks)\n├── .env                        # API keys + env vars (chmod 600)\n├── channel_directory.json      # Multi-platform channel routing\n├── cron/\n│   ├── jobs.json               # ⭐ Cron job definitions + state\n│   ├── scheduler.py            # ⭐ Delivery routing logic (read this to understand env vars)\n│   └── runs/                   # Per-job run history\n├── scripts/                    # Custom push scripts (cron usually calls these)\n├── hermes-agent/cron/          # Source code (if git-installed)\n│   ├── jobs.py\n│   └── scheduler.py\n└── logs/                       # gateway.log, agent.log\n```\n\n`jobs.json` is the **ground truth** for cron state — not `hermes cron list` (paginated, visual scrollback can hide rows). Always `jq` it.\n\n## CLI Reference\n\n```bash\n# List jobs\nhermes cron list                # Paginated table (10 rows visible)\nhermes cron list --all          # Include disabled\n\n# Count + audit (the right way)\njq 'length' ~/.hermes/cron/jobs.json                           # Total count\njq '[.[] | .deliver] | group_by(.) | map({deliver: .[0], count: length})' \\\n  ~/.hermes/cron/jobs.json                                     # Deliver distribution\njq '[.[] | select(.last_delivery_error != null) | {name, deliver, last_delivery_error}]' \\\n  ~/.hermes/cron/jobs.json                                     # ⭐ Stale errors\n\n# Inspect a single job\nhermes cron status <id>         # Verbose\njq '.[] | select(.name == \"美股每日晨報\")' ~/.hermes/cron/jobs.json\n\n# Run / control\nhermes cron run <id>            # Trigger on next tick\nhermes cron pause <id>\nhermes cron resume <id>\nhermes cron edit <id>           # Edit schedule, prompt, delivery\nhermes cron remove <id>\nhermes cron status              # Scheduler status (is the loop even running?)\n```\n\n## Layer 1 — Syntax / Import Audit (Bash)\n\n```bash\n# Bash scripts\nfor f in ~/.hermes/scripts/*.sh; do\n  echo \"=== $f ===\"; bash -n \"$f\" || echo \"❌ $f\"\ndone\n\n# Inline Python in heredocs (bash scripts that embed python3 - <<'PY' ... PY)\nfor f in ~/.hermes/scripts/*.sh; do\n  if grep -q \"^python3 - <<\" \"$f\"; then\n    echo \"=== $f (heredoc Python) ===\"\n    awk '/^python3 - <</{flag=1; next} /^[^A-Z]/{flag=0} flag' \"$f\" \\\n      | python3 -c \"import sys, py_compile; py_compile.compile(sys.stdin.read(), doraise=True)\" \\\n      && echo \"✅ heredoc OK\" || echo \"❌ $f heredoc\"\n  fi\ndone\n```\n\n## Layer 1 — Syntax / Import Audit (Python)\n\n```bash\n# Single file\npython3 -c \"import py_c"
    },
    "category": "系統維護"
   },
@@ -679,14 +679,14 @@
    "enabled": true,
    "deliver": "origin",
    "script": null,
-   "last_run_at": "2026-11-08T00:01:08.258658+08:00",
+   "last_run_at": "2026-11-09T00:01:04.220168+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-08T06:00:00+08:00",
+   "next_run_at": "2026-11-09T06:00:00+08:00",
    "output": {
-    "file": "2026-11-08_00-01-04.md",
-    "mtime": 1794067264.7011309,
-    "text": "# Cron Job: Free model check (6h)\n\n**Job ID:** ae614505479b\n**Run Time:** 2026-11-08 00:01:04\n**Schedule:** 0 */6 * * *\n\n**Prompt Characters:** 12851\n## Prompt\n\n[IMPORTANT: The user has invoked the \"free-model-auto-switch\" skill, indicating they want you to follow its instructions. The full skill content is loaded below.]\n\n---\nname: free-model-auto-switch\ndescription: Use when 路由 opencode-go 免費模型 (check_free_models.py).\nmetadata:\n  hermes:\n    version: 1.0.0\n    author: Jason Fan\n    license: MIT\n    tags: [opencode-go, model-routing, cost, cron]\n    related_skills: [hermes-llm-config]\n---\n\n## When to Use\n\n- 免費模型 cron 檢查回報異常（SWITCHED / PROBE-FAIL / WRITE-FAIL）時。\n- 要手動重跑、回歸測試，或修改 `model.default` / `fallback_providers` 路由時。\n- 換 opencode-go key、懷疑 config.yaml 被寫壞、或要新增/調整 6h 檢查 cron 時。\n\n# Free-model auto-switch (opencode-go, 本機 linux)\n\n自動把 Hermes 的推理路由維持在「最便宜的可用層級」：探測 opencode-go 上的免費／preview 模型，\n把 `model.default` 指到最強的那個，其餘免費模型（最多 2 個）+ `zai/glm-5.3-flash` 依序放進\n`fallback_providers`；免費模型全消失時自動退回 `glm-5.3-flash`。\n\n## 0. 本機部署事實 (2026-10-21)\n\n- 腳本：`/home/jasonckfan/.hermes/scripts/check_free_models.py`（`HERMES_HOME` 用預設 `~/.hermes`）。\n- **PyYAML 坑：cron 的 `python3` 會用 `-I`（isolated mode）** — 這是 2026-10-21 cron 首次執行的真實失敗原因。\n  `-I` 會丟棄 `~/.local/lib/pythonX.Y/site-packages`，所以 `pip install --user` 裝的 PyYAML\n  **在 cron session 裡看不到**（`ModuleNotFoundError: yaml`），但同一個 python 在一般 shell 裡跑卻正常。\n  正確理解：\n  1. Hermes bundled `python3` = `~/.hermes/tools/python-3.14.7+.../bin/python3`（3.14.7），\n     `-I` 下看不到 `~/.local`，但有 `pip` module。\n  2. `/usr/bin/python3` = 3.10.12，PyYAML 5.4.1 在 `/usr/lib/python3/dist-packages`（**不受 `-I` 影響**），\n     是最保險的選擇。\n  3. 腳本已內建 `_yaml()`：import 失敗時手動把 `~/.local/lib/python3.*/site-packages` 加回 `sys.path`，\n     所以**任何** python3 都能跑（已驗：bundled / bundled `-I` / `/usr/bin/python3` / `/usr/bin/python3 -I`，\n     全部 `NO-CHANGE` + config byte-identical）。\n  4. cron prompt 一律寫絕對路徑 `/usr/bin/python3`；`#!/usr/bin/env python3` 的 shebang 在此環境會揀錯。\n- 本機 Hermes **v0.21.5 已內建** `agent/opencode_affinity.py`（`x-opencode-session` 由 Hermes 自己帶），\n  **不需要** user plugin；但獨立探測腳本仍要自己帶 header（見 §3）。\n- **`fallback_providers` 必須是 dict list**：`  - {provider: X, model: Y}`。\n  舊寫法 `- glm`（純字串）會被 `hermes_cli/fallback_config.get_fallback_chain()` 靜默丟棄 =\n  形同沒有 fallback；2026-10-21 已被腳本改成 dict 格式。\n- config 改動後備份會被搬到 `~/.hermes/backups/config/config.yaml.bak.<tag>`（不是 `~/.hermes/` 根目錄），\n  rollback 從那裡拿。\n- `model.available_models` 只給 picker 用，不驗證 `model.default`，切換後**不用**同步它；\n  `providers.opencode-go.model` 同理（`runtime_provider._get_model_config()` 以 `model.default` 為準）。\n\n## 1. 路由表\n\n| 免費模型數量 | `model.default` | `fallback_providers` |\n|---|---|---|\n| ≥ 2 | 最強免費模型 | 其他免費模型 → `zai/glm-5.3-flash` |\n| 1 | 該模型 | `zai/glm-5.3-flash` |\n| 0 | `glm-5.3-flash` (zai) | `opencode-go/glm-5.3-flash` |\n\n**使用者策略（2026-10-18）**：**優先用盡所有免費模型，真的不行才 fallback 到 `glm-5.3-flash`**。\n免費鏈最多排 3 個（default + 2 fallback），`zai/glm-5.3-flash` 永遠坐最後一順位。\n\n免費判定 = **官方 OpenCode Go 計價表的明確清單**（2026-10-21 核實：\nhttps://opencode.ai/v2/docs/console/go/ 嘅 pricing table）。\n\n**只有這 3 個 model id 真正免費**（Input=Free / Output=Free / 月限額 Unlimited）：\n\n| model id | 官方計價 |\n|---|---|\n| `longcat-2.5-preview-free` | Free / Free / Unlimited（限時） |\n| `minimax-m3.1-flash-free` | Free / Free / Unlimited（限時） |\n| `beam-free` | Free / Free / Unlimited（限時，**香港／中國大陸等 20 個地區不提供**） |\n\n**陷阱：`preview` ≠ 免費。** `hy4-preview`（$0.834 in / $2.501 out per M）同\n`step-5-preview`（$1.00 / $2.70）**係付費模型**，只係叫「preview」。\n上游 skill 用「model id 含 free/preview/promo」嘅 substring heuristic → **會把呢兩個付費模型\n誤判為免費並寫入 fallback 鏈**。2026-10-21 實測中招，script 已改用權威清單\n（`FREE_MODELS` / `NOT_FREE` 常數）。**唔好再由 model id 推斷免費**。\n\n其他常見付費模型參考價（Go plan，per M tokens）：`mimo-v2.6-flash` $0.14/$0.28、\n`hy3` $0.14/$0.58、`glm-5.3-flash` $0.15/$0.50、`minimax-m3` $0.30/$1.20、\n`muse-spark-1.3-contributor` $0.10/$0.20。\n\n## 2. 探測門檻 — 絕不只看 status code\n\n免費／preview 模型會**回 200 但 body 空的**（`deepseek`、`longcat` 都發生過）。門檻 = 一個真的完成\n且內容非空：\n\n```python\nmsg = (r.get(\"choices\") or [{}])[0].get(\"message\", {})\nok = bool((msg.get(\"content\") or \"\").strip() or (msg.get(\"reasoning_content\") or \"\").strip())\n```\n\n`max_tokens=512` 很重要 — reasoning 模型先吐 `reasoning_content`，上限太小會讓 `content` 為空。\n\n## 3. 環境需求\n\n1. **Key** — `OPENCODE_GO_API_KEY`（`oc_sk_…`）在 `~/.hermes/.env`（約第 444 行；第 78 行有個被註解的舊的）。\n2. **Header** — 每個請求都要 `x-opencode-session`，否則 relay 回 `400 MissingSessionID`。\n3. **Cloudflare attribution** — 缺 `User-Agent: HermesAgent/<ver>`、`HTTP-Referer`、`X-Title`\n   會回 `403 error 1010`。\n4. **Blocked regions** — `beam-free` 403；探測失敗只記錄不致命。\n\n## 4. 腳本契約\n\n`~/.hermes/scripts/check_free_models.py` — 冪等、agent 用 terminal 跑、exit 0/1/2。\nstdout 機器可讀（cron agent 只 grep 這些，**禁止貼原始輸出**）：\n\n```\nFREE-OK [\"hy4-preview\",\"longcat-2.5-preview-free\",\"step-5-preview\"]\nPROBE {\"hy4-preview\":\"OK\", ...}\nCURRENT default=<cur> usable=[...]\nCHAIN [[provider, default], [provider, fb1], ...]   # config.yaml 裡的實際路由鏈\nSWITCHED default <old> -> <new> | fallback=[[\"opencode-go\",\"minimax-m3.1-flash-free\"],[\"zai\",\"glm-5.3-flash\"]]\nNO-CHANGE\n```\n\n**回報時的路由鏈一定要引用 `CHAIN` 行**，不要自己從 `usable[]` 組：free chain 上限 3 筆（default + 2），\n`usable[]` 可以有 4 個（例：`step-5-preview` 會被排除在鏈外）。2026-10-21 cron 曾因此回報了\n「step-5-preview 在鏈裡」的錯誤鏈。\n\n| 標記 | exit | 意義 |\n|---|---|---|\n| `NO-CHANGE` | 0 | 路由已正確（靜默一行回覆） |\n| `SWITCHED` | 0 | 已切換（要詳細回報） |\n| `PROBE-FAIL` | 1 | `models.list` 不可達（401 key 過期 / 403 CF）；路由未動 |\n| `WRITE-FAIL` | 2 | YAML 驗證失敗；路由未動 |\n\n一次完整探測 ≈ 10–15s（4 個免費模型，`_post` timeout 45s、list timeout 20s）。\n\n## 5. 安全寫入 config.yaml\n\n**絕對不要用 edit/patch 工具改 `config.yaml`** — 會被當敏感設定檔拒絕。由腳本 `open(path,'w')` 寫入。\n\n兩個曾把檔案寫壞的失敗模式：\n1. **窄的 block regex** — `^fallback_providers:\\s*\\n(?:\\s+-.*\\n)+` 遇空行就停 → 重複 key。\n   正確：從 key 行一路取代到**下一個非縮排行**（`(?ms)^fallback_providers:.*?(?=^[A-Za-z_])`）。\n2. **沒有驗證** — 寫入前 re-parse 並斷言後面的 block 還活著：\n   ```python\n   d = yaml.safe_load(new_cfg)\n   assert d['model']['default'] == new_default\n   assert all(isinstance(e,dict) and e.get('provider') and e.get('model') for e in d['fallback_providers'])\n   assert 'toolsets"
+    "file": "2026-11-09_00-01-00.md",
+    "mtime": 1794153660.806802,
+    "text": "# Cron Job: Free model check (6h)\n\n**Job ID:** ae614505479b\n**Run Time:** 2026-11-09 00:00:59\n**Schedule:** 0 */6 * * *\n\n**Prompt Characters:** 12851\n## Prompt\n\n[IMPORTANT: The user has invoked the \"free-model-auto-switch\" skill, indicating they want you to follow its instructions. The full skill content is loaded below.]\n\n---\nname: free-model-auto-switch\ndescription: Use when 路由 opencode-go 免費模型 (check_free_models.py).\nmetadata:\n  hermes:\n    version: 1.0.0\n    author: Jason Fan\n    license: MIT\n    tags: [opencode-go, model-routing, cost, cron]\n    related_skills: [hermes-llm-config]\n---\n\n## When to Use\n\n- 免費模型 cron 檢查回報異常（SWITCHED / PROBE-FAIL / WRITE-FAIL）時。\n- 要手動重跑、回歸測試，或修改 `model.default` / `fallback_providers` 路由時。\n- 換 opencode-go key、懷疑 config.yaml 被寫壞、或要新增/調整 6h 檢查 cron 時。\n\n# Free-model auto-switch (opencode-go, 本機 linux)\n\n自動把 Hermes 的推理路由維持在「最便宜的可用層級」：探測 opencode-go 上的免費／preview 模型，\n把 `model.default` 指到最強的那個，其餘免費模型（最多 2 個）+ `zai/glm-5.3-flash` 依序放進\n`fallback_providers`；免費模型全消失時自動退回 `glm-5.3-flash`。\n\n## 0. 本機部署事實 (2026-10-21)\n\n- 腳本：`/home/jasonckfan/.hermes/scripts/check_free_models.py`（`HERMES_HOME` 用預設 `~/.hermes`）。\n- **PyYAML 坑：cron 的 `python3` 會用 `-I`（isolated mode）** — 這是 2026-10-21 cron 首次執行的真實失敗原因。\n  `-I` 會丟棄 `~/.local/lib/pythonX.Y/site-packages`，所以 `pip install --user` 裝的 PyYAML\n  **在 cron session 裡看不到**（`ModuleNotFoundError: yaml`），但同一個 python 在一般 shell 裡跑卻正常。\n  正確理解：\n  1. Hermes bundled `python3` = `~/.hermes/tools/python-3.14.7+.../bin/python3`（3.14.7），\n     `-I` 下看不到 `~/.local`，但有 `pip` module。\n  2. `/usr/bin/python3` = 3.10.12，PyYAML 5.4.1 在 `/usr/lib/python3/dist-packages`（**不受 `-I` 影響**），\n     是最保險的選擇。\n  3. 腳本已內建 `_yaml()`：import 失敗時手動把 `~/.local/lib/python3.*/site-packages` 加回 `sys.path`，\n     所以**任何** python3 都能跑（已驗：bundled / bundled `-I` / `/usr/bin/python3` / `/usr/bin/python3 -I`，\n     全部 `NO-CHANGE` + config byte-identical）。\n  4. cron prompt 一律寫絕對路徑 `/usr/bin/python3`；`#!/usr/bin/env python3` 的 shebang 在此環境會揀錯。\n- 本機 Hermes **v0.21.5 已內建** `agent/opencode_affinity.py`（`x-opencode-session` 由 Hermes 自己帶），\n  **不需要** user plugin；但獨立探測腳本仍要自己帶 header（見 §3）。\n- **`fallback_providers` 必須是 dict list**：`  - {provider: X, model: Y}`。\n  舊寫法 `- glm`（純字串）會被 `hermes_cli/fallback_config.get_fallback_chain()` 靜默丟棄 =\n  形同沒有 fallback；2026-10-21 已被腳本改成 dict 格式。\n- config 改動後備份會被搬到 `~/.hermes/backups/config/config.yaml.bak.<tag>`（不是 `~/.hermes/` 根目錄），\n  rollback 從那裡拿。\n- `model.available_models` 只給 picker 用，不驗證 `model.default`，切換後**不用**同步它；\n  `providers.opencode-go.model` 同理（`runtime_provider._get_model_config()` 以 `model.default` 為準）。\n\n## 1. 路由表\n\n| 免費模型數量 | `model.default` | `fallback_providers` |\n|---|---|---|\n| ≥ 2 | 最強免費模型 | 其他免費模型 → `zai/glm-5.3-flash` |\n| 1 | 該模型 | `zai/glm-5.3-flash` |\n| 0 | `glm-5.3-flash` (zai) | `opencode-go/glm-5.3-flash` |\n\n**使用者策略（2026-10-18）**：**優先用盡所有免費模型，真的不行才 fallback 到 `glm-5.3-flash`**。\n免費鏈最多排 3 個（default + 2 fallback），`zai/glm-5.3-flash` 永遠坐最後一順位。\n\n免費判定 = **官方 OpenCode Go 計價表的明確清單**（2026-10-21 核實：\nhttps://opencode.ai/v2/docs/console/go/ 嘅 pricing table）。\n\n**只有這 3 個 model id 真正免費**（Input=Free / Output=Free / 月限額 Unlimited）：\n\n| model id | 官方計價 |\n|---|---|\n| `longcat-2.5-preview-free` | Free / Free / Unlimited（限時） |\n| `minimax-m3.1-flash-free` | Free / Free / Unlimited（限時） |\n| `beam-free` | Free / Free / Unlimited（限時，**香港／中國大陸等 20 個地區不提供**） |\n\n**陷阱：`preview` ≠ 免費。** `hy4-preview`（$0.834 in / $2.501 out per M）同\n`step-5-preview`（$1.00 / $2.70）**係付費模型**，只係叫「preview」。\n上游 skill 用「model id 含 free/preview/promo」嘅 substring heuristic → **會把呢兩個付費模型\n誤判為免費並寫入 fallback 鏈**。2026-10-21 實測中招，script 已改用權威清單\n（`FREE_MODELS` / `NOT_FREE` 常數）。**唔好再由 model id 推斷免費**。\n\n其他常見付費模型參考價（Go plan，per M tokens）：`mimo-v2.6-flash` $0.14/$0.28、\n`hy3` $0.14/$0.58、`glm-5.3-flash` $0.15/$0.50、`minimax-m3` $0.30/$1.20、\n`muse-spark-1.3-contributor` $0.10/$0.20。\n\n## 2. 探測門檻 — 絕不只看 status code\n\n免費／preview 模型會**回 200 但 body 空的**（`deepseek`、`longcat` 都發生過）。門檻 = 一個真的完成\n且內容非空：\n\n```python\nmsg = (r.get(\"choices\") or [{}])[0].get(\"message\", {})\nok = bool((msg.get(\"content\") or \"\").strip() or (msg.get(\"reasoning_content\") or \"\").strip())\n```\n\n`max_tokens=512` 很重要 — reasoning 模型先吐 `reasoning_content`，上限太小會讓 `content` 為空。\n\n## 3. 環境需求\n\n1. **Key** — `OPENCODE_GO_API_KEY`（`oc_sk_…`）在 `~/.hermes/.env`（約第 444 行；第 78 行有個被註解的舊的）。\n2. **Header** — 每個請求都要 `x-opencode-session`，否則 relay 回 `400 MissingSessionID`。\n3. **Cloudflare attribution** — 缺 `User-Agent: HermesAgent/<ver>`、`HTTP-Referer`、`X-Title`\n   會回 `403 error 1010`。\n4. **Blocked regions** — `beam-free` 403；探測失敗只記錄不致命。\n\n## 4. 腳本契約\n\n`~/.hermes/scripts/check_free_models.py` — 冪等、agent 用 terminal 跑、exit 0/1/2。\nstdout 機器可讀（cron agent 只 grep 這些，**禁止貼原始輸出**）：\n\n```\nFREE-OK [\"hy4-preview\",\"longcat-2.5-preview-free\",\"step-5-preview\"]\nPROBE {\"hy4-preview\":\"OK\", ...}\nCURRENT default=<cur> usable=[...]\nCHAIN [[provider, default], [provider, fb1], ...]   # config.yaml 裡的實際路由鏈\nSWITCHED default <old> -> <new> | fallback=[[\"opencode-go\",\"minimax-m3.1-flash-free\"],[\"zai\",\"glm-5.3-flash\"]]\nNO-CHANGE\n```\n\n**回報時的路由鏈一定要引用 `CHAIN` 行**，不要自己從 `usable[]` 組：free chain 上限 3 筆（default + 2），\n`usable[]` 可以有 4 個（例：`step-5-preview` 會被排除在鏈外）。2026-10-21 cron 曾因此回報了\n「step-5-preview 在鏈裡」的錯誤鏈。\n\n| 標記 | exit | 意義 |\n|---|---|---|\n| `NO-CHANGE` | 0 | 路由已正確（靜默一行回覆） |\n| `SWITCHED` | 0 | 已切換（要詳細回報） |\n| `PROBE-FAIL` | 1 | `models.list` 不可達（401 key 過期 / 403 CF）；路由未動 |\n| `WRITE-FAIL` | 2 | YAML 驗證失敗；路由未動 |\n\n一次完整探測 ≈ 10–15s（4 個免費模型，`_post` timeout 45s、list timeout 20s）。\n\n## 5. 安全寫入 config.yaml\n\n**絕對不要用 edit/patch 工具改 `config.yaml`** — 會被當敏感設定檔拒絕。由腳本 `open(path,'w')` 寫入。\n\n兩個曾把檔案寫壞的失敗模式：\n1. **窄的 block regex** — `^fallback_providers:\\s*\\n(?:\\s+-.*\\n)+` 遇空行就停 → 重複 key。\n   正確：從 key 行一路取代到**下一個非縮排行**（`(?ms)^fallback_providers:.*?(?=^[A-Za-z_])`）。\n2. **沒有驗證** — 寫入前 re-parse 並斷言後面的 block 還活著：\n   ```python\n   d = yaml.safe_load(new_cfg)\n   assert d['model']['default'] == new_default\n   assert all(isinstance(e,dict) and e.get('provider') and e.get('model') for e in d['fallback_providers'])\n   assert 'toolsets"
    },
    "category": "系統維護"
   },
@@ -727,5 +727,11 @@
    "category": "市場報告"
   }
  ],
- "reports": []
+ "reports": [
+  {
+   "file": "bull_flag_20261109.md",
+   "mtime": 1794156392.0736926,
+   "text": "# Bull Flag 突破訊號 — 2026-11-09\n\n> 掃描時間: 2026-11-09 00:46 HKT\n> 掃描範圍: 499 隻\n> 過濾: 上升趨勢 + Pole ≥ +15.0% + Flag 5-15 日 + 上沿突破 + 量能 1.5x\n\n## Setup 列表\n\n| Ticker | 信心 | 進場 | 止損 | T1 | T2 | R:R | Pole% | Flag 日 | 緊度 | 量能 |\n|--------|------|------|------|------|------|-----|-------|---------|------|------|\n| — | — | — | — | — | — | — | — | — | — | — |\n\n## 策略說明\n\n**Bull Flag** 係 O'Neil/Weinstein 經典形態:\n- **Pole**: 急漲段, 5-15 日 +15% 或更多\n- **Flag**: 急漲後窄幅整理, 5-15 日, 回撤不超過 Pole 38.2% Fibonacci\n- **突破**: Flag 上沿 + 量能 1.5x = 續勢爆發\n- **量度目標** (Flag pole projection): T1 = entry + Pole 高度\n\n## 風控\n\n- Stop = Flag 低位 × 0.99 (旗下緣失守 = 形態失效)\n- T1 = entry + Pole 高度\n- T2 = entry + 1.5× Pole 高度 (跑長線)\n- R:R 必須 ≥ 1.5, 否則棄置\n\n_由 Hermes bull_flag_scanner 自動生成_\n_不構成投資建議_"
+  }
+ ]
 }
