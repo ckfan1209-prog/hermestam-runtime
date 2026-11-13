@@ -41,8 +41,9 @@ h2{font-size:21px;line-height:1.35;margin:0 0 6px;padding-bottom:8px;border-bott
 .md code{background:#eef1f6;color:#334155;padding:1px 5px;border-radius:5px;font-size:13.5px}
 .md pre.code{white-space:pre-wrap;word-break:break-word;background:#f1f0eb;border-radius:8px;padding:12px;font-size:13.5px;line-height:1.6;overflow:auto}
 .md a{color:var(--accent)}
-.tbl-wrap{overflow-x:auto;margin:12px 0}
+.tbl-wrap{overflow-x:auto;margin:12px 0;-webkit-overflow-scrolling:touch}
 .md table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.55}
+.md table.wide{min-width:640px}
 .md th{background:#eef1f6;padding:8px 10px;white-space:nowrap;border:1px solid var(--line)}
 .md td{padding:7px 10px;border:1px solid var(--line);vertical-align:top}
 .md tbody tr:nth-child(even){background:#faf9f6}
@@ -61,12 +62,20 @@ td.job-name summary:hover{color:var(--accent)}
 .row-out{margin-top:10px} .row-out .md{font-size:15px;max-height:340px;overflow:auto;padding-right:6px}
 .err-msg{color:var(--err);font-size:13px;background:var(--errbg);border-radius:8px;padding:8px 10px;margin:0 0 8px;overflow-wrap:break-word;line-height:1.6}
 footer{color:var(--muted);font-size:13px;max-width:820px;margin:0 auto;padding:0 20px 32px;line-height:1.7}
-@media (max-width:640px){h1{font-size:23px} .article{padding:16px} .md{font-size:16px} table.status{font-size:13.5px}}
+@media (max-width:640px){h1{font-size:23px} .article{padding:16px} .md{font-size:16px} .md table.wide{min-width:560px} .md th,.md td{padding:6px 8px}
+table.status thead{display:none}
+table.status,table.status tbody,table.status tr.job,table.status td{display:block;width:100%}
+table.status tr.job{border:1px solid var(--line);border-radius:12px;margin-bottom:10px;padding:8px 4px;background:var(--paper)}
+table.status td{border-bottom:none;padding:3px 12px}
+table.status td.hide-m{display:none}
+table.status td[data-label]:not(.job-name)::before{content:attr(data-label) "：";color:var(--muted);font-size:12.5px}
+td.job-name summary{font-size:15.5px}
+}
 </style></head><body>
 <header>
 <div class="eyebrow">HermesTam Runtime · .240 美股投資助手</div>
 <h1>每日運行報告</h1>
-<div class="sub">更新：2026-11-13 08:29 HKT · 資料來源：.240 Hermes cron 系統，每日自動同步一次</div>
+<div class="sub">更新：2026-11-13 09:43 HKT · 資料來源：.240 Hermes cron 系統，每日自動同步一次</div>
 <div class="verdict warn">今日有 1 個 job 出錯：交易輔助_Humbled_ScannerA_盤前Gappers。其餘全部正常。</div>
 <div class="stats">
 <div class="stat"><b>40</b><span>Job 總數</span></div>
@@ -113,7 +122,7 @@ Traceback (most recent call last):
 <hr>
 <h5 class="md-h2">一、主要指數表現（前一交易日收盤）</h5>
 <p>週四美股三大指數低開後震盪回升，早盤受科技巨頭高層人事震盪及油價跳升衝擊，標普 500 指數一度跌近 1%，隨後逢低買盤進場收斂跌幅，終場小幅收跌。羅素 2000 小型股受 10 年期美債殖利率重返 5% 上方影響，跌勢相對沉重。</p>
-<div class="tbl-wrap"><table><thead><tr><th style="text-align:left">指數</th><th style="text-align:center">收盤價</th><th style="text-align:center">漲跌點數</th><th style="text-align:center">漲跌幅</th><th style="text-align:center">成交量</th></tr></thead><tbody><tr><td style="text-align:left"><strong>標普 500 指數 (S&amp;P 500)</strong></td><td style="text-align:center">7,592.40</td><td style="text-align:center">-26.98</td><td style="text-align:center">🔴 -0.35%</td><td style="text-align:center">—</td></tr><tr><td style="text-align:left"><strong>納斯達克綜合指數 (Nasdaq)</strong></td><td style="text-align:center">25,366.09</td><td style="text-align:center">-100.10</td><td style="text-align:center">🔴 -0.39%</td><td style="text-align:center">1.57B</td></tr><tr><td style="text-align:left"><strong>道瓊斯工業平均指數 (Dow Jones)</strong></td><td style="text-align:center">52,297.09</td><td style="text-align:center">-189.40</td><td style="text-align:center">🔴 -0.36%</td><td style="text-align:center">1.02B</td></tr><tr><td style="text-align:left"><strong>羅素 2000 指數 (Russell 2000)</strong></td><td style="text-align:center">2,799.06</td><td style="text-align:center">-47.20</td><td style="text-align:center">🔴 -1.66%</td><td style="text-align:center">—</td></tr></tbody></table></div>
+<div class="tbl-wrap"><table class="wide"><thead><tr><th style="text-align:left">指數</th><th style="text-align:center">收盤價</th><th style="text-align:center">漲跌點數</th><th style="text-align:center">漲跌幅</th><th style="text-align:center">成交量</th></tr></thead><tbody><tr><td style="text-align:left"><strong>標普 500 指數 (S&amp;P 500)</strong></td><td style="text-align:center">7,592.40</td><td style="text-align:center">-26.98</td><td style="text-align:center">🔴 -0.35%</td><td style="text-align:center">—</td></tr><tr><td style="text-align:left"><strong>納斯達克綜合指數 (Nasdaq)</strong></td><td style="text-align:center">25,366.09</td><td style="text-align:center">-100.10</td><td style="text-align:center">🔴 -0.39%</td><td style="text-align:center">1.57B</td></tr><tr><td style="text-align:left"><strong>道瓊斯工業平均指數 (Dow Jones)</strong></td><td style="text-align:center">52,297.09</td><td style="text-align:center">-189.40</td><td style="text-align:center">🔴 -0.36%</td><td style="text-align:center">1.02B</td></tr><tr><td style="text-align:left"><strong>羅素 2000 指數 (Russell 2000)</strong></td><td style="text-align:center">2,799.06</td><td style="text-align:center">-47.20</td><td style="text-align:center">🔴 -1.66%</td><td style="text-align:center">—</td></tr></tbody></table></div>
 <hr>
 <h5 class="md-h2">二、市場情緒指標</h5>
 <ul><li><strong>VIX 恐慌指數</strong>：<strong>18.70</strong>（變動：+1.21，漲幅：+6.92%）</li><li><strong>52 週區間</strong>：13.38 — 35.30</li><li><strong>市場整體情緒評估</strong>：🟡 <strong>中性偏謹慎（Neutral to Elevated）</strong>  </li></ul>
@@ -246,7 +255,7 @@ Traceback (most recent call last):
 <article class="article"><div class="art-head"><h3>atr_squeeze_20261113.md</h3></div><div class="md"><h4 class="md-h1">ATR Squeeze 突破訊號 — 2026-11-13</h4>
 <blockquote>掃描時間: 2026-11-13 05:35 HKT<br>掃描範圍: 499 隻<br>過濾: 上升趨勢 + BB Width 6 月 20-percentile + 上軌突破 + 量能 1.5x</blockquote>
 <h5 class="md-h2">Setup 列表</h5>
-<div class="tbl-wrap"><table><thead><tr><th style="text-align:left">Ticker</th><th style="text-align:left">信心</th><th style="text-align:left">進場</th><th style="text-align:left">止損</th><th style="text-align:left">T1</th><th style="text-align:left">T2</th><th style="text-align:left">R:R</th><th style="text-align:left">壓縮%</th><th style="text-align:left">量能</th><th style="text-align:left">距 52W 高</th></tr></thead><tbody><tr><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td></tr></tbody></table></div>
+<div class="tbl-wrap"><table class="wide"><thead><tr><th style="text-align:left">Ticker</th><th style="text-align:left">信心</th><th style="text-align:left">進場</th><th style="text-align:left">止損</th><th style="text-align:left">T1</th><th style="text-align:left">T2</th><th style="text-align:left">R:R</th><th style="text-align:left">壓縮%</th><th style="text-align:left">量能</th><th style="text-align:left">距 52W 高</th></tr></thead><tbody><tr><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td></tr></tbody></table></div>
 <h5 class="md-h2">策略說明</h5>
 <p><strong>ATR Squeeze 突破</strong> 係 TTM Squeeze 概念變體:</p>
 <ul><li>BB Width 收窄至 6 月 20-percentile = 波動率歷史低位</li><li>上升趨勢中 (close &gt; 50SMA &gt; 200SMA) 嘅低波 = 蓄勢階段</li><li>突破上軌 + 量能 1.5x 以上 = 動能釋放確認</li><li>持倉 3-15 日, R:R ≥ 1:2</li></ul>
@@ -256,7 +265,7 @@ Traceback (most recent call last):
 <article class="article"><div class="art-head"><h3>bull_flag_20261113.md</h3></div><div class="md"><h4 class="md-h1">Bull Flag 突破訊號 — 2026-11-13</h4>
 <blockquote>掃描時間: 2026-11-13 05:34 HKT<br>掃描範圍: 499 隻<br>過濾: 上升趨勢 + Pole ≥ +15.0% + Flag 5-15 日 + 上沿突破 + 量能 1.5x</blockquote>
 <h5 class="md-h2">Setup 列表</h5>
-<div class="tbl-wrap"><table><thead><tr><th style="text-align:left">Ticker</th><th style="text-align:left">信心</th><th style="text-align:left">進場</th><th style="text-align:left">止損</th><th style="text-align:left">T1</th><th style="text-align:left">T2</th><th style="text-align:left">R:R</th><th style="text-align:left">Pole%</th><th style="text-align:left">Flag 日</th><th style="text-align:left">緊度</th><th style="text-align:left">量能</th></tr></thead><tbody><tr><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td></tr></tbody></table></div>
+<div class="tbl-wrap"><table class="wide"><thead><tr><th style="text-align:left">Ticker</th><th style="text-align:left">信心</th><th style="text-align:left">進場</th><th style="text-align:left">止損</th><th style="text-align:left">T1</th><th style="text-align:left">T2</th><th style="text-align:left">R:R</th><th style="text-align:left">Pole%</th><th style="text-align:left">Flag 日</th><th style="text-align:left">緊度</th><th style="text-align:left">量能</th></tr></thead><tbody><tr><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td></tr></tbody></table></div>
 <h5 class="md-h2">策略說明</h5>
 <p><strong>Bull Flag</strong> 係 O&#x27;Neil/Weinstein 經典形態:</p>
 <ul><li><strong>Pole</strong>: 急漲段, 5-15 日 +15% 或更多</li><li><strong>Flag</strong>: 急漲後窄幅整理, 5-15 日, 回撤不超過 Pole 38.2% Fibonacci</li><li><strong>突破</strong>: Flag 上沿 + 量能 1.5x = 續勢爆發</li><li><strong>量度目標</strong> (Flag pole projection): T1 = entry + Pole 高度</li></ul>
@@ -266,7 +275,7 @@ Traceback (most recent call last):
 <article class="article"><div class="art-head"><h3>cup_handle_20261113.md</h3></div><div class="md"><h4 class="md-h1">Cup &amp; Handle 突破訊號 — 2026-11-13</h4>
 <blockquote>掃描時間: 2026-11-13 05:33 HKT<br>掃描範圍: 499 隻<br>過濾: 上升趨勢 + Cup 30-100d + Cup 深 8-50% + Handle 5-25d + Pivot 突破 + 量能 1.5x</blockquote>
 <h5 class="md-h2">Setup 列表</h5>
-<div class="tbl-wrap"><table><thead><tr><th style="text-align:left">Ticker</th><th style="text-align:left">信心</th><th style="text-align:left">進場</th><th style="text-align:left">止損</th><th style="text-align:left">T1</th><th style="text-align:left">T2</th><th style="text-align:left">R:R</th><th style="text-align:left">Cup%</th><th style="text-align:left">Cup d</th><th style="text-align:left">Handle%</th><th style="text-align:left">Handle d</th><th style="text-align:left">量能</th></tr></thead><tbody><tr><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td></tr></tbody></table></div>
+<div class="tbl-wrap"><table class="wide"><thead><tr><th style="text-align:left">Ticker</th><th style="text-align:left">信心</th><th style="text-align:left">進場</th><th style="text-align:left">止損</th><th style="text-align:left">T1</th><th style="text-align:left">T2</th><th style="text-align:left">R:R</th><th style="text-align:left">Cup%</th><th style="text-align:left">Cup d</th><th style="text-align:left">Handle%</th><th style="text-align:left">Handle d</th><th style="text-align:left">量能</th></tr></thead><tbody><tr><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td></tr></tbody></table></div>
 <h5 class="md-h2">策略說明</h5>
 <p><strong>Cup &amp; Handle</strong> 係 William O&#x27;Neil CANSLIM 體系核心 base 形態:</p>
 <ul><li><strong>Cup</strong>: 7-65 週左壁 → 圓底 → 右壁 (容許 5% 偏差) 嘅 U 字回升</li><li><strong>Handle</strong>: 右壁完成後 5-25 日輕微回撤 (≤ 12%, 不破 cup midpoint)</li><li><strong>Pivot</strong>: Handle 高位 + 0.1% (傳統 +$0.10) = 突破進場點</li><li><strong>量能</strong>: 突破日 ≥ 1.5× 50 日均量 (O&#x27;Neil 經典 1.4-2x)</li><li><strong>量度目標</strong> (Cup depth projection): T1 = entry + Cup 深度</li></ul>
@@ -278,7 +287,7 @@ Traceback (most recent call last):
 <h5 class="md-h2">SPY 基準回報</h5>
 <ul><li>1週: +3.29%</li><li>4週: -1.90%</li><li>13週: -2.23%</li><li>26週: +1.71%</li></ul>
 <h5 class="md-h2">排名 (RS Score 降序)</h5>
-<div class="tbl-wrap"><table><thead><tr><th style="text-align:left">排名</th><th style="text-align:left">ETF</th><th style="text-align:left">板塊</th><th style="text-align:left">RS Score</th><th style="text-align:left">1w 超SPY</th><th style="text-align:left">4w 超SPY</th><th style="text-align:left">13w 超SPY</th><th style="text-align:left">26w 超SPY</th><th style="text-align:left">建議</th></tr></thead><tbody><tr><td style="text-align:left">1</td><td style="text-align:left">XLV</td><td style="text-align:left">醫療</td><td style="text-align:left">+7.41</td><td style="text-align:left">-1.71%</td><td style="text-align:left">+7.91%</td><td style="text-align:left">+14.89%</td><td style="text-align:left">+27.45%</td><td style="text-align:left">🟢 強烈買入</td></tr><tr><td style="text-align:left">2</td><td style="text-align:left">XLF</td><td style="text-align:left">金融</td><td style="text-align:left">+3.14</td><td style="text-align:left">-2.06%</td><td style="text-align:left">+7.22%</td><td style="text-align:left">+2.67%</td><td style="text-align:left">+12.58%</td><td style="text-align:left">🟢 強烈買入</td></tr><tr><td style="text-align:left">3</td><td style="text-align:left">XLP</td><td style="text-align:left">必需消費</td><td style="text-align:left">+3.12</td><td style="text-align:left">-3.50%</td><td style="text-align:left">+6.95%</td><td style="text-align:left">+8.70%</td><td style="text-align:left">+6.90%</td><td style="text-align:left">🟢 強烈買入</td></tr><tr><td style="text-align:left">4</td><td style="text-align:left">XLY</td><td style="text-align:left">非必需消費</td><td style="text-align:left">+2.97</td><td style="text-align:left">-0.89%</td><td style="text-align:left">+8.12%</td><td style="text-align:left">+4.37%</td><td style="text-align:left">+0.23%</td><td style="text-align:left">🟢 買入</td></tr><tr><td style="text-align:left">5</td><td style="text-align:left">XLE</td><td style="text-align:left">能源</td><td style="text-align:left">+2.41</td><td style="text-align:left">+1.09%</td><td style="text-align:left">-1.45%</td><td style="text-align:left">+6.76%</td><td style="text-align:left">+10.53%</td><td style="text-align:left">🟢 買入</td></tr><tr><td style="text-align:left">6</td><td style="text-align:left">XLU</td><td style="text-align:left">公用事業</td><td style="text-align:left">+1.37</td><td style="text-align:left">-2.11%</td><td style="text-align:left">+7.09%</td><td style="text-align:left">+1.83%</td><td style="text-align:left">-2.79%</td><td style="text-align:left">🟡 中性</td></tr><tr><td style="text-align:left">7</td><td style="text-align:left">XLRE</td><td style="text-align:left">房地產</td><td style="text-align:left">+1.32</td><td style="text-align:left">-3.16%</td><td style="text-align:left">+7.54%</td><td style="text-align:left">+1.05%</td><td style="text-align:left">+1.06%</td><td style="text-align:left">🟡 中性</td></tr><tr><td style="text-align:left">8</td><td style="text-align:left">XLB</td><td style="text-align:left">材料</td><td style="text-align:left">+0.82</td><td style="text-align:left">-3.27%</td><td style="text-align:left">+5.42%</td><td style="text-align:left">+2.31%</td><td style="text-align:left">+0.43%</td><td style="text-align:left">🔴 避開</td></tr><tr><td style="text-align:left">9</td><td style="text-align:left">XLI</td><td style="text-align:left">工業</td><td style="text-align:left">-0.50</td><td style="text-align:left">+1.00%</td><td style="text-align:left">+2.82%</td><td style="text-align:left">-6.67%</td><td style="text-align:left">-4.11%</td><td style="text-align:left">🔴 避開</td></tr><tr><td style="text-align:left">10</td><td style="text-align:left">XLK</td><td style="text-align:left">科技</td><td style="text-align:left">-2.09</td><td style="text-align:left">+3.72%</td><td style="text-align:left">-6.25%</td><td style="text-align:left">-6.21%</td><td style="text-align:left">-4.67%</td><td style="text-align:left">🔴 強烈避開</td></tr><tr><td style="text-align:left">11</td><td style="text-align:left">XLC</td><td style="text-align:left">通訊服務</td><td style="text-align:left">-2.19</td><td style="text-align:left">-0.20%</td><td style="text-align:left">-2.44%</td><td style="text-align:left">-2.22%</td><td style="text-align:left">-9.32%</td><td style="text-align:left">🔴 強烈避開</td></tr></tbody></table></div>
+<div class="tbl-wrap"><table class="wide"><thead><tr><th style="text-align:left">排名</th><th style="text-align:left">ETF</th><th style="text-align:left">板塊</th><th style="text-align:left">RS Score</th><th style="text-align:left">1w 超SPY</th><th style="text-align:left">4w 超SPY</th><th style="text-align:left">13w 超SPY</th><th style="text-align:left">26w 超SPY</th><th style="text-align:left">建議</th></tr></thead><tbody><tr><td style="text-align:left">1</td><td style="text-align:left">XLV</td><td style="text-align:left">醫療</td><td style="text-align:left">+7.41</td><td style="text-align:left">-1.71%</td><td style="text-align:left">+7.91%</td><td style="text-align:left">+14.89%</td><td style="text-align:left">+27.45%</td><td style="text-align:left">🟢 強烈買入</td></tr><tr><td style="text-align:left">2</td><td style="text-align:left">XLF</td><td style="text-align:left">金融</td><td style="text-align:left">+3.14</td><td style="text-align:left">-2.06%</td><td style="text-align:left">+7.22%</td><td style="text-align:left">+2.67%</td><td style="text-align:left">+12.58%</td><td style="text-align:left">🟢 強烈買入</td></tr><tr><td style="text-align:left">3</td><td style="text-align:left">XLP</td><td style="text-align:left">必需消費</td><td style="text-align:left">+3.12</td><td style="text-align:left">-3.50%</td><td style="text-align:left">+6.95%</td><td style="text-align:left">+8.70%</td><td style="text-align:left">+6.90%</td><td style="text-align:left">🟢 強烈買入</td></tr><tr><td style="text-align:left">4</td><td style="text-align:left">XLY</td><td style="text-align:left">非必需消費</td><td style="text-align:left">+2.97</td><td style="text-align:left">-0.89%</td><td style="text-align:left">+8.12%</td><td style="text-align:left">+4.37%</td><td style="text-align:left">+0.23%</td><td style="text-align:left">🟢 買入</td></tr><tr><td style="text-align:left">5</td><td style="text-align:left">XLE</td><td style="text-align:left">能源</td><td style="text-align:left">+2.41</td><td style="text-align:left">+1.09%</td><td style="text-align:left">-1.45%</td><td style="text-align:left">+6.76%</td><td style="text-align:left">+10.53%</td><td style="text-align:left">🟢 買入</td></tr><tr><td style="text-align:left">6</td><td style="text-align:left">XLU</td><td style="text-align:left">公用事業</td><td style="text-align:left">+1.37</td><td style="text-align:left">-2.11%</td><td style="text-align:left">+7.09%</td><td style="text-align:left">+1.83%</td><td style="text-align:left">-2.79%</td><td style="text-align:left">🟡 中性</td></tr><tr><td style="text-align:left">7</td><td style="text-align:left">XLRE</td><td style="text-align:left">房地產</td><td style="text-align:left">+1.32</td><td style="text-align:left">-3.16%</td><td style="text-align:left">+7.54%</td><td style="text-align:left">+1.05%</td><td style="text-align:left">+1.06%</td><td style="text-align:left">🟡 中性</td></tr><tr><td style="text-align:left">8</td><td style="text-align:left">XLB</td><td style="text-align:left">材料</td><td style="text-align:left">+0.82</td><td style="text-align:left">-3.27%</td><td style="text-align:left">+5.42%</td><td style="text-align:left">+2.31%</td><td style="text-align:left">+0.43%</td><td style="text-align:left">🔴 避開</td></tr><tr><td style="text-align:left">9</td><td style="text-align:left">XLI</td><td style="text-align:left">工業</td><td style="text-align:left">-0.50</td><td style="text-align:left">+1.00%</td><td style="text-align:left">+2.82%</td><td style="text-align:left">-6.67%</td><td style="text-align:left">-4.11%</td><td style="text-align:left">🔴 避開</td></tr><tr><td style="text-align:left">10</td><td style="text-align:left">XLK</td><td style="text-align:left">科技</td><td style="text-align:left">-2.09</td><td style="text-align:left">+3.72%</td><td style="text-align:left">-6.25%</td><td style="text-align:left">-6.21%</td><td style="text-align:left">-4.67%</td><td style="text-align:left">🔴 強烈避開</td></tr><tr><td style="text-align:left">11</td><td style="text-align:left">XLC</td><td style="text-align:left">通訊服務</td><td style="text-align:left">-2.19</td><td style="text-align:left">-0.20%</td><td style="text-align:left">-2.44%</td><td style="text-align:left">-2.22%</td><td style="text-align:left">-9.32%</td><td style="text-align:left">🔴 強烈避開</td></tr></tbody></table></div>
 <h5 class="md-h2">解讀指引</h5>
 <h6 class="md-h3">🟢 Top 3 強勢板塊</h6>
 <ul><li>應重倉/優先買入該 sector 內成分股</li><li>給 ABCD 策略的 setup 加分</li></ul>
@@ -290,7 +299,7 @@ Traceback (most recent call last):
 <article class="article"><div class="art-head"><h3>vcp_20261113.md</h3></div><div class="md"><h4 class="md-h1">Minervini VCP 訊號 — 2026-11-13</h4>
 <blockquote>掃描時間: 2026-11-13 05:32 HKT<br>掃描範圍: 30 隻<br>過濾: Trend Template 8 條件 + VCP 形態<br>Lookback: 60 日</blockquote>
 <h5 class="md-h2">Setup 列表</h5>
-<div class="tbl-wrap"><table><thead><tr><th style="text-align:left">Ticker</th><th style="text-align:left">Trend</th><th style="text-align:left">收縮序列</th><th style="text-align:left">當前價</th><th style="text-align:left">Pivot 價</th><th style="text-align:left">量能爆發</th></tr></thead><tbody><tr><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">無 setup</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td></tr></tbody></table></div>
+<div class="tbl-wrap"><table class="wide"><thead><tr><th style="text-align:left">Ticker</th><th style="text-align:left">Trend</th><th style="text-align:left">收縮序列</th><th style="text-align:left">當前價</th><th style="text-align:left">Pivot 價</th><th style="text-align:left">量能爆發</th></tr></thead><tbody><tr><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">無 setup</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td></tr></tbody></table></div>
 <h5 class="md-h2">策略說明</h5>
 <p><strong>VCP (Volatility Contraction Pattern)</strong> 是 Mark Minervini 提出的中線持倉形態:</p>
 <ul><li>連續 2-4 次擺動高/低間距遞減 (例: 10% → 7% → 5%)</li><li>反映供需關係: 賣壓逐步耗盡, 突破時動能釋放</li><li>配合 Minervini Trend Template 8 條件, 勝率可達 60-70%</li></ul>
@@ -299,41 +308,41 @@ Traceback (most recent call last):
 <p class="sec-note">共 40 個 job（啟用 38 個）。撳 job 名稱可以睇最新輸出。</p>
 <div class="filters"><button data-f="all" class="chip on">全部 40</button><button data-f="err" class="chip">出錯 1</button><button data-f="ok" class="chip">正常 37</button><button data-f="off" class="chip">已停用 2</button></div>
 <input id="search" type="search" placeholder="搜尋 job 名稱…">
-<div class="tbl-wrap"><table class="status"><thead><tr><th>狀態</th><th>Job</th><th>類別</th><th>頻率</th><th>上次運行</th><th>下次</th></tr></thead><tbody>
+<div class="tbl-wrap"><table class="status"><thead><tr><th>狀態</th><th>Job</th><th class="hide-m">類別</th><th class="hide-m">頻率</th><th>上次運行</th><th>下次</th></tr></thead><tbody>
 <tr class="job" data-name="voo/qqq 預測_收市後" data-status="ok">
-  <td><span class="dot ok"></span> 正常</td>
+  <td data-label="狀態"><span class="dot ok"></span> 正常</td>
   <td class="job-name"><details><summary>VOO/QQQ 預測_收市後</summary><div class="row-out"><div class="md"><p>📊 VOO/QQQ 趨勢預測 (收市報告) — 2026-11-13 05:30 HKT</p>
 <p><strong>VOO</strong> — 🟡 橫行 | 信心 48% | 收市 696.0<br>2 週預測區間: <strong>654.18 – 737.82</strong> (中值 696.0)<br>回測命中 (walk-forward, 752 樣本): <strong>55%</strong><br>UP訊號勝率 64% (n=523) | DOWN訊號勝率 34% (n=53)<br>四模型: 動量 UP / 均值回歸 FLAT / 季節性 UP / 波動率 DOWN<br>當刻建議: ⏸️ 持有觀望 (無明顯 edge)</p>
 <p><strong>QQQ</strong> — 🟡 橫行 | 信心 31% | 收市 688.17<br>2 週預測區間: <strong>624.69 – 751.65</strong> (中值 688.17)<br>回測命中 (walk-forward, 1331 樣本): <strong>46%</strong><br>UP訊號勝率 62% (n=729) | DOWN訊號勝率 51% (n=185)<br>四模型: 動量 UP / 均值回歸 DOWN / 季節性 UP / 波動率 DOWN<br>當刻建議: ⏸️ 持有觀望 (無明顯 edge)</p>
 <p>_預測基於 20 年 walk-forward 回測; 勝率係歷史統計, 唔係保證。_<br>send VOO_20261113_0530.png: OK<br>send QQQ_20261113_0530.png: OK</p></div></div></details></td>
-  <td>市場報告</td>
-  <td><code>30 5 * * 2-6</code></td>
-  <td class="nowrap">11-13 05:30</td>
-  <td class="nowrap">11-14 05:30</td>
+  <td class="hide-m">市場報告</td>
+  <td class="hide-m"><code>30 5 * * 2-6</code></td>
+  <td class="nowrap" data-label="上次運行">11-13 05:30</td>
+  <td class="nowrap" data-label="下次">11-14 05:30</td>
 </tr>
 <tr class="job" data-name="voo/qqq 預測_開市前" data-status="ok">
-  <td><span class="dot ok"></span> 正常</td>
+  <td data-label="狀態"><span class="dot ok"></span> 正常</td>
   <td class="job-name"><details><summary>VOO/QQQ 預測_開市前</summary><div class="row-out"><div class="md"><p>📊 VOO/QQQ 趨勢預測 (盤前報告) — 2026-11-12 20:00 HKT</p>
 <p><strong>VOO</strong> — 🟡 橫行 | 信心 31% | 收市 698.35<br>2 週預測區間: <strong>656.38 – 740.32</strong> (中值 698.35)<br>回測命中 (walk-forward, 752 樣本): <strong>55%</strong><br>UP訊號勝率 64% (n=523) | DOWN訊號勝率 34% (n=53)<br>四模型: 動量 UP / 均值回歸 DOWN / 季節性 UP / 波動率 DOWN<br>當刻建議: ⏸️ 持有觀望 (無明顯 edge)</p>
 <p><strong>QQQ</strong> — 🟡 橫行 | 信心 31% | 收市 690.38<br>2 週預測區間: <strong>626.28 – 754.48</strong> (中值 690.38)<br>回測命中 (walk-forward, 1331 樣本): <strong>46%</strong><br>UP訊號勝率 62% (n=729) | DOWN訊號勝率 51% (n=185)<br>四模型: 動量 UP / 均值回歸 DOWN / 季節性 UP / 波動率 DOWN<br>當刻建議: ⏸️ 持有觀望 (無明顯 edge)</p>
 <p>_預測基於 20 年 walk-forward 回測; 勝率係歷史統計, 唔係保證。_<br>send VOO_20261112_2000.png: OK<br>send QQQ_20261112_2000.png: OK</p></div></div></details></td>
-  <td>市場報告</td>
-  <td><code>0 20 * * 1-5</code></td>
-  <td class="nowrap">11-12 20:00</td>
-  <td class="nowrap">11-13 20:00</td>
+  <td class="hide-m">市場報告</td>
+  <td class="hide-m"><code>0 20 * * 1-5</code></td>
+  <td class="nowrap" data-label="上次運行">11-12 20:00</td>
+  <td class="nowrap" data-label="下次">11-13 20:00</td>
 </tr>
 <tr class="job" data-name="動能股技術指標日報" data-status="ok">
-  <td><span class="dot ok"></span> 正常</td>
+  <td data-label="狀態"><span class="dot ok"></span> 正常</td>
   <td class="job-name"><details><summary>動能股技術指標日報</summary><div class="row-out"><div class="md"><p>🎯 <strong>動能股技術指標 (Daily)</strong><br>_2026-11-13 08:00 HKT_</p>
 <p><strong>NVDA</strong> — $166.19<br>📈 趨勢: 🔴 下跌趨勢<br>📊 10DMA $186.92 | 20DMA $201.25 | 50DMA $215.96 | 200DMA $204.34<br>📏 50DMA 偏離 -23.0% | ATR 6.4%/日 | RSI 24<br>🎯 距 52週高位 $243.37 (-31.7%)<br>⚠️ 警號: 💡 RSI 超賣 (&lt;30) 反彈機會; 🔴 短線破位 (跌穿 10DMA &amp; 10&lt;20)<br>🛑 短線阻力: $181.32 (+9.1%)<br>─────────────────────────<br><strong>TSLA</strong> — $397.45<br>📈 趨勢: 🟡 趨勢分歧<br>📊 10DMA $383.54 | 20DMA $383.59 | 50DMA $374.46 | 200DMA $382.86<br>📏 50DMA 偏離 +6.1% | ATR 4.7%/日 | RSI 58<br>🎯 距 52週高位 $498.83 (-20.3%)<br>🛑 建議止損: $372.03 (-6.4%)<br>─────────────────────────<br><strong>SOXL</strong> — $65.53<br>📈 趨勢: 🔴 下跌趨勢<br>📊 10DMA $61.57 | 20DMA $78.79 | 50DMA $111.37 | 200DMA $124.14<br>📏 50DMA 偏離 -41.2% | ATR 19.9%/日 | RSI 43<br>🎯 距 52週高位 $302.00 (-78.3%)<br>🛑 建議止損: $59.72 (-8.9%)<br>─────────────────────────<br><strong>AMD</strong> — $585.30<br>📈 趨勢: 🟢 上升趨勢<br>📊 10DMA $495.98 | 20DMA $518.76 | 50DMA $552.99 | 200DMA $421.71<br>📏 50DMA 偏離 +5.8% | ATR 7.6%/日 | RSI 57<br>🎯 距 52週高位 $658.52 (-11.1%)<br>🛑 建議止損: $518.38 (-11.4%)<br>─────────────────────────<br><strong>QQQ</strong> — $688.17<br>📈 趨勢: 🟡 趨勢分歧<br>📊 10DMA $678.46 | 20DMA $696.94 | 50DMA $718.62 | 200DMA $681.99<br>📏 50DMA 偏離 -4.2% | ATR 2.6%/日 | RSI 45<br>🎯 距 52週高位 $762.86 (-9.8%)<br>🛑 建議止損: $660.92 (-4.0%)<br>─────────────────────────</p>
 <p>⚠️ 僅供參考，不構成投資建議<br>💡 框架: 茄利略 CUP (@KelileoCUP) Hard Penny Market 識別法</p></div></div></details></td>
-  <td>市場報告</td>
-  <td><code>0 8 * * 2-6</code></td>
-  <td class="nowrap">11-13 08:00</td>
-  <td class="nowrap">11-14 08:00</td>
+  <td class="hide-m">市場報告</td>
+  <td class="hide-m"><code>0 8 * * 2-6</code></td>
+  <td class="nowrap" data-label="上次運行">11-13 08:00</td>
+  <td class="nowrap" data-label="下次">11-14 08:00</td>
 </tr>
 <tr class="job" data-name="美股收市後深度分析" data-status="ok">
-  <td><span class="dot ok"></span> 正常</td>
+  <td data-label="狀態"><span class="dot ok"></span> 正常</td>
   <td class="job-name"><details><summary>美股收市後深度分析</summary><div class="row-out"><div class="md"><h4 class="md-h1">📊 美股收市後深度市況分析與風控報告 (2026-11-13)</h4>
 <h6 class="md-h3">📌 執行摘要 (Executive Summary)</h6>
 <p>週四（11/12 美股收市）美股大盤重回弱勢震盪，<strong>週三的超賣「死貓反彈」僅維持一日便迅速夭折</strong>：S&amp;P 500 下跌 -0.35%（收 7592.40，失守 7600 關口），納指下跌 -0.39%（收 25366.09），QQQ 跌 -0.32%（收 $688.17），VIX 恐慌指數逆勢跳升 +6.9% 至 <strong>18.70</strong>。透過盤面深度數據穿透，市場已由週三的短暫空頭回補重新切換至空方控盤的 <strong>Hard Penny Market 泥沼擴散期</strong>：</p>
@@ -351,19 +360,19 @@ Traceback (most recent call last):
 <h6 class="md-h3">2️⃣ 經典交易心法與七書理論評估</h6>
 <ul><li><strong>Mark Douglas《Trading in the Zone》（反彈夭折的教訓與客觀現實）</strong><ul><li>不要為死貓反彈的夭折感到意外，嚴守客觀現實：週三 TQQQ 彈至 $60.44 時容易產生「底部已確立」的幻想，但週四立刻回跌至 <strong>$59.88 (-0.93%)</strong>，浮虧重新擴大至 <strong>-$14,432 (-30.47%)</strong>。</li><li>Douglas 告誡：「市場不欠你任何東西，也不會按照你的願望行事。每一刻都是獨特的，如果你讓希望取代了概率與規則，你就是在向市場乞求慈悲，而市場從不寬恕。」</li><li>現價 $59.88 距離初始設定止損位 $72.70 已<strong>深穿 -21.4%</strong>。客觀事實是：這筆交易在兩週前就已徹底破位失敗。在交易系統崩潰時，唯一的專業動作是承認失敗並切斷虧損，而非持續期待奇蹟。</li></ul></li></ul>
 <ul><li><strong>茄利略 CUP 最新筆記精髓 (2026-11-08 影片 + 岡本詩菜名言)</strong><ul><li><strong>3x 槓桿 ETF 致命波動損耗 (Volatility Decay) 與德州撲克「蓋牌」哲學</strong>：茄利略在 11/08 影片中嚴厲警告：「散戶最鍾意喺暴跌市買三倍 ETF 搏反彈，但槓桿損耗極大，往往會出現『大市指數返到原位，但三倍 ETF 仲大幅蝕緊』嘅慘況！」</li><li>數據印證：目前納指 100（QQQ）距 50DMA 僅偏離 -4.2%，距 52 週高位僅差 -9.8%；但 3x 的 TQQQ 較成本 $86.12 卻崩跌了 <strong>-30.47%</strong>！這就是數學上的槓桿損耗與高額借貸融資利息雙重吞噬的殘酷現實。</li><li>2026 WSOP 德州撲克女王岡本詩菜名言：「<strong>感到壓力？即係你以為自己單靠實力就會贏到？</strong>」</li><li>頂級牌手在起手牌落後、公牌面完全不利、底牌毫無勝率的情況下，面對對手強勢下注，唯一的正期望值操作就是<strong>果斷蓋牌（Fold）</strong>！繼續跟注（Hold/扛單）只會讓籌碼被盲注逐步抽乾。留得本金在，才能在 Easy Money 順風局大展身手。</li></ul></li></ul><p class="trunc">…（上為節錄）</p></div></div></details></td>
-  <td>市場報告</td>
-  <td><code>30 5 * * 2-6</code></td>
-  <td class="nowrap">11-13 05:38</td>
-  <td class="nowrap">11-14 05:30</td>
+  <td class="hide-m">市場報告</td>
+  <td class="hide-m"><code>30 5 * * 2-6</code></td>
+  <td class="nowrap" data-label="上次運行">11-13 05:38</td>
+  <td class="nowrap" data-label="下次">11-14 05:30</td>
 </tr>
 <tr class="job" data-name="美股每日晨報" data-status="ok">
-  <td><span class="dot ok"></span> 正常</td>
+  <td data-label="狀態"><span class="dot ok"></span> 正常</td>
   <td class="job-name"><details><summary>美股每日晨報</summary><div class="row-out"><div class="md"><h4 class="md-h1">📊 美股市場晨報</h4>
 <p><strong>報告日期</strong>：2026 年 11 月 13 日（星期五）<br><strong>交易基準日</strong>：2026 年 11 月 12 日（星期四）美股收盤<br><strong>數據來源</strong>：CNBC Quote Cache、WSJ Market Data、Bloomberg、Investing.com</p>
 <hr>
 <h5 class="md-h2">一、主要指數表現（前一交易日收盤）</h5>
 <p>週四美股三大指數低開後震盪回升，早盤受科技巨頭高層人事震盪及油價跳升衝擊，標普 500 指數一度跌近 1%，隨後逢低買盤進場收斂跌幅，終場小幅收跌。羅素 2000 小型股受 10 年期美債殖利率重返 5% 上方影響，跌勢相對沉重。</p>
-<div class="tbl-wrap"><table><thead><tr><th style="text-align:left">指數</th><th style="text-align:center">收盤價</th><th style="text-align:center">漲跌點數</th><th style="text-align:center">漲跌幅</th><th style="text-align:center">成交量</th></tr></thead><tbody><tr><td style="text-align:left"><strong>標普 500 指數 (S&amp;P 500)</strong></td><td style="text-align:center">7,592.40</td><td style="text-align:center">-26.98</td><td style="text-align:center">🔴 -0.35%</td><td style="text-align:center">—</td></tr><tr><td style="text-align:left"><strong>納斯達克綜合指數 (Nasdaq)</strong></td><td style="text-align:center">25,366.09</td><td style="text-align:center">-100.10</td><td style="text-align:center">🔴 -0.39%</td><td style="text-align:center">1.57B</td></tr><tr><td style="text-align:left"><strong>道瓊斯工業平均指數 (Dow Jones)</strong></td><td style="text-align:center">52,297.09</td><td style="text-align:center">-189.40</td><td style="text-align:center">🔴 -0.36%</td><td style="text-align:center">1.02B</td></tr><tr><td style="text-align:left"><strong>羅素 2000 指數 (Russell 2000)</strong></td><td style="text-align:center">2,799.06</td><td style="text-align:center">-47.20</td><td style="text-align:center">🔴 -1.66%</td><td style="text-align:center">—</td></tr></tbody></table></div>
+<div class="tbl-wrap"><table class="wide"><thead><tr><th style="text-align:left">指數</th><th style="text-align:center">收盤價</th><th style="text-align:center">漲跌點數</th><th style="text-align:center">漲跌幅</th><th style="text-align:center">成交量</th></tr></thead><tbody><tr><td style="text-align:left"><strong>標普 500 指數 (S&amp;P 500)</strong></td><td style="text-align:center">7,592.40</td><td style="text-align:center">-26.98</td><td style="text-align:center">🔴 -0.35%</td><td style="text-align:center">—</td></tr><tr><td style="text-align:left"><strong>納斯達克綜合指數 (Nasdaq)</strong></td><td style="text-align:center">25,366.09</td><td style="text-align:center">-100.10</td><td style="text-align:center">🔴 -0.39%</td><td style="text-align:center">1.57B</td></tr><tr><td style="text-align:left"><strong>道瓊斯工業平均指數 (Dow Jones)</strong></td><td style="text-align:center">52,297.09</td><td style="text-align:center">-189.40</td><td style="text-align:center">🔴 -0.36%</td><td style="text-align:center">1.02B</td></tr><tr><td style="text-align:left"><strong>羅素 2000 指數 (Russell 2000)</strong></td><td style="text-align:center">2,799.06</td><td style="text-align:center">-47.20</td><td style="text-align:center">🔴 -1.66%</td><td style="text-align:center">—</td></tr></tbody></table></div>
 <hr>
 <h5 class="md-h2">二、市場情緒指標</h5>
 <ul><li><strong>VIX 恐慌指數</strong>：<strong>18.70</strong>（變動：+1.21，漲幅：+6.92%）</li><li><strong>52 週區間</strong>：13.38 — 35.30</li><li><strong>市場整體情緒評估</strong>：🟡 <strong>中性偏謹慎（Neutral to Elevated）</strong>  </li></ul>
@@ -402,13 +411,13 @@ Traceback (most recent call last):
 <p>主要指數技術面仍處於中長期多頭格局，但短期受制於高殖利率與龍頭股動盪，呈現高檔震盪整理態勢。</p>
 <ul><li><strong>標普 500 指數 (.SPX)</strong> — 🟡 <strong>中性偏弱震盪</strong><ul><li>收盤：<strong>7,592.40</strong>（距 52 週高點 7,844.52 約 <strong>-3.21%</strong>）</li><li>關鍵支撐：7,500 整數關卡 / 7,420</li><li>關鍵阻力：7,650 / 7,720</li><li>簡評：指數在 7,500 附近具備逢低承接買盤，但短線需觀察能否站穩 7,650 上方方能重啟強勢進攻。</li></ul></li></ul>
 <ul><li><strong>納斯達克綜合指數 (.IXIC)</strong> — 🟡 <strong>中性偏弱</strong><ul><li>收盤：<strong>25,366.09</strong>（距 52 </li></ul></li></ul><p class="trunc">…（上為節錄）</p></div></div></details></td>
-  <td>市場報告</td>
-  <td><code>30 7 * * 2-6</code></td>
-  <td class="nowrap">11-13 07:33</td>
-  <td class="nowrap">11-14 07:30</td>
+  <td class="hide-m">市場報告</td>
+  <td class="hide-m"><code>30 7 * * 2-6</code></td>
+  <td class="nowrap" data-label="上次運行">11-13 07:33</td>
+  <td class="nowrap" data-label="下次">11-14 07:30</td>
 </tr>
 <tr class="job" data-name="美股科技股新聞推送" data-status="ok">
-  <td><span class="dot ok"></span> 正常</td>
+  <td data-label="狀態"><span class="dot ok"></span> 正常</td>
   <td class="job-name"><details><summary>美股科技股新聞推送</summary><div class="row-out"><div class="md"><p>🚀 美股科技股投資新聞推送系統 (完整中文版)<br>⏰ 執行時間: 2026-11-13 08:00:27</p>
 <hr>
 <p>✅ 已從本地配置載入 API Keys (default model=gemini-3.8-flash-high, temp=0.3)<br>Available models: GLM-5.3-flash, gemini-3.8-flash-high<br>Per-task models: translation=gemini-3.8-flash-high, portfolio_analysis=gemini-3.8-flash-high<br>🔍 開始免費資源搜尋...</p>
@@ -416,13 +425,13 @@ Traceback (most recent call last):
 <p>📊 原始搜尋總計: 24 篇<br>🔄 去重後: 17 篇<br>✅ 過濾後: 11 篇</p>
 <p>📤 準備發送 11 篇新聞...<br>[敏感行已遮蔽]<br>📊 已載入 1 個 scanner 信號 (用於出入貨建議)<br>📝 並行翻譯 11 篇 × 標題+摘要 (4 workers)...<br>✅ 翻譯完成 (40.5s)<br>📄 生成 HTML digest...</p>
 <p>✅ Digest 已發送 (11 篇 → 1 個附件)</p></div></div></details></td>
-  <td>市場報告</td>
-  <td><code>0 */2 * * *</code></td>
-  <td class="nowrap">11-13 08:02</td>
-  <td class="nowrap">11-13 10:00</td>
+  <td class="hide-m">市場報告</td>
+  <td class="hide-m"><code>0 */2 * * *</code></td>
+  <td class="nowrap" data-label="上次運行">11-13 08:02</td>
+  <td class="nowrap" data-label="下次">11-13 10:00</td>
 </tr>
 <tr class="job" data-name="美股開市前簡報" data-status="ok">
-  <td><span class="dot ok"></span> 正常</td>
+  <td data-label="狀態"><span class="dot ok"></span> 正常</td>
   <td class="job-name"><details><summary>美股開市前簡報</summary><div class="row-out"><div class="md"><p>🌅 <strong>美股開市前簡報</strong> (2026-11-12 21:00 HKT)</p>
 <h5 class="md-h2">🌏 隔夜全球市場</h5>
 <ul><li>日經 225: 60,819.36 (-0.70%) 🔴</li><li>恒指: 24,008.55 (-2.23%) 🔴⚠️</li><li>歐洲 STOXX 50: 6,406.63 (+0.21%) ⚪</li><li>VIX 波幅: 18.29 (+4.57%) 🟢🚀</li><li>10Y 美債息率: 5.00 (+0.30%) ⚪</li><li>美元指數 DXY: 102.92 (+0.01%) ⚪</li></ul>
@@ -437,65 +446,65 @@ Traceback (most recent call last):
 <ul><li><strong>NVDA</strong> -4.93%</li><li><strong>AMD</strong> +8.45%</li><li><strong>MSFT</strong> -2.31%</li><li><strong>META</strong> -2.69%</li><li><strong>AAPL</strong> +2.46%</li><li><strong>SOXL</strong> +8.78%</li></ul>
 <hr>
 <p>_⚠️ 盤前報價成交量薄,實際開市後可能反轉。不構成投資建議_</p></div></div></details></td>
-  <td>市場報告</td>
-  <td><code>0 21 * * 1-5</code></td>
-  <td class="nowrap">11-12 21:00</td>
-  <td class="nowrap">11-13 21:00</td>
+  <td class="hide-m">市場報告</td>
+  <td class="hide-m"><code>0 21 * * 1-5</code></td>
+  <td class="nowrap" data-label="上次運行">11-12 21:00</td>
+  <td class="nowrap" data-label="下次">11-13 21:00</td>
 </tr>
 <tr class="job" data-name="aapl trigger alert @ $302.67" data-status="off">
-  <td><span class="dot off"></span> 已停用</td>
+  <td data-label="狀態"><span class="dot off"></span> 已停用</td>
   <td class="job-name"><details><summary>AAPL trigger alert @ $302.67</summary><div class="row-out"><div class="md"><p class="md-empty">（今次運行無輸出）</p></div></div></details></td>
-  <td>交易掃描</td>
-  <td><code>* * * * *</code></td>
-  <td class="nowrap">07-20 20:07</td>
-  <td class="nowrap">07-20 20:08</td>
+  <td class="hide-m">交易掃描</td>
+  <td class="hide-m"><code>* * * * *</code></td>
+  <td class="nowrap" data-label="上次運行">07-20 20:07</td>
+  <td class="nowrap" data-label="下次">07-20 20:08</td>
 </tr>
 <tr class="job" data-name="f_orb_r_multiple_daily_scan" data-status="ok">
-  <td><span class="dot ok"></span> 正常</td>
+  <td data-label="狀態"><span class="dot ok"></span> 正常</td>
   <td class="job-name"><details><summary>F_ORB_r_multiple_daily_scan</summary><div class="row-out"><div class="md"><p class="md-empty">（今次運行無輸出）</p></div></div></details></td>
-  <td>交易掃描</td>
-  <td><code>45 5 * * 2-6</code></td>
-  <td class="nowrap">11-13 05:45</td>
-  <td class="nowrap">11-14 05:45</td>
+  <td class="hide-m">交易掃描</td>
+  <td class="hide-m"><code>45 5 * * 2-6</code></td>
+  <td class="nowrap" data-label="上次運行">11-13 05:45</td>
+  <td class="nowrap" data-label="下次">11-14 05:45</td>
 </tr>
 <tr class="job" data-name="g atr squeeze daily scanner" data-status="ok">
-  <td><span class="dot ok"></span> 正常</td>
+  <td data-label="狀態"><span class="dot ok"></span> 正常</td>
   <td class="job-name"><details><summary>G ATR Squeeze daily scanner</summary><div class="row-out"><div class="md"><p>🌀 &lt;b&gt;ATR 收縮 突破訊號&lt;/b&gt; (2026-11-12 HKT)<br>低波壓縮 + 上軌突破 + 量能確認 | 掃描 499 隻<br>━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>⚠️ &lt;b&gt;掃描結果&lt;/b&gt;<br>目前無可交易 setup。<br>💡 條件:</p>
 <ul><li>找連續壓縮後爆破嘅股票</li><li>結合上升趨勢過濾 (close &gt; 50SMA &gt; 200SMA)</li><li>嚴守止損 = max(20SMA, entry - 1.5ATR)</li></ul>
 <p>━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>💡 &lt;b&gt;玩法&lt;/b&gt;<br>突破 BB 上軌 + 量能確認時買入, 持倉 3-15 日<br>ATR Squeeze = TTM Squeeze 變體, 配合趨勢過濾勝率 60%+</p></div></div></details></td>
-  <td>交易掃描</td>
-  <td><code>0 21 * * 1-5</code></td>
-  <td class="nowrap">11-12 21:01</td>
-  <td class="nowrap">11-13 21:00</td>
+  <td class="hide-m">交易掃描</td>
+  <td class="hide-m"><code>0 21 * * 1-5</code></td>
+  <td class="nowrap" data-label="上次運行">11-12 21:01</td>
+  <td class="nowrap" data-label="下次">11-13 21:00</td>
 </tr>
 <tr class="job" data-name="h bull flag intraday scanner" data-status="ok">
-  <td><span class="dot ok"></span> 正常</td>
+  <td data-label="狀態"><span class="dot ok"></span> 正常</td>
   <td class="job-name"><details><summary>H Bull Flag intraday scanner</summary><div class="row-out"><div class="md"><p>🚩 &lt;b&gt;牛旗 突破訊號&lt;/b&gt; (2026-11-13 HKT)<br>急漲 + 旗形整理 + 突破上沿 | 掃描 499 隻<br>━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>⚠️ &lt;b&gt;掃描結果&lt;/b&gt;<br>目前無可交易 setup。<br>💡 條件:</p>
 <ul><li>Pole = 5-15 日急漲 ≥ +15%</li><li>Flag = 5-15 日窄幅整理 (回撤 &lt; 38.2%)</li><li>突破上沿 + 量能 1.5x = 進場</li></ul>
 <p>━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>💡 &lt;b&gt;玩法&lt;/b&gt;<br>突破 Flag 上沿 + 量能買入, T1 = entry + Pole 高度<br>Bull Flag = O&#x27;Neil/Weinstein 經典形態, 勝率 55-65%</p></div></div></details></td>
-  <td>交易掃描</td>
-  <td><code>*/15 22-23,0-3 * * 1-5</code></td>
-  <td class="nowrap">11-13 03:46</td>
-  <td class="nowrap">11-13 22:00</td>
+  <td class="hide-m">交易掃描</td>
+  <td class="hide-m"><code>*/15 22-23,0-3 * * 1-5</code></td>
+  <td class="nowrap" data-label="上次運行">11-13 03:46</td>
+  <td class="nowrap" data-label="下次">11-13 22:00</td>
 </tr>
 <tr class="job" data-name="j cup &amp;amp; handle daily scanner" data-status="ok">
-  <td><span class="dot ok"></span> 正常</td>
+  <td data-label="狀態"><span class="dot ok"></span> 正常</td>
   <td class="job-name"><details><summary>J Cup &amp;amp; Handle daily scanner</summary><div class="row-out"><div class="md"><p>☕ &lt;b&gt;杯柄 突破訊號&lt;/b&gt; (2026-11-12 HKT)<br>O&#x27;Neil 杯柄形態 + Pivot 突破 | 掃描 499 隻<br>━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>⚠️ &lt;b&gt;掃描結果&lt;/b&gt;<br>目前無可交易 setup。<br>💡 條件:</p>
 <ul><li>Cup 深 12-50%, U 字底 (非 V), 右壁回到左壁附近</li><li>Handle 5-25 日輕微回撤 (≤ 12%)</li><li>Pivot = Handle 高 + 0.1%, 量能 1.5x 50日均</li></ul>
 <p>━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>💡 &lt;b&gt;玩法&lt;/b&gt;<br>突破 Pivot 買入, T1 = entry + Cup 深度<br>Cup &amp; Handle = O&#x27;Neil CANSLIM 經典 base, 大牛市勝率 60%+</p></div></div></details></td>
-  <td>交易掃描</td>
-  <td><code>30 20 * * 1-5</code></td>
-  <td class="nowrap">11-12 20:31</td>
-  <td class="nowrap">11-13 20:30</td>
+  <td class="hide-m">交易掃描</td>
+  <td class="hide-m"><code>30 20 * * 1-5</code></td>
+  <td class="nowrap" data-label="上次運行">11-12 20:31</td>
+  <td class="nowrap" data-label="下次">11-13 20:30</td>
 </tr>
 <tr class="job" data-name="mae/mfe 週報 (週六 hkt 09:00)" data-status="ok">
-  <td><span class="dot ok"></span> 正常</td>
+  <td data-label="狀態"><span class="dot ok"></span> 正常</td>
   <td class="job-name"><details><summary>MAE/MFE 週報 (週六 HKT 09:00)</summary><div class="row-out"><div class="md"><p>📐 <strong>最大不利/有利偏移 (MAE/MFE) 週報</strong> (2026-11-07 HKT)<br>近 7 日 / 24 筆 Outcomes 統計完成並已成功推送至 Telegram。</p>
 <p>━━━━━━━━━━━━━━━━━━━━</p>
 <p>📊 <strong>各策略偏移分佈</strong></p>
@@ -510,30 +519,30 @@ ATR 收縮             1    -42.04%     +7.28%      1      1</pre>
 <hr>
 <p>🎓 <strong>七書框架檢討與建議</strong></p>
 <ul><li><strong>ORB 區間突破</strong>: 中位止損 10.63R &gt; 1.2R — 止損偏緊 (<em>Schwager: 應 ≤ 1R 風險</em>)；中位目標 51.64R &gt; 2.5R — 目標偏遠 (<em>Livermore: 順勢讓利奔跑，1.5–2.5R 為佳</em>)</li><li><strong>8EMA 回踩</strong>: 中位止損 15.69R &gt; 1.2R — 止損偏緊；中位目標 11.29R &gt; 2.5R — 目標偏遠</li><li><strong>VCP 變盤</strong>: 中位止損 25.50R &gt; 1.2R — 止損偏緊</li><li><strong>ATR 收縮</strong>: 中位止損 21.02R &gt; 1.2R — 止損偏緊；中位目標 3.64R &gt; 2.5R — 目標偏遠</li></ul></div></div></details></td>
-  <td>交易掃描</td>
-  <td><code>0 9 * * 6</code></td>
-  <td class="nowrap">11-07 09:01</td>
-  <td class="nowrap">11-14 09:00</td>
+  <td class="hide-m">交易掃描</td>
+  <td class="hide-m"><code>0 9 * * 6</code></td>
+  <td class="nowrap" data-label="上次運行">11-07 09:01</td>
+  <td class="nowrap" data-label="下次">11-14 09:00</td>
 </tr>
 <tr class="job" data-name="交易輔助_abcd策略備忘錄" data-status="ok">
-  <td><span class="dot ok"></span> 正常</td>
+  <td data-label="狀態"><span class="dot ok"></span> 正常</td>
   <td class="job-name"><details><summary>交易輔助_ABCD策略備忘錄</summary><div class="row-out"><div class="md"><p class="md-empty">（今次運行無輸出）</p></div></div></details></td>
-  <td>交易掃描</td>
-  <td><code>5,35 * * * 1-5</code></td>
-  <td class="nowrap">11-13 08:05</td>
-  <td class="nowrap">11-13 08:35</td>
+  <td class="hide-m">交易掃描</td>
+  <td class="hide-m"><code>5,35 * * * 1-5</code></td>
+  <td class="nowrap" data-label="上次運行">11-13 09:35</td>
+  <td class="nowrap" data-label="下次">11-13 10:05</td>
 </tr>
 <tr class="job" data-name="交易輔助_excel統一報告" data-status="ok">
-  <td><span class="dot ok"></span> 正常</td>
+  <td data-label="狀態"><span class="dot ok"></span> 正常</td>
   <td class="job-name"><details><summary>交易輔助_Excel統一報告</summary><div class="row-out"><div class="md"><p>📊 Excel 報告: ~/美股投資/交易記錄/unified_signals_20261113.xlsx<br>總信號: 1<br>F ORB 突破: 1 個 (BB)</p>
 <p>✅ Telegram 附件已推送</p></div></div></details></td>
-  <td>交易掃描</td>
-  <td><code>*/30 21-23,0-5 * * 1-5</code></td>
-  <td class="nowrap">11-13 05:30</td>
-  <td class="nowrap">11-13 21:00</td>
+  <td class="hide-m">交易掃描</td>
+  <td class="hide-m"><code>*/30 21-23,0-5 * * 1-5</code></td>
+  <td class="nowrap" data-label="上次運行">11-13 05:30</td>
+  <td class="nowrap" data-label="下次">11-13 21:00</td>
 </tr>
 <tr class="job" data-name="交易輔助_humbled_scannera_盤前gappers" data-status="err">
-  <td><span class="dot err"></span> 出錯</td>
+  <td data-label="狀態"><span class="dot err"></span> 出錯</td>
   <td class="job-name"><details><summary>交易輔助_Humbled_ScannerA_盤前Gappers</summary><div class="row-out"><div class="err-msg">Script exited with code 1
 stderr:
 Traceback (most recent call last):
@@ -541,67 +550,67 @@ Traceback (most recent call last):
   File &quot;/home/jasonckfan/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/urllib/request.py&quot;, line 216, in urlopen
     return opener.open(url, data, timeout)
            ^</div><div class="md"><p>Script exited with code 1<br>stderr:<br>Traceback (most recent call last):<br>File &quot;&lt;stdin&gt;&quot;, line 13, in &lt;module&gt;<br>File &quot;~/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/urllib/request.py&quot;, line 216, in urlopen<br>return opener.open(url, data, timeout)<br>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br>File &quot;~/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/urllib/request.py&quot;, line 525, in open<br>response = meth(req, response)<br>^^^^^^^^^^^^^^^^^^^<br>File &quot;~/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/urllib/request.py&quot;, line 634, in http_response<br>response = self.parent.error(<br>^^^^^^^^^^^^^^^^^^<br>File &quot;~/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/urllib/request.py&quot;, line 563, in error<br>return self._call_chain(*args)<br>^^^^^^^^^^^^^^^^^^^^^^^<br>File &quot;~/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/urllib/request.py&quot;, line 496, in _call_chain<br>result = func(*args)<br>^^^^^^^^^^^<br>File &quot;~/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/urllib/request.py&quot;, line 643, in http_error_default<br>raise HTTPError(req.full_url, code, msg, hdrs, fp)<br>urllib.error.HTTPError: HTTP Error 403: Forbidden</p></div></div></details></td>
-  <td>交易掃描</td>
-  <td><code>30 20 * * 1-5</code></td>
-  <td class="nowrap">11-12 20:30</td>
-  <td class="nowrap">11-13 20:30</td>
+  <td class="hide-m">交易掃描</td>
+  <td class="hide-m"><code>30 20 * * 1-5</code></td>
+  <td class="nowrap" data-label="上次運行">11-12 20:30</td>
+  <td class="nowrap" data-label="下次">11-13 20:30</td>
 </tr>
 <tr class="job" data-name="交易輔助_humbled_scannerb_tjl_凌晨段" data-status="ok">
-  <td><span class="dot ok"></span> 正常</td>
+  <td data-label="狀態"><span class="dot ok"></span> 正常</td>
   <td class="job-name"><details><summary>交易輔助_Humbled_ScannerB_TJL_凌晨段</summary><div class="row-out"><div class="md"><p class="md-empty">（今次運行無輸出）</p></div></div></details></td>
-  <td>交易掃描</td>
-  <td><code>0,30 0-1 * * 2-6</code></td>
-  <td class="nowrap">11-13 01:30</td>
-  <td class="nowrap">11-14 00:00</td>
+  <td class="hide-m">交易掃描</td>
+  <td class="hide-m"><code>0,30 0-1 * * 2-6</code></td>
+  <td class="nowrap" data-label="上次運行">11-13 01:30</td>
+  <td class="nowrap" data-label="下次">11-14 00:00</td>
 </tr>
 <tr class="job" data-name="交易輔助_humbled_scannerb_tjl_晚段" data-status="ok">
-  <td><span class="dot ok"></span> 正常</td>
+  <td data-label="狀態"><span class="dot ok"></span> 正常</td>
   <td class="job-name"><details><summary>交易輔助_Humbled_ScannerB_TJL_晚段</summary><div class="row-out"><div class="md"><p class="md-empty">（今次運行無輸出）</p></div></div></details></td>
-  <td>交易掃描</td>
-  <td><code>0,30 22-23 * * 1-5</code></td>
-  <td class="nowrap">11-12 23:30</td>
-  <td class="nowrap">11-13 22:00</td>
+  <td class="hide-m">交易掃描</td>
+  <td class="hide-m"><code>0,30 22-23 * * 1-5</code></td>
+  <td class="nowrap" data-label="上次運行">11-12 23:30</td>
+  <td class="nowrap" data-label="下次">11-13 22:00</td>
 </tr>
 <tr class="job" data-name="交易輔助_orb_盤中每15分鐘" data-status="ok">
-  <td><span class="dot ok"></span> 正常</td>
+  <td data-label="狀態"><span class="dot ok"></span> 正常</td>
   <td class="job-name"><details><summary>交易輔助_ORB_盤中每15分鐘</summary><div class="row-out"><div class="md"><p class="md-empty">（今次運行無輸出）</p></div></div></details></td>
-  <td>交易掃描</td>
-  <td><code>*/15 21-22 * * 1-5</code></td>
-  <td class="nowrap">11-12 22:45</td>
-  <td class="nowrap">11-13 21:00</td>
+  <td class="hide-m">交易掃描</td>
+  <td class="hide-m"><code>*/15 21-22 * * 1-5</code></td>
+  <td class="nowrap" data-label="上次運行">11-12 22:45</td>
+  <td class="nowrap" data-label="下次">11-13 21:00</td>
 </tr>
 <tr class="job" data-name="交易輔助_vcp_盤前掃描" data-status="ok">
-  <td><span class="dot ok"></span> 正常</td>
+  <td data-label="狀態"><span class="dot ok"></span> 正常</td>
   <td class="job-name"><details><summary>交易輔助_VCP_盤前掃描</summary><div class="row-out"><div class="md"><p>📊 &lt;b&gt;VCP 變盤 訊號&lt;/b&gt; (2026-11-12 HKT)<br>Trend Template + VCP 形態 | 掃描 30 隻<br>━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>⚠️ &lt;b&gt;掃描結果&lt;/b&gt;<br>目前無可交易 setup。<br>💡 條件:</p>
 <ul><li>找連續收縮後突破的股票</li><li>結合 Minervini Trend Template 8 條件</li><li>嚴守止損 = VCP 區間低端</li></ul>
 <p>━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>💡 &lt;b&gt;VCP 玩法&lt;/b&gt;<br>突破 Pivot 價買入, 止損 = VCP 區間低端<br>VCP = Mark Minervini 核心策略, 歷史勝率 60-70%</p></div></div></details></td>
-  <td>交易掃描</td>
-  <td><code>30 20 * * 1-5</code></td>
-  <td class="nowrap">11-12 20:30</td>
-  <td class="nowrap">11-13 20:30</td>
+  <td class="hide-m">交易掃描</td>
+  <td class="hide-m"><code>30 20 * * 1-5</code></td>
+  <td class="nowrap" data-label="上次運行">11-12 20:30</td>
+  <td class="nowrap" data-label="下次">11-13 20:30</td>
 </tr>
 <tr class="job" data-name="交易輔助_watchlistcurated_監控" data-status="ok">
-  <td><span class="dot ok"></span> 正常</td>
+  <td data-label="狀態"><span class="dot ok"></span> 正常</td>
   <td class="job-name"><details><summary>交易輔助_WatchlistCurated_監控</summary><div class="row-out"><div class="md"><p>ℹ No curated watchlist for today</p></div></div></details></td>
-  <td>交易掃描</td>
-  <td><code>*/30 20-23,0-4 * * 1-5</code></td>
-  <td class="nowrap">11-13 04:30</td>
-  <td class="nowrap">11-13 20:00</td>
+  <td class="hide-m">交易掃描</td>
+  <td class="hide-m"><code>*/30 20-23,0-4 * * 1-5</code></td>
+  <td class="nowrap" data-label="上次運行">11-13 04:30</td>
+  <td class="nowrap" data-label="下次">11-13 20:00</td>
 </tr>
 <tr class="job" data-name="交易輔助_月度universe更新" data-status="ok">
-  <td><span class="dot ok"></span> 正常</td>
+  <td data-label="狀態"><span class="dot ok"></span> 正常</td>
   <td class="job-name"><details><summary>交易輔助_月度Universe更新</summary><div class="row-out"><div class="md"><p>📋 <strong>Universe 更新</strong> (2026-11-01)</p>
 <p>S&amp;P 500: 503 隻<br>NASDAQ 100: 0 隻<br>去重合併: 503 隻<br>流動性過濾 (≥$50M/日): 499 隻</p>
 <p>_明日 pre_market_scanner 將掃描新清單。_</p></div></div></details></td>
-  <td>交易掃描</td>
-  <td><code>0 9 1 * *</code></td>
-  <td class="nowrap">11-01 09:01</td>
-  <td class="nowrap">12-01 09:00</td>
+  <td class="hide-m">交易掃描</td>
+  <td class="hide-m"><code>0 9 1 * *</code></td>
+  <td class="nowrap" data-label="上次運行">11-01 09:01</td>
+  <td class="nowrap" data-label="下次">12-01 09:00</td>
 </tr>
 <tr class="job" data-name="交易輔助_板塊rs_sector_rs" data-status="ok">
-  <td><span class="dot ok"></span> 正常</td>
+  <td data-label="狀態"><span class="dot ok"></span> 正常</td>
   <td class="job-name"><details><summary>交易輔助_板塊RS_Sector_RS</summary><div class="row-out"><div class="md"><p>📊 &lt;b&gt;板塊相對強度 報告&lt;/b&gt; (2026-11-12 HKT)<br>基準 SPY: 1週 -0.91% | 4週 -1.27% | 13週 -2.08%<br>━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>📋 &lt;b&gt;完整排名&lt;/b&gt; (RS Score 降序)<br>&lt;pre&gt;</p>
 <h4 class="md-h1">ETF          板塊     RS   超SPY 1w   超SPY 4w  超SPY 13w</h4>
@@ -610,37 +619,37 @@ Traceback (most recent call last):
 <p>━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>💡 &lt;b&gt;如何用 (ABCD 策略加權過濾)&lt;/b&gt;<br>Top 3 sector 內成分股 → 維持或加倉<br>Bottom 3 sector 內成分股 → 降倉或避開<br>XLE/RS 排名 = 觀察板塊輪動訊號</p>
 <p>_基於 IBD/O&#x27;Neil RS Rating 改進算法_</p></div></div></details></td>
-  <td>交易掃描</td>
-  <td><code>0 20 * * 1-5</code></td>
-  <td class="nowrap">11-12 20:00</td>
-  <td class="nowrap">11-13 20:00</td>
+  <td class="hide-m">交易掃描</td>
+  <td class="hide-m"><code>0 20 * * 1-5</code></td>
+  <td class="nowrap" data-label="上次運行">11-12 20:00</td>
+  <td class="nowrap" data-label="下次">11-13 20:00</td>
 </tr>
 <tr class="job" data-name="交易輔助_盤中監控_上半段" data-status="ok">
-  <td><span class="dot ok"></span> 正常</td>
+  <td data-label="狀態"><span class="dot ok"></span> 正常</td>
   <td class="job-name"><details><summary>交易輔助_盤中監控_上半段</summary><div class="row-out"><div class="md"><p class="md-empty">（今次運行無輸出）</p></div></div></details></td>
-  <td>交易掃描</td>
-  <td><code>*/30 21-23 * * 1-5</code></td>
-  <td class="nowrap">11-12 23:30</td>
-  <td class="nowrap">11-13 21:00</td>
+  <td class="hide-m">交易掃描</td>
+  <td class="hide-m"><code>*/30 21-23 * * 1-5</code></td>
+  <td class="nowrap" data-label="上次運行">11-12 23:30</td>
+  <td class="nowrap" data-label="下次">11-13 21:00</td>
 </tr>
 <tr class="job" data-name="交易輔助_盤中監控_後半段" data-status="ok">
-  <td><span class="dot ok"></span> 正常</td>
+  <td data-label="狀態"><span class="dot ok"></span> 正常</td>
   <td class="job-name"><details><summary>交易輔助_盤中監控_後半段</summary><div class="row-out"><div class="md"><p class="md-empty">（今次運行無輸出）</p></div></div></details></td>
-  <td>交易掃描</td>
-  <td><code>0,30 0-3 * * 2-6</code></td>
-  <td class="nowrap">11-13 03:30</td>
-  <td class="nowrap">11-14 00:00</td>
+  <td class="hide-m">交易掃描</td>
+  <td class="hide-m"><code>0,30 0-3 * * 2-6</code></td>
+  <td class="nowrap" data-label="上次運行">11-13 03:30</td>
+  <td class="nowrap" data-label="下次">11-14 00:00</td>
 </tr>
 <tr class="job" data-name="交易輔助_盤中監控_收市檢查" data-status="ok">
-  <td><span class="dot ok"></span> 正常</td>
+  <td data-label="狀態"><span class="dot ok"></span> 正常</td>
   <td class="job-name"><details><summary>交易輔助_盤中監控_收市檢查</summary><div class="row-out"><div class="md"><p class="md-empty">（今次運行無輸出）</p></div></div></details></td>
-  <td>交易掃描</td>
-  <td><code>0 4 * * 2-6</code></td>
-  <td class="nowrap">11-13 04:00</td>
-  <td class="nowrap">11-14 04:00</td>
+  <td class="hide-m">交易掃描</td>
+  <td class="hide-m"><code>0 4 * * 2-6</code></td>
+  <td class="nowrap" data-label="上次運行">11-13 04:00</td>
+  <td class="nowrap" data-label="下次">11-14 04:00</td>
 </tr>
 <tr class="job" data-name="交易輔助_盤前掃描" data-status="ok">
-  <td><span class="dot ok"></span> 正常</td>
+  <td data-label="狀態"><span class="dot ok"></span> 正常</td>
   <td class="job-name"><details><summary>交易輔助_盤前掃描</summary><div class="row-out"><div class="md"><p>📊 <strong>盤前掃描</strong> (2026-11-12 HKT)<br>掃描 498 隻股, 找到 <strong>5</strong> 個 setup<br>━━━━━━━━━━━━━━━</p>
 <p><strong>1. 🔄 RVTY</strong> — 趨勢回調 (分數 0.723)<br><code>當前 $158.25</code><br><code>Trigger $163.62 | Stop $148.74 | Target $193.36</code><br><code>R:R 1:2.0 | 317 股 (≈$51,868, 風險 1.999%)</code><br>RSI 53.1 · 量 0.62x · 50DMA 斜率 1.97%</p>
 <p>中期均線維持強勁仰角，股價回踩短期支撐時伴隨成交量顯著萎縮，顯示籌碼沉澱且洗盤接近尾聲。<br>待右側放量突破整理平台高點確認動能重啟後順勢進場，捕捉趨勢延續的主升浪。<br>若走勢反轉並跌破中期關鍵均線防守位，即代表回踩失效與結構轉弱，必須果斷停損出場。<br>貫徹 O&#x27;Neil「量縮回踩蓄勢、放量突破追擊」的動能法則，以嚴控下檔風險換取對稱以上的利潤空間。</p>
@@ -658,34 +667,34 @@ Traceback (most recent call last):
 <p>50日均線維持向上斜率，股價縮量回踩20日均線沉澱浮額，展現標準的強勢股回調結構。<br>待買盤帶量克服上方整理平台高點時順勢進場，右側確認動能重啟。<br>若跌破短期均線聚合支撐與前低平台，視為多頭架構破位，立即無條件砍倉。<br>正如 Livermore 所言：「耐心等待關鍵阻力被突破，沿著最小阻力路徑進場，才是勝率最高的時候。」</p>
 <p>━━━━━━━━━━━━━━━</p>
 <p>_由 live_watcher 於開盤後監控觸發, 觸發時推送 alert。_<br>_不會自動下單, 請手動在 IBKR 執行。_</p></div></div></details></td>
-  <td>交易掃描</td>
-  <td><code>30 20 * * 1-5</code></td>
-  <td class="nowrap">11-12 20:31</td>
-  <td class="nowrap">11-13 20:30</td>
+  <td class="hide-m">交易掃描</td>
+  <td class="hide-m"><code>30 20 * * 1-5</code></td>
+  <td class="nowrap" data-label="上次運行">11-12 20:31</td>
+  <td class="nowrap" data-label="下次">11-13 20:30</td>
 </tr>
 <tr class="job" data-name="交易輔助_盤後復盤" data-status="ok">
-  <td><span class="dot ok"></span> 正常</td>
+  <td data-label="狀態"><span class="dot ok"></span> 正常</td>
   <td class="job-name"><details><summary>交易輔助_盤後復盤</summary><div class="row-out"><div class="md"><p>📊 <strong>盤後復盤</strong> (2026-11-13 HKT)<br>━━━━━━━━━━━━━━━</p>
 <p><strong>F ORB 突破</strong> (1 個, +0.00R)<br>⏸️ <strong>BB</strong> (未觸發) — +0.00R<br>EOD $9.12 | MAE 0.0% / MFE 0.0%</p>
 <p><strong>今日總 R: +0.00</strong></p>
 <p>━━━━━━━━━━━━━━━<br><strong>近 30 天累計</strong><br>勝率: 13/33 = 39%<br>平均 R: 0.06 | 累計 R: 7.42</p>
 <p>━━━━━━━━━━━━━━━<br><strong>💭 復盤評語</strong></p>
 <p>今日唯一的標的 BB 未觸發進場，全日零成交收在 +0.00R，最大亮點在於嚴格遵守進場邊界，沒有因空手而躁進或強行交易，完美落實資本保護。策略面暫不更動邏輯，但應審視盤前候選清單的篩選覆蓋度，確保在非系統性大行情時依然保有適當的觀察廣度，而非被動等候單一標的。誠如 Jesse Livermore 所言：「錢是坐著等出來的，而不是靠頻繁交易做出來的」，今日的靜止正是資深交易員在雜訊中展現的頂級心理紀律。明日重點在於延續這份等待獵物落入陷阱的定力，守住近 30 天 +7.42R 的累積戰果，專注於觸發瞬間的乾脆執行。</p></div></div></details></td>
-  <td>交易掃描</td>
-  <td><code>30 5 * * 2-6</code></td>
-  <td class="nowrap">11-13 05:30</td>
-  <td class="nowrap">11-14 05:30</td>
+  <td class="hide-m">交易掃描</td>
+  <td class="hide-m"><code>30 5 * * 2-6</code></td>
+  <td class="nowrap" data-label="上次運行">11-13 05:30</td>
+  <td class="nowrap" data-label="下次">11-14 05:30</td>
 </tr>
 <tr class="job" data-name="交易輔助_策略d_8ema中午swing" data-status="ok">
-  <td><span class="dot ok"></span> 正常</td>
+  <td data-label="狀態"><span class="dot ok"></span> 正常</td>
   <td class="job-name"><details><summary>交易輔助_策略D_8EMA中午Swing</summary><div class="row-out"><div class="md"><p class="md-empty">（今次運行無輸出）</p></div></div></details></td>
-  <td>交易掃描</td>
-  <td><code>30 0 * * 2-6</code></td>
-  <td class="nowrap">11-13 00:30</td>
-  <td class="nowrap">11-14 00:30</td>
+  <td class="hide-m">交易掃描</td>
+  <td class="hide-m"><code>30 0 * * 2-6</code></td>
+  <td class="nowrap" data-label="上次運行">11-13 00:30</td>
+  <td class="nowrap" data-label="下次">11-14 00:30</td>
 </tr>
 <tr class="job" data-name="交易輔助_週六深度復盤" data-status="ok">
-  <td><span class="dot ok"></span> 正常</td>
+  <td data-label="狀態"><span class="dot ok"></span> 正常</td>
   <td class="job-name"><details><summary>交易輔助_週六深度復盤</summary><div class="row-out"><div class="md"><p>📈 <strong>週六深度復盤</strong> (2026-11-07 HKT)<br>━━━━━━━━━━━━━━━</p>
 <p><strong>30 天統計</strong><br>總 setup: 120<br>勝率: 10/36 = 28% (含同日雙觸保守當輸)<br>雙觸 ambiguous: 4 (11%)<br>累計 R: -3.51<br>平均 R: -0.03</p>
 <p><strong>分策略表現</strong><br>A: 勝率 0%, 平均 R 0.00<br>B: 勝率 0%, 平均 R 0.00<br>C: 勝率 0%, 平均 R -0.25<br>D: 勝率 0%, 平均 R -0.24<br>E: 勝率 0%, 平均 R 0.06<br>F: 勝率 34%, 平均 R 0.10 (⚠️4 amb)<br>G: 勝率 0%, 平均 R -0.10</p>
@@ -705,21 +714,21 @@ Traceback (most recent call last):
 <p>🔍 <strong>IBKR reconciliation (2026-08-28 待辦)</strong>: 截圖 NLV +18.86% ≠ TQQQ +3.49%, 大概率是 8/27 全天累計未 reset 或 hidden positions. 用戶收市後查 IBKR Activity / Positions 全倉或拉 Statement 確認.</p>
 <p>[敏感行已遮蔽]</p>
 <p>[敏感行已遮蔽]</p></div></div></details></td>
-  <td>交易掃描</td>
-  <td><code>0 9 * * 6</code></td>
-  <td class="nowrap">11-07 09:00</td>
-  <td class="nowrap">11-14 09:00</td>
+  <td class="hide-m">交易掃描</td>
+  <td class="hide-m"><code>0 9 * * 6</code></td>
+  <td class="nowrap" data-label="上次運行">11-07 09:00</td>
+  <td class="nowrap" data-label="下次">11-14 09:00</td>
 </tr>
 <tr class="job" data-name="持倉價格警報 (盤前1h + 盤中)" data-status="off">
-  <td><span class="dot off"></span> 已停用</td>
+  <td data-label="狀態"><span class="dot off"></span> 已停用</td>
   <td class="job-name"><details><summary>持倉價格警報 (盤前1h + 盤中)</summary><div class="row-out"><div class="md"><p>[持倉章節已於公開版遮蔽]</p></div></div></details></td>
-  <td>交易掃描</td>
-  <td><code>*/30 20-23,0-4 * * 1-5</code></td>
-  <td class="nowrap">07-20 20:00</td>
-  <td class="nowrap">07-20 20:30</td>
+  <td class="hide-m">交易掃描</td>
+  <td class="hide-m"><code>*/30 20-23,0-4 * * 1-5</code></td>
+  <td class="nowrap" data-label="上次運行">07-20 20:00</td>
+  <td class="nowrap" data-label="下次">07-20 20:30</td>
 </tr>
 <tr class="job" data-name="每日活躍美股top5掃描" data-status="ok">
-  <td><span class="dot ok"></span> 正常</td>
+  <td data-label="狀態"><span class="dot ok"></span> 正常</td>
   <td class="job-name"><details><summary>每日活躍美股Top5掃描</summary><div class="row-out"><div class="md"><p>🚀 <strong>每日活躍美股 Top 5 即時掃描</strong> (2026-11-12 HKT)<br>掃描 23 隻活躍股，推薦 <strong>Top 5</strong><br>━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p><strong>1. 💎 AMZN</strong> — 評分 65.3<br><code>當前 $268.63 (+0.92%) | 量能 0.04x</code><br><code>RSI 64.3 | 20DMA $257 | 50DMA $255</code><br><code>52W距離 -2.4% | Fwd PE 24.640396</code></p>
 <p>_LLM 分析生成中..._<br>━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
@@ -732,13 +741,13 @@ Traceback (most recent call last):
 <p><strong>5. 📊 META</strong> — 評分 45.2<br><code>當前 $626.86 (-0.30%) | 量能 0.02x</code><br><code>RSI 45.0 | 20DMA $641 | 50DMA $679</code><br><code>52W距離 -19.6% | Fwd PE 17.605448</code></p>
 <p>_LLM 分析生成中..._<br>━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>_分析基於七書理論框架 | 不構成投資建議_<br>_檔案已存檔至 ~/美股投資/市場分析/_</p></div></div></details></td>
-  <td>交易掃描</td>
-  <td><code>30 22 * * 1-5</code></td>
-  <td class="nowrap">11-12 22:30</td>
-  <td class="nowrap">11-13 22:30</td>
+  <td class="hide-m">交易掃描</td>
+  <td class="hide-m"><code>30 22 * * 1-5</code></td>
+  <td class="nowrap" data-label="上次運行">11-12 22:30</td>
+  <td class="nowrap" data-label="下次">11-13 22:30</td>
 </tr>
 <tr class="job" data-name="hard penny market 週度檢查" data-status="ok">
-  <td><span class="dot ok"></span> 正常</td>
+  <td data-label="狀態"><span class="dot ok"></span> 正常</td>
   <td class="job-name"><details><summary>Hard Penny Market 週度檢查</summary><div class="row-out"><div class="md"><p>📊 <strong>Hard Penny Market 週度檢查</strong><br>_2026-11-07 07:00 HKT_</p>
 <p><strong>📈 主要指數狀態</strong></p>
 <ul><li>S&amp;P 500: 7376.86 | 50DMA偏離 -3.9% | ATR×-4.1 🟢</li></ul>
@@ -750,66 +759,66 @@ Traceback (most recent call last):
 <p>🟡 <strong>疑似 Hard Penny Market</strong> — 提高警覺、減慢進場節奏</p>
 <p>_警號計數: 2/5_</p>
 <p>⚠️ 僅供參考，不構成投資建議</p></div></div></details></td>
-  <td>KOL／專題監控</td>
-  <td><code>0 7 * * 6</code></td>
-  <td class="nowrap">11-07 07:00</td>
-  <td class="nowrap">11-14 07:00</td>
+  <td class="hide-m">KOL／專題監控</td>
+  <td class="hide-m"><code>0 7 * * 6</code></td>
+  <td class="nowrap" data-label="上次運行">11-07 07:00</td>
+  <td class="nowrap" data-label="下次">11-14 07:00</td>
 </tr>
 <tr class="job" data-name="茄利略cup_新影片監控" data-status="ok">
-  <td><span class="dot ok"></span> 正常</td>
+  <td data-label="狀態"><span class="dot ok"></span> 正常</td>
   <td class="job-name"><details><summary>茄利略CUP_新影片監控</summary><div class="row-out"><div class="md"><p class="md-empty">（今次運行無輸出）</p></div></div></details></td>
-  <td>KOL／專題監控</td>
-  <td><code>0 */6 * * *</code></td>
-  <td class="nowrap">11-13 06:00</td>
-  <td class="nowrap">11-13 12:00</td>
+  <td class="hide-m">KOL／專題監控</td>
+  <td class="hide-m"><code>0 */6 * * *</code></td>
+  <td class="nowrap" data-label="上次運行">11-13 06:00</td>
+  <td class="nowrap" data-label="下次">11-13 12:00</td>
 </tr>
 <tr class="job" data-name="cron jobs 自動備份至 gitea" data-status="ok">
-  <td><span class="dot ok"></span> 正常</td>
+  <td data-label="狀態"><span class="dot ok"></span> 正常</td>
   <td class="job-name"><details><summary>Cron Jobs 自動備份至 Gitea</summary><div class="row-out"><div class="md"><p>⚠️  Local backup committed, Gitea push FAILED after retries: 40 jobs<br>Host may be down. Local backup preserved in ~/backup-repos/jason-investment-agent-code/cron_backup</p></div></div></details></td>
-  <td>系統維護</td>
-  <td><code>0 9 * * *</code></td>
-  <td class="nowrap">11-12 09:02</td>
-  <td class="nowrap">11-13 09:00</td>
+  <td class="hide-m">系統維護</td>
+  <td class="hide-m"><code>0 9 * * *</code></td>
+  <td class="nowrap" data-label="上次運行">11-13 09:02</td>
+  <td class="nowrap" data-label="下次">11-14 09:00</td>
 </tr>
 <tr class="job" data-name="dashboard 每日重生 + push gitea" data-status="ok">
-  <td><span class="dot ok"></span> 正常</td>
+  <td data-label="狀態"><span class="dot ok"></span> 正常</td>
   <td class="job-name"><details><summary>Dashboard 每日重生 + Push Gitea</summary><div class="row-out"><div class="md"><p>[2026-11-12 23:35:28 CST] Start dashboard regen<br>⚠️  push attempt 1/4 failed (rc=128), retrying in 10s...<br>⚠️  push attempt 2/4 failed (rc=128), retrying in 20s...<br>⚠️  push attempt 3/4 failed (rc=128), retrying in 40s...<br>[2026-11-12 23:37:03 CST] ⚠️ Dashboard regenerated + committed, but Gitea push FAILED<br>Local commit preserved in ~/backup-repos/jason-investment-agent-code. Gitea host may be down.</p></div></div></details></td>
-  <td>系統維護</td>
-  <td><code>35 23 * * 1-5</code></td>
-  <td class="nowrap">11-12 23:37</td>
-  <td class="nowrap">11-13 23:35</td>
+  <td class="hide-m">系統維護</td>
+  <td class="hide-m"><code>35 23 * * 1-5</code></td>
+  <td class="nowrap" data-label="上次運行">11-12 23:37</td>
+  <td class="nowrap" data-label="下次">11-13 23:35</td>
 </tr>
 <tr class="job" data-name="free model check (6h)" data-status="ok">
-  <td><span class="dot ok"></span> 正常</td>
+  <td data-label="狀態"><span class="dot ok"></span> 正常</td>
   <td class="job-name"><details><summary>Free model check (6h)</summary><div class="row-out"><div class="md"><p class="md-empty">（此輸出以任務指令為主，暫無報告內容）</p></div></div></details></td>
-  <td>系統維護</td>
-  <td><code>0 */6 * * *</code></td>
-  <td class="nowrap">11-13 06:00</td>
-  <td class="nowrap">11-13 12:00</td>
+  <td class="hide-m">系統維護</td>
+  <td class="hide-m"><code>0 */6 * * *</code></td>
+  <td class="nowrap" data-label="上次運行">11-13 06:00</td>
+  <td class="nowrap" data-label="下次">11-13 12:00</td>
 </tr>
 <tr class="job" data-name="funnel-analyzer-daily" data-status="ok">
-  <td><span class="dot ok"></span> 正常</td>
+  <td data-label="狀態"><span class="dot ok"></span> 正常</td>
   <td class="job-name"><details><summary>funnel-analyzer-daily</summary><div class="row-out"><div class="md"><p class="md-empty">（今次運行無輸出）</p></div></div></details></td>
-  <td>系統維護</td>
-  <td><code>30 23 * * 1-5</code></td>
-  <td class="nowrap">11-12 23:31</td>
-  <td class="nowrap">11-13 23:30</td>
+  <td class="hide-m">系統維護</td>
+  <td class="hide-m"><code>30 23 * * 1-5</code></td>
+  <td class="nowrap" data-label="上次運行">11-12 23:31</td>
+  <td class="nowrap" data-label="下次">11-13 23:30</td>
 </tr>
 <tr class="job" data-name="投資助理_本地git備份" data-status="ok">
-  <td><span class="dot ok"></span> 正常</td>
-  <td class="job-name"><details><summary>投資助理_本地Git備份</summary><div class="row-out"><div class="md"><p>Investment backup OK: changed=yes remote=failed head=cd9f7c8b</p></div></div></details></td>
-  <td>系統維護</td>
-  <td><code>15 9 * * *</code></td>
-  <td class="nowrap">11-12 09:16</td>
-  <td class="nowrap">11-13 09:15</td>
+  <td data-label="狀態"><span class="dot ok"></span> 正常</td>
+  <td class="job-name"><details><summary>投資助理_本地Git備份</summary><div class="row-out"><div class="md"><p>Investment backup OK: changed=yes remote=failed head=6939d767</p></div></div></details></td>
+  <td class="hide-m">系統維護</td>
+  <td class="hide-m"><code>15 9 * * *</code></td>
+  <td class="nowrap" data-label="上次運行">11-13 09:16</td>
+  <td class="nowrap" data-label="下次">11-14 09:15</td>
 </tr>
 <tr class="job" data-name="每日工作報告" data-status="ok">
-  <td><span class="dot ok"></span> 正常</td>
+  <td data-label="狀態"><span class="dot ok"></span> 正常</td>
   <td class="job-name"><details><summary>每日工作報告</summary><div class="row-out"><div class="md"><p class="md-empty">（此輸出以任務指令為主，暫無報告內容）</p></div></div></details></td>
-  <td>系統維護</td>
-  <td><code>0 23 * * *</code></td>
-  <td class="nowrap">11-12 23:02</td>
-  <td class="nowrap">11-13 23:00</td>
+  <td class="hide-m">系統維護</td>
+  <td class="hide-m"><code>0 23 * * *</code></td>
+  <td class="nowrap" data-label="上次運行">11-12 23:02</td>
+  <td class="nowrap" data-label="下次">11-13 23:00</td>
 </tr>
 </tbody></table></div></section>
 </main>
