@@ -1,5 +1,5 @@
 {
- "generated_at_hkt": "2026-11-13 08:29 HKT",
+ "generated_at_hkt": "2026-11-13 09:43 HKT",
  "source": ".240 hermestam Hermes cron",
  "total": 40,
  "enabled": 38,
@@ -337,14 +337,14 @@
    "enabled": true,
    "deliver": "telegram",
    "script": "backup_investment_agent_git.sh",
-   "last_run_at": "2026-11-12T09:16:54.440385+08:00",
+   "last_run_at": "2026-11-13T09:16:55.478009+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-13T09:15:00+08:00",
+   "next_run_at": "2026-11-14T09:15:00+08:00",
    "output": {
-    "file": "2026-11-12_09-16-52.md",
-    "mtime": 1794446212.1168177,
-    "text": "# Cron Job: 投資助理_本地Git備份\n\n**Job ID:** 2480e3dfe54e\n**Run Time:** 2026-11-12 09:16:51\n**Mode:** no_agent (script)\n\n---\n\nInvestment backup OK: changed=yes remote=failed head=cd9f7c8b"
+    "file": "2026-11-13_09-16-52.md",
+    "mtime": 1794532612.735026,
+    "text": "# Cron Job: 投資助理_本地Git備份\n\n**Job ID:** 2480e3dfe54e\n**Run Time:** 2026-11-13 09:16:52\n**Mode:** no_agent (script)\n\n---\n\nInvestment backup OK: changed=yes remote=failed head=6939d767"
    },
    "category": "系統維護"
   },
@@ -463,14 +463,14 @@
    "enabled": true,
    "deliver": "telegram",
    "script": "trading_assistant/abcd_notes_sync.py",
-   "last_run_at": "2026-11-13T08:05:28.338196+08:00",
+   "last_run_at": "2026-11-13T09:35:28.391726+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-13T08:35:00+08:00",
+   "next_run_at": "2026-11-13T10:05:00+08:00",
    "output": {
-    "file": "2026-11-13_08-05-28.md",
-    "mtime": 1794528328.24306,
-    "text": "# Cron Job: 交易輔助_ABCD策略備忘錄\n\n**Job ID:** 0f52af1be96c\n**Run Time:** 2026-11-13 08:05:28\n**Mode:** no_agent (script)\n**Status:** silent (empty output)"
+    "file": "2026-11-13_09-35-28.md",
+    "mtime": 1794533728.3224978,
+    "text": "# Cron Job: 交易輔助_ABCD策略備忘錄\n\n**Job ID:** 0f52af1be96c\n**Run Time:** 2026-11-13 09:35:28\n**Mode:** no_agent (script)\n**Status:** silent (empty output)"
    },
    "category": "交易掃描"
   },
@@ -535,14 +535,14 @@
    "enabled": true,
    "deliver": "local",
    "script": "backup_cron_jobs.sh",
-   "last_run_at": "2026-11-12T09:02:01.457388+08:00",
+   "last_run_at": "2026-11-13T09:02:01.204841+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-13T09:00:00+08:00",
+   "next_run_at": "2026-11-14T09:00:00+08:00",
    "output": {
-    "file": "2026-11-12_09-02-01.md",
-    "mtime": 1794445321.311084,
-    "text": "# Cron Job: Cron Jobs 自動備份至 Gitea\n\n**Job ID:** 46141cbff660\n**Run Time:** 2026-11-12 09:02:01\n**Mode:** no_agent (script)\n\n---\n\n⚠️  Local backup committed, Gitea push FAILED after retries: 40 jobs\n    Host may be down. Local backup preserved in /home/jasonckfan/backup-repos/jason-investment-agent-code/cron_backup"
+    "file": "2026-11-13_09-02-01.md",
+    "mtime": 1794531721.1044283,
+    "text": "# Cron Job: Cron Jobs 自動備份至 Gitea\n\n**Job ID:** 46141cbff660\n**Run Time:** 2026-11-13 09:02:01\n**Mode:** no_agent (script)\n\n---\n\n⚠️  Local backup committed, Gitea push FAILED after retries: 40 jobs\n    Host may be down. Local backup preserved in /home/jasonckfan/backup-repos/jason-investment-agent-code/cron_backup"
    },
    "category": "系統維護"
   },
