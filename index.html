@@ -75,7 +75,7 @@ td.job-name summary{font-size:15.5px}
 <header>
 <div class="eyebrow">HermesTam Runtime · .240 美股投資助手</div>
 <h1>每日運行報告</h1>
-<div class="sub">更新：2026-11-22 00:47 HKT · 資料來源：.240 Hermes cron 系統，每日自動同步一次</div>
+<div class="sub">更新：2026-11-23 00:47 HKT · 資料來源：.240 Hermes cron 系統，每日自動同步一次</div>
 <div class="verdict">今日全部正常，沒有 job 出錯。</div>
 <div class="stats">
 <div class="stat"><b>39</b><span>Job 總數</span></div>
@@ -87,9 +87,9 @@ td.job-name summary{font-size:15.5px}
 <main>
 <section class="attention-sec"><h2>今日要留意</h2><p class="all-ok">✓ 今日全部正常，沒有 job 出錯。</p></section>
 <section><h2>今日市場報告</h2><p class="sec-note">以下係今日最新嘅市場報告，按最近更新排序，直接睇得，唔使逐個撳開。</p><article class="article">
-  <div class="art-head"><h3>美股科技股新聞推送</h3><span class="art-time">最後更新 11-22 00:01</span></div>
-  <div class="art-meta">頻率 <code>0 */2 * * *</code> · 下次 11-22 02:00 · 推送 telegram</div>
-  <div class="md"><p>🚀 美股科技股投資新聞推送系統 (完整中文版)<br>⏰ 執行時間: 2026-11-22 00:01:02</p>
+  <div class="art-head"><h3>美股科技股新聞推送</h3><span class="art-time">最後更新 11-23 00:01</span></div>
+  <div class="art-meta">頻率 <code>0 */2 * * *</code> · 下次 11-23 02:00 · 推送 telegram</div>
+  <div class="md"><p>🚀 美股科技股投資新聞推送系統 (完整中文版)<br>⏰ 執行時間: 2026-11-23 00:01:06</p>
 <hr>
 <p>✅ 已從本地配置載入 API Keys (default model=gemini-3.8-flash-high, temp=0.3)<br>Available models: GLM-5.3-flash, gemini-3.8-flash-high<br>Per-task models: translation=gemini-3.8-flash-high, portfolio_analysis=gemini-3.8-flash-high<br>🌙 靜音時段, 跳過 (HKT 23-06, 現在 0:00)</p>
 <p>📭 沒有找到符合條件的新聞</p></div>
@@ -187,7 +187,16 @@ td.job-name summary{font-size:15.5px}
 <p><strong>QQQ</strong> — 🟢 上漲 | 信心 69% | 收市 645.04<br>2 週預測區間: <strong>637.05 – 716.91</strong> (中值 676.98)<br>回測命中 (walk-forward, 1332 樣本): <strong>46%</strong><br>UP訊號勝率 62% (n=730) | DOWN訊號勝率 51% (n=185)<br>四模型: 動量 FLAT / 均值回歸 UP / 季節性 UP / 波動率 FLAT<br>當刻建議: 🛒 買入傾向 (歷史同狀態下 10 日平均為正)</p>
 <p>_預測基於 20 年 walk-forward 回測; 勝率係歷史統計, 唔係保證。_<br>send VOO_20261120_2001.png: OK<br>send QQQ_20261120_2001.png: OK</p></div>
 </article></section>
-
+<section><h2>今日市場分析輸出</h2><article class="article"><div class="art-head"><h3>bull_flag_20261123.md</h3></div><div class="md"><h4 class="md-h1">Bull Flag 突破訊號 — 2026-11-23</h4>
+<blockquote>掃描時間: 2026-11-23 00:32 HKT<br>掃描範圍: 499 隻<br>過濾: 上升趨勢 + Pole ≥ +15.0% + Flag 5-15 日 + 上沿突破 + 量能 1.5x</blockquote>
+<h5 class="md-h2">Setup 列表</h5>
+<div class="tbl-wrap"><table class="wide"><thead><tr><th style="text-align:left">Ticker</th><th style="text-align:left">信心</th><th style="text-align:left">進場</th><th style="text-align:left">止損</th><th style="text-align:left">T1</th><th style="text-align:left">T2</th><th style="text-align:left">R:R</th><th style="text-align:left">Pole%</th><th style="text-align:left">Flag 日</th><th style="text-align:left">緊度</th><th style="text-align:left">量能</th></tr></thead><tbody><tr><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td><td style="text-align:left">—</td></tr></tbody></table></div>
+<h5 class="md-h2">策略說明</h5>
+<p><strong>Bull Flag</strong> 係 O&#x27;Neil/Weinstein 經典形態:</p>
+<ul><li><strong>Pole</strong>: 急漲段, 5-15 日 +15% 或更多</li><li><strong>Flag</strong>: 急漲後窄幅整理, 5-15 日, 回撤不超過 Pole 38.2% Fibonacci</li><li><strong>突破</strong>: Flag 上沿 + 量能 1.5x = 續勢爆發</li><li><strong>量度目標</strong> (Flag pole projection): T1 = entry + Pole 高度</li></ul>
+<h5 class="md-h2">風控</h5>
+<ul><li>Stop = Flag 低位 × 0.99 (旗下緣失守 = 形態失效)</li><li>T1 = entry + Pole 高度</li><li>T2 = entry + 1.5× Pole 高度 (跑長線)</li><li>R:R 必須 ≥ 1.5, 否則棄置</li></ul>
+<p>_由 Hermes bull_flag_scanner 自動生成_<br>_不構成投資建議_</p></div></article></section>
 <section><h2>全部 Job 狀態</h2>
 <p class="sec-note">共 39 個 job（啟用 37 個）。撳 job 名稱可以睇最新輸出。</p>
 <div class="filters"><button data-f="all" class="chip on">全部 39</button><button data-f="err" class="chip">出錯 0</button><button data-f="ok" class="chip">正常 37</button><button data-f="off" class="chip">已停用 2</button></div>
@@ -285,14 +294,14 @@ td.job-name summary{font-size:15.5px}
 </tr>
 <tr class="job" data-name="美股科技股新聞推送" data-status="ok">
   <td data-label="狀態"><span class="dot ok"></span> 正常</td>
-  <td class="job-name"><details><summary>美股科技股新聞推送</summary><div class="row-out"><div class="md"><p>🚀 美股科技股投資新聞推送系統 (完整中文版)<br>⏰ 執行時間: 2026-11-22 00:01:02</p>
+  <td class="job-name"><details><summary>美股科技股新聞推送</summary><div class="row-out"><div class="md"><p>🚀 美股科技股投資新聞推送系統 (完整中文版)<br>⏰ 執行時間: 2026-11-23 00:01:06</p>
 <hr>
 <p>✅ 已從本地配置載入 API Keys (default model=gemini-3.8-flash-high, temp=0.3)<br>Available models: GLM-5.3-flash, gemini-3.8-flash-high<br>Per-task models: translation=gemini-3.8-flash-high, portfolio_analysis=gemini-3.8-flash-high<br>🌙 靜音時段, 跳過 (HKT 23-06, 現在 0:00)</p>
 <p>📭 沒有找到符合條件的新聞</p></div></div></details></td>
   <td class="hide-m">市場報告</td>
   <td class="hide-m"><code>0 */2 * * *</code></td>
-  <td class="nowrap" data-label="上次運行">11-22 00:01</td>
-  <td class="nowrap" data-label="下次">11-22 02:00</td>
+  <td class="nowrap" data-label="上次運行">11-23 00:01</td>
+  <td class="nowrap" data-label="下次">11-23 02:00</td>
 </tr>
 <tr class="job" data-name="美股開市前簡報" data-status="ok">
   <td data-label="狀態"><span class="dot ok"></span> 正常</td>
@@ -345,15 +354,15 @@ td.job-name summary{font-size:15.5px}
 </tr>
 <tr class="job" data-name="h bull flag intraday scanner" data-status="ok">
   <td data-label="狀態"><span class="dot ok"></span> 正常</td>
-  <td class="job-name"><details><summary>H Bull Flag intraday scanner</summary><div class="row-out"><div class="md"><p>🚩 &lt;b&gt;牛旗 突破訊號&lt;/b&gt; (2026-11-20 HKT)<br>急漲 + 旗形整理 + 突破上沿 | 掃描 499 隻<br>━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+  <td class="job-name"><details><summary>H Bull Flag intraday scanner</summary><div class="row-out"><div class="md"><p>🚩 &lt;b&gt;牛旗 突破訊號&lt;/b&gt; (2026-11-23 HKT)<br>急漲 + 旗形整理 + 突破上沿 | 掃描 499 隻<br>━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>⚠️ &lt;b&gt;掃描結果&lt;/b&gt;<br>目前無可交易 setup。<br>💡 條件:</p>
 <ul><li>Pole = 5-15 日急漲 ≥ +15%</li><li>Flag = 5-15 日窄幅整理 (回撤 &lt; 38.2%)</li><li>突破上沿 + 量能 1.5x = 進場</li></ul>
 <p>━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>💡 &lt;b&gt;玩法&lt;/b&gt;<br>突破 Flag 上沿 + 量能買入, T1 = entry + Pole 高度<br>Bull Flag = O&#x27;Neil/Weinstein 經典形態, 勝率 55-65%</p></div></div></details></td>
   <td class="hide-m">交易掃描</td>
   <td class="hide-m"><code>*/15 22-23,0-3 * * 1-5</code></td>
-  <td class="nowrap" data-label="上次運行">11-20 23:47</td>
-  <td class="nowrap" data-label="下次">11-23 00:00</td>
+  <td class="nowrap" data-label="上次運行">11-23 00:32</td>
+  <td class="nowrap" data-label="下次">11-23 01:00</td>
 </tr>
 <tr class="job" data-name="j cup &amp;amp; handle daily scanner" data-status="ok">
   <td data-label="狀態"><span class="dot ok"></span> 正常</td>
@@ -385,17 +394,16 @@ td.job-name summary{font-size:15.5px}
   <td class="job-name"><details><summary>交易輔助_ABCD策略備忘錄</summary><div class="row-out"><div class="md"><p class="md-empty">（今次運行無輸出）</p></div></div></details></td>
   <td class="hide-m">交易掃描</td>
   <td class="hide-m"><code>5,35 * * * 1-5</code></td>
-  <td class="nowrap" data-label="上次運行">11-20 23:36</td>
-  <td class="nowrap" data-label="下次">11-23 00:05</td>
+  <td class="nowrap" data-label="上次運行">11-23 00:36</td>
+  <td class="nowrap" data-label="下次">11-23 01:05</td>
 </tr>
 <tr class="job" data-name="交易輔助_excel統一報告" data-status="ok">
   <td data-label="狀態"><span class="dot ok"></span> 正常</td>
-  <td class="job-name"><details><summary>交易輔助_Excel統一報告</summary><div class="row-out"><div class="md"><p>📊 Excel 報告: ~/美股投資/交易記錄/unified_signals_20261120.xlsx<br>總信號: 16<br>F ORB 突破: 5 個 (AI, SAIL, TRIP, BEAM, DAL)<br>I 板塊相對強度: 11 個 (XLK, XLC, XLY, XLF, XLB, XLV, XLI, XLP, XLRE, XLU, XLE)</p>
-<p>✅ Telegram 附件已推送</p></div></div></details></td>
+  <td class="job-name"><details><summary>交易輔助_Excel統一報告</summary><div class="row-out"><div class="md"><p>📊 Excel 報告: ~/美股投資/交易記錄/unified_signals_20261123.xlsx<br>總信號: 0<br>ℹ️  保留現有 Excel (unified_signals_20261123.xlsx, mtime=00:01:07), 不覆寫<br>ℹ️  今日無新信號, 跳過 Telegram 附件推送</p></div></div></details></td>
   <td class="hide-m">交易掃描</td>
   <td class="hide-m"><code>*/30 21-23,0-5 * * 1-5</code></td>
-  <td class="nowrap" data-label="上次運行">11-20 23:31</td>
-  <td class="nowrap" data-label="下次">11-23 00:00</td>
+  <td class="nowrap" data-label="上次運行">11-23 00:31</td>
+  <td class="nowrap" data-label="下次">11-23 01:00</td>
 </tr>
 <tr class="job" data-name="交易輔助_humbled_scannera_盤前gappers" data-status="ok">
   <td data-label="狀態"><span class="dot ok"></span> 正常</td>
@@ -446,8 +454,8 @@ td.job-name summary{font-size:15.5px}
   <td class="job-name"><details><summary>交易輔助_WatchlistCurated_監控</summary><div class="row-out"><div class="md"><p>ℹ No curated watchlist for today</p></div></div></details></td>
   <td class="hide-m">交易掃描</td>
   <td class="hide-m"><code>*/30 20-23,0-4 * * 1-5</code></td>
-  <td class="nowrap" data-label="上次運行">11-20 23:31</td>
-  <td class="nowrap" data-label="下次">11-23 00:00</td>
+  <td class="nowrap" data-label="上次運行">11-23 00:31</td>
+  <td class="nowrap" data-label="下次">11-23 01:00</td>
 </tr>
 <tr class="job" data-name="交易輔助_月度universe更新" data-status="ok">
   <td data-label="狀態"><span class="dot ok"></span> 正常</td>
@@ -634,16 +642,16 @@ td.job-name summary{font-size:15.5px}
   <td class="job-name"><details><summary>茄利略CUP_新影片監控</summary><div class="row-out"><div class="md"><p class="md-empty">（今次運行無輸出）</p></div></div></details></td>
   <td class="hide-m">KOL／專題監控</td>
   <td class="hide-m"><code>0 */6 * * *</code></td>
-  <td class="nowrap" data-label="上次運行">11-22 00:01</td>
-  <td class="nowrap" data-label="下次">11-22 06:00</td>
+  <td class="nowrap" data-label="上次運行">11-23 00:01</td>
+  <td class="nowrap" data-label="下次">11-23 06:00</td>
 </tr>
 <tr class="job" data-name="cron jobs 自動備份至 gitea" data-status="ok">
   <td data-label="狀態"><span class="dot ok"></span> 正常</td>
   <td class="job-name"><details><summary>Cron Jobs 自動備份至 Gitea</summary><div class="row-out"><div class="md"><p>⚠️  Local backup committed, Gitea push FAILED after retries: 39 jobs<br>Host may be down. Local backup preserved in ~/backup-repos/jason-investment-agent-code/cron_backup</p></div></div></details></td>
   <td class="hide-m">系統維護</td>
   <td class="hide-m"><code>0 9 * * *</code></td>
-  <td class="nowrap" data-label="上次運行">11-21 09:02</td>
-  <td class="nowrap" data-label="下次">11-22 09:00</td>
+  <td class="nowrap" data-label="上次運行">11-22 09:02</td>
+  <td class="nowrap" data-label="下次">11-23 09:00</td>
 </tr>
 <tr class="job" data-name="dashboard 每日重生 + push gitea" data-status="ok">
   <td data-label="狀態"><span class="dot ok"></span> 正常</td>
@@ -663,19 +671,19 @@ td.job-name summary{font-size:15.5px}
 </tr>
 <tr class="job" data-name="投資助理_本地git備份" data-status="ok">
   <td data-label="狀態"><span class="dot ok"></span> 正常</td>
-  <td class="job-name"><details><summary>投資助理_本地Git備份</summary><div class="row-out"><div class="md"><p>Investment backup OK: changed=yes remote=failed head=b23c16fa</p></div></div></details></td>
+  <td class="job-name"><details><summary>投資助理_本地Git備份</summary><div class="row-out"><div class="md"><p>Investment backup OK: changed=yes remote=failed head=9b8e23e1</p></div></div></details></td>
   <td class="hide-m">系統維護</td>
   <td class="hide-m"><code>15 9 * * *</code></td>
-  <td class="nowrap" data-label="上次運行">11-21 09:17</td>
-  <td class="nowrap" data-label="下次">11-22 09:15</td>
+  <td class="nowrap" data-label="上次運行">11-22 09:17</td>
+  <td class="nowrap" data-label="下次">11-23 09:15</td>
 </tr>
 <tr class="job" data-name="每日工作報告" data-status="ok">
   <td data-label="狀態"><span class="dot ok"></span> 正常</td>
   <td class="job-name"><details><summary>每日工作報告</summary><div class="row-out"><div class="md"><p class="md-empty">（此輸出以任務指令為主，暫無報告內容）</p></div></div></details></td>
   <td class="hide-m">系統維護</td>
   <td class="hide-m"><code>0 23 * * *</code></td>
-  <td class="nowrap" data-label="上次運行">11-21 23:02</td>
-  <td class="nowrap" data-label="下次">11-22 23:00</td>
+  <td class="nowrap" data-label="上次運行">11-22 23:03</td>
+  <td class="nowrap" data-label="下次">11-23 23:00</td>
 </tr>
 </tbody></table></div></section>
 </main>
