@@ -1,10 +1,10 @@
 {
- "generated_at_hkt": "2026-11-27 00:49 HKT",
+ "generated_at_hkt": "2026-11-28 00:47 HKT",
  "source": ".240 hermestam Hermes cron",
  "total": 39,
  "enabled": 37,
- "ok": 37,
- "errors": 0,
+ "ok": 34,
+ "errors": 3,
  "jobs": [
   {
    "id": "d740ace88192",
@@ -13,10 +13,10 @@
    "enabled": true,
    "deliver": "telegram",
    "script": null,
-   "last_run_at": "2026-11-26T07:44:05.049534+08:00",
-   "last_status": "ok",
-   "last_error": null,
-   "next_run_at": "2026-11-27T07:30:00+08:00",
+   "last_run_at": "2026-11-27T07:38:34.063521+08:00",
+   "last_status": "error",
+   "last_error": "Restart-safe cron worker dispatch failed: cron external worker exited before ownership acknowledgement (exit 1); worker stderr: <frozen runpy>:130: RuntimeWarning: 'cron.scheduler' found in sys.modules after import of package 'cron', but prior to execution of 'cron.scheduler'; this may result in unp",
+   "next_run_at": "2026-11-28T07:30:00+08:00",
    "output": {
     "file": "d740ace88192_20261126_074402.txt",
     "mtime": 1795650242.8764238,
@@ -31,14 +31,14 @@
    "enabled": true,
    "deliver": "telegram",
    "script": "us_tech_stock_news_final.py",
-   "last_run_at": "2026-11-26T20:03:43.853465+08:00",
+   "last_run_at": "2026-11-28T00:00:39.151511+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-26T22:00:00+08:00",
+   "next_run_at": "2026-11-28T02:00:00+08:00",
    "output": {
-    "file": "2026-11-26_20-03-41.md",
-    "mtime": 1795694621.5050771,
-    "text": "# Cron Job: 美股科技股新聞推送\n\n**Job ID:** a1f7931bffc6\n**Run Time:** 2026-11-26 20:03:41\n**Mode:** no_agent (script)\n\n---\n\n🚀 美股科技股投資新聞推送系統 (完整中文版)\n⏰ 執行時間: 2026-11-26 20:00:34\n------------------------------------------------------------\n✅ 已從本地配置載入 API Keys (default model=gemini-3.8-flash-high, temp=0.3)\n   Available models: GLM-5.3-flash, gemini-3.8-flash-high\n   Per-task models: translation=gemini-3.8-flash-high, portfolio_analysis=gemini-3.8-flash-high\n🔍 開始免費資源搜尋...\n\n🔍 從 Brave Search 搜尋...\n   ✅ Brave Search: 0 篇\n🔍 從 Yahoo Finance 搜尋...\n   ✅ Yahoo Finance: 15 篇\n🔍 從 Google News 搜尋...\n   ✅ Google News: 6 篇\n🔍 從 GDELT 搜尋...\n   ⚠️  GDELT error: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=20)\n   ⚠️  GDELT error: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=20)\n   ⚠️  GDELT error: HTTPSConnectionPool(host='api.gdeltproject.org', port=443): Read timed out. (read timeout=20)\n   ✅ GDELT: 0 篇\n🔍 從 SEC EDGAR 檢查官方文件...\n   ✅ SEC EDGAR: 5 份\n🔥 從 StockTwits 抓熱門股新聞...\n   🔥 熱門 (排除已追蹤): USDCAD, XAUUSD, DIS, UUUU, VRTX\n   ✅ Trending: 0 篇\n\n📊 原始搜尋總計: 26 篇\n🔄 去重後: 17 篇\n✅ 過濾後: 10 篇\n\n📤 準備發送 10 篇新聞...\n[敏感行已遮蔽]\n📊 已載入 3 個 scanner 信號 (用於出入貨建議)\n📝 並行翻譯 10 篇 × 標題+摘要 (4 workers)...\n   ⚠️  [antigravity/gemini-3.8-flash-high] 失敗: HTTP 503\n   ⚠️  [antigravity/gemini-3.8-flash-high] 失敗: HTTP 503\n   ⚠️  [antigravity/gemini-3.8-flash-high] 失敗: HTTP 503\n   ⚠️  [antigravity/gemini-3.8-flash-high] 失敗: HTTP 503\n   ⚠️  [antigravity/gemini-3.8-flash-high] 失敗: HTTP 503\n   ⚠️  [antigravity/gemini-3.8-flash-high] 失敗: HTTP 503\n   ⚠️  [antigravity/gemini-3.8-flash-high] 失敗: HTTP 503\n   ⚠️  [antigravity/gemini-3.8-flash-high] 失敗: HTTP 503\n   ⚠️  [antigravity/gemini-3.8-flash-high] 失敗: HTTP 503\n   ✅ 翻譯完成 (40.9s)\n📄 生成 HTML digest...\n   💾 /home/jasonckfan/.hermes/cron/output/a1f7931bffc6/news_digest_2026-11-26_2003.html\n   ✅ Telegram 文件發送成功: /home/jasonckfan/.hermes/cron/output/a1f7931bffc6/news_digest_2026-11-26_2003.html\n\n✅ Digest 已發送 (10 篇 → 1 個附件)\n\n📄 完整 cron log: /home/jasonckfan/.hermes/cron/output/a1f7931bffc6/2026-11-26_18-02-44.md"
+    "file": "2026-11-28_00-00-36.md",
+    "mtime": 1795795236.9149303,
+    "text": "# Cron Job: 美股科技股新聞推送\n\n**Job ID:** a1f7931bffc6\n**Run Time:** 2026-11-28 00:00:36\n**Mode:** no_agent (script)\n\n---\n\n🚀 美股科技股投資新聞推送系統 (完整中文版)\n⏰ 執行時間: 2026-11-28 00:00:36\n------------------------------------------------------------\n✅ 已從本地配置載入 API Keys (default model=gemini-3.8-flash-high, temp=0.3)\n   Available models: GLM-5.3-flash, gemini-3.8-flash-high\n   Per-task models: translation=gemini-3.8-flash-high, portfolio_analysis=gemini-3.8-flash-high\n🌙 靜音時段, 跳過 (HKT 23-06, 現在 0:00)\n\n📭 沒有找到符合條件的新聞\n\n📄 完整 cron log: /home/jasonckfan/.hermes/cron/output/a1f7931bffc6/2026-11-27_22-02-45.md"
    },
    "category": "市場報告"
   },
@@ -67,14 +67,14 @@
    "enabled": true,
    "deliver": "telegram",
    "script": "market_monitor/momentum_indicators.py",
-   "last_run_at": "2026-11-26T08:00:37.679521+08:00",
+   "last_run_at": "2026-11-27T08:01:18.854393+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-27T08:00:00+08:00",
+   "next_run_at": "2026-11-28T08:00:00+08:00",
    "output": {
-    "file": "2026-11-26_08-00-34.md",
-    "mtime": 1795651234.4399374,
-    "text": "# Cron Job: 動能股技術指標日報\n\n**Job ID:** 2f085eb966df\n**Run Time:** 2026-11-26 08:00:34\n**Mode:** no_agent (script)\n\n---\n\n🎯 **動能股技術指標 (Daily)**\n_2026-11-26 08:00 HKT_\n\n**NVDA** — $149.30\n📈 趨勢: 🔴 下跌趨勢\n📊 10DMA $153.28 | 20DMA $172.48 | 50DMA $203.65 | 200DMA $202.87\n📏 50DMA 偏離 -26.7% | ATR 10.6%/日 | RSI 38\n🎯 距 52週高位 $243.37 (-38.7%)\n⚠️ 警號: 🔴 短線破位 (跌穿 10DMA & 10<20)\n🛑 建議止損: $148.69 (-0.4%)\n─────────────────────────\n**TSLA** — $380.14\n📈 趨勢: 🔴 下跌趨勢\n📊 10DMA $380.18 | 20DMA $382.15 | 50DMA $377.17 | 200DMA $381.15\n📏 50DMA 偏離 +0.8% | ATR 5.3%/日 | RSI 62\n🎯 距 52週高位 $498.83 (-23.8%)\n⚠️ 警號: 🔴 短線破位 (跌穿 10DMA & 10<20)\n🛑 建議止損: $368.77 (-3.0%)\n─────────────────────────\n**SOXL** — $32.02\n📈 趨勢: 🔴 下跌趨勢\n📊 10DMA $45.49 | 20DMA $55.37 | 50DMA $98.79 | 200DMA $123.31\n📏 50DMA 偏離 -67.6% | ATR 33.1%/日 | RSI 45\n🎯 距 52週高位 $302.00 (-89.4%)\n⚠️ 警號: 🔴 短線破位 (跌穿 10DMA & 10<20)\n🛑 短線阻力: $44.13 (+37.8%)\n─────────────────────────\n**AMD** — $406.03\n📈 趨勢: 🔴 下跌趨勢\n📊 10DMA $484.35 | 20DMA $489.22 | 50DMA $548.35 | 200DMA $432.96\n📏 50DMA 偏離 -26.0% | ATR 12.9%/日 | RSI 50\n🎯 距 52週高位 $658.52 (-38.3%)\n⚠️ 警號: 🔴 短線破位 (跌穿 10DMA & 10<20)\n🛑 短線阻力: $469.82 (+15.7%)\n─────────────────────────\n**QQQ** — $633.93\n📈 趨勢: 🔴 下跌趨勢\n📊 10DMA $652.28 | 20DMA $666.73 | 50DMA $707.05 | 200DMA $683.50\n📏 50DMA 偏離 -10.3% | ATR 3.7%/日 | RSI 47\n🎯 距 52週高位 $762.86 (-16.9%)\n⚠️ 警號: 🔴 短線破位 (跌穿 10DMA & 10<20)\n🛑 建議止損: $632.71 (-0.2%)\n─────────────────────────\n\n⚠️ 僅供參考，不構成投資建議\n💡 框架: 茄利略 CUP (@KelileoCUP) Hard Penny Market 識別法"
+    "file": "2026-11-27_08-01-01.md",
+    "mtime": 1795737661.369967,
+    "text": "# Cron Job: 動能股技術指標日報\n\n**Job ID:** 2f085eb966df\n**Run Time:** 2026-11-27 08:00:59\n**Mode:** no_agent (script)\n\n---\n\n🎯 **動能股技術指標 (Daily)**\n_2026-11-27 08:00 HKT_\n\n**NVDA** — $149.30\n📈 趨勢: 🔴 下跌趨勢\n📊 10DMA $153.28 | 20DMA $172.48 | 50DMA $203.65 | 200DMA $202.87\n📏 50DMA 偏離 -26.7% | ATR 10.6%/日 | RSI 38\n🎯 距 52週高位 $243.37 (-38.7%)\n⚠️ 警號: 🔴 短線破位 (跌穿 10DMA & 10<20)\n🛑 建議止損: $148.69 (-0.4%)\n─────────────────────────\n**TSLA** — $380.14\n📈 趨勢: 🔴 下跌趨勢\n📊 10DMA $380.18 | 20DMA $382.15 | 50DMA $377.17 | 200DMA $381.15\n📏 50DMA 偏離 +0.8% | ATR 5.3%/日 | RSI 62\n🎯 距 52週高位 $498.83 (-23.8%)\n⚠️ 警號: 🔴 短線破位 (跌穿 10DMA & 10<20)\n🛑 建議止損: $368.77 (-3.0%)\n─────────────────────────\n**SOXL** — $32.02\n📈 趨勢: 🔴 下跌趨勢\n📊 10DMA $45.49 | 20DMA $55.37 | 50DMA $98.79 | 200DMA $123.31\n📏 50DMA 偏離 -67.6% | ATR 33.1%/日 | RSI 45\n🎯 距 52週高位 $302.00 (-89.4%)\n⚠️ 警號: 🔴 短線破位 (跌穿 10DMA & 10<20)\n🛑 短線阻力: $44.13 (+37.8%)\n─────────────────────────\n**AMD** — $406.03\n📈 趨勢: 🔴 下跌趨勢\n📊 10DMA $484.35 | 20DMA $489.22 | 50DMA $548.35 | 200DMA $432.96\n📏 50DMA 偏離 -26.0% | ATR 12.9%/日 | RSI 50\n🎯 距 52週高位 $658.52 (-38.3%)\n⚠️ 警號: 🔴 短線破位 (跌穿 10DMA & 10<20)\n🛑 短線阻力: $469.82 (+15.7%)\n─────────────────────────\n**QQQ** — $633.93\n📈 趨勢: 🔴 下跌趨勢\n📊 10DMA $652.28 | 20DMA $666.73 | 50DMA $707.05 | 200DMA $683.50\n📏 50DMA 偏離 -10.3% | ATR 3.7%/日 | RSI 47\n🎯 距 52週高位 $762.86 (-16.9%)\n⚠️ 警號: 🔴 短線破位 (跌穿 10DMA & 10<20)\n🛑 建議止損: $632.71 (-0.2%)\n─────────────────────────\n\n⚠️ 僅供參考，不構成投資建議\n💡 框架: 茄利略 CUP (@KelileoCUP) Hard Penny Market 識別法"
    },
    "category": "市場報告"
   },
@@ -85,14 +85,14 @@
    "enabled": true,
    "deliver": "telegram",
    "script": "market_monitor/pre_market_briefing.py",
-   "last_run_at": "2026-11-26T21:00:39.525241+08:00",
+   "last_run_at": "2026-11-27T21:00:38.408234+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-27T21:00:00+08:00",
+   "next_run_at": "2026-11-30T21:00:00+08:00",
    "output": {
-    "file": "2026-11-26_21-00-37.md",
-    "mtime": 1795698037.2034662,
-    "text": "# Cron Job: 美股開市前簡報\n\n**Job ID:** 96f195341bf8\n**Run Time:** 2026-11-26 21:00:37\n**Mode:** no_agent (script)\n\n---\n\n🌅 **美股開市前簡報** (2026-11-26 21:00 HKT)\n\n## 🌏 隔夜全球市場\n• 日經 225: 57,499.16 (+0.86%) 🟢\n• 恒指: 22,226.88 (+0.03%) ⚪\n• 歐洲 STOXX 50: 6,007.52 (+1.92%) 🟢\n• VIX 波幅: 26.80 (-5.27%) 🔴⚠️\n• 10Y 美債息率: 4.85 (-1.14%) 🔴\n• 美元指數 DXY: 103.81 (+0.14%) ⚪\n\n## 📊 美股期貨指示\n• S&P 500 期貨: 7,247.75 (+0.72%) 🟢\n• Nasdaq 100 期貨: 26,389.75 (+1.11%) 🟢\n• 道指期貨: 50,415.00 (+0.37%) ⚪\n\n## 🚀 大型科技股盤前\n• NVDA: $151.22 (-2.68%) 🔴⚠️\n• TSLA: $383.23 (-0.38%) ⚪\n• AMD: $413.81 (+0.13%) ⚪\n• MSFT: $492.15 (-0.80%) 🔴\n• META: $612.39 (+3.83%) 🟢🚀\n• GOOGL: $274.89 (-1.49%) 🔴\n• AAPL: $355.10 (+0.29%) ⚪\n• QQQ: $636.62 (-0.23%) ⚪\n• SOXL: $33.19 (+1.81%) 🟢\n\n[持倉章節已於公開版遮蔽]\n### 🚨 立即注意\n- **TQQQ** 已接近止損位 $72.70 (現價 $45.93)\n\n## ⚡ 盤前大幅異動 (|%|≥2%)\n- **NVDA** -2.68%\n- **META** +3.83%\n\n---\n_⚠️ 盤前報價成交量薄,實際開市後可能反轉。不構成投資建議_"
+    "file": "2026-11-27_21-00-37.md",
+    "mtime": 1795784437.1231382,
+    "text": "# Cron Job: 美股開市前簡報\n\n**Job ID:** 96f195341bf8\n**Run Time:** 2026-11-27 21:00:36\n**Mode:** no_agent (script)\n\n---\n\n🌅 **美股開市前簡報** (2026-11-27 21:00 HKT)\n\n## 🌏 隔夜全球市場\n• 日經 225: 58,711.11 (+2.11%) 🟢🚀\n• 恒指: 22,694.77 (+3.32%) 🟢🚀\n• 歐洲 STOXX 50: 6,076.36 (+1.02%) 🟢\n• VIX 波幅: 25.44 (-5.07%) 🔴⚠️\n• 10Y 美債息率: 4.85 (-1.14%) 🔴\n• 美元指數 DXY: 103.81 (+0.14%) ⚪\n\n## 📊 美股期貨指示\n• S&P 500 期貨: 7,247.75 (+0.72%) 🟢\n• Nasdaq 100 期貨: 26,389.75 (+1.11%) 🟢\n• 道指期貨: 50,415.00 (+0.37%) ⚪\n\n## 🚀 大型科技股盤前\n• NVDA: $151.22 (-2.68%) 🔴⚠️\n• TSLA: $383.23 (-0.38%) ⚪\n• AMD: $413.81 (+0.13%) ⚪\n• MSFT: $492.15 (-0.80%) 🔴\n• META: $612.39 (+3.83%) 🟢🚀\n• GOOGL: $274.89 (-1.49%) 🔴\n• AAPL: $355.10 (+0.29%) ⚪\n• QQQ: $636.62 (-0.23%) ⚪\n• SOXL: $33.19 (+1.81%) 🟢\n\n[持倉章節已於公開版遮蔽]\n### 🚨 立即注意\n- **TQQQ** 已接近止損位 $72.70 (現價 $45.93)\n\n## ⚡ 盤前大幅異動 (|%|≥2%)\n- **NVDA** -2.68%\n- **META** +3.83%\n\n---\n_⚠️ 盤前報價成交量薄,實際開市後可能反轉。不構成投資建議_"
    },
    "category": "市場報告"
   },
@@ -103,10 +103,10 @@
    "enabled": true,
    "deliver": "telegram",
    "script": null,
-   "last_run_at": "2026-11-26T05:42:53.525205+08:00",
-   "last_status": "ok",
-   "last_error": null,
-   "next_run_at": "2026-11-27T05:30:00+08:00",
+   "last_run_at": "2026-11-27T07:38:49.157768+08:00",
+   "last_status": "error",
+   "last_error": "Restart-safe cron worker dispatch failed: cron external worker exited before ownership acknowledgement (exit 1); worker stderr: <frozen runpy>:130: RuntimeWarning: 'cron.scheduler' found in sys.modules after import of package 'cron', but prior to execution of 'cron.scheduler'; this may result in unp",
+   "next_run_at": "2026-11-28T05:30:00+08:00",
    "output": {
     "file": "2026-11-26_05-42-48.md",
     "mtime": 1795642968.8746629,
@@ -121,14 +121,14 @@
    "enabled": true,
    "deliver": "telegram",
    "script": "trading_assistant/pre_market_scanner.py",
-   "last_run_at": "2026-11-26T20:32:00.560529+08:00",
+   "last_run_at": "2026-11-27T20:31:42.825005+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-27T20:30:00+08:00",
+   "next_run_at": "2026-11-30T20:30:00+08:00",
    "output": {
-    "file": "1b58a326e3cb_20261126_203158.txt",
-    "mtime": 1795696318.133865,
-    "text": "Cronjob Response: 交易輔助_盤前掃描\n(job_id: 1b58a326e3cb)\n-------------\n\n📊 **盤前掃描** (2026-11-26 HKT)\n掃描 498 隻股, 找到 **10** 個 setup\n━━━━━━━━━━━━━━━\n\n**1. 🚀 DIS** — 動能突破 (分數 0.732)\n`當前 $125.6`\n`Trigger $126.41 | Stop $119.99 | Target $139.24`\n`R:R 1:2.0 | 735 股 (≈$92,911, 風險 1.999%)`\nRSI 68.9 · 量 1.52x · 50DMA 斜率 1.31%\n\nDIS 於 52 週高點臨界蓄勢，均線強勢多頭且買盤顯著放量，展現強勢股啟動主升段的標準特徵。\n放量衝破長期壓制時即順勢進場，若遇健康縮量回踩原阻力位轉支撐，則持股續抱擴大戰果。\n一旦形成假突破並跌穿近期整固平台底部，代表多頭動能潰敗、結構失效，必須嚴格離場。\n正如 Livermore 所言：「永遠交易阻力最小的路徑」，在嚴控下檔風險的前提下，大膽擁抱強者恆強的機率優勢。\n\n━━━━━━━━━━━━━━━\n\n**2. 🔄 CBOE** — 趨勢回調 (分數 0.584)\n`當前 $351.8`\n`Trigger $369.19 | Stop $345.05 | Target $417.47`\n`R:R 1:2.0 | 195 股 (≈$71,992, 風險 1.995%)`\nRSI 53.6 · 量 0.99x · 50DMA 斜率 2.52%\n\n強勢多頭趨勢未變，股價回踩短期均線後指標重回健康中性區，展現典型波段回調的蓄勢特徵。\n耐心等待放量突破整理平台關鍵位，確認買盤重啟後順勢進場，鎖定趨勢延伸的上檔空間。\n一旦有效跌破近期回調低點與支撐結構，即宣告多頭形態破位，必須無條件嚴格止損。\n實踐 Livermore 經典原則：「耐心等待關鍵點出現，只在最小阻力路徑確認向上時出手。」將風險嚴控在下檔，換取對稱且優質的盈虧比。\n\n━━━━━━━━━━━━━━━\n\n**3. 🔄 HLT** — 趨勢回調 (分數 0.548)\n`當前 $366.2`\n`Trigger $373.64 | Stop $356.22 | Target $408.47`\n`R:R 1:2.0 | 270 股 (≈$100,883, 風險 1.993%)`\nRSI 54.9 · 量 1.01x · 50DMA 斜率 1.64%\n\n中長期均線維持強勁上升斜率，股價回踩短期均線群完成籌碼沉澱，為典型多頭回調買點。\n待放量突破盤整區間上緣、確認買盤重新主導時順勢進場，捕捉下一波主升段動能。\n若失守回踩波段支撐底線，代表整理結構遭技術性破位，立即無條件止損以切斷下檔風險。\n貫徹 Livermore 的「阻力最小路徑」原則：只做強勢股順勢突破，在走勢得到市場確認時進場，絕不提前猜底。\n\n━━━━━━━━━━━━━━━\n\n**4. 🔄 RCL** — 趨勢回調 (分數 0.546)\n`當前 $314.11`\n`Trigger $320.54 | Stop $294.84 | Target $371.94`\n`R:R 1:2.0 | 183 股 (≈$58,659, 風險 1.993%)`\nRSI 52.7 · 量 0.7x · 50DMA 斜率 1.89%\n\nRCL 中期多頭趨勢強勁，此處呈現量縮回踩關鍵均線群的健康洗盤，為典型的順勢低風險買點。\n等待買盤放量轉強、向上突破短線整理平台時確認進場，捕捉下一波主升動能。\n一旦向下跌破回調結構低點與均線支撐，即判定技術破位、趨勢失效，立刻無條件止損。\n貫徹 Livermore「等待關鍵點確認、只做阻力最小方向」原則，嚴格鎖定 2% 帳戶風險，專注執行高期望值邊界。\n\n━━━━━━━━━━━━━━━\n\n**5. 🚀 TECH** — 動能突破 (分數 0.546)\n`當前 $72.65`\n`Trigger $72.96 | Stop $72.68 | Target $73.53`\n`R:R 1:2.0 | 16857 股 (≈$1,229,887, 風險 2.0%)`\nRSI 50.4 · 量 2.04x · 50DMA 斜率 0.08%\n\n[敏感行已遮蔽]\n確認帶量創高後立即順勢進場，若短線出現健康縮量回踩而不破支撐，則堅定持有博取上檔空間。\n一旦價格失守突破起漲點並跌回均線之下，即視為假突破結構，必須嚴格執行停損以切斷下檔風險。\n正如 Jesse Livermore 所言：「永遠買進最強勢的股票，並在關鍵轉折點進場；若市場證明你錯了，立即退場毫不猶豫。」\n\n━━━━━━━━━━━━━━━\n\n**6. 🔄 ULTA** — 趨勢回調 (分數 0.543)\n`當前 $642.64`\n`Trigger $649.8 | Stop $611.26 | Target $726.87`\n`R:R 1:2.0 | 122 股 (≈$79,276, 風險 1.992%)`\nRSI 54.8 · 量 1.07x · 50DMA 斜率 1.51%\n\n【買點解析】ULTA 處於強勢上升軌道，健康回踩短期均線洗淨浮額，具備動能重啟的順勢買點。\n【進場確認】待帶量突破回調整理區間上緣即刻順勢切入，捕捉主動買盤回流的續漲力道。\n【失效條件】若價格灌破回踩平台低點與關鍵支撐，代表多頭結構破位，必須無條件果斷停損。\n【大師原則】貫徹 Schwager 的風控思維：嚴格限制單筆帳戶曝險，只在非對稱的盈虧比優勢下出手。\n\n━━━━━━━━━━━━━━━\n\n**7. 🔄 FDS** — 趨勢回調 (分數 0.54)\n`當前 $324.55`\n`Trigger $326.75 | Stop $304.62 | Target $371.02`\n`R:R 1:2.0 | 213 股 (≈$69,598, 風險 1.997%)`\nRSI 54.2 · 量 0.57x · 50DMA 斜率 1.5%\n\n【買點邏輯】多頭趨勢向上且量縮回踩均線支撐，結構健康，提供極佳的不對稱風險報酬機會。\n【執行策略】耐心等待帶量突破短期整理高點確認多頭表態，隨即順勢進場搭乘動能。\n【失效防守】若以帶量長黑摜破上升中的中天期均線，即代表趨勢結構破壞，絕不猶豫嚴格離場。\n【大師原則】貫徹 Livermore「關鍵點交易」哲學：不猜測底部，只在市場突破阻力最小的路線時果斷出手。\n\n━━━━━━━━━━━━━━━\n\n**8. 🔄 BF-B** — 趨勢回調 (分數 0.523)\n`當前 $29.62`\n`Trigger $30.76 | Stop $28.88 | Target $34.51`\n`R:R 1:2.0 | 2510 股 (≈$77,208, 風險 1.999%)`\nRSI 50.8 · 量 0.95x · 50DMA 斜率 1.25%\n\n中期上升趨勢維持良好，股價於均線支撐區完成洗盤與沉澱，提供低風險的順勢切入契機。\n待買盤帶量突破短線整理平台高點，即確認回踩結束並重啟動能，果斷於右側順勢進場。\n若價格跌破本波回踩低點與均線支撐，即宣告多頭結構破壞，必須毫不猶豫全面砍倉。\n正如 Livermore 所言：「等待市場確認其最小阻力線已形成再出手」，以嚴格風控換取倍數獲利空間。\n\n━━━━━━━━━━━━━━━\n\n**9. 🔄 SJM** — 趨勢回調 (分數 0.521)\n`當前 $130.06`\n`Trigger $136.47 | Stop $128.49 | Target $152.43`\n`R:R 1:2.0 | 591 股 (≈$80,654, 風險 1.998%)`\nRSI 50.5 · 量 1.37x · 50DMA 斜率 0.89%\n\n中長多頭趨勢不變，股價回踩短均線後動能指標沉澱完畢，伴隨量能回溫顯現籌碼承接力道。\n待放量突破整理區間阻力、確認多頭動能重啟時於右側順勢進場，鎖定波段主升段。\n若跌破回調支撐平台與關鍵均線防守區，則視為趨勢轉弱且突破失敗，應立即執行止損。\n秉持 Livermore「沿著最小阻力線操作」的精髓：絕不在左側預測底部，只在強勢確認時果斷出手。\n\n━━━━━━━━━━━━━━━\n\n**10. 🔄 HCA** — 趨勢回調 (分數 0.495)\n`當前 $491.01`\n`Trigger $493.89 | Stop $461.84 | Target $557.98`\n`R:R 1:2.0 | 147 股 (≈$72,602, 風險 1.996%)`\nRSI 54.6 · 量 0.66x · 50DMA 斜率 1.15%\n\nHCA 處於強勁上升趨勢，目前呈現典型縮量回踩短中期均線，浮額清洗乾淨且多頭結構紮實。\n待價格帶量突破短線整理平台時順勢進場，捕捉回踩完畢後重啟的動能波段。\n若走勢轉弱並實質跌破中期均線支撐，即確認多頭架構遭到破壞，必須堅決停損離場。\n貫徹 Livermore 的「最小阻力路線」原則：只在強勢股整理結束、關鍵阻力被突破的瞬間出手，將風險嚴格鎖定於可控範圍。\n\n━━━━━━━━━━━━━━━\n\n_由 live_watcher 於開盤後監控觸發, 觸發時推送 alert。_\n_不會自動下單, 請手動在 IBKR 執行。_\n\nTo stop or manage this job, send me a new message (e.g. \"stop reminder 交易輔助_盤前掃描\")."
+    "file": "1b58a326e3cb_20261127_203140.txt",
+    "mtime": 1795782700.3451302,
+    "text": "Cronjob Response: 交易輔助_盤前掃描\n(job_id: 1b58a326e3cb)\n-------------\n\n📊 **盤前掃描** (2026-11-27 HKT)\n掃描 498 隻股, 找到 **10** 個 setup\n━━━━━━━━━━━━━━━\n\n**1. 🚀 DIS** — 動能突破 (分數 0.732)\n`當前 $125.6`\n`Trigger $126.41 | Stop $119.99 | Target $139.24`\n`R:R 1:2.0 | 735 股 (≈$92,911, 風險 1.999%)`\nRSI 68.9 · 量 1.52x · 50DMA 斜率 1.31%\n\nDIS 沿著強勁上揚的均線推升，伴隨顯著放大之量能扣關年度新高，屬於阻力最小路徑的典型強勢標的。\n帶量越過前高關鍵阻力即刻順勢切入，若遇良性回踩且量縮守穩則確認為有效突破。\n若跌回突破平台結構下緣，即視為動能衰竭與假突破確立，必須嚴格執行出場以鎖死下檔風險。\n誠如 Livermore 的交易鐵律：「永遠只買走勢最強的股票，並在市場證明你做對之前嚴密看管本金。」\n\n━━━━━━━━━━━━━━━\n\n**2. 🔄 CBOE** — 趨勢回調 (分數 0.584)\n`當前 $351.8`\n`Trigger $369.19 | Stop $345.05 | Target $417.47`\n`R:R 1:2.0 | 195 股 (≈$71,992, 風險 1.995%)`\nRSI 53.6 · 量 0.99x · 50DMA 斜率 2.52%\n\n【CBOE 交易摘要】\n中期趨勢強勁向上且基底均線斜率陡峭，股價回踩短期均線使動能健康降溫，形成標準的順勢回調買點。\n待買盤放量向上突破整理平台高點確認動能重啟後順勢進場，掌握趨勢延續的主升段利潤。\n一旦跌破本次回調的結構性支撐平台，即代表多頭格局遭破壞，交易邏輯失效並嚴格出場。\n貫徹 Livermore「順應最小阻力路徑」原則：絕不在回跌時摸底，只在市場以突破自我證明時果斷出手。\n\n━━━━━━━━━━━━━━━\n\n**3. 🔄 HLT** — 趨勢回調 (分數 0.548)\n`當前 $366.2`\n`Trigger $373.64 | Stop $356.22 | Target $408.47`\n`R:R 1:2.0 | 270 股 (≈$100,883, 風險 1.993%)`\nRSI 54.9 · 量 1.01x · 50DMA 斜率 1.64%\n\nHLT 維持強勁多頭架構，股價回踩 20 日均線完成健康洗盤，動能指標已修復完畢、蓄勢重啟推升。\n確認帶量突破短線整理平台高點即順勢切入，捕捉動能重續的起漲瞬間。\n一旦跌破本次回踩低點與均線防守區，即代表多頭結構遭破壞，必須毫不猶豫離場以鎖定下檔風險。\n正如 Livermore 所言：「只在阻力最小路線的關鍵點（Pivot Point）出手」，耐心等待確認信號，讓趨勢為你工作。\n\n━━━━━━━━━━━━━━━\n\n**4. 🔄 RCL** — 趨勢回調 (分數 0.546)\n`當前 $314.11`\n`Trigger $320.54 | Stop $294.84 | Target $371.94`\n`R:R 1:2.0 | 183 股 (≈$58,659, 風險 1.993%)`\nRSI 52.7 · 量 0.7x · 50DMA 斜率 1.89%\n\n中期上升趨勢維持強勁斜率，回調期間量能顯著萎縮、動能回歸中性，呈現典型強勢股的健康洗盤結構。\n待買盤重燃、放量重返短期均線並突破整理平台時順勢進場，確認多頭動能重啟。\n若跌破中期均線支撐與近期回踩低點，代表多頭架構被破壞，應果斷停損絕不戀戰。\n貫徹 Livermore「最小阻力線」原則：不逆勢猜底，只在市場證明強者恆強時順勢出手。\n\n━━━━━━━━━━━━━━━\n\n**5. 🚀 TECH** — 動能突破 (分數 0.546)\n`當前 $72.65`\n`Trigger $72.96 | Stop $72.68 | Target $73.53`\n`R:R 1:2.0 | 16857 股 (≈$1,229,887, 風險 2.0%)`\nRSI 50.4 · 量 2.04x · 50DMA 斜率 0.08%\n\n股價緊貼年度高點且伴隨倍數成交量激增，動能指標中性健康，具備最純粹的阻力突破爆發潛力。\n帶量越過前高瞬間果斷追價進場，若出現回踩需見量縮並守穩頸線，方可確認支撐有效。\n一旦跌破突破點並失守關鍵短期均線，視為假突破訊號確立，必須無條件止損離場。\n貫徹 Livermore 的核心法則：「只在阻力最小的路線上前進，新高往往才是利潤奔跑的起點。」\n\n━━━━━━━━━━━━━━━\n\n**6. 🔄 ULTA** — 趨勢回調 (分數 0.543)\n`當前 $642.64`\n`Trigger $649.8 | Stop $611.26 | Target $726.87`\n`R:R 1:2.0 | 122 股 (≈$79,276, 風險 1.992%)`\nRSI 54.8 · 量 1.07x · 50DMA 斜率 1.51%\n\nULTA 處於強勁上升趨勢，此處回踩短均線獲得支撐且中長均線斜率健康向上，為典型動能沉澱後的低吸買點。\n待盤中突破短期整理區高點、確認買盤重啟時順勢進場，直接搭乘下一波主升段動能。\n若價格跌破回踩低點並跌穿關鍵均線支撐，即判定技術結構轉弱，應無條件果斷停損。\n貫徹 Livermore 的核心哲學：「順應最小阻力路徑，只在趨勢確認強勢時出手」，嚴格鎖定單筆 2% 風險，保留不對稱的上檔爆發力。\n\n━━━━━━━━━━━━━━━\n\n**7. 🔄 FDS** — 趨勢回調 (分數 0.54)\n`當前 $324.55`\n`Trigger $326.75 | Stop $304.62 | Target $371.02`\n`R:R 1:2.0 | 213 股 (≈$69,598, 風險 1.997%)`\nRSI 54.2 · 量 0.57x · 50DMA 斜率 1.5%\n\n均線維持多頭排列下縮量回踩支撐，動能指標健康蓄勢，為經典的高勝率回調買點。\n靜待帶量突破短期整理區間確認買盤回流，即可順應中長線趨勢進場捕捉主升段。\n一旦放量摜破中期生命線與前波防守低點，宣告多頭結構遭到破壞，必須果斷停損離場。\n貫徹 Schwager 的交易哲學：嚴格將單筆虧損鎖定在 2% 以內，用有限下檔換取翻倍的上行空間。\n\n━━━━━━━━━━━━━━━\n\n**8. 🔄 BF-B** — 趨勢回調 (分數 0.523)\n`當前 $29.62`\n`Trigger $30.76 | Stop $28.88 | Target $34.51`\n`R:R 1:2.0 | 2510 股 (≈$77,208, 風險 1.999%)`\nRSI 50.8 · 量 0.95x · 50DMA 斜率 1.25%\n\n中期多頭架構完好且均線向上發散，短線回踩短期均線沉澱浮額、成交量萎縮顯示拋壓竭盡，為絕佳順勢切入點。\n待放量收復短期均線並突破整理平台確認多頭表態時順勢進場，鎖定趨勢重啟的波段利潤。\n若跌破支撐低點與上揚的中期均線，代表回調演變為結構破位，交易邏輯失效必須果斷離場。\n貫徹 Schwager《金融怪傑》的 2% 風險控制與 1:2 賠率原則，只在勝率與不對稱回報站在我們這邊時出手。\n\n━━━━━━━━━━━━━━━\n\n**9. 🔄 SJM** — 趨勢回調 (分數 0.521)\n`當前 $130.06`\n`Trigger $136.47 | Stop $128.49 | Target $152.43`\n`R:R 1:2.0 | 591 股 (≈$80,654, 風險 1.998%)`\nRSI 50.5 · 量 1.37x · 50DMA 斜率 0.89%\n\n【邏輯】中期上升趨勢未變且長天期均線持續走揚，股價回踩短期均線完成籌碼沉澱，形成典型的高勝率回調蓄勢結構。\n【執行】耐心等待買盤帶量向上突破整理區間頸線，確認「關鍵點」轉強後順勢進場，捕捉趨勢延續行情。\n【防守】若跌破回調築底支撐與防守均線，代表多頭結構遭破壞，必須毫不猶豫停損離場，不預設立場。\n【心法】恪守 Livermore「在關鍵點突破時才順勢出手」的原則，永遠讓市場先證明方向正確，絕不提前左側猜底。\n\n━━━━━━━━━━━━━━━\n\n**10. 🔄 HCA** — 趨勢回調 (分數 0.495)\n`當前 $491.01`\n`Trigger $493.89 | Stop $461.84 | Target $557.98`\n`R:R 1:2.0 | 147 股 (≈$72,602, 風險 1.996%)`\nRSI 54.6 · 量 0.66x · 50DMA 斜率 1.15%\n\n【進場邏輯】強勢股縮量回踩關鍵均線獲得支撐，動能指標已健康修復，呈現標準的順勢整理結構。\n【執行策略】待價格放量突破短線整理平台確立轉折，即可順應多頭主升趨勢果斷介入。\n【失效條件】若向下實質跌破中期上揚均線與波段防守低點，即宣告多頭結構破位，必須無條件離場。\n【大師心法】實踐 Livermore「只沿最小阻力線交易」的原則，在動能確認回歸時順勢出手，並用嚴格的部位風控鎖死下檔。\n\n━━━━━━━━━━━━━━━\n\n_由 live_watcher 於開盤後監控觸發, 觸發時推送 alert。_\n_不會自動下單, 請手動在 IBKR 執行。_\n\nTo stop or manage this job, send me a new message (e.g. \"stop reminder 交易輔助_盤前掃描\")."
    },
    "category": "交易掃描"
   },
@@ -139,14 +139,14 @@
    "enabled": true,
    "deliver": "telegram",
    "script": "trading_assistant/live_watcher.py",
-   "last_run_at": "2026-11-26T21:32:48.135854+08:00",
+   "last_run_at": "2026-11-27T23:30:40.539551+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-26T22:00:00+08:00",
+   "next_run_at": "2026-11-30T21:00:00+08:00",
    "output": {
-    "file": "2026-11-26_21-32-47.md",
-    "mtime": 1795699967.8261635,
-    "text": "# Cron Job: 交易輔助_盤中監控_上半段\n\n**Job ID:** 041fc309b280\n**Run Time:** 2026-11-26 21:32:47\n**Mode:** no_agent (script)\n**Status:** silent (empty output)"
+    "file": "2026-11-27_23-30-40.md",
+    "mtime": 1795793440.2564113,
+    "text": "# Cron Job: 交易輔助_盤中監控_上半段\n\n**Job ID:** 041fc309b280\n**Run Time:** 2026-11-27 23:30:40\n**Mode:** no_agent (script)\n**Status:** silent (empty output)"
    },
    "category": "交易掃描"
   },
@@ -157,14 +157,14 @@
    "enabled": true,
    "deliver": "telegram",
    "script": "trading_assistant/live_watcher.py",
-   "last_run_at": "2026-11-26T03:30:38.992520+08:00",
+   "last_run_at": "2026-11-28T00:30:35.616531+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-27T00:00:00+08:00",
+   "next_run_at": "2026-11-28T01:00:00+08:00",
    "output": {
-    "file": "2026-11-26_03-30-38.md",
-    "mtime": 1795635038.8467584,
-    "text": "# Cron Job: 交易輔助_盤中監控_後半段\n\n**Job ID:** 88c69370ec39\n**Run Time:** 2026-11-26 03:30:38\n**Mode:** no_agent (script)\n**Status:** silent (empty output)"
+    "file": "2026-11-28_00-30-35.md",
+    "mtime": 1795797035.506976,
+    "text": "# Cron Job: 交易輔助_盤中監控_後半段\n\n**Job ID:** 88c69370ec39\n**Run Time:** 2026-11-28 00:30:35\n**Mode:** no_agent (script)\n**Status:** silent (empty output)"
    },
    "category": "交易掃描"
   },
@@ -175,10 +175,10 @@
    "enabled": true,
    "deliver": "telegram",
    "script": "trading_assistant/post_mortem.py",
-   "last_run_at": "2026-11-26T05:31:04.596657+08:00",
-   "last_status": "ok",
-   "last_error": null,
-   "next_run_at": "2026-11-27T05:30:00+08:00",
+   "last_run_at": "2026-11-27T07:38:59.685251+08:00",
+   "last_status": "error",
+   "last_error": "Restart-safe cron worker dispatch failed: cron external worker exited before ownership acknowledgement (exit 1); worker stderr: <frozen runpy>:130: RuntimeWarning: 'cron.scheduler' found in sys.modules after import of package 'cron', but prior to execution of 'cron.scheduler'; this may result in unp",
+   "next_run_at": "2026-11-28T05:30:00+08:00",
    "output": {
     "file": "2026-11-26_05-30-57.md",
     "mtime": 1795642257.7867637,
@@ -229,14 +229,14 @@
    "enabled": true,
    "deliver": "telegram",
    "script": "us_stock_scanner/daily_top5_scanner.py",
-   "last_run_at": "2026-11-25T22:30:50.570476+08:00",
+   "last_run_at": "2026-11-27T22:30:47.958212+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-26T22:30:00+08:00",
+   "next_run_at": "2026-11-30T22:30:00+08:00",
    "output": {
-    "file": "2026-11-25_22-30-48.md",
-    "mtime": 1795617048.3485682,
-    "text": "# Cron Job: 每日活躍美股Top5掃描\n\n**Job ID:** b6b9125384d8\n**Run Time:** 2026-11-25 22:30:48\n**Mode:** no_agent (script)\n\n---\n\n🚀 **每日活躍美股 Top 5 即時掃描** (2026-11-25 HKT)\n掃描 23 隻活躍股，推薦 **Top 5**\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n**1. 💎 AAPL** — 評分 60.2\n`當前 $352.66 (-0.40%) | 量能 0.03x`\n`RSI 58.9 | 20DMA $348 | 50DMA $343`\n`52W距離 -2.3% | Fwd PE 33.35988`\n\n_LLM 分析生成中..._\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n**2. 📊 TSLA** — 評分 43.4\n`當前 $366.70 (-4.67%) | 量能 0.05x`\n`RSI 56.7 | 20DMA $381 | 50DMA $377`\n`52W距離 -11.5% | Fwd PE 169.40262`\n\n_LLM 分析生成中..._\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n**3. 📊 META** — 評分 35.3\n`當前 $570.95 (-3.20%) | 量能 0.04x`\n`RSI 42.1 | 20DMA $613 | 50DMA $672`\n`52W距離 -26.8% | Fwd PE 16.056875`\n\n_LLM 分析生成中..._\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n**4. 📊 MSFT** — 評分 31.6\n`當前 $487.08 (-1.82%) | 量能 0.08x`\n`RSI 28.2 | 20DMA $516 | 50DMA $519`\n`52W距離 -12.7% | Fwd PE 20.104376`\n\n_LLM 分析生成中..._\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n**5. 📊 NFLX** — 評分 31.2\n`當前 $57.84 (-1.75%) | 量能 0.03x`\n`RSI 25.8 | 20DMA $62 | 50DMA $66`\n`52W距離 -30.8% | Fwd PE 15.386901`\n\n_LLM 分析生成中..._\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n_分析基於七書理論框架 | 不構成投資建議_\n_檔案已存檔至 ~/美股投資/市場分析/_"
+    "file": "2026-11-27_22-30-45.md",
+    "mtime": 1795789845.7893617,
+    "text": "# Cron Job: 每日活躍美股Top5掃描\n\n**Job ID:** b6b9125384d8\n**Run Time:** 2026-11-27 22:30:45\n**Mode:** no_agent (script)\n\n---\n\n🚀 **每日活躍美股 Top 5 即時掃描** (2026-11-27 HKT)\n掃描 23 隻活躍股，推薦 **Top 5**\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n**1. ⚠️ TSLA** — 評分 55.3\n`當前 $392.72 (+3.31%) | 量能 0.04x`\n`RSI 61.0 | 20DMA $382 | 50DMA $378`\n`52W距離 -5.2% | Fwd PE 181.54323`\n\n_LLM 分析生成中..._\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n**2. ⚠️ AAPL** — 評分 55.2\n`當前 $357.33 (+0.49%) | 量能 0.03x`\n`RSI 65.5 | 20DMA $349 | 50DMA $343`\n`52W距離 -1.0% | Fwd PE 33.797325`\n\n_LLM 分析生成中..._\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n**3. 📊 META** — 評分 40.4\n`當前 $628.60 (+3.07%) | 量能 0.05x`\n`RSI 54.0 | 20DMA $615 | 50DMA $671`\n`52W距離 -19.4% | Fwd PE 17.660452`\n\n_LLM 分析生成中..._\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n**4. 📊 UBER** — 評分 38.2\n`當前 $67.50 (+1.73%) | 量能 0.02x`\n`RSI 46.8 | 20DMA $68 | 50DMA $68`\n`52W距離 -14.6% | Fwd PE 15.319996`\n\n_LLM 分析生成中..._\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n**5. 📊 AMZN** — 評分 35.2\n`當前 $249.49 (+2.07%) | 量能 0.03x`\n`RSI 44.1 | 20DMA $257 | 50DMA $255`\n`52W距離 -9.4% | Fwd PE 22.82795`\n\n_LLM 分析生成中..._\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n_分析基於七書理論框架 | 不構成投資建議_\n_檔案已存檔至 ~/美股投資/市場分析/_"
    },
    "category": "交易掃描"
   },
@@ -247,14 +247,14 @@
    "enabled": true,
    "deliver": "telegram",
    "script": "trading_assistant/live_watcher.py",
-   "last_run_at": "2026-11-26T04:00:36.482077+08:00",
+   "last_run_at": "2026-11-27T07:39:26.282407+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-27T04:00:00+08:00",
+   "next_run_at": "2026-11-28T04:00:00+08:00",
    "output": {
-    "file": "2026-11-26_04-00-36.md",
-    "mtime": 1795636836.4239085,
-    "text": "# Cron Job: 交易輔助_盤中監控_收市檢查\n\n**Job ID:** 89d4846bd9f2\n**Run Time:** 2026-11-26 04:00:36\n**Mode:** no_agent (script)\n**Status:** silent (empty output)"
+    "file": "2026-11-27_07-39-12.md",
+    "mtime": 1795736352.5020804,
+    "text": "# Cron Job: 交易輔助_盤中監控_收市檢查\n\n**Job ID:** 89d4846bd9f2\n**Run Time:** 2026-11-27 07:39:10\n**Mode:** no_agent (script)\n**Status:** silent (empty output)"
    },
    "category": "交易掃描"
   },
@@ -265,14 +265,14 @@
    "enabled": true,
    "deliver": "telegram",
    "script": "trading_assistant/run_premarket_gappers_once.sh",
-   "last_run_at": "2026-11-26T20:33:42.696092+08:00",
+   "last_run_at": "2026-11-27T20:33:31.561274+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-27T20:30:00+08:00",
+   "next_run_at": "2026-11-30T20:30:00+08:00",
    "output": {
-    "file": "2026-11-26_20-33-38.md",
-    "mtime": 1795696418.3342683,
-    "text": "# Cron Job: 交易輔助_Humbled_ScannerA_盤前Gappers\n\n**Job ID:** 2290289cb158\n**Run Time:** 2026-11-26 20:33:37\n**Mode:** no_agent (script)\n\n---\n\nPremarket Gappers: 0 names. Top:"
+    "file": "2026-11-27_20-33-28.md",
+    "mtime": 1795782808.254989,
+    "text": "# Cron Job: 交易輔助_Humbled_ScannerA_盤前Gappers\n\n**Job ID:** 2290289cb158\n**Run Time:** 2026-11-27 20:33:28\n**Mode:** no_agent (script)\n\n---\n\nPremarket Gappers: 0 names. Top:"
    },
    "category": "交易掃描"
   },
@@ -283,14 +283,14 @@
    "enabled": true,
    "deliver": "telegram",
    "script": "trading_assistant/trend_join_long_scanner.py",
-   "last_run_at": "2026-11-25T23:30:48.265288+08:00",
+   "last_run_at": "2026-11-27T23:30:40.842938+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-26T22:00:00+08:00",
+   "next_run_at": "2026-11-30T22:00:00+08:00",
    "output": {
-    "file": "2026-11-25_23-30-45.md",
-    "mtime": 1795620645.8529415,
-    "text": "# Cron Job: 交易輔助_Humbled_ScannerB_TJL_晚段\n\n**Job ID:** 971501df1bd8\n**Run Time:** 2026-11-25 23:30:43\n**Mode:** no_agent (script)\n\n---\n\n⚡ **Trend Join Long Scanner** (2026-11-25T10:30:40.641479-05:00 ET)\n來源: watchlist:watchlist_2026-11-25.json / yfinance(Yahoo online) | 檢查 10 隻 | 命中 1 隻\n\n**PASS / 新訊號:**\n🟢 **BF-B** $30.35 () — PMH $30.0, HOD $30.305, PDH $29.94; 無 catalyst 資料\nMETA ✅ BF-B (tjl): 3/6 PASS |   ✅ E1 |   ✅ E2 |   ❌ E3 |   ❌ E4 |   ✅ E5 |   ❌ E6\n\n_只作 alert；不自動下單。資料源為 Yahoo/yfinance，可能延遲或缺少 premarket bars，請在 IBKR 手動確認。_"
+    "file": "2026-11-27_23-30-40.md",
+    "mtime": 1795793440.773438,
+    "text": "# Cron Job: 交易輔助_Humbled_ScannerB_TJL_晚段\n\n**Job ID:** 971501df1bd8\n**Run Time:** 2026-11-27 23:30:40\n**Mode:** no_agent (script)\n**Status:** silent (empty output)"
    },
    "category": "交易掃描"
   },
@@ -301,14 +301,14 @@
    "enabled": true,
    "deliver": "telegram",
    "script": "trading_assistant/trend_join_long_scanner.py",
-   "last_run_at": "2026-11-26T01:30:42.855560+08:00",
+   "last_run_at": "2026-11-28T00:30:37.912754+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-27T00:00:00+08:00",
+   "next_run_at": "2026-11-28T01:00:00+08:00",
    "output": {
-    "file": "2026-11-26_01-30-42.md",
-    "mtime": 1795627842.7807686,
-    "text": "# Cron Job: 交易輔助_Humbled_ScannerB_TJL_凌晨段\n\n**Job ID:** 93ab8a2af180\n**Run Time:** 2026-11-26 01:30:42\n**Mode:** no_agent (script)\n**Status:** silent (empty output)"
+    "file": "2026-11-28_00-30-37.md",
+    "mtime": 1795797037.8819976,
+    "text": "# Cron Job: 交易輔助_Humbled_ScannerB_TJL_凌晨段\n\n**Job ID:** 93ab8a2af180\n**Run Time:** 2026-11-28 00:30:37\n**Mode:** no_agent (script)\n**Status:** silent (empty output)"
    },
    "category": "交易掃描"
   },
@@ -319,14 +319,14 @@
    "enabled": true,
    "deliver": "telegram",
    "script": "trading_assistant/large_cap_midday_swing_scanner.py",
-   "last_run_at": "2026-11-26T00:30:42.941603+08:00",
+   "last_run_at": "2026-11-28T00:30:35.689371+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-27T00:30:00+08:00",
+   "next_run_at": "2026-12-01T00:30:00+08:00",
    "output": {
-    "file": "2026-11-26_00-30-42.md",
-    "mtime": 1795624242.868212,
-    "text": "# Cron Job: 交易輔助_策略D_8EMA中午Swing\n\n**Job ID:** dff00c6cf7aa\n**Run Time:** 2026-11-26 00:30:42\n**Mode:** no_agent (script)\n**Status:** silent (empty output)"
+    "file": "2026-11-28_00-30-35.md",
+    "mtime": 1795797035.4379752,
+    "text": "# Cron Job: 交易輔助_策略D_8EMA中午Swing\n\n**Job ID:** dff00c6cf7aa\n**Run Time:** 2026-11-28 00:30:35\n**Mode:** no_agent (script)\n**Status:** silent (empty output)"
    },
    "category": "交易掃描"
   },
@@ -337,14 +337,14 @@
    "enabled": true,
    "deliver": "telegram",
    "script": "backup_investment_agent_git.sh",
-   "last_run_at": "2026-11-26T09:17:00.540415+08:00",
+   "last_run_at": "2026-11-27T09:17:58.063850+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-27T09:15:00+08:00",
+   "next_run_at": "2026-11-28T09:15:00+08:00",
    "output": {
-    "file": "2026-11-26_09-16-57.md",
-    "mtime": 1795655817.9946406,
-    "text": "# Cron Job: 投資助理_本地Git備份\n\n**Job ID:** 2480e3dfe54e\n**Run Time:** 2026-11-26 09:16:57\n**Mode:** no_agent (script)\n\n---\n\nInvestment backup OK: changed=yes remote=failed head=acd016c0"
+    "file": "2026-11-27_09-17-46.md",
+    "mtime": 1795742266.838133,
+    "text": "# Cron Job: 投資助理_本地Git備份\n\n**Job ID:** 2480e3dfe54e\n**Run Time:** 2026-11-27 09:17:45\n**Mode:** no_agent (script)\n\n---\n\nInvestment backup OK: changed=yes remote=failed head=8f46bbaa"
    },
    "category": "系統維護"
   },
@@ -355,14 +355,14 @@
    "enabled": true,
    "deliver": "telegram",
    "script": "trading_assistant/sector_rs_scanner.py",
-   "last_run_at": "2026-11-26T20:00:40.967202+08:00",
+   "last_run_at": "2026-11-27T20:00:38.755915+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-27T20:00:00+08:00",
+   "next_run_at": "2026-11-30T20:00:00+08:00",
    "output": {
-    "file": "2026-11-26_20-00-38.md",
-    "mtime": 1795694438.7299948,
-    "text": "# Cron Job: 交易輔助_板塊RS_Sector_RS\n\n**Job ID:** 2939b402f2f2\n**Run Time:** 2026-11-26 20:00:38\n**Mode:** no_agent (script)\n\n---\n\n📊 <b>板塊相對強度 報告</b> (2026-11-26 HKT)\n基準 SPY: 1週 -1.85% | 4週 -7.20% | 13週 -6.82%\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n📋 <b>完整排名</b> (RS Score 降序)\n<pre>\n#      ETF          板塊     RS   超SPY 1w   超SPY 4w  超SPY 13w\n───────────────────────────────────────────────────────────\n1      XLP        必需消費 +10.02    +3.08%   +13.49%   +16.02%\n2      XLV          醫療  +9.70    +3.23%    +9.40%   +14.29%\n3     XLRE         房地產  +6.02    +2.40%   +11.31%    +5.86%\n4      XLU        公用事業  +5.82    +1.99%    +9.84%    +8.56%\n5      XLF          金融  +5.68    +2.01%    +7.88%    +4.80%\n6      XLY       非必需消費  +4.70    +0.41%    +9.07%    +8.44%\n7      XLB          材料  +4.32    +3.34%    +5.95%    +3.47%\n8      XLC        通訊服務  +3.36    +1.66%    +9.37%    +1.72%\n9      XLE          能源  +1.66    +1.21%    -3.83%    +5.17%\n10     XLI          工業  +1.02    +0.81%    +3.91%    -1.80%\n11     XLK          科技  -7.87    -3.05%   -11.23%   -10.48%\n</pre>\n\n🎯 <b>重點摘要</b>\n　🟢 重倉 Top 3: XLP, XLV, XLRE\n　🔴 避開 Bottom 3: XLE, XLI, XLK\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n💡 <b>如何用 (ABCD 策略加權過濾)</b>\nTop 3 sector 內成分股 → 維持或加倉\nBottom 3 sector 內成分股 → 降倉或避開\nXLE/RS 排名 = 觀察板塊輪動訊號\n\n_基於 IBD/O'Neil RS Rating 改進算法_"
+    "file": "2026-11-27_20-00-37.md",
+    "mtime": 1795780837.5117736,
+    "text": "# Cron Job: 交易輔助_板塊RS_Sector_RS\n\n**Job ID:** 2939b402f2f2\n**Run Time:** 2026-11-27 20:00:37\n**Mode:** no_agent (script)\n\n---\n\n📊 <b>板塊相對強度 報告</b> (2026-11-27 HKT)\n基準 SPY: 1週 -1.85% | 4週 -7.20% | 13週 -6.82%\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n📋 <b>完整排名</b> (RS Score 降序)\n<pre>\n#      ETF          板塊     RS   超SPY 1w   超SPY 4w  超SPY 13w\n───────────────────────────────────────────────────────────\n1      XLP        必需消費 +10.02    +3.08%   +13.49%   +16.02%\n2      XLV          醫療  +9.70    +3.23%    +9.40%   +14.29%\n3     XLRE         房地產  +6.02    +2.40%   +11.31%    +5.86%\n4      XLU        公用事業  +5.82    +1.99%    +9.84%    +8.56%\n5      XLF          金融  +5.68    +2.01%    +7.88%    +4.80%\n6      XLY       非必需消費  +4.70    +0.41%    +9.07%    +8.44%\n7      XLB          材料  +4.32    +3.34%    +5.95%    +3.47%\n8      XLC        通訊服務  +3.36    +1.66%    +9.37%    +1.72%\n9      XLE          能源  +1.66    +1.21%    -3.83%    +5.17%\n10     XLI          工業  +1.02    +0.81%    +3.91%    -1.80%\n11     XLK          科技  -7.87    -3.05%   -11.23%   -10.48%\n</pre>\n\n🎯 <b>重點摘要</b>\n　🟢 重倉 Top 3: XLP, XLV, XLRE\n　🔴 避開 Bottom 3: XLE, XLI, XLK\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n💡 <b>如何用 (ABCD 策略加權過濾)</b>\nTop 3 sector 內成分股 → 維持或加倉\nBottom 3 sector 內成分股 → 降倉或避開\nXLE/RS 排名 = 觀察板塊輪動訊號\n\n_基於 IBD/O'Neil RS Rating 改進算法_"
    },
    "category": "交易掃描"
   },
@@ -373,14 +373,14 @@
    "enabled": true,
    "deliver": "telegram",
    "script": "trading_assistant/orb_scanner.py",
-   "last_run_at": "2026-11-26T21:32:46.642955+08:00",
+   "last_run_at": "2026-11-27T22:45:34.586137+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-26T21:45:00+08:00",
+   "next_run_at": "2026-11-30T21:00:00+08:00",
    "output": {
-    "file": "2026-11-26_21-32-46.md",
-    "mtime": 1795699966.2712376,
-    "text": "# Cron Job: 交易輔助_ORB_盤中每15分鐘\n\n**Job ID:** b1d7b306ab78\n**Run Time:** 2026-11-26 21:32:45\n**Mode:** no_agent (script)\n**Status:** silent (empty output)"
+    "file": "2026-11-27_22-45-34.md",
+    "mtime": 1795790734.5522714,
+    "text": "# Cron Job: 交易輔助_ORB_盤中每15分鐘\n\n**Job ID:** b1d7b306ab78\n**Run Time:** 2026-11-27 22:45:34\n**Mode:** no_agent (script)\n**Status:** silent (empty output)"
    },
    "category": "交易掃描"
   },
@@ -391,14 +391,14 @@
    "enabled": true,
    "deliver": "telegram",
    "script": "trading_assistant/vcp_scanner.py",
-   "last_run_at": "2026-11-26T20:30:54.291988+08:00",
+   "last_run_at": "2026-11-27T20:30:42.673134+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-27T20:30:00+08:00",
+   "next_run_at": "2026-11-30T20:30:00+08:00",
    "output": {
-    "file": "2026-11-26_20-30-51.md",
-    "mtime": 1795696251.9176166,
-    "text": "# Cron Job: 交易輔助_VCP_盤前掃描\n\n**Job ID:** 833082f43ccb\n**Run Time:** 2026-11-26 20:30:51\n**Mode:** no_agent (script)\n\n---\n\n📊 <b>VCP 變盤 訊號</b> (2026-11-26 HKT)\nTrend Template + VCP 形態 | 掃描 30 隻\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n\n⚠️ <b>掃描結果</b>\n目前無可交易 setup。\n💡 條件:\n　• 找連續收縮後突破的股票\n　• 結合 Minervini Trend Template 8 條件\n　• 嚴守止損 = VCP 區間低端\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n💡 <b>VCP 玩法</b>\n突破 Pivot 價買入, 止損 = VCP 區間低端\nVCP = Mark Minervini 核心策略, 歷史勝率 60-70%"
+    "file": "2026-11-27_20-30-39.md",
+    "mtime": 1795782639.82108,
+    "text": "# Cron Job: 交易輔助_VCP_盤前掃描\n\n**Job ID:** 833082f43ccb\n**Run Time:** 2026-11-27 20:30:39\n**Mode:** no_agent (script)\n\n---\n\n📊 <b>VCP 變盤 訊號</b> (2026-11-27 HKT)\nTrend Template + VCP 形態 | 掃描 30 隻\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n\n⚠️ <b>掃描結果</b>\n目前無可交易 setup。\n💡 條件:\n　• 找連續收縮後突破的股票\n　• 結合 Minervini Trend Template 8 條件\n　• 嚴守止損 = VCP 區間低端\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n💡 <b>VCP 玩法</b>\n突破 Pivot 價買入, 止損 = VCP 區間低端\nVCP = Mark Minervini 核心策略, 歷史勝率 60-70%"
    },
    "category": "交易掃描"
   },
@@ -409,14 +409,14 @@
    "enabled": true,
    "deliver": "telegram",
    "script": "trading_assistant/export_to_excel.py",
-   "last_run_at": "2026-11-26T21:32:51.686904+08:00",
+   "last_run_at": "2026-11-27T23:30:42.972863+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-26T22:00:00+08:00",
+   "next_run_at": "2026-11-30T00:00:00+08:00",
    "output": {
-    "file": "2026-11-26_21-32-47.md",
-    "mtime": 1795699967.7011695,
-    "text": "# Cron Job: 交易輔助_Excel統一報告\n\n**Job ID:** e83182ddf4ce\n**Run Time:** 2026-11-26 21:32:47\n**Mode:** no_agent (script)\n\n---\n\n📊 Excel 報告: /home/jasonckfan/美股投資/交易記錄/unified_signals_20261126.xlsx\n   總信號: 12\n   G ATR Squeeze: 1 個 (HPQ)\n   I 板塊相對強度: 11 個 (XLB, XLU, XLC, XLI, XLE, XLK, XLF, XLP, XLRE, XLV, XLY)\n\n   ✅ Telegram 附件已推送\nMEDIA:/home/jasonckfan/美股投資/交易記錄/unified_signals_20261126.xlsx"
+    "file": "2026-11-27_23-30-38.md",
+    "mtime": 1795793438.6793292,
+    "text": "# Cron Job: 交易輔助_Excel統一報告\n\n**Job ID:** e83182ddf4ce\n**Run Time:** 2026-11-27 23:30:38\n**Mode:** no_agent (script)\n\n---\n\n📊 Excel 報告: /home/jasonckfan/美股投資/交易記錄/unified_signals_20261127.xlsx\n   總信號: 12\n   G ATR Squeeze: 1 個 (HPQ)\n   I 板塊相對強度: 11 個 (XLK, XLY, XLE, XLF, XLB, XLRE, XLV, XLP, XLI, XLU, XLC)\n\n   ✅ Telegram 附件已推送\nMEDIA:/home/jasonckfan/美股投資/交易記錄/unified_signals_20261127.xlsx"
    },
    "category": "交易掃描"
   },
@@ -445,14 +445,14 @@
    "enabled": true,
    "deliver": "telegram",
    "script": "market_monitor/kelileo_watcher.py",
-   "last_run_at": "2026-11-26T18:00:34.231552+08:00",
+   "last_run_at": "2026-11-28T00:00:36.717380+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-27T00:00:00+08:00",
+   "next_run_at": "2026-11-28T06:00:00+08:00",
    "output": {
-    "file": "2026-11-26_18-00-34.md",
-    "mtime": 1795687234.145646,
-    "text": "# Cron Job: 茄利略CUP_新影片監控\n\n**Job ID:** f03d4ac0fb8f\n**Run Time:** 2026-11-26 18:00:34\n**Mode:** no_agent (script)\n**Status:** silent (empty output)"
+    "file": "2026-11-28_00-00-36.md",
+    "mtime": 1795795236.5879261,
+    "text": "# Cron Job: 茄利略CUP_新影片監控\n\n**Job ID:** f03d4ac0fb8f\n**Run Time:** 2026-11-28 00:00:36\n**Mode:** no_agent (script)\n**Status:** silent (empty output)"
    },
    "category": "KOL／專題監控"
   },
@@ -463,14 +463,14 @@
    "enabled": true,
    "deliver": "telegram",
    "script": "trading_assistant/abcd_notes_sync.py",
-   "last_run_at": "2026-11-26T21:35:36.258816+08:00",
+   "last_run_at": "2026-11-27T23:35:34.610075+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-26T22:05:00+08:00",
+   "next_run_at": "2026-11-30T00:05:00+08:00",
    "output": {
-    "file": "2026-11-26_21-35-35.md",
-    "mtime": 1795700135.876548,
-    "text": "# Cron Job: 交易輔助_ABCD策略備忘錄\n\n**Job ID:** 0f52af1be96c\n**Run Time:** 2026-11-26 21:35:35\n**Mode:** no_agent (script)\n**Status:** silent (empty output)"
+    "file": "2026-11-27_23-35-34.md",
+    "mtime": 1795793734.571845,
+    "text": "# Cron Job: 交易輔助_ABCD策略備忘錄\n\n**Job ID:** 0f52af1be96c\n**Run Time:** 2026-11-27 23:35:34\n**Mode:** no_agent (script)\n**Status:** silent (empty output)"
    },
    "category": "交易掃描"
   },
@@ -481,14 +481,14 @@
    "enabled": true,
    "deliver": "local",
    "script": "trading_assistant/atr_squeeze_scanner.py",
-   "last_run_at": "2026-11-26T21:01:47.223093+08:00",
+   "last_run_at": "2026-11-27T21:01:42.632204+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-27T21:00:00+08:00",
+   "next_run_at": "2026-11-30T21:00:00+08:00",
    "output": {
-    "file": "2026-11-26_21-01-47.md",
-    "mtime": 1795698107.0631118,
-    "text": "# Cron Job: G ATR Squeeze daily scanner\n\n**Job ID:** 057a1bc30424\n**Run Time:** 2026-11-26 21:01:46\n**Mode:** no_agent (script)\n\n---\n\n🌀 <b>ATR 收縮 突破訊號</b> (2026-11-26 HKT)\n低波壓縮 + 上軌突破 + 量能確認 | 掃描 499 隻\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n📋 <b>ATR 收縮 setup 列表</b> (1 隻)\n<pre>\n代碼            信心    Entry     Stop       T1  R:R     壓縮%     量能    距52W高\n────────────────────────────────────────────────────────────────────────\nHPQ       69/100    31.15    29.33    34.80 2.00      9%  2.47x    16.3%\n</pre>\n\n🎯 <b>META 評估 (各 setup)</b>\n<code>HPQ</code>: META ⚠️ HPQ (atr_squeeze): 1/6 NEEDS MORE EDGES |   ❌ E1 |   ❌ E2 |   ❌ E3 |   ❌ E4 |   ❌ E5 |   ✅ E6\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n💡 <b>玩法</b>\n突破 BB 上軌 + 量能確認時買入, 持倉 3-15 日\nATR Squeeze = TTM Squeeze 變體, 配合趨勢過濾勝率 60%+"
+    "file": "2026-11-27_21-01-42.md",
+    "mtime": 1795784502.4888942,
+    "text": "# Cron Job: G ATR Squeeze daily scanner\n\n**Job ID:** 057a1bc30424\n**Run Time:** 2026-11-27 21:01:42\n**Mode:** no_agent (script)\n\n---\n\n🌀 <b>ATR 收縮 突破訊號</b> (2026-11-27 HKT)\n低波壓縮 + 上軌突破 + 量能確認 | 掃描 499 隻\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n📋 <b>ATR 收縮 setup 列表</b> (1 隻)\n<pre>\n代碼            信心    Entry     Stop       T1  R:R     壓縮%     量能    距52W高\n────────────────────────────────────────────────────────────────────────\nHPQ       69/100    31.15    29.33    34.80 2.00      9%  2.47x    16.3%\n</pre>\n\n🎯 <b>META 評估 (各 setup)</b>\n<code>HPQ</code>: META ⚠️ HPQ (atr_squeeze): 1/6 NEEDS MORE EDGES |   ❌ E1 |   ❌ E2 |   ❌ E3 |   ❌ E4 |   ❌ E5 |   ✅ E6\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n💡 <b>玩法</b>\n突破 BB 上軌 + 量能確認時買入, 持倉 3-15 日\nATR Squeeze = TTM Squeeze 變體, 配合趨勢過濾勝率 60%+"
    },
    "category": "交易掃描"
   },
@@ -499,14 +499,14 @@
    "enabled": true,
    "deliver": "local",
    "script": "trading_assistant/bull_flag_scanner.py",
-   "last_run_at": "2026-11-26T03:47:36.608758+08:00",
+   "last_run_at": "2026-11-27T23:46:40.403962+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-26T22:00:00+08:00",
+   "next_run_at": "2026-11-30T00:00:00+08:00",
    "output": {
-    "file": "2026-11-26_03-47-36.md",
-    "mtime": 1795636056.2206156,
-    "text": "# Cron Job: H Bull Flag intraday scanner\n\n**Job ID:** cd2a7058a628\n**Run Time:** 2026-11-26 03:47:35\n**Mode:** no_agent (script)\n\n---\n\n🚩 <b>牛旗 突破訊號</b> (2026-11-26 HKT)\n急漲 + 旗形整理 + 突破上沿 | 掃描 499 隻\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n\n⚠️ <b>掃描結果</b>\n目前無可交易 setup。\n💡 條件:\n　• Pole = 5-15 日急漲 ≥ +15%\n　• Flag = 5-15 日窄幅整理 (回撤 < 38.2%)\n　• 突破上沿 + 量能 1.5x = 進場\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n💡 <b>玩法</b>\n突破 Flag 上沿 + 量能買入, T1 = entry + Pole 高度\nBull Flag = O'Neil/Weinstein 經典形態, 勝率 55-65%"
+    "file": "2026-11-27_23-46-40.md",
+    "mtime": 1795794400.256897,
+    "text": "# Cron Job: H Bull Flag intraday scanner\n\n**Job ID:** cd2a7058a628\n**Run Time:** 2026-11-27 23:46:40\n**Mode:** no_agent (script)\n\n---\n\n🚩 <b>牛旗 突破訊號</b> (2026-11-27 HKT)\n急漲 + 旗形整理 + 突破上沿 | 掃描 499 隻\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n\n⚠️ <b>掃描結果</b>\n目前無可交易 setup。\n💡 條件:\n　• Pole = 5-15 日急漲 ≥ +15%\n　• Flag = 5-15 日窄幅整理 (回撤 < 38.2%)\n　• 突破上沿 + 量能 1.5x = 進場\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n💡 <b>玩法</b>\n突破 Flag 上沿 + 量能買入, T1 = entry + Pole 高度\nBull Flag = O'Neil/Weinstein 經典形態, 勝率 55-65%"
    },
    "category": "交易掃描"
   },
@@ -517,14 +517,14 @@
    "enabled": true,
    "deliver": "local",
    "script": "trading_assistant/cup_handle_scanner.py",
-   "last_run_at": "2026-11-26T20:31:54.534889+08:00",
+   "last_run_at": "2026-11-27T20:31:36.747178+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-27T20:30:00+08:00",
+   "next_run_at": "2026-11-30T20:30:00+08:00",
    "output": {
-    "file": "2026-11-26_20-31-54.md",
-    "mtime": 1795696314.1248498,
-    "text": "# Cron Job: J Cup &amp; Handle daily scanner\n\n**Job ID:** f60db0d978f4\n**Run Time:** 2026-11-26 20:31:51\n**Mode:** no_agent (script)\n\n---\n\n☕ <b>杯柄 突破訊號</b> (2026-11-26 HKT)\nO'Neil 杯柄形態 + Pivot 突破 | 掃描 499 隻\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n\n⚠️ <b>掃描結果</b>\n目前無可交易 setup。\n💡 條件:\n　• Cup 深 12-50%, U 字底 (非 V), 右壁回到左壁附近\n　• Handle 5-25 日輕微回撤 (≤ 12%)\n　• Pivot = Handle 高 + 0.1%, 量能 1.5x 50日均\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n💡 <b>玩法</b>\n突破 Pivot 買入, T1 = entry + Cup 深度\nCup & Handle = O'Neil CANSLIM 經典 base, 大牛市勝率 60%+"
+    "file": "2026-11-27_20-31-36.md",
+    "mtime": 1795782696.401062,
+    "text": "# Cron Job: J Cup &amp; Handle daily scanner\n\n**Job ID:** f60db0d978f4\n**Run Time:** 2026-11-27 20:31:36\n**Mode:** no_agent (script)\n\n---\n\n☕ <b>杯柄 突破訊號</b> (2026-11-27 HKT)\nO'Neil 杯柄形態 + Pivot 突破 | 掃描 499 隻\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n\n⚠️ <b>掃描結果</b>\n目前無可交易 setup。\n💡 條件:\n　• Cup 深 12-50%, U 字底 (非 V), 右壁回到左壁附近\n　• Handle 5-25 日輕微回撤 (≤ 12%)\n　• Pivot = Handle 高 + 0.1%, 量能 1.5x 50日均\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n💡 <b>玩法</b>\n突破 Pivot 買入, T1 = entry + Cup 深度\nCup & Handle = O'Neil CANSLIM 經典 base, 大牛市勝率 60%+"
    },
    "category": "交易掃描"
   },
@@ -535,14 +535,14 @@
    "enabled": true,
    "deliver": "local",
    "script": "backup_cron_jobs.sh",
-   "last_run_at": "2026-11-26T09:02:07.791536+08:00",
+   "last_run_at": "2026-11-27T09:02:38.753714+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-27T09:00:00+08:00",
+   "next_run_at": "2026-11-28T09:00:00+08:00",
    "output": {
-    "file": "2026-11-26_09-02-07.md",
-    "mtime": 1795654927.6625624,
-    "text": "# Cron Job: Cron Jobs 自動備份至 Gitea\n\n**Job ID:** 46141cbff660\n**Run Time:** 2026-11-26 09:02:07\n**Mode:** no_agent (script)\n\n---\n\n⚠️  Local backup committed, Gitea push FAILED after retries: 39 jobs\n    Host may be down. Local backup preserved in /home/jasonckfan/backup-repos/jason-investment-agent-code/cron_backup"
+    "file": "2026-11-27_09-02-35.md",
+    "mtime": 1795741355.4705503,
+    "text": "# Cron Job: Cron Jobs 自動備份至 Gitea\n\n**Job ID:** 46141cbff660\n**Run Time:** 2026-11-27 09:02:34\n**Mode:** no_agent (script)\n\n---\n\n⚠️  Local backup committed, Gitea push FAILED after retries: 39 jobs\n    Host may be down. Local backup preserved in /home/jasonckfan/backup-repos/jason-investment-agent-code/cron_backup"
    },
    "category": "系統維護"
   },
@@ -553,14 +553,14 @@
    "enabled": true,
    "deliver": "local",
    "script": "regen_dashboard.sh",
-   "last_run_at": "2026-11-25T23:37:11.210488+08:00",
+   "last_run_at": "2026-11-27T23:37:08.697889+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-26T23:35:00+08:00",
+   "next_run_at": "2026-11-30T23:35:00+08:00",
    "output": {
-    "file": "2026-11-25_23-37-11.md",
-    "mtime": 1795621031.0756948,
-    "text": "# Cron Job: Dashboard 每日重生 + Push Gitea\n\n**Job ID:** 10ac3bae86d8\n**Run Time:** 2026-11-25 23:37:11\n**Mode:** no_agent (script)\n\n---\n\n[2026-11-25 23:35:36 CST] Start dashboard regen\n  ⚠️  push attempt 1/4 failed (rc=128), retrying in 10s...\n  ⚠️  push attempt 2/4 failed (rc=128), retrying in 20s...\n  ⚠️  push attempt 3/4 failed (rc=128), retrying in 40s...\n[2026-11-25 23:37:11 CST] ⚠️ Dashboard regenerated + committed, but Gitea push FAILED\n    Local commit preserved in /home/jasonckfan/backup-repos/jason-investment-agent-code. Gitea host may be down."
+    "file": "2026-11-27_23-37-08.md",
+    "mtime": 1795793828.5168717,
+    "text": "# Cron Job: Dashboard 每日重生 + Push Gitea\n\n**Job ID:** 10ac3bae86d8\n**Run Time:** 2026-11-27 23:37:08\n**Mode:** no_agent (script)\n\n---\n\n[2026-11-27 23:35:33 CST] Start dashboard regen\n  ⚠️  push attempt 1/4 failed (rc=128), retrying in 10s...\n  ⚠️  push attempt 2/4 failed (rc=128), retrying in 20s...\n  ⚠️  push attempt 3/4 failed (rc=128), retrying in 40s...\n[2026-11-27 23:37:08 CST] ⚠️ Dashboard regenerated + committed, but Gitea push FAILED\n    Local commit preserved in /home/jasonckfan/backup-repos/jason-investment-agent-code. Gitea host may be down."
    },
    "category": "系統維護"
   },
@@ -571,14 +571,14 @@
    "enabled": true,
    "deliver": "local",
    "script": "trading_funnel_daily.sh",
-   "last_run_at": "2026-11-25T23:31:26.561517+08:00",
+   "last_run_at": "2026-11-27T23:31:16.759021+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-26T23:30:00+08:00",
+   "next_run_at": "2026-11-30T23:30:00+08:00",
    "output": {
-    "file": "2026-11-25_23-31-26.md",
-    "mtime": 1795620686.4476647,
-    "text": "# Cron Job: funnel-analyzer-daily\n\n**Job ID:** de5c6acb19f4\n**Run Time:** 2026-11-25 23:31:26\n**Mode:** no_agent (script)\n**Status:** silent (empty output)"
+    "file": "2026-11-27_23-31-16.md",
+    "mtime": 1795793476.6642525,
+    "text": "# Cron Job: funnel-analyzer-daily\n\n**Job ID:** de5c6acb19f4\n**Run Time:** 2026-11-27 23:31:16\n**Mode:** no_agent (script)\n**Status:** silent (empty output)"
    },
    "category": "系統維護"
   },
@@ -589,14 +589,14 @@
    "enabled": true,
    "deliver": "origin",
    "script": "trading_assistant/r_multiple_alerts.py",
-   "last_run_at": "2026-11-26T05:45:34.826542+08:00",
+   "last_run_at": "2026-11-27T07:39:51.666183+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-27T05:45:00+08:00",
+   "next_run_at": "2026-11-28T05:45:00+08:00",
    "output": {
-    "file": "2026-11-26_05-45-34.md",
-    "mtime": 1795643134.771754,
-    "text": "# Cron Job: F_ORB_r_multiple_daily_scan\n\n**Job ID:** 1acafb14a4cc\n**Run Time:** 2026-11-26 05:45:34\n**Mode:** no_agent (script)\n**Status:** silent (empty output)"
+    "file": "2026-11-27_07-39-47.md",
+    "mtime": 1795736387.9114485,
+    "text": "# Cron Job: F_ORB_r_multiple_daily_scan\n\n**Job ID:** 1acafb14a4cc\n**Run Time:** 2026-11-27 07:39:44\n**Mode:** no_agent (script)\n**Status:** silent (empty output)"
    },
    "category": "交易掃描"
   },
@@ -643,14 +643,14 @@
    "enabled": true,
    "deliver": "telegram",
    "script": "trading_assistant/watchlist_monitor.py",
-   "last_run_at": "2026-11-26T21:32:49.869183+08:00",
+   "last_run_at": "2026-11-27T23:30:39.063998+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-26T22:00:00+08:00",
+   "next_run_at": "2026-11-30T00:00:00+08:00",
    "output": {
-    "file": "2026-11-26_21-32-44.md",
-    "mtime": 1795699965.1912894,
-    "text": "# Cron Job: 交易輔助_WatchlistCurated_監控\n\n**Job ID:** 2c537592c42e\n**Run Time:** 2026-11-26 21:32:43\n**Mode:** no_agent (script)\n\n---\n\nℹ No curated watchlist for today"
+    "file": "2026-11-27_23-30-35.md",
+    "mtime": 1795793435.7631767,
+    "text": "# Cron Job: 交易輔助_WatchlistCurated_監控\n\n**Job ID:** 2c537592c42e\n**Run Time:** 2026-11-27 23:30:35\n**Mode:** no_agent (script)\n\n---\n\nℹ No curated watchlist for today"
    },
    "category": "交易掃描"
   },
@@ -661,14 +661,14 @@
    "enabled": true,
    "deliver": "origin",
    "script": null,
-   "last_run_at": "2026-11-25T23:01:26.291511+08:00",
+   "last_run_at": "2026-11-27T23:02:54.997853+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-26T23:00:00+08:00",
+   "next_run_at": "2026-11-28T23:00:00+08:00",
    "output": {
-    "file": "2026-11-25_23-01-24.md",
-    "mtime": 1795618884.8135438,
-    "text": "# Cron Job: 每日工作報告\n\n**Job ID:** 69aaca70973e\n**Run Time:** 2026-11-25 23:01:23\n**Schedule:** 0 23 * * *\n\n**Prompt Characters:** 38634\n## Prompt\n\n[IMPORTANT: The user has invoked the \"hermes-cron-operations\" skill, indicating they want you to follow its instructions. The full skill content is loaded below.]\n\n---\nname: hermes-cron-operations\ndescription: Use when diagnosing Hermes cron job failures, doing a dry-run of scheduled jobs, fixing delivery errors (Discord 404, Telegram 403, channel routing), checking host connectivity for backup/SSH endpoints, or auditing the cron health of a deployed system. Covers hermes cron list, jobs.json schema, scheduler.py delivery routing, and the dry-run methodology that distinguishes syntax bugs from runtime bugs from data-source bugs.\nversion: 1.0.0\nauthor: Hermes Agent\nlicense: MIT\nmetadata:\n  hermes:\n    tags: [cron, operations, diagnostics, delivery, hermes, health-check, dry-run]\n    related_skills: [hermes-agent, trading-assistant-system, webhook-subscriptions]\n---\n\n# Hermes Cron Operations\n\nOperational playbook for diagnosing and maintaining Hermes cron jobs in a deployed environment. The skill is **about** the class of work that comes after you've written a cron job: how do you tell a syntax bug from a runtime bug from a data-source bug? How do you triage `last_delivery_error` fields that linger from a previous failure? How do you know if it's your script, your env, your delivery target, or your data feed?\n\n## When to Use\n\n- User says \"dry-run my cron jobs\", \"why is my cron not working\", \"cron job failing\", \"delivery error\"\n- `hermes cron list` shows a job with `error: ...` or stale `last_delivery_error`\n- A `no-agent` push script is silently dying (script exits 1 with no Telegram/Discord message)\n- A backup / SSH / web endpoint that a cron job depends on has gone away\n- A previously-working pipeline suddenly starts failing after a config change\n- After adding a new platform (Discord, Slack, etc.) and wondering why cron still goes to old place\n- Code audit / health check across the whole cron fleet (30+ jobs)\n- **Bulk-switching LLM model/provider across cron jobs** (rotating API key, migrating from one provider to another, changing the global fallback chain, fixing `auxiliary.vision` config drift)\n\n**Don't use for:** writing a new cron job (just use the `cronjob` tool / `hermes cron create`), or debugging a specific script's logic (use `systematic-debugging`).\n\n## TL;DR — The 4-Layer Diagnostic Stack\n\nCron job failures have **four layers**, and the wrong fix targets the wrong layer. Always diagnose in this order:\n\n| Layer | Question | Tool | Symptom |\n|---|---|---|---|\n| **1. Syntax** | Does the script even parse? | `bash -n script.sh` / `py_compile.compile(..., doraise=True)` | Import error on import, syntax error on run |\n| **2. Runtime** | Does it run end-to-end? | `--dry-run` flag or `timeout 30 script.py` | Exit code 1, traceback mid-execution |\n| **3. Data source** | Does the external API work? | `curl -I <endpoint>` directly | HTTP 429, JSONDecodeError, network timeout |\n| **4. Delivery** | Does the result reach the user? | `hermes cron list` `last_delivery_error` field | \"no message received\", silent failures |\n\nA real dry-run walks all four layers. **The most common mistake is stopping at layer 1.** A script that passes `bash -n` and `import` can still be broken because Yahoo returned 429, the LLM timed out, or the Telegram bot token expired.\n\n## File Layout\n\n```\n~/.hermes/\n├── config.yaml                 # Main config (model, providers, fallbacks)\n├── .env                        # API keys + env vars (chmod 600)\n├── channel_directory.json      # Multi-platform channel routing\n├── cron/\n│   ├── jobs.json               # ⭐ Cron job definitions + state\n│   ├── scheduler.py            # ⭐ Delivery routing logic (read this to understand env vars)\n│   └── runs/                   # Per-job run history\n├── scripts/                    # Custom push scripts (cron usually calls these)\n├── hermes-agent/cron/          # Source code (if git-installed)\n│   ├── jobs.py\n│   └── scheduler.py\n└── logs/                       # gateway.log, agent.log\n```\n\n`jobs.json` is the **ground truth** for cron state — not `hermes cron list` (paginated, visual scrollback can hide rows). Always `jq` it.\n\n## CLI Reference\n\n```bash\n# List jobs\nhermes cron list                # Paginated table (10 rows visible)\nhermes cron list --all          # Include disabled\n\n# Count + audit (the right way)\njq 'length' ~/.hermes/cron/jobs.json                           # Total count\njq '[.[] | .deliver] | group_by(.) | map({deliver: .[0], count: length})' \\\n  ~/.hermes/cron/jobs.json                                     # Deliver distribution\njq '[.[] | select(.last_delivery_error != null) | {name, deliver, last_delivery_error}]' \\\n  ~/.hermes/cron/jobs.json                                     # ⭐ Stale errors\n\n# Inspect a single job\nhermes cron status <id>         # Verbose\njq '.[] | select(.name == \"美股每日晨報\")' ~/.hermes/cron/jobs.json\n\n# Run / control\nhermes cron run <id>            # Trigger on next tick\nhermes cron pause <id>\nhermes cron resume <id>\nhermes cron edit <id>           # Edit schedule, prompt, delivery\nhermes cron remove <id>\nhermes cron status              # Scheduler status (is the loop even running?)\n```\n\n## Layer 1 — Syntax / Import Audit (Bash)\n\n```bash\n# Bash scripts\nfor f in ~/.hermes/scripts/*.sh; do\n  echo \"=== $f ===\"; bash -n \"$f\" || echo \"❌ $f\"\ndone\n\n# Inline Python in heredocs (bash scripts that embed python3 - <<'PY' ... PY)\nfor f in ~/.hermes/scripts/*.sh; do\n  if grep -q \"^python3 - <<\" \"$f\"; then\n    echo \"=== $f (heredoc Python) ===\"\n    awk '/^python3 - <</{flag=1; next} /^[^A-Z]/{flag=0} flag' \"$f\" \\\n      | python3 -c \"import sys, py_compile; py_compile.compile(sys.stdin.read(), doraise=True)\" \\\n      && echo \"✅ heredoc OK\" || echo \"❌ $f heredoc\"\n  fi\ndone\n```\n\n## Layer 1 — Syntax / Import Audit (Python)\n\n```bash\n# Single file\npython3 -c \"import py_c"
+    "file": "2026-11-27_23-02-52.md",
+    "mtime": 1795791772.449959,
+    "text": "# Cron Job: 每日工作報告\n\n**Job ID:** 69aaca70973e\n**Run Time:** 2026-11-27 23:02:51\n**Schedule:** 0 23 * * *\n\n**Prompt Characters:** 38634\n## Prompt\n\n[IMPORTANT: The user has invoked the \"hermes-cron-operations\" skill, indicating they want you to follow its instructions. The full skill content is loaded below.]\n\n---\nname: hermes-cron-operations\ndescription: Use when diagnosing Hermes cron job failures, doing a dry-run of scheduled jobs, fixing delivery errors (Discord 404, Telegram 403, channel routing), checking host connectivity for backup/SSH endpoints, or auditing the cron health of a deployed system. Covers hermes cron list, jobs.json schema, scheduler.py delivery routing, and the dry-run methodology that distinguishes syntax bugs from runtime bugs from data-source bugs.\nversion: 1.0.0\nauthor: Hermes Agent\nlicense: MIT\nmetadata:\n  hermes:\n    tags: [cron, operations, diagnostics, delivery, hermes, health-check, dry-run]\n    related_skills: [hermes-agent, trading-assistant-system, webhook-subscriptions]\n---\n\n# Hermes Cron Operations\n\nOperational playbook for diagnosing and maintaining Hermes cron jobs in a deployed environment. The skill is **about** the class of work that comes after you've written a cron job: how do you tell a syntax bug from a runtime bug from a data-source bug? How do you triage `last_delivery_error` fields that linger from a previous failure? How do you know if it's your script, your env, your delivery target, or your data feed?\n\n## When to Use\n\n- User says \"dry-run my cron jobs\", \"why is my cron not working\", \"cron job failing\", \"delivery error\"\n- `hermes cron list` shows a job with `error: ...` or stale `last_delivery_error`\n- A `no-agent` push script is silently dying (script exits 1 with no Telegram/Discord message)\n- A backup / SSH / web endpoint that a cron job depends on has gone away\n- A previously-working pipeline suddenly starts failing after a config change\n- After adding a new platform (Discord, Slack, etc.) and wondering why cron still goes to old place\n- Code audit / health check across the whole cron fleet (30+ jobs)\n- **Bulk-switching LLM model/provider across cron jobs** (rotating API key, migrating from one provider to another, changing the global fallback chain, fixing `auxiliary.vision` config drift)\n\n**Don't use for:** writing a new cron job (just use the `cronjob` tool / `hermes cron create`), or debugging a specific script's logic (use `systematic-debugging`).\n\n## TL;DR — The 4-Layer Diagnostic Stack\n\nCron job failures have **four layers**, and the wrong fix targets the wrong layer. Always diagnose in this order:\n\n| Layer | Question | Tool | Symptom |\n|---|---|---|---|\n| **1. Syntax** | Does the script even parse? | `bash -n script.sh` / `py_compile.compile(..., doraise=True)` | Import error on import, syntax error on run |\n| **2. Runtime** | Does it run end-to-end? | `--dry-run` flag or `timeout 30 script.py` | Exit code 1, traceback mid-execution |\n| **3. Data source** | Does the external API work? | `curl -I <endpoint>` directly | HTTP 429, JSONDecodeError, network timeout |\n| **4. Delivery** | Does the result reach the user? | `hermes cron list` `last_delivery_error` field | \"no message received\", silent failures |\n\nA real dry-run walks all four layers. **The most common mistake is stopping at layer 1.** A script that passes `bash -n` and `import` can still be broken because Yahoo returned 429, the LLM timed out, or the Telegram bot token expired.\n\n## File Layout\n\n```\n~/.hermes/\n├── config.yaml                 # Main config (model, providers, fallbacks)\n├── .env                        # API keys + env vars (chmod 600)\n├── channel_directory.json      # Multi-platform channel routing\n├── cron/\n│   ├── jobs.json               # ⭐ Cron job definitions + state\n│   ├── scheduler.py            # ⭐ Delivery routing logic (read this to understand env vars)\n│   └── runs/                   # Per-job run history\n├── scripts/                    # Custom push scripts (cron usually calls these)\n├── hermes-agent/cron/          # Source code (if git-installed)\n│   ├── jobs.py\n│   └── scheduler.py\n└── logs/                       # gateway.log, agent.log\n```\n\n`jobs.json` is the **ground truth** for cron state — not `hermes cron list` (paginated, visual scrollback can hide rows). Always `jq` it.\n\n## CLI Reference\n\n```bash\n# List jobs\nhermes cron list                # Paginated table (10 rows visible)\nhermes cron list --all          # Include disabled\n\n# Count + audit (the right way)\njq 'length' ~/.hermes/cron/jobs.json                           # Total count\njq '[.[] | .deliver] | group_by(.) | map({deliver: .[0], count: length})' \\\n  ~/.hermes/cron/jobs.json                                     # Deliver distribution\njq '[.[] | select(.last_delivery_error != null) | {name, deliver, last_delivery_error}]' \\\n  ~/.hermes/cron/jobs.json                                     # ⭐ Stale errors\n\n# Inspect a single job\nhermes cron status <id>         # Verbose\njq '.[] | select(.name == \"美股每日晨報\")' ~/.hermes/cron/jobs.json\n\n# Run / control\nhermes cron run <id>            # Trigger on next tick\nhermes cron pause <id>\nhermes cron resume <id>\nhermes cron edit <id>           # Edit schedule, prompt, delivery\nhermes cron remove <id>\nhermes cron status              # Scheduler status (is the loop even running?)\n```\n\n## Layer 1 — Syntax / Import Audit (Bash)\n\n```bash\n# Bash scripts\nfor f in ~/.hermes/scripts/*.sh; do\n  echo \"=== $f ===\"; bash -n \"$f\" || echo \"❌ $f\"\ndone\n\n# Inline Python in heredocs (bash scripts that embed python3 - <<'PY' ... PY)\nfor f in ~/.hermes/scripts/*.sh; do\n  if grep -q \"^python3 - <<\" \"$f\"; then\n    echo \"=== $f (heredoc Python) ===\"\n    awk '/^python3 - <</{flag=1; next} /^[^A-Z]/{flag=0} flag' \"$f\" \\\n      | python3 -c \"import sys, py_compile; py_compile.compile(sys.stdin.read(), doraise=True)\" \\\n      && echo \"✅ heredoc OK\" || echo \"❌ $f heredoc\"\n  fi\ndone\n```\n\n## Layer 1 — Syntax / Import Audit (Python)\n\n```bash\n# Single file\npython3 -c \"import py_c"
    },
    "category": "系統維護"
   },
@@ -679,14 +679,14 @@
    "enabled": true,
    "deliver": "origin",
    "script": "etf_forecast/run_report.sh",
-   "last_run_at": "2026-11-26T05:31:09.853100+08:00",
+   "last_run_at": "2026-11-27T07:40:25.780862+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-27T05:30:00+08:00",
+   "next_run_at": "2026-11-28T05:30:00+08:00",
    "output": {
-    "file": "2026-11-26_05-31-07.md",
-    "mtime": 1795642267.662836,
-    "text": "# Cron Job: VOO/QQQ 預測_收市後\n\n**Job ID:** 4e8e5a30310e\n**Run Time:** 2026-11-26 05:31:07\n**Mode:** no_agent (script)\n\n---\n\n📊 VOO/QQQ 趨勢預測 (收市報告) — 2026-11-26 05:31 HKT\n\n**VOO** — 🟡 橫行 | 信心 43% | 收市 658.87\n  2 週預測區間: **616.25 – 701.49** (中值 658.87)\n  回測命中 (walk-forward, 754 樣本): **55%**\n  UP訊號勝率 64% (n=525) | DOWN訊號勝率 34% (n=53)\n  四模型: 動量 FLAT / 均值回歸 FLAT / 季節性 UP / 波動率 DOWN\n  當刻建議: ⏸️ 持有觀望 (無明顯 edge)\n\n**QQQ** — 🟡 橫行 | 信心 43% | 收市 633.93\n  2 週預測區間: **569.41 – 698.45** (中值 633.93)\n  回測命中 (walk-forward, 1333 樣本): **46%**\n  UP訊號勝率 62% (n=730) | DOWN訊號勝率 51% (n=186)\n  四模型: 動量 FLAT / 均值回歸 FLAT / 季節性 UP / 波動率 DOWN\n  當刻建議: ⏸️ 持有觀望 (無明顯 edge)\n\n_預測基於 20 年 walk-forward 回測; 勝率係歷史統計, 唔係保證。_\n  send VOO_20261126_0530.png: OK\n  send QQQ_20261126_0531.png: OK"
+    "file": "2026-11-27_07-40-07.md",
+    "mtime": 1795736407.1286507,
+    "text": "# Cron Job: VOO/QQQ 預測_收市後\n\n**Job ID:** 4e8e5a30310e\n**Run Time:** 2026-11-27 07:40:05\n**Mode:** no_agent (script)\n\n---\n\n📊 VOO/QQQ 趨勢預測 (收市報告) — 2026-11-27 07:40 HKT\n\n**VOO** — 🟡 橫行 | 信心 43% | 收市 658.87\n  2 週預測區間: **616.25 – 701.49** (中值 658.87)\n  回測命中 (walk-forward, 754 樣本): **55%**\n  UP訊號勝率 64% (n=525) | DOWN訊號勝率 34% (n=53)\n  四模型: 動量 FLAT / 均值回歸 FLAT / 季節性 UP / 波動率 DOWN\n  當刻建議: ⏸️ 持有觀望 (無明顯 edge)\n\n**QQQ** — 🟡 橫行 | 信心 43% | 收市 633.93\n  2 週預測區間: **569.41 – 698.45** (中值 633.93)\n  回測命中 (walk-forward, 1333 樣本): **46%**\n  UP訊號勝率 62% (n=730) | DOWN訊號勝率 51% (n=186)\n  四模型: 動量 FLAT / 均值回歸 FLAT / 季節性 UP / 波動率 DOWN\n  當刻建議: ⏸️ 持有觀望 (無明顯 edge)\n\n_預測基於 20 年 walk-forward 回測; 勝率係歷史統計, 唔係保證。_\n  send VOO_20261127_0739.png: OK\n  send QQQ_20261127_0740.png: OK"
    },
    "category": "市場報告"
   },
@@ -697,14 +697,14 @@
    "enabled": true,
    "deliver": "origin",
    "script": "etf_forecast/run_report.sh",
-   "last_run_at": "2026-11-26T20:00:48.087593+08:00",
+   "last_run_at": "2026-11-27T20:00:47.636957+08:00",
    "last_status": "ok",
    "last_error": null,
-   "next_run_at": "2026-11-27T20:00:00+08:00",
+   "next_run_at": "2026-11-30T20:00:00+08:00",
    "output": {
-    "file": "2026-11-26_20-00-45.md",
-    "mtime": 1795694445.8449905,
-    "text": "# Cron Job: VOO/QQQ 預測_開市前\n\n**Job ID:** 9c2c9c4238d0\n**Run Time:** 2026-11-26 20:00:45\n**Mode:** no_agent (script)\n\n---\n\n📊 VOO/QQQ 趨勢預測 (盤前報告) — 2026-11-26 20:00 HKT\n\n**VOO** — 🟡 橫行 | 信心 43% | 收市 658.87\n  2 週預測區間: **616.25 – 701.49** (中值 658.87)\n  回測命中 (walk-forward, 754 樣本): **55%**\n  UP訊號勝率 64% (n=525) | DOWN訊號勝率 34% (n=53)\n  四模型: 動量 FLAT / 均值回歸 FLAT / 季節性 UP / 波動率 DOWN\n  當刻建議: ⏸️ 持有觀望 (無明顯 edge)\n\n**QQQ** — 🟡 橫行 | 信心 43% | 收市 633.93\n  2 週預測區間: **569.41 – 698.45** (中值 633.93)\n  回測命中 (walk-forward, 1333 樣本): **46%**\n  UP訊號勝率 62% (n=730) | DOWN訊號勝率 51% (n=186)\n  四模型: 動量 FLAT / 均值回歸 FLAT / 季節性 UP / 波動率 DOWN\n  當刻建議: ⏸️ 持有觀望 (無明顯 edge)\n\n_預測基於 20 年 walk-forward 回測; 勝率係歷史統計, 唔係保證。_\n  send VOO_20261126_2000.png: OK\n  send QQQ_20261126_2000.png: OK"
+    "file": "2026-11-27_20-00-44.md",
+    "mtime": 1795780844.429875,
+    "text": "# Cron Job: VOO/QQQ 預測_開市前\n\n**Job ID:** 9c2c9c4238d0\n**Run Time:** 2026-11-27 20:00:43\n**Mode:** no_agent (script)\n\n---\n\n📊 VOO/QQQ 趨勢預測 (盤前報告) — 2026-11-27 20:00 HKT\n\n**VOO** — 🟡 橫行 | 信心 43% | 收市 658.87\n  2 週預測區間: **616.25 – 701.49** (中值 658.87)\n  回測命中 (walk-forward, 754 樣本): **55%**\n  UP訊號勝率 64% (n=525) | DOWN訊號勝率 34% (n=53)\n  四模型: 動量 FLAT / 均值回歸 FLAT / 季節性 UP / 波動率 DOWN\n  當刻建議: ⏸️ 持有觀望 (無明顯 edge)\n\n**QQQ** — 🟡 橫行 | 信心 43% | 收市 633.93\n  2 週預測區間: **569.41 – 698.45** (中值 633.93)\n  回測命中 (walk-forward, 1333 樣本): **46%**\n  UP訊號勝率 62% (n=730) | DOWN訊號勝率 51% (n=186)\n  四模型: 動量 FLAT / 均值回歸 FLAT / 季節性 UP / 波動率 DOWN\n  當刻建議: ⏸️ 持有觀望 (無明顯 edge)\n\n_預測基於 20 年 walk-forward 回測; 勝率係歷史統計, 唔係保證。_\n  send VOO_20261127_2000.png: OK\n  send QQQ_20261127_2000.png: OK"
    },
    "category": "市場報告"
   }
